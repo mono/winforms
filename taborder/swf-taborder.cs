@@ -62,7 +62,7 @@ namespace MWFTestApplication {
 		void WalkControls(Control container, Control start, int count, bool forward) {
 			Control ctl;
 
-			Console.WriteLine("Walking inside {0},\n starting at control {0}", container.Text, start.Text);
+			Console.WriteLine("Walking inside {0},\n starting at control {1}", container.Text, start.Text);
 
 			ctl = start;
 			for (int i = 0; i < count; i++) {
@@ -90,7 +90,7 @@ namespace MWFTestApplication {
 			}
 
 			if (verbose > 0) {
-				Console.WriteLine("Test {0} passed", test_no++);
+				Console.WriteLine("Test {0} passed (TabIndex)", test_no++);
 			}
 			return true;
 		}
@@ -103,7 +103,7 @@ namespace MWFTestApplication {
 
 			if (ctl == null && expected == null) {
 				if (verbose > 0) {
-					Console.WriteLine("Test {0} passed", test_no++);
+					Console.WriteLine("Test {0} passed (GetNextControl)", test_no++);
 				}
 				return true;
 			}
@@ -125,7 +125,7 @@ namespace MWFTestApplication {
 				failed++;
 			} else {
 				if (verbose > 0) {
-					Console.WriteLine("Test {0} passed", test_no++);
+					Console.WriteLine("Test {0} passed (GetNextControl)", test_no++);
 				}
 				result = true;
 			}
@@ -196,6 +196,9 @@ namespace MWFTestApplication {
 
 			group3.TabIndex = 35;
 			group3.TabStop = true;
+
+			// Test default tab index
+			TestTabIndex(radio11, 0);				// Test 1
 
 			radio11.Text = "Radio 1-1 [Tab1]";
 			radio12.Text = "Radio 1-2 [Tab2]";
@@ -291,15 +294,26 @@ namespace MWFTestApplication {
 
 				// Bogus args, test sanity checking
 				Console.WriteLine("Sanity check testing, container is non-container control, starting at sibling");
+				WalkControls(radio11, radio12, 14, true);
+
+				// Bogus args, test sanity checking
+				Console.WriteLine("Sanity check testing, container is non-container control, starting at sibling in different container");
 				WalkControls(radio11, radio21, 14, true);
+
+				// Bogus args, test sanity checking
+				Console.WriteLine("Sanity check testing, container is non-container control, starting is same as container");
+				WalkControls(label1, label1, 14, true);
 
 				Console.WriteLine("Sanity check testing, container is aunt of start");
 				WalkControls(group1, radio21, 14, true);
+
+				Console.WriteLine("Sanity check testing, container is child of start");
+				WalkControls(group1, this, 14, true);
 			}
 
 			// Perform some tests, the TabIndex stuff below will alter the outcome
-			TestControl(group2, radio34, true, null);		// Test 1
-			TestTabIndex(group2, 31);				// Test 2
+			TestControl(group2, radio34, true, null);		// Test 2
+			TestTabIndex(group2, 31);				// Test 3
 
 			// Does the taborder of containers and non-selectable things change behaviour?
 			label1.TabIndex = 5;
@@ -311,32 +325,42 @@ namespace MWFTestApplication {
 			if (debug > 0) {
 				Console.WriteLine("With selected radio buttons, starting from Toplevel form");
 				WalkControls(this, this, 14, true);
+
+				Console.WriteLine("Sanity check testing, reverse walk");
+				WalkControls(this, this, 20, false);
 			}
 
 			// Start verification
-			TestControl(group2, radio34, true, radio23.Text);	// Test 3
-			TestControl(group2, group2, true, radio24.Text);	// Test 4
-			TestControl(group2, group3, true, radio31.Text);	// Test 5
-			TestControl(group1, radio14, true, null);		// Test 6
-			TestControl(group2, radio24, true, group3.Text);	// Test 7
-			TestControl(group2, radio21, true, null);		// Test 8
-			TestControl(this, radio12, true, radio13.Text);		// Test 9
-			TestControl(this, radio14, true, label2.Text);		// Test 10
-			TestControl(this, radio34, true, radio23.Text);		// Test 11
-			TestControl(group2, radio24, true, group3.Text);	// Test 12
+			TestControl(group2, radio34, true, radio23.Text);	// Test 4
+			TestControl(group2, group2, true, radio24.Text);	// Test 5
+			TestControl(group2, group3, true, radio31.Text);	// Test 6
+			TestControl(group1, radio14, true, null);		// Test 7
+			TestControl(group2, radio24, true, group3.Text);	// Test 8
+			TestControl(group2, radio21, true, null);		// Test 9
+			TestControl(this, radio12, true, radio13.Text);		// Test 10
+			TestControl(this, radio14, true, label2.Text);		// Test 11
+			TestControl(this, radio34, true, radio23.Text);		// Test 12
+			TestControl(group2, radio24, true, group3.Text);	// Test 13
 
 			// Sanity checks
-			TestControl(radio11, radio21, true, null);		// Test 13
-			TestControl(group1, radio21, true, radio11.Text);	// Test 14
+			TestControl(radio11, radio21, true, null);		// Test 14
+			TestControl(group1, radio21, true, radio11.Text);	// Test 15
 
-			TestControl(this, label2, false, radio14.Text);		// Test 15
-			TestControl(group2, group3, false, radio24.Text);	// Test 16
+			TestControl(this, label2, false, radio14.Text);		// Test 16
+			TestControl(group2, group3, false, radio24.Text);	// Test 17
 
-			TestTabIndex(radio21, 4);				// Test 17
-			TestTabIndex(radio11, 0);				// Test 18
-			TestTabIndex(radio13, 2);				// Test 19
-			TestTabIndex(group3, 1);				// Test 20
-			TestTabIndex(group2, 1);				// Test 21
+			TestTabIndex(radio21, 4);				// Test 18
+			TestTabIndex(radio11, 0);				// Test 19
+			TestTabIndex(radio13, 2);				// Test 20
+			TestTabIndex(group3, 1);				// Test 21
+			TestTabIndex(group2, 1);				// Test 22
+
+			TestControl(this, this, false, label1.Text);		// Test 23
+			TestControl(group1, group1, false, radio14.Text);	// Test 24
+			TestControl(group3, group3, false, radio34.Text);	// Test 25
+
+			TestControl(label1, label1, false, null);		// Test 26
+			TestControl(radio11, radio21, false, null);		// Test 27
 
 			if (visual) {
 				if (failed == 0) {
