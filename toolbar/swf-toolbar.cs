@@ -102,12 +102,12 @@ namespace SWFToolBar
 			this.toolBar2.ButtonClick += new ToolBarButtonClickEventHandler (this.toolBar2_ButtonClick);
 			this.toolBar2.ButtonDropDown += new ToolBarButtonClickEventHandler(this.toolBar2_ButtonDropDown);
 
-			//il.ColorDepth = ColorDepth.Depth32Bit;
-			//il.Images.Add (new Bitmap ("Sunset.jpg"));
-			//il.Images.Add (new Bitmap ("Bluehills.jpg"));
-			//il.Images.Add (new Bitmap ("Water.jpg"));
-			//il.Images.Add (new Bitmap ("Winter.jpg"));
-			//il.ImageSize = new Size (40, 40);
+			il.ColorDepth = ColorDepth.Depth32Bit;
+			il.Images.Add (new Bitmap ("image1.bmp"));
+			il.Images.Add (new Bitmap ("image2.bmp"));
+			il.Images.Add (new Bitmap ("image3.bmp"));
+			il.Images.Add (new Bitmap ("image4.bmp"));
+			il.ImageSize = new Size (40, 40);
 
 			b11.Style = ToolBarButtonStyle.DropDownButton;
 			b11.ImageIndex = 0;
