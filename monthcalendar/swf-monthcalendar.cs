@@ -16,6 +16,19 @@ namespace MyFormProject
 		public MainForm()
 		{
 			InitializeComponent();
+			
+			// set up some bolded dates
+			monthcal1.BoldedDates = new DateTime [] {DateTime.Now, DateTime.Now.AddDays (2)};
+			monthcal2.AddMonthlyBoldedDate (DateTime.Now);
+			monthcal2.AddMonthlyBoldedDate (DateTime.Now.AddDays (2));
+			monthcal2.AddMonthlyBoldedDate (DateTime.Now.AddDays (5));
+			monthcal2.UpdateBoldedDates();
+			
+			monthcal3.AddAnnuallyBoldedDate (DateTime.Now.AddDays (-2));
+			monthcal3.AddAnnuallyBoldedDate (DateTime.Now.AddDays (-5));
+			monthcal3.UpdateBoldedDates();
+			monthcal2.RemoveMonthlyBoldedDate (DateTime.Now.AddDays (2));
+			monthcal2.UpdateBoldedDates();
 		}
 
 		private void InitializeComponent()
