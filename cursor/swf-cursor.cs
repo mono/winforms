@@ -25,7 +25,7 @@ namespace MWFTestApplication {
 		static bool		exception	= false;
 
 		Label[]			labels;
-		const int		num_of_cursors	= 27;
+		const int		num_of_cursors	= 29;
 		const int		size_of_label	= 60;
 		const int		max_labels_row	= 5;
 
@@ -199,6 +199,13 @@ namespace MWFTestApplication {
 					return;
 				}
 
+				case 28: {
+					ci.name = "Application defined";
+					//ci.cursor = new Cursor("mycursor.cur");
+					ci.cursor = Cursors.WaitCursor;
+					return;
+				}
+
 				default: {
 					ci.name = "Default";
 					ci.cursor = Cursors.Default;
@@ -231,6 +238,7 @@ namespace MWFTestApplication {
 				this.Controls.Add(labels[i]);
 			}
 
+			KeyDown += new KeyEventHandler(MainWindow_KeyDown);
 		}		
 		
 		public static int Main(string[] args) {
@@ -271,6 +279,12 @@ namespace MWFTestApplication {
 			}
 
 			return failed;
+		}
+
+		private void MainWindow_KeyDown(object sender, KeyEventArgs e) {
+			if (e.KeyData == Keys.Escape) {
+				Application.Exit();
+			}
 		}
 	}
 }
