@@ -297,8 +297,9 @@ namespace MyFormProject
 		void ButtonAddClick (object sender, System.EventArgs e)
 		{ 
 			string item_text;
+			int last = last_item;
 			
-			for (int i = last_item; i < last_item + 10; i++) {
+			for (int i = last_item; i < last + 10; i++) {
 				item_text = "new item " + last_item;
 				listBox1.Items.Add (item_text);
 				listBox2.Items.Add (item_text);
