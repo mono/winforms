@@ -227,11 +227,24 @@ namespace MWFTestApplication {
 			CheckStandardValuesExclusive(false, key_conv);
 		}
 
+		public void TestOpacityConverter() {
+			OpacityConverter	conv;
+
+			conv = new OpacityConverter();
+
+			CheckConvert(1, 1, conv, typeof(double));
+
+			CheckConversion(1.0, "100%", conv, typeof(string));
+			CheckConversion(0.5, "50%", conv, typeof(string));
+			CheckConversion(0.0, "0%", conv, typeof(string));
+		}
+
 		public MainWindow() {
 			ClientSize = new System.Drawing.Size (520, 520);
 			Text = "SWF Converters Test App";
 
 			TestKeysConverter();
+			TestOpacityConverter();
 
 			if (visual) {
 				if (failed != failed_expected) {
