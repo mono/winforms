@@ -3,6 +3,7 @@
 #define have_combobox
 #undef have_resxset
 #define have_treeview
+#undef have_transform_points
 
 using System;
 using System.Drawing;
@@ -2880,9 +2881,11 @@ namespace FormsTest
 				g.RotateTransform(transformRotation);
 				g.TranslateTransform(transformX, transformY);
 				g.ScaleTransform(transformScaleX, transformScaleY);
+#if have_transform_points
 				g.TransformPoints(CoordinateSpace.Page,
 					CoordinateSpace.World,
 					f);
+#endif
 
 				using (Brush b = new SolidBrush(Color.CadetBlue))
 				{
