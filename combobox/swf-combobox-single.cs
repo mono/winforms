@@ -39,6 +39,9 @@ namespace MyFormProject
 		private Button buttonSimple;
 		private Button buttonDropDown;
 		private Button buttonDropDownList;
+		private Button buttonAddItems;
+		private Button buttonCleanItems;
+		private int last_item = 0;
 
 		public MainForm()
 		{
@@ -1024,9 +1027,24 @@ namespace MyFormProject
 			comboBox.Name = "comboBox";
 			comboBox.Size = new System.Drawing.Size (248, 150);
 			comboBox.TabIndex = 0;
-			comboBox.Text = "A normal ComboBox";
+			//comboBox.Text = "A normal ComboBox";
 			comboBox.DropDownStyle = ComboBoxStyle.Simple;
 			comboBox.MaxDropDownItems = 10;
+			//comboBox.ItemHeight = false;
+						
+			
+			buttonAddItems = new Button ();
+			buttonAddItems.Location = new Point (400, 30);
+			buttonAddItems.Text = "Add Items";
+			buttonAddItems.Size = new Size (100, 23);
+			buttonAddItems.Click += new System.EventHandler (buttonAddItemsClick);
+			
+			buttonCleanItems = new Button ();
+			buttonCleanItems.Location = new Point (400, 80);
+			buttonCleanItems.Text = "Clean Items";
+			buttonCleanItems.Size = new Size (100, 23);
+			buttonCleanItems.Click += new System.EventHandler (buttonCleanItemsClick);
+					
 			
 			//this.comboBox.IntegralHeight = true;			
 			//comboBox.Font = new System.Drawing.Font (comboBox.Font.FontFamily, comboBox.Font.Size + 5);
@@ -1036,7 +1054,7 @@ namespace MyFormProject
 			// MainForm
 			// 
 			this.ClientSize = new System.Drawing.Size(624, 309);
-			this.Controls.AddRange(new Control[] {						
+			this.Controls.AddRange(new Control[] { buttonAddItems, buttonCleanItems,
 						comboBox, buttonSimple, buttonDropDown, buttonDropDownList});
 						
 			this.Text = "Single ComboBox sample";
@@ -1046,12 +1064,26 @@ namespace MyFormProject
 			Console.WriteLine ("ComboBox IntegralHeight {0}", comboBox.IntegralHeight);
 			Console.WriteLine ("ComboBox ItemHeight {0}", comboBox.ItemHeight);
 			Console.WriteLine ("ComboBox FontHeight {0}", comboBox.Font.Height);			
+			Console.WriteLine ("ComboBox String {0}", comboBox.ToString ());		
 			
+		}
+		
+		private void buttonCleanItemsClick (object sender, System.EventArgs e)
+		{				
+			comboBox.Items.Clear ();			
+		}
+		
+		private void buttonAddItemsClick (object sender, System.EventArgs e)
+		{				
+			for (int i = 0; i < 8; i++) {
+				comboBox.Items.Add ("Item " + last_item);
+				last_item++;
+			}
 		}
 
 		private void buttonSimpleClick (object sender, System.EventArgs e)
-		{
-			comboBox.DropDownStyle = ComboBoxStyle.Simple;
+		{				
+			comboBox.DroppedDown = true; 			
 		}
 
 		private void buttonDropDownClick (object sender, System.EventArgs e)
