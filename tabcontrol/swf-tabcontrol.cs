@@ -20,26 +20,28 @@ namespace System.Windows.Forms {
 		{
 			TabControl tab = new TabControl ();
 			tab.Alignment = TabAlignment.Top;
+			tab.Dock = DockStyle.Fill;
 			// tab.Appearance = TabAppearance.FlatButtons;
 			// tab.Multiline = true;
 
-			tab.Controls.Add (new TabPage ("Tab A"));
-			tab.Controls.Add (new TabPage ("Tab B"));
-			tab.Controls.Add (new TabPage ("Tab C"));
-			tab.Controls.Add (new TabPage ("Tab D"));
-			tab.Controls.Add (new TabPage ("Tab E"));
-			
-			tab.Controls.Add (new TabPage ("Tab F"));
-			tab.Controls.Add (new TabPage ("Tab G"));
-			tab.Controls.Add (new TabPage ("Tab H"));
-			tab.Controls.Add (new TabPage ("Tab I"));
-			tab.Controls.Add (new TabPage ("Tab J"));
-			tab.Controls.Add (new TabPage ("Tab K"));
-			
+			tab.Controls.Add (CreateTabPage ("Red", Color.FromArgb (255, 255, 0, 0)));
+			tab.Controls.Add (CreateTabPage ("Orange", Color.FromArgb (255, 255, 153, 0)));
+			tab.Controls.Add (CreateTabPage ("Yellow", Color.FromArgb (255, 255, 255, 0)));
+			tab.Controls.Add (CreateTabPage ("Green", Color.FromArgb (255, 0, 153, 0)));
+			tab.Controls.Add (CreateTabPage ("Blue", Color.FromArgb (255, 0, 0, 255)));
+			tab.Controls.Add (CreateTabPage ("Purple", Color.FromArgb (255, 197, 0, 148)));
+
 			tab.Height = 200;
 			tab.SelectedIndex = 3;
 			Controls.Add (tab);
 
+		}
+
+		private TabPage CreateTabPage (string label, Color c)
+		{
+			TabPage res = new TabPage (label);
+			res.BackColor = c;
+			return res;
 		}
 
 		public static void Main ()
