@@ -1,7 +1,7 @@
 all: mono
 
 mono: swf-mainmenu.cs
-	mcs swf-mainmenu.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
+	#mcs swf-mainmenu.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
 	mcs swf-mainmenu-nomdi.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
 
 dotnet: swf-mainmenu.cs
