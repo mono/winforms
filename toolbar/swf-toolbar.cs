@@ -39,7 +39,6 @@ namespace SWFToolBar
 	{
 		private System.Windows.Forms.ToolBar toolBar1;
 		private System.Windows.Forms.ToolBar toolBar2;
-		private System.ComponentModel.Container components = null;
 
 		public MainForm ()
 		{
@@ -48,6 +47,8 @@ namespace SWFToolBar
 
 		private void InitializeComponent ()
 		{
+			this.SuspendLayout ();
+
 			this.toolBar1 = new System.Windows.Forms.ToolBar ();
 			this.toolBar2 = new System.Windows.Forms.ToolBar ();
 
@@ -62,7 +63,6 @@ namespace SWFToolBar
 			ToolBarButton b24 = new ToolBarButton ("button24");
 
 			ImageList il = new ImageList ();
-			this.SuspendLayout ();
 
 			// 
 			// toolBar1
@@ -77,7 +77,8 @@ namespace SWFToolBar
 			this.toolBar1.ImageList = il;
 			this.toolBar1.Divider = false;
 			this.toolBar1.TextAlign = ToolBarTextAlign.Right;
-			this.toolBar1.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler (this.toolBar1_ButtonClick);
+			this.toolBar1.ButtonClick += new ToolBarButtonClickEventHandler (this.toolBar1_ButtonClick);
+			this.toolBar1.ButtonDropDown += new ToolBarButtonClickEventHandler(this.toolBar1_ButtonDropDown);
 
 			// 
 			// toolBar2
@@ -133,19 +134,25 @@ namespace SWFToolBar
 			
 			this.Controls.Add (this.toolBar2);
 			this.Controls.Add (this.toolBar1);
+			this.ResumeLayout (false);
+
 			this.Name = "MainForm";
 			this.Text = "MainForm";
-			this.ResumeLayout (false);
 		}
 
 		private void toolBar1_ButtonClick (object sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
 		{
-			Console.WriteLine ("button clicked: {0}", e.Button.Text);
+			Console.WriteLine ("button clicked: {0}, rect: {1}", e.Button.Text, e.Button.Rectangle);
+		}
+
+		private void toolBar1_ButtonDropDown (object sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
+		{
+			Console.WriteLine ("button dropdown clicked: {0}, rect: {1}", e.Button.Text, e.Button.Rectangle);
 		}
 
 		private void toolBar2_ButtonClick (object sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
 		{
-			Console.WriteLine ("button clicked: {0}", e.Button.Text);
+			Console.WriteLine ("button clicked: {0}, rect: {1}", e.Button.Text, e.Button.Rectangle);
 		}
 
 		static void Main () 
