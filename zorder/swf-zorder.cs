@@ -1,7 +1,7 @@
 //
-// This is a bit overboard for a test app, but I'm hoping it 
-// can be gutted and used as a base for other test apps, trying
-// to set a good example :-)
+// Right-click or left-click to move a label
+// into background or foreground respectively
+// Middle click to move it one up the chain
 //
 
 
@@ -51,12 +51,22 @@ namespace MWFTestApplication {
 			if (child != null) {
 				if (child.Parent != null) {
 					if (verbose > 0) {
-						Console.WriteLine("Clicked on Label '{0}', moving to {1} of Z-Order", child.Text, e.Button == MouseButtons.Left ? "Bottom" : "Top");
+						Console.WriteLine("Clicked on Label '{0}', moving to {1} of Z-Order", child.Text, e.Button == MouseButtons.Left ? "Bottom" : e.Button == MouseButtons.Right ? "Top" : "Middle");
 					}
 					if (e.Button == MouseButtons.Left) {
 						main_window.Controls.SetChildIndex(child, main_window.Controls.Count);
-					} else {
+					} else if (e.Button == MouseButtons.Right) {
 						main_window.Controls.SetChildIndex(child, 0);
+					} else {
+						int i;
+
+						i = main_window.Controls.GetChildIndex(child);
+						if (i > 0) {
+							i--;
+						} else {
+							i = main_window.Controls.Count;
+						}
+						main_window.Controls.SetChildIndex(child, i);
 					}
 				}
 			} else {
