@@ -413,11 +413,11 @@ namespace FormsTest
 			AddRegionsTest(tabPage5);
 			AddTabControlsTest(tabPage6);
 			AddPrimitivesTest(tabPage7);
-//			AddMenuTest();
+			AddMenuTest();
 			AddGraphicsTest(tabPage8);
 			AddGraphicsPathTest(tabPage16);
 			AddGraphicsDrawStringTest(tabPage17);
-//			AddContextTest(tabPage9);
+			AddContextTest(tabPage9);
 			AddImageTest(tabPage10);
 			AddComboTest(tabPage11);
 			AddTreeViewTest(tabPage12);
