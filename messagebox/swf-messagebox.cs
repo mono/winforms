@@ -56,19 +56,19 @@ namespace MyFormProject
 
 			switch (count) {
 				case 0: {
-					result = MessageBox.Show("You must enter a name.", "Name Entry Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 					this.button1.Text = "Last result was " + result + "\nClick to get OK/Cancel MessageBox";
 					break;
 				}
 
 				case 1: {
-					result = MessageBox.Show("You must enter a name.", "Name Entry Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
 					this.button1.Text = "Last result was " + result + "\nClick me for Yes/No MessageBox";
 					break;
 				}
 
 				case 2: {
-					result = MessageBox.Show("You must enter a name.", "Name Entry Error", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 					this.button1.Text = "Last result was " + result + "\nClick to exit the test application";
 					break;
 				}
