@@ -3,7 +3,7 @@ all: mono
 mono: swf-statusbar.cs
 	mcs swf-statusbar.cs /r:System.Windows.Forms.dll
 
-dotnet: swf-trackbars.cs
+dotnet: swf-statusbar.cs
 	csc swf-statusbar.cs /r:System.Windows.Forms.dll
 
 clean:
