@@ -29,6 +29,9 @@ namespace MyFormProject
 			monthcal3.UpdateBoldedDates();
 			monthcal2.RemoveMonthlyBoldedDate (DateTime.Now.AddDays (2));
 			monthcal2.UpdateBoldedDates();
+			
+			// test the scroll change property
+			monthcal2.ScrollChange = 2;
 		}
 
 		private void InitializeComponent()
