@@ -41,10 +41,18 @@ namespace MyFormProject
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TrackBar trackBar3;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.TrackBar trackBar35;
+		private System.Windows.Forms.Label label35;
 		private System.Windows.Forms.TrackBar trackBar4;
 		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.TrackBar trackBar45;
+		private System.Windows.Forms.Label label45;
 		private System.Windows.Forms.TrackBar trackBar5;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TrackBar trackBar6;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.TrackBar trackBar7;
+		private System.Windows.Forms.Label label7;
 		
 		public MainForm()
 		{
@@ -60,10 +68,18 @@ namespace MyFormProject
 			this.label2 = new System.Windows.Forms.Label ();
 			this.trackBar3 = new System.Windows.Forms.TrackBar ();			
 			this.label3 = new System.Windows.Forms.Label ();			
+			this.trackBar35 = new System.Windows.Forms.TrackBar ();			
+			this.label35 = new System.Windows.Forms.Label ();			
 			this.trackBar4 = new System.Windows.Forms.TrackBar ();			
 			this.label4 = new System.Windows.Forms.Label ();			
+			this.trackBar45 = new System.Windows.Forms.TrackBar ();			
+			this.label45 = new System.Windows.Forms.Label ();			
 			this.trackBar5 = new System.Windows.Forms.TrackBar ();			
 			this.label5 = new System.Windows.Forms.Label ();			
+			this.trackBar6 = new System.Windows.Forms.TrackBar ();			
+			this.label6 = new System.Windows.Forms.Label ();			
+			this.trackBar7 = new System.Windows.Forms.TrackBar ();			
+			this.label7 = new System.Windows.Forms.Label ();			
 			this.SuspendLayout();
 		
 			// 
@@ -80,7 +96,7 @@ namespace MyFormProject
 			this.label1.Location = new System.Drawing.Point (230, 20);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size (300, 20);			
-			this.label1.Text = "Trackbar";
+			this.label1.Text = "Trackbar BottomRight";
 			
 			// 
 			// trackBar2
@@ -98,9 +114,9 @@ namespace MyFormProject
 			// label2
 			// 
 			this.label2.Location = new System.Drawing.Point (230, 70);
-			this.label2.Name = "label2";
+			this.label2.Name = "label";
 			this.label2.Size = new System.Drawing.Size (300, 20);			
-			this.label2.Text = "Pos";
+			this.label2.Text = "Trackbar TopLeft";
 						
 			
 			// 
@@ -122,13 +138,55 @@ namespace MyFormProject
 			this.label3.Location = new System.Drawing.Point (230, 120);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size (300, 20);			
-			this.label3.Text = "Trackbar 3";
+			this.label3.Text = "Trackbar BottomRight";
+			
+			// 
+			// trackBar35
+			// 
+			this.trackBar35.Location = new System.Drawing.Point (10, 170);
+			this.trackBar35.Name = "Trackbar35";
+			this.trackBar35.Size = new System.Drawing.Size (200, 30);			
+			this.trackBar35.Minimum = 50;
+			this.trackBar35.Maximum = 100;				
+			this.trackBar35.SmallChange = 5;			
+			this.trackBar35.LargeChange = 10;		
+			this.trackBar35.TickStyle = TickStyle.Both;				
+			
+			// 
+			// label35
+			// 
+			this.label35.Location = new System.Drawing.Point (230, 180);
+			this.label35.Name = "label35";
+			this.label35.Size = new System.Drawing.Size (300, 20);			
+			this.label35.Text = "Trackbar Both";			
+			
+			// 
+			// trackBar45
+			// 			
+			this.trackBar45.Location = new System.Drawing.Point (10, 220);
+			this.trackBar45.Name = "Trackbar4";
+			this.trackBar45.Size = new System.Drawing.Size (100, 50);			
+			this.trackBar45.Minimum = 0;
+			this.trackBar45.Maximum = 100;
+			this.trackBar45.Value = 50;			
+			this.trackBar45.TickFrequency = 10;
+			this.trackBar45.TickStyle = TickStyle.None;			
+						
+			// 
+			// label45
+			// 
+			this.label45.Location = new System.Drawing.Point (230, 220);
+			this.label45.Name = "label4";
+			this.label45.Size = new System.Drawing.Size (100, 20);			
+			this.label45.Text = "TrackBar None";
+			
+			/* Vertical */
 			
 			// 
 			// trackBar4
 			// 
 			this.trackBar4.Orientation = Orientation.Vertical;
-			this.trackBar4.Location = new System.Drawing.Point (10, 180);
+			this.trackBar4.Location = new System.Drawing.Point (10, 280);
 			this.trackBar4.Name = "Trackbar4";
 			this.trackBar4.Size = new System.Drawing.Size (20, 50);			
 			this.trackBar4.Minimum = 0;
@@ -140,47 +198,96 @@ namespace MyFormProject
 			// 
 			// label4
 			// 
-			this.label4.Location = new System.Drawing.Point (40, 180);
+			this.label4.Location = new System.Drawing.Point (10, 360);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size (60, 20);			
-			this.label4.Text = "";
+			this.label4.Size = new System.Drawing.Size (80, 60);			
+			this.label4.Text = "Trackbar BottomRight";
 			
 			// 
 			// trackBar5
 			// 
-			this.trackBar5.Location = new System.Drawing.Point (150, 180);
+			this.trackBar5.Location = new System.Drawing.Point (100, 280);
 			this.trackBar5.Name = "Trackbar5";
-			this.trackBar5.Size = new System.Drawing.Size (80, 30);			
+			this.trackBar5.Size = new System.Drawing.Size (80, 50);			
 			this.trackBar5.Minimum = 0;
 			this.trackBar5.Maximum = 5;
 			this.trackBar5.Value = 1;			
-			this.trackBar5.Orientation = Orientation.Vertical;
-			this.trackBar5.TickStyle = TickStyle.None;
+			this.trackBar5.Orientation = Orientation.Vertical;			
 			this.trackBar5.ValueChanged  += new System.EventHandler (this.trackBar5ValueChanged);
+			this.trackBar5.TickStyle = TickStyle.TopLeft;
 			
 			// 
 			// label5
 			// 
-			this.label5.Location = new System.Drawing.Point (200, 180);
+			this.label5.Location = new System.Drawing.Point (100, 360);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size (60, 20);			
-			this.label5.Text = "ep";
+			this.label5.Size = new System.Drawing.Size (60, 60);			
+			this.label5.Text = "Trackbar TopLeft";
+			
+			// 
+			// trackBar6
+			// 
+			this.trackBar6.Location = new System.Drawing.Point (190, 280);
+			this.trackBar6.Name = "Trackbar6";
+			this.trackBar6.Size = new System.Drawing.Size (80, 50);			
+			this.trackBar6.Minimum = 0;
+			this.trackBar6.Maximum = 5;
+			this.trackBar6.Value = 1;			
+			this.trackBar6.Orientation = Orientation.Vertical;
+			this.trackBar6.TickStyle = TickStyle.Both;
+			
+						
+			// 
+			// label6
+			// 
+			this.label6.Location = new System.Drawing.Point (190, 360);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size (60, 60);			
+			this.label6.Text = "Trackbar Both";
+			
+			// 
+			// trackBar7
+			// 
+			this.trackBar7.Location = new System.Drawing.Point (280, 280);
+			this.trackBar7.Name = "Trackbar7";
+			this.trackBar7.Size = new System.Drawing.Size (80, 30);			
+			this.trackBar7.Minimum = 0;
+			this.trackBar7.Maximum = 5;
+			this.trackBar7.Value = 1;			
+			this.trackBar7.Orientation = Orientation.Vertical;
+			this.trackBar7.TickStyle = TickStyle.None;			
+			
+			// 
+			// label7
+			// 
+			this.label7.Location = new System.Drawing.Point (280, 360);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size (60, 60);			
+			this.label7.Text = "Trackbar None";
 		
 			// 
 			// MainForm
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size (5, 14);
-			this.ClientSize = new System.Drawing.Size (504, 378);
+			this.ClientSize = new System.Drawing.Size (504, 440);
 			this.Controls.Add (this.trackBar1);
+			this.Controls.Add (this.trackBar2);			
 			this.Controls.Add (this.label1);
-			this.Controls.Add (this.trackBar2);
 			this.Controls.Add (this.label2);
 			this.Controls.Add (this.trackBar3);
 			this.Controls.Add (this.label3);
+			this.Controls.Add (this.trackBar35);
+			this.Controls.Add (this.label35);
 			this.Controls.Add (this.trackBar4);
 			this.Controls.Add (this.label4);
+			this.Controls.Add (this.trackBar45);
+			this.Controls.Add (this.label45);
 			this.Controls.Add (this.trackBar5);
 			this.Controls.Add (this.label5);
+			this.Controls.Add (this.trackBar6);
+			this.Controls.Add (this.label6);
+			this.Controls.Add (this.trackBar7);
+			this.Controls.Add (this.label7);
 		
 			this.Name = "MainForm";
 			this.Text = "swf-trackbars";
@@ -203,6 +310,8 @@ namespace MyFormProject
 			label2.Text = "Trackbar - Pos: " + trackBar2.Value
 			+ " Max.:" + trackBar2.Maximum + " Min.: " + 
 			trackBar2.Minimum;			
+			
+			Console.WriteLine ("Event:trackBar2Scroll");
 		}	
 		
 		void trackBar3Scroll (object sender, System.EventArgs e)
@@ -214,12 +323,13 @@ namespace MyFormProject
 		
 		void trackBar4ValueChanged (object sender, System.EventArgs e)
 		{			
-			label4.Text = "Pos: " + trackBar4.Value;			
+			label4.Text = "Pos: " + trackBar4.Value + " (value chgd)";			
+			Console.WriteLine ("Event: trackBar4ValueChanged");
 		}			
 		
 		void trackBar5ValueChanged (object sender, System.EventArgs e)
 		{			
-			label5.Text = "Pos: " + trackBar4.Value;			
+			label5.Text = "Pos: " + trackBar5.Value;			
 		}			
 				
 	}			
