@@ -20,6 +20,7 @@ namespace MyFormProject
 		private System.Windows.Forms.GroupBox groupBox13;
 		private System.Windows.Forms.GroupBox groupBox14;
 		private System.Windows.Forms.GroupBox groupBox15;
+		private System.Windows.Forms.GroupBox groupBox16;
 		public MainForm()
 		{
 			InitializeComponent();
@@ -39,6 +40,7 @@ namespace MyFormProject
 			this.groupBox12 = new System.Windows.Forms.GroupBox();
 			this.groupBox14 = new System.Windows.Forms.GroupBox();
 			this.groupBox15 = new System.Windows.Forms.GroupBox();
+			this.groupBox16 = new System.Windows.Forms.GroupBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -195,11 +197,23 @@ namespace MyFormProject
 			this.groupBox5.TabIndex = 4;
 			this.groupBox5.TabStop = false;
 			this.groupBox5.Text = "A normal GroupBox : BackColor=Red";
+			
+			// 
+			// groupBox16
+			// 			
+			this.groupBox16.Location = new System.Drawing.Point(272, 300);
+			this.groupBox16.Name = "groupBox16";
+			this.groupBox16.Size = new System.Drawing.Size(280, 32);
+			this.groupBox16.TabIndex = 12;
+			this.groupBox16.TabStop = false;
+			
+			
 			// 
 			// MainForm
 			// 
 			this.ClientSize = new System.Drawing.Size(584, 365);
 			this.Controls.AddRange(new System.Windows.Forms.Control[] {
+						this.groupBox16,
 						this.groupBox15,
 						this.groupBox14,
 						this.groupBox13,
