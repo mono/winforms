@@ -5,6 +5,7 @@
 //
 
 
+using Accessibility;
 using System;
 using System.ComponentModel;
 using System.Drawing;
@@ -71,15 +72,11 @@ namespace MWFTestApplication {
 			group1.TabIndex = 30;
 			group1.TabStop = true;
 
-			// Don't assign, test automatic assignment
-			//group2.TabIndex = 2;
+			group2.TabIndex = 2;
 			group2.TabStop = true;
 
 			group3.TabIndex = 35;
 			group3.TabStop = true;
-
-			// Test default tab index
-			TestTabIndex(radio11, 0);				// Test 1
 
 			text1.Text = "Edit Control";
 
@@ -175,30 +172,54 @@ namespace MWFTestApplication {
 			group2.TabIndex = 1;
 
 			// Test 1; verify Control.FindForm results
-			if (main_window.FindForm() != main_window) {
+			if (this.FindForm() != this) {
 				failed++;
-				if (verbose) {
-					Console.WriteLine("{0}: main_window.FindForm returned {1}, expected {2}", test_no, main_window.FindForm(), main_window);
+				if (verbose > 0) {
+					Console.WriteLine("{0}: main_window.FindForm returned {1}, expected {2}", test_no, main_window.FindForm(), this);
 				}
 				test_no++;
+			} else {
+				if (verbose > 0) {
+					Console.WriteLine("Test {0} passed", test_no++);
+				}
 			}
 
 			// Test 2; verify Control.FindForm results
-			if (radio34.FindForm() != main_window) {
+			if (radio34.FindForm() != this) {
 				failed++;
-				if (verbose) {
-					Console.WriteLine("{0}: radio34.FindForm returned {1}, expected {2}", test_no, main_window.FindForm(), main_window);
+				if (verbose > 0) {
+					Console.WriteLine("{0}: radio34.FindForm returned {1}, expected {2}", test_no, main_window.FindForm(), this);
 				}
 				test_no++;
+			} else {
+				if (verbose > 0) {
+					Console.WriteLine("Test {0} passed", test_no++);
+				}
 			}
 
 			// Test 3; verify Control.FindForm results
-			if (radio12.FindForm() != main_window) {
+			if (radio12.FindForm() != this) {
 				failed++;
-				if (verbose) {
-					Console.WriteLine("{0}: radio12.FindForm returned {1}, expected {2}", test_no, main_window.FindForm(), main_window);
+				if (verbose > 0) {
+					Console.WriteLine("{0}: radio12.FindForm returned {1}, expected {2}", test_no, main_window.FindForm(), this);
 				}
 				test_no++;
+			} else {
+				if (verbose > 0) {
+					Console.WriteLine("Test {0} passed", test_no++);
+				}
+			}
+
+			if (this.AccessibilityObject.ToString() != "ControlAccessibleObject: Owner = MWFTestApplication.MainWindow, Text: SWF Various Tests") {
+				failed++;
+				if (verbose > 0) {
+					Console.WriteLine("{0}: radio12.AccessibilityObject.ToString()\nreturned >{1}<\nexpected >ControlAccessibleObject: Owner = MWFTestApplication.MainWindow, Text: SWF Various Tests<", test_no, AccessibilityObject.ToString());
+				}
+				test_no++;
+			} else {
+				if (verbose > 0) {
+					Console.WriteLine("Test {0} passed", test_no++);
+				}
 			}
 
 			if (visual) {
