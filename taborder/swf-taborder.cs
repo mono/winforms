@@ -319,8 +319,7 @@ namespace MWFTestApplication {
 			label1.TabIndex = 5;
 			label2.TabIndex = 4;
 			group1.TabIndex = 3;
-			group2.TabIndex = 1;	// same as group3
-			group3.TabIndex = 1;
+			group2.TabIndex = 1;
 
 			if (debug > 0) {
 				Console.WriteLine("With selected radio buttons, starting from Toplevel form");
@@ -331,28 +330,28 @@ namespace MWFTestApplication {
 			}
 
 			// Start verification
-			TestControl(group2, radio34, true, radio23.Text);	// Test 4
+			TestControl(group2, radio34, true, null);		// Test 4
 			TestControl(group2, group2, true, radio24.Text);	// Test 5
 			TestControl(group2, group3, true, radio31.Text);	// Test 6
 			TestControl(group1, radio14, true, null);		// Test 7
-			TestControl(group2, radio24, true, group3.Text);	// Test 8
-			TestControl(group2, radio21, true, null);		// Test 9
+			TestControl(group2, radio24, true, radio23.Text);	// Test 8
+			TestControl(group2, radio21, true, group3.Text);	// Test 9
 			TestControl(this, radio12, true, radio13.Text);		// Test 10
 			TestControl(this, radio14, true, label2.Text);		// Test 11
-			TestControl(this, radio34, true, radio23.Text);		// Test 12
-			TestControl(group2, radio24, true, group3.Text);	// Test 13
+			TestControl(this, radio34, true, group1.Text);		// Test 12
+			TestControl(group2, radio24, true, radio23.Text);	// Test 13
 
 			// Sanity checks
 			TestControl(radio11, radio21, true, null);		// Test 14
 			TestControl(group1, radio21, true, radio11.Text);	// Test 15
 
 			TestControl(this, label2, false, radio14.Text);		// Test 16
-			TestControl(group2, group3, false, radio24.Text);	// Test 17
+			TestControl(group2, group3, false, radio21.Text);	// Test 17
 
 			TestTabIndex(radio21, 4);				// Test 18
 			TestTabIndex(radio11, 0);				// Test 19
 			TestTabIndex(radio13, 2);				// Test 20
-			TestTabIndex(group3, 1);				// Test 21
+			TestTabIndex(group3, 35);				// Test 21
 			TestTabIndex(group2, 1);				// Test 22
 
 			TestControl(this, this, false, label1.Text);		// Test 23
