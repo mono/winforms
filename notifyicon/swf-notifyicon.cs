@@ -15,9 +15,43 @@ namespace MWFTestApplication {
 		public static NotifyIcon	notify;
 		public static ContextMenu	menu;
 		public static Bitmap		icon_bitmap;
+		public Timer			timer;
+		public bool			state;
+		public Icon			save;
 
 		private void MainWindow_Paint(object sender, PaintEventArgs e) {
 			e.Graphics.DrawImage(icon_bitmap, 0, 0);
+		}
+
+
+		private void MainWindow_MouseDown(object sender, MouseEventArgs e) {
+			if (e.Button == MouseButtons.Left) {
+				if (timer != null) {
+					timer.Dispose();
+					timer = null;
+				}
+				if (notify.Visible) {
+					notify.Visible = false;
+				} else {
+					notify.Visible = true;
+				}
+			} else {
+				timer = new Timer();
+
+				timer.Interval = 500;
+				timer.Tick +=new EventHandler(timer_Tick);
+				timer.Start();
+			}
+		}
+
+		private void timer_Tick(object sender, EventArgs e) {
+			if (!state) {
+				save = notify.Icon;
+				notify.Icon = null;
+			} else {
+				notify.Icon = save;
+			}
+			state = !state;
 		}
 
 		public MainWindow() {
@@ -26,6 +60,7 @@ namespace MWFTestApplication {
 
 			BackColor = Color.Green;
 			Paint += new PaintEventHandler(MainWindow_Paint);
+			MouseDown += new MouseEventHandler(MainWindow_MouseDown);
 		}
 
 		public static void Main(string[] args) {
