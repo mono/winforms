@@ -20,7 +20,7 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-// Autors:
+// Author:
 //	Ravindra (rkumar@novell.com)
 //
 // Copyright (C) Novell Inc., 2004
@@ -61,6 +61,11 @@ namespace SWFToolBar
 			ToolBarButton b22 = new ToolBarButton ("button22");
 			ToolBarButton b23 = new ToolBarButton ("button23");
 			ToolBarButton b24 = new ToolBarButton ("button24");
+
+			MenuItem item1 = new MenuItem ("Item1");
+			MenuItem item2 = new MenuItem ("Item2");
+			MenuItem item3 = new MenuItem ("Item3");
+			ContextMenu menu = new ContextMenu (new MenuItem [] {item1, item2, item3});
 
 			ImageList il = new ImageList ();
 
@@ -104,8 +109,9 @@ namespace SWFToolBar
 			//il.Images.Add (new Bitmap ("Winter.jpg"));
 			//il.ImageSize = new Size (40, 40);
 
-			b11.Style = ToolBarButtonStyle.DropDownButton;	
-			b11.ImageIndex = 0;		
+			b11.Style = ToolBarButtonStyle.DropDownButton;
+			b11.ImageIndex = 0;
+			b11.DropDownMenu = menu;
 			b12.Style = ToolBarButtonStyle.Separator;
 			b12.ImageIndex = 1;
 			b13.Style = ToolBarButtonStyle.ToggleButton;
