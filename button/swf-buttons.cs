@@ -242,6 +242,7 @@ namespace MyFormProject
 			this.button2.Size = new System.Drawing.Size(480, 24);
 			this.button2.TabIndex = 1;
 			this.button2.Text = "A normal button";
+			this.button2.DoubleClick += new EventHandler(MainForm_DoubleClick);
 			// 
 			// button3
 			// 
@@ -307,6 +308,10 @@ namespace MyFormProject
 		public static void Main(string[] args)
 		{
 			Application.Run(new MainForm());
+		}
+
+		private void MainForm_DoubleClick(object sender, EventArgs e) {
+			Console.WriteLine("Got doubleclick");
 		}
 	}			
 }
