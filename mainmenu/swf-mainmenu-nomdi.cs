@@ -5,6 +5,11 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
+using System.Collections;
+using System.Globalization;
+using System.Text;
+
 
 namespace MyFormProject 
 {
@@ -14,9 +19,6 @@ namespace MyFormProject
         //Define the controls
         //
 		private System.Windows.Forms.MainMenu mainMenu;
-		private System.Windows.Forms.Form fOne;
-		private System.Windows.Forms.Form fTwo;
-		private System.Windows.Forms.Form fThree;
 		private System.Windows.Forms.MenuItem miStandard;
 		private System.Windows.Forms.MenuItem miDivided;
 		private System.Windows.Forms.MenuItem miHierarchical;
@@ -121,8 +123,12 @@ namespace MyFormProject
 			//Standard menu example menu items
 			//
 			miSub0.Text = "&Normal";
-			miSub1.Text = "&Checked_true";
-			miSub1.Checked = true;
+			miSub0.Visible = false;
+			miSub1.Text = "&Checked_true (event)";
+			miSub1.Checked = true;			
+			miSub1.Select += new System.EventHandler (SelectedItem);
+			miSub1.Click  += new System.EventHandler (ClickItem);
+						
 			miSub2.Text = "&Checked_false";
 			miSub2.Checked = false;
 			miSub3.Text = "&RadioCheck_true";
@@ -312,8 +318,8 @@ namespace MyFormProject
 			miSubHierarchical27.Text = "&Shortcut(CtrlT)_ShowShortcut_false";
 			miSubHierarchical27.Shortcut = Shortcut.CtrlT;
 			miSubHierarchical27.ShowShortcut = false;
-			miSubHierarchical28.Text = "&Shortcut(CtrlU)_ShowShortcut_true";
-			miSubHierarchical28.Shortcut = Shortcut.CtrlU;
+			miSubHierarchical28.Text = "&Shortcut(Alt0)_ShowShortcut_true";
+			miSubHierarchical28.Shortcut = Shortcut.Alt0;
 			miSubHierarchical28.ShowShortcut = true;
 
 			//
@@ -335,7 +341,7 @@ namespace MyFormProject
 			//
 			//Add the menu items to the Divided example
 			//
-			miDivided = new MenuItem("&Divided", new MenuItem[] {miSubDivided0, 
+			miDivided = new MenuItem("Divided", new MenuItem[] {miSubDivided0, 
 			                         miDash, miSubDivided1, miSubDivided2, 
 			                         miDash2, miSubDivided3, miSubDivided4, 
 			                         miDash3, miSubDivided5, miSubDivided6, 
@@ -365,9 +371,10 @@ namespace MyFormProject
 			//Add the examples to the mainMenu
 			//
 			mainMenu = new MainMenu(new MenuItem[] {miStandard, miDivided, 
-			                        miHierarchical, miWindow});
+			                        miHierarchical, miWindow});		                        
 			
-            //
+				
+				
             // MainForm (Add the controls to the form and set its properties)
             //
 			this.SuspendLayout();			
@@ -384,5 +391,17 @@ namespace MyFormProject
 		{
 			Application.Run(new MainForm());
 		}
+		
+				
+		void SelectedItem (object sender, EventArgs e)
+		{
+			Console.WriteLine ("Selected 'Checked_true (event)' item");
+		}
+		
+		void ClickItem (object sender, EventArgs e)
+		{
+			Console.WriteLine ("Clicked 'Checked_true (event)' item");
+		}		
+		
 	}		
 }
