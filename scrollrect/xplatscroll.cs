@@ -29,6 +29,9 @@ namespace ScrollTest {
 				g.DrawLine(bp, 0, i, 500, i);
 			}
 			
+			if ((e.ClipRectangle.Width == 5) || (e.ClipRectangle.Height == 5)) {
+				g.FillRectangle(b, e.ClipRectangle);
+			}
 
 			Console.WriteLine("Received Expose area {0}", e.ClipRectangle);
                 }
