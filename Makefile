@@ -1,9 +1,12 @@
 SUBDIRS = \
-	button checkbox control-anchors control-docking groupbox \
-	label listbox listview panel radiobutton textbox combobox \
-	mainmenu progressbar linklabel databinding \
-        horizontalscrollbar verticalscrollbar monthcalendar 
-
+	begininvoke button checkbox checkedlistbox colordialog combobox \
+	contextmenu control-anchors control-docking controlpaint cursor \
+	databinding datetimepicker dll endian groupbox horizontalscrollbar \
+	idle imagelist label linklabel listbox listview mainloop mainmenu \
+	messagebox monthcalendar notifyicon panel picturebox progressbar \
+	propertygrid radiobutton rente scrollrect splitter statusbar \
+	sysinfo tabcontrol taborder textbox toolbar tooltip trackbar \
+	treeview various verticalscrollbar zorder
 all: 
 	for i in $(SUBDIRS); do (cd $$i; make); done
 
