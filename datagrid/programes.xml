@@ -1,0 +1,4470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="programes.xsd" generated="2005-03-29T11:07:22">
+<Programes>
+<ID>17</ID>
+<Nom>Recull de termes de Softcatalà</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>1999-04-17T00:00:00</Data>
+<URL1>recull30.zip</URL1>
+<Versio>3.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>26406</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>És un recull de termes informàtics en anglès amb la corresponent
+traducció al català, elaborat i actualitzat de manera continuada per 
+Softcatalà. Aquests termes han estat extrets dels textos originals en 
+anglès dels diferents programes que Softcatalà ha traduït fins ara, o 
+que estan en procés de traducció.
+&lt;br&gt;&lt;br&gt;
+Aquest document és una eina important i útil per a l&apos;equip de traductors
+de Softcatalà ja que inclou les traduccions de gairebé 1400 entrades,
+algunes de les quals apareixen força sovint en els textos que cal traduir 
+i per a les quals -de vegades- resulta força enrevessat de trobar una 
+traducció adequada i coherent. En altres ocasions, les traduccions ja estan
+normalitzades i Softcatalà es limita a deixar-ne constància en aquest
+recull.
+&lt;br&gt;&lt;br&gt;
+La conveniència d&apos;aquesta eina es fa evident quan en la traducció d&apos;un
+mateix producte informàtic -i a causa de la magnitud d&apos;aquest- hi
+intervenen diferents traductors. El fet de poder consultar la mateixa font 
+de dades permet assegurar que tots els implicats en un projecte determinat 
+faran servir les mateixes traduccions per als mateixos termes a traduir, de 
+manera que s&apos;optimitzarà la consistència dels textos.
+&lt;br&gt;&lt;br&gt;
+Veureu que alguns termes tenen més d&apos;una traducció al català, ja que el
+camp de les traduccions no és una ciència exacta, però apareix en primer lloc
+la més habitual o lògica. En altres ocasions veureu que alguns termes tenen
+més d&apos;una entrada; això és degut al fet que la traducció al català varia en
+funció del context en el qual aquests apareixen. Cal dir que totes les
+traduccions s&apos;han d&apos;interpretar en l&apos;àmbit de la informàtica.
+&lt;br&gt;&lt;br&gt;
+Softcatalà compta amb el suport del Centre de Terminologia TERMCAT,
+entitat que s&apos;encarrega de revisar el contingut del Recull de termes i suggerir
+els canvis que considera oportuns, fruit de l&apos;acord de col·laboració que hi
+ha entre aquestes dues entitats des de juny de 1999.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>18</ID>
+<Nom>GR Disk Utility</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-18T00:00:00</Data>
+<URL1>grudw31.zip</URL1>
+<Versio>3.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 29 dolars)</Preu>
+<Mida>411989</Mida>
+<Autor>GR Software</Autor>
+<ProgramWeb>http://www.grsoftware.net/grduw.htm</ProgramWeb>
+<Descripcio>GRDUW: Utilitat de disc shareware per a
+Windows 95 V3.1 i Windows 32 bits (no
+funciona sota Windows NT). Suport per
+a disquets de 720Kb, 1.2Mb, 1.44Mb,
+1.72Mb i MS-DMF (Microsoft Distribution
+Format de 1.68Mb), i discs durs extraïbles;
+duplica i compara disquets; enregistra i
+carrega imatges binàries dels disquets;
+torna a crear i comprova el sector
+d&apos;engegada (boot); optimitza i verifica el
+format del disc; dóna informació de disc
+detallada; és capaç de reparar discs durs
+i disquets; plena integració amb l&apos;explorador.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>grud.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>19</ID>
+<Nom>Pegasus Mail</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-18T00:00:00</Data>
+<URL1>winca233.zip</URL1>
+<Versio>2.33</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1588112</Mida>
+<Autor>David Harris</Autor>
+<Descripcio>Pegasus Mail és un programa de correu
+electrònic per a sistemes Novell NetWare
+i per a sistemes monousuari que utilitzen
+una interfície Winsock TCP/IP. Aquest veterà
+programa de correu inclou opcions molt útils,
+com un revisor ortogràfic, suport de fitxers
+de bústies amb format Unix, configuració
+senzilla del servidor POP3/SMTP i suport per
+a llistes de correu.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>peg.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>20</ID>
+<Nom>SemPoint</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-04-18T00:00:00</Data>
+<URL1>sp225es.zip</URL1>
+<Versio>2.25</Versio>
+<Plataforma>2</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 3600 ptes)</Preu>
+<Mida>524029</Mida>
+<Autor>Andrea Matta</Autor>
+<Descripcio>SemPoint és el millor lector en
+desconnexió per a Windows, útil tant
+per a usuaris de BBS com per a punts
+(o sysops) de FidoNet. És capaç de
+manipular les aplicacions QWK,
+BlueWave, Mc-Link&apos;s X)press i els
+paquets dels grups de notícies
+Usenet, així com bases de missatges
+permanents en format *.MSG (Fido),
+formats Hudson, Squish, JAM i
+EzyCom! FÀCIL d&apos;utilitzar, però
+molt potent!
+Incorpora zip/unzip, UUEncode/Decode,
+protecció PGP, funció de visualització
+de text enriquit, classificació de
+missatges i generador TIC.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>sem.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>21</ID>
+<Nom>Veterin</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-18T00:00:00</Data>
+<URL1>veterin.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>4668796</Mida>
+<Descripcio>És un programa per a la gestió d&apos;un Centre Veterinari que ens permet
+tenir un catàleg de clients, dels animals que posseeixen, així com del
+seu historial. Existeix un control de les vacunes que se li han
+subministrat per poder efectuar posteriorment una publitramesa.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>veter.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>22</ID>
+<Nom>Recull de termes de l&apos;OS/2</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-18T00:00:00</Data>
+<URL1>losos2.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>164812</Mida>
+<Autor>IBM</Autor>
+<ProgramWeb>http://www.ibm.com</ProgramWeb>
+<Descripcio>Recull de termes d&apos;IBM per a l&apos;OS/2. Conté una llista dels termes en
+anglès i la corresponent traducció al català que es van utilitzar per
+traduir aquest sistema operatiu a la nostra llengua. D&apos;utilitat per
+consultar termes tècnics en l&apos;àmbit de la informàtica, i si treballeu en
+aquest entorn us servirà com a complement de l&apos;extens glossari que podeu
+consultar des de l&apos;ajuda del mateix sistema.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>23</ID>
+<Nom>QFacWin 2000</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-09-22T00:00:00</Data>
+<URL1>fac2000.zip</URL1>
+<Versio>4.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 14.500 ptes)</Preu>
+<Mida>6408336</Mida>
+<Autor>Qsoft</Autor>
+<ProgramWeb>http://www.qsoftnet.com</ProgramWeb>
+<Descripcio>Programa de facturació amb aquestes caracteristiques:
+&lt;br&gt;- Treball monousuari o en xarxa (v. professional)
+&lt;br&gt;- Accés al programa per a usuaris i contrasenyes (configurable)
+&lt;br&gt;- Preparat per a l&apos;EURO i l&apos;efecte 2.000
+&lt;br&gt;- Multiempresa i possibilitat de multiexercici
+&lt;br&gt;- Possibilitat de treballar amb pessetes o amb euros
+&lt;br&gt;- Possibilitat de compartir arxius d&apos;articles, clients i proveïdors entre
+vàries
+&lt;br&gt;- empreses.
+&lt;br&gt;- Amb suport per a Articles, Clients, Albarans, Factures, Proveïdors,
+&lt;br&gt;- Compres i despeses.
+&lt;br&gt;La nova versió 2000 conté aquestes novetats:
+&lt;br&gt;- Gràfics comparatius i  configurables de vendes per clients, per mesos, per
+articles, etc.
+&lt;br&gt;- Rebuts. Es generen automàticament en afegir factures segons les formes de 
+pagament i els dies de pagament del client.
+&lt;br&gt; - Descomptes en cada línia d&apos; albarans, factures i compres.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>qfac2000.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>24</ID>
+<Nom>Diccionari Ispell en català d&apos;Ignasi Labastida</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-20T00:00:00</Data>
+<URL1>ispellca.zip</URL1>
+<Versio>0.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2553664</Mida>
+<Autor>Ignasi Labastida i Juan</Autor>
+<Descripcio>Diccionari català per al programa Ispell, versió 0.1. L&apos;arxiu català és
+una còpia de totes les paraules que componen el diccionari, extret d&apos;una
+llista original elaborada per en Joan Dolç, i compactada amb
+tots els afixos en l&apos;arxiu català. Totes les paraules del diccionari
+estan en format de text.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>25</ID>
+<Nom>WordCorrect</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-08-20T00:00:00</Data>
+<URL1>wcpcca40.zip</URL1>
+<Versio>4.0.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu 12000 ptes)</Preu>
+<Mida>3042383</Mida>
+<Autor>Market Way</Autor>
+<ProgramWeb>http://www.market-way.net/wordcorrect/</ProgramWeb>
+<Descripcio>WordCorrect és un programa independent a l&apos;editor de textos, de manera
+que el mateix corrector es pot utilitzar en els diferents editors instal·lats
+al vostre ordinador, incloent-hi el Microsoft Word 6.0, 7.0 (Office 95) i 8
+(Office 97), WordPerfect 5.2, 6.x, WordPerfect 8 (Suite 8),  Lotus AmiPro 3.x, 
+Claris Works i QuarkXPress (per a la versió professional del WordCorrect). El
+WordCorrect s&apos;incorpora al vostre editor mitjançant una barra d&apos;eines des d&apos;on es pot accedir a
+l&apos;aplicació, o també des del menú de les eines oferint les funcions de
+corrector, diccionari i sinònims.
+
+&lt;p&gt;WordCorrect és l&apos;únic corrector ortogràfic i gramatical de català, que
+especifica l&apos;errada comesa, mostra les alternatives i s&apos;associa a una Ajuda Gramatical que
+conté la norma gramatical a aplicar per a cada errada detectada.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;
+Aquesta versió de demostració permet fer servir totes les opcions, tret de la substitució. 
+Per a més informació: &lt;a href=&quot;http://www.market-way.net/wordcorrect/&quot;&gt;http://www.market-way.net/wordcorrect/&lt;a&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<URLMirror>/populars/wcpcca40.zip</URLMirror>
+</Programes>
+<Programes>
+<ID>27</ID>
+<Nom>Carter</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-26T00:00:00</Data>
+<URL1>carter.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>740231</Mida>
+<Autor>Aguayos, J.; Almazán, Ll.; Bernat, A.; Cardenas, J.</Autor>
+<Descripcio>Aquest programa us permet treballar en els conceptes de comunicació i
+correu durant el procés d&apos;aprenentatge de llegir i escriure dels nens petits. 
+Es caracteritza per la possibilitat de configurar bústies personalitzades 
+facilitant l&apos;intercanvi (enviar i rebre) de textos i dibuixos.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>carter.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>28</ID>
+<Nom>Programació Lineal</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-04-27T00:00:00</Data>
+<URL1>lineal.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>2</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>781784</Mida>
+<Autor>Francesc Calbet</Autor>
+<ProgramWeb>http://www.arrakis.es/~fcalbet/</ProgramWeb>
+<Descripcio>La Programació Lineal permet optimitzar, obtenir el màxim o el mínim,
+d&apos;una funció lineal sotmesa a un conjunt de restriccions. Aquest ve determinat
+per un sistema d&apos;inequacions lineals. El programa permet estudiar els problemes
+de Programació Lineal de dues variables. Accepta un màxim de vuit
+inequacions i lesrepresenta gràficament. Permet modificar l&apos;escala, ofereix 
+els resultats de les interseccions de les rectes i el valor de la funció objectiva 
+en aquests punts. El programa senyala la regió solució i permet una còpia en 
+paper dels resultats i del gràfic del problema.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>lineal.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>29</ID>
+<Nom>Músic</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-27T00:00:00</Data>
+<URL1>music.zip</URL1>
+<Versio>4.3</Versio>
+<Plataforma>3</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>4</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>672349</Mida>
+<Autor>F. Busquets</Autor>
+<Descripcio>Aquest editor musical permet l&apos;escriptura i la modificació de partitures
+musicals sobre pentagrama. Aprofitant la capacitat que tenen els microordinadors
+de generar sons de freqüència programable, permet l&apos;execució musical polifònica de
+partitures. A més, mitjançant la incorporació d&apos;una targeta MIDI, permet acoblar-se
+a dispositius musicals externs i escriure les partitures de peces musicals
+generades amb aquests dispositius. Pot exportar les peces editades als
+formats Framework, WinLogo, COM, LISP, MIDI, Pascal i Basic.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>30</ID>
+<Nom>Taula periòdica dels elements</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-28T00:00:00</Data>
+<URL1>taulaper.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>3</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>3</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>326275</Mida>
+<Autor> P. Viladoms Serra</Autor>
+<Descripcio>Ha estat dissenyat per poder treballar amb algunes propietats físiques i
+químiques dels elements de la taula periòdica. El seu objectiu principal
+és facilitar l&apos;aprenentatge de la química en permetre que l&apos;alumnat aprofundeixi
+en lacomprensió de les seves peces fonamentals, els elements químics. En
+particular, es vol fer més entenedor i, si és possible, augmentar els
+coneixements sobre química a partir de l&apos;estudi dels elements i de les
+seves propietats físiques. El programa parteix d&apos;una base de dades dels primers 103
+elements. El manual explica la instal·lació i funcionament del programa i inclou
+orientacions didàctiques per al professorat.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>taula.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>31</ID>
+<Nom>Les Plaques tectòniques</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-28T00:00:00</Data>
+<URL1>plaques.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>3</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>3</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1187710</Mida>
+<Autor>Martínez, A.; Van Eeckhout, J.A.</Autor>
+<Descripcio>És una aplicació animada que reconstrueix el moviment tectònic de les
+plaques terrestres. En el programa hi trobem dos apartats diferenciats:
+generalitats i l&apos;evolució de les plaques. Les generalitats estan estructurades en la
+història dels fets, l&apos;evolució de l&apos;estructura de la terra, les parts que la
+constitueixen, les plaques litosfèriques actuals i els principals tipus de contactes
+entre elles. Referent a l&apos;evolució de les plaques es pot realitzar en dues
+modalitats, una que és l&apos;animació íntegra i continuada i l&apos;altra on la mateixa animació és
+seqüenciada i acompanyada d&apos;informació addicional de l&apos;era a la que pertany.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>plaques.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>2</ID>
+<Nom>Omega</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-11T00:00:00</Data>
+<URL1>omega447.exe</URL1>
+<Versio>4.47</Versio>
+<Plataforma>3</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 12000 ptes)</Preu>
+<Mida>756958</Mida>
+<Autor>Omega Software</Autor>
+<ProgramWeb>http://www.omega-software.net/cat.htm</ProgramWeb>
+<Descripcio>Excel·lent paquet integrat de gestió empresarial, amb facturació emesa i rebuda, 
+impressió de  factures, rebuts en paper i en disquet, factura directa, detallada 
+i resumida, verificació de targes de crèdit,  formes de pagament, venciments múltiples,
+risc de clients, MAGATZEM, registre de recepcions, expedicions amb emissió, impressió 
+i modificació d&apos;albarans, pressuposts convertibles a albarà o factura,
+escandalls de costos, funció de fullejar, EDITOR DE TEXTS per a crear i imprimir circulars
+personalitzades, gestió completa dels FITXERS d&apos;articles, clients, proveïdors i agents comercials, amb
+opcions d&apos;edició, canvi de preus, classificació per famílies, visualització, impressió d&apos;etiquetes, càlcul de
+comissions, configuració d&apos;IMPRESORA, nombroses UTILITATS en línia, rellotge, calculadora,
+calendari, agenda, llista de telèfons, salvapantalla temporitzat, bloc de notes, joc trencaclosques, gran
+varietat de LLISTATS visibles per pantalla i impressora, compatible amb XARXA d&apos;àrea local,
+MANUAL de l&apos;usuari complet imprimible, AJUDA sensible al context des de tots els punts del programa,
+atractiva interfaç amb menús pull-down, altament configurable, molt fàcil d&apos;usar sense aprenentatge previ,
+ideal per a petites i mitjanes empreses.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>omega.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<AutorTraduccio>Omega Software</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>3</ID>
+<Nom>Navegador 4.76</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>1999-04-15T00:00:00</Data>
+<URL1>cc32d476.exe</URL1>
+<Versio>4.76</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>1</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>19712928</Mida>
+<Autor>Netscape</Autor>
+<ProgramWeb>http://www.netscape.com</ProgramWeb>
+<Descripcio>El Navegador en català 4.76 és la nova versió del popular navegador de la
+casa Netscape que us permetrà explorar els continguts d&apos;Internet, enviar
+i rebre correu electrònic, consultar i participar en els fòrums de
+notícies i crear les vostres pàgines web; ara podeu fer tot això en
+català i d&apos;una manera senzilla, intuïtiva i eficaç que pretén aprofitar
+al màxim les possibilitats actuals que ens ofereix Internet. Els usuaris
+habituals de versions anteriors podreu comprovar que aquesta ofereix
+noves opcions i que és plenament configurable; també notareu importants
+millores en el programa de gestió del correu.
+&lt;br&gt;
+&lt;br&gt;
+El Navegador en català integra les mateixes funcions que el Netscape 4.76
+i ha estat homologat per la mateixa casa Netscape, amb qui Softcatalà ha
+estat en contacte permanent durant el procés d&apos;adaptació al català per
+tal de poder-ne obtenir la seva homologació.
+&lt;br&gt;
+&lt;br&gt;
+Una de les millores més importants d&apos;aquesta versió és l&apos;increment de la
+longitud de clau de RC4-MD5 a 128 bits per a connexions segures. Es
+tracta d&apos;una millora força important, ja que la versió 4.76 permet
+establir connexions molt més segures que versions anteriors del
+Navegador.
+&lt;br&gt;
+&lt;br&gt;
+Aquesta versió també inclou de sèrie el manual del Navegador, publicat
+anteriorment de forma separada per Softcatalà. El manual del Navegador
+és una guia de referència completa que cobreix tota el funcionament del
+Navegador per a Windows, Mac i Unix. En aquest manual de 75 pàgines és
+fa una explicació detallada de tots els aspectes del Navegador i del seu
+ús, i es recomana a tots els usuaris que vulguin conèixer més a fons
+aquesta aplicació o que simplement vulguin resoldre dubtes sobre el seu
+funcionament.
+&lt;br&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>nav.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/navegador/</Projecte>
+<URLMirror>/navegador/4.76/win32/cc32d476.exe</URLMirror>
+<AutorTraduccio>Softcatalà</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>5</ID>
+<Nom>Tot</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-15T00:00:00</Data>
+<URL1>tot.zip</URL1>
+<Versio>1.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>1</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2034531</Mida>
+<Autor>Informàtica Figueres - Infimont s.l</Autor>
+<ProgramWeb>http://www.ctv.es/USERS/tramunta/tot.htm</ProgramWeb>
+<Descripcio>Tot forma un potent conjunt d&apos;eines per a Internet que inclouen
+un navegador (fa servir el motor d&apos;Internet Explorer), un client d&apos;FTP
+per a la descàrrega de fitxers de la xarxa, un client d&apos;IRC per a
+tertúlies en directe, accés a motors de recerca, i traducció de pàgines
+web a través d&apos;AltaVista. Aquestes aplicacions han estat desenvolupades al
+nostre país i són totalment en català. Inclou l&apos;opció de parla amb 
+les eines de IBM Voice.</Descripcio>
+<Puntuacio>2</Puntuacio>
+<Imatge>tot.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<AutorTraduccio>Informàtica Figueres - Infimont s.l</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>6</ID>
+<Nom>Microsoft Internet Explorer</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-15T00:00:00</Data>
+<URL1>camsie30r.exe</URL1>
+<Versio>3.01</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>1</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>6082120</Mida>
+<Autor>Microsoft</Autor>
+<ProgramWeb>http://www.microsoft.com</ProgramWeb>
+<Descripcio>Internet Explorer és el popular navegador per Internet de Microsoft que
+inclou un sistema per llegir correu i grups de notícies. Aquesta versió
+és una mica antiga però és l&apos;última que es troba disponible en català.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<AutorTraduccio>Microsoft</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>7</ID>
+<Nom>CurveMail</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-16T00:00:00</Data>
+<URL1>curve1_1.exe</URL1>
+<Versio>1.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2162146</Mida>
+<Autor>Mario Gomez Molina</Autor>
+<ProgramWeb>http://members.xoom.com/curvemail/requicat.htm</ProgramWeb>
+<Descripcio>Curve Mail és un programa que us permet gestionar el vostre correu
+electrònic fàcilment. Si disposeu de diferents comptes de correu
+electrònic o diverses persones fan servir el mateix ordinador per llegir
+el seu correu, podeu crear diferents perfils d´usuaris, sense haver de
+configurar de nou els paràmetres per a cada sessió. També podeu crear
+filtres per tal que els nous missatges que rebeu es desin automàticament 
+a la carpeta que escolliu, o fins i tot eliminar aquells missatges 
+indesitjables, com poden ser els que només contenen propaganda.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>curve.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>8</ID>
+<Nom>Salt</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-16T00:00:00</Data>
+<URL1>salt1.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>2</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>8699255</Mida>
+<Autor>Conselleria de Cultura de la Generalitat Valenciana</Autor>
+<ProgramWeb>http://www.cult.gva.es/dgoiepl/salt/</ProgramWeb>
+<Descripcio>Programa de traducció i correcció de textos, de la Conselleria de
+Cultura de la Generalitat Valenciana. SALT és un traductor que permet 
+traduir els textos del castellà a la nostra llengua amb un mètode 
+interactiu que minimitza els errors i garanteix una gran qualitat dels 
+textos traduïts. A més dels errors estrictament ortogràfics, detecta 
+barbarismes, perífrasis incorrectes, locucions errònies, combinacions 
+incorrectes de pronoms i faltes de concordança.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>salt.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>9</ID>
+<Nom>Verbix</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-01-17T00:00:00</Data>
+<URL1>verbx40d.zip</URL1>
+<Versio>4.0d</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 30 dolars)</Preu>
+<Mida>8585428</Mida>
+<Autor>Erik Lindberg</Autor>
+<ProgramWeb>http://www.verbix.com</ProgramWeb>
+<Descripcio>Verbix és un programa lingüístic que us ajuda en la gramàtica verbal.
+Està pensat per a estudiants de llengües estrangeres per ajudar-los en
+les conjugacions verbals. Aquestes són les llengües disponibles:
+&lt;br&gt;-Llengües romàniques: espanyol, portuguès, francès, italià, romanès,
+gallec, català i occità.
+&lt;br&gt;-Llengües germàniques: anglès, suec, alemany, holandès, noruec i danès.
+&lt;br&gt;-Llengües uralianes: finès i setu.
+&lt;br&gt;-Llengües extingides: llatí, gòtic, anglès antic i alt alemany.
+A ...
+&lt;br&gt;A més de les conjugacions verbals actuals, Verbix us mostra una
+llista amb tots els verbs que es conjuguen igual.
+&lt;br&gt; Molts verbs inclouen informació addicional que us ajuda a entendre&apos;ls.
+&lt;br&gt; Molts verbs inclouen traduccions en altres llengües que són
+equivalents.
+&lt;br&gt; La disponibilitat de les llengües extingides us ajuda a prendre
+coneixement de les formes verbals antigues.
+&lt;br&gt; Els mapes us mostren on es parla o parlava la llengua.
+&lt;br&gt; Les animacions us mostren informació addicional.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>verbix.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>10</ID>
+<Nom>L&apos;Ed</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-16T00:00:00</Data>
+<URL1>ledw32ca.zip</URL1>
+<Versio>1.3</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 2000 ptes)</Preu>
+<Mida>90861</Mida>
+<Autor>Antoni Matheu</Autor>
+<ProgramWeb>http://pagina.de/amatheu</ProgramWeb>
+<Descripcio>L&apos;Ed per a Windows, versió catalana. És un editor de línies amb les
+següents característiques:
+&lt;p&gt;- Nombre il·limitat d&apos;arxius, fins a 65.000 línies cadascun.
+&lt;p&gt;- Numeració de línies suportant mandats de línia &apos;host like&apos;.
+&lt;p&gt;- Coneixement de llenguatges definit per l&apos;usuari. Ajuda a escriure
+programes
+sense errors, correctament indentats.
+&lt;p&gt;- Ajuda en línia sensible al context.
+&lt;p&gt;- Ajudes externes definides per l&apos;usuari, prenent arguments del text.
+&lt;p&gt;- Recorda els últims mandats.
+&lt;p&gt;- Pila de línies per copiar dades fàcilment, en un mateix arxiu o entre
+diferents.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>ed.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>12</ID>
+<Nom>Eurocalc</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-16T00:00:00</Data>
+<URL1>eurocalc.exe</URL1>
+<Versio>1.27</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>207665</Mida>
+<Autor>Omega Software</Autor>
+<ProgramWeb>http://www.ctv.es/omega/cat.htm</ProgramWeb>
+<Descripcio>Eurocalc és un senzill però útil programa que permet fer conversions
+monetàries entre pessetes i euros.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>euro.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>14</ID>
+<Nom>WinBox</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-16T00:00:00</Data>
+<URL1>winbox42.zip</URL1>
+<Versio>4.2</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 30 dolars)</Preu>
+<Mida>1011427</Mida>
+<Autor>Agustin Lopez</Autor>
+<ProgramWeb>http://www.uv.es/~lopezj/</ProgramWeb>
+<Descripcio>Winbox és una aplicació de xarxa per llegir i enviar correu electrònic
+usant els protocols comuns d&apos;Internet.
+
+&lt;br&gt;Més concretament, Winbox és una aplicació client estàndard per a POP3,
+IMAP 2, 3 i 4 (per llegir bústies) i SMTP (per enviar correu) per a
+connectors de Windows. Opcionalment (activant-lo en el winbox.ini),
+WinBox també suporta NNTP (per llegir les notícies Usenet).</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>winbox.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>15</ID>
+<Nom>GetRight</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>1999-04-16T00:00:00</Data>
+<URL1>getrt41.zip</URL1>
+<Versio>4.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 17.5 dolars)</Preu>
+<Mida>2241770</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>GetRight és un programa gestor de descàrrega que permet fer descàrregues
+parcials de programes que hi ha a Internet de tal manera que si mai es
+talla la connexió telefònica amb el servidor remot, se&apos;n va la llum i
+l&apos;ordinador s&apos;apaga o accidentalment es desconnecta el mòdem, conserva 
+la part d&apos;arxiu ja descarregada. D&apos;aquesta manera s&apos;evita l&apos;incident habitual 
+d&apos;haver de descarregar novament un arxiu que sovint ocupa diverses megues 
+amb la corresponent pèrdua de temps i diners.
+&lt;br&gt;&lt;br&gt;
+A més a més GetRight ofereix la possibilitat de llistar totes les
+descàrregues de programes que l&apos;usuari té previstes de tal manera que
+s&apos;indiqui l&apos;hora de l&apos;operació tenint en compte, posem per cas, que a la
+nit la xarxa està més descongestionada i la tarifa telefònica és més
+econòmica. Si cal, GetRight selecciona quin servidor és el més adequat 
+per fer la descàrrega amb l&apos;objectiu d&apos;evitar congestions.
+&lt;br&gt;&lt;br&gt;
+Entre les novetats que aporta el GetRight 4.1 hi ha la descàrrega per 
+segments, que permet descarregar parts d&apos;un mateix fitxer de diferents 
+servidors per augmentar la velocitat de descàrrega, possibilitat de fer 
+descàrregues diàries dels mateixos fitxers, i més de seixanta millores.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>get.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>16</ID>
+<Nom>Windows Commander</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-17T00:00:00</Data>
+<URL1>wc32v353.zip</URL1>
+<Versio>3.53</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 32 dolars)</Preu>
+<Mida>1222410</Mida>
+<Autor>Chirstian Ghisler</Autor>
+<ProgramWeb>http://www.ghisler.com/</ProgramWeb>
+<Descripcio>Wincmd és un programa per a Windows que reemplaça el gestor de fitxers.
+Aquesta és la versió en 32 bits per a Windows 95/98 i NT 3.51/4.0.
+Wincmd suporta formats ZIP/ARJ/LHA/RAR/UC2/TAR/GZ/CAB/ACE, unitats ZIP, 
+recerques ampliades, visualització ràpida, funció d&apos;arrosegar i deixar des 
+de i cap a l&apos;explorador o l&apos;escriptori.
+NOVETATS: client d&apos;FTP, accés directe al Veïnatge de la xarxa, directori
+d&apos;historial i llista d&apos;èxits (hotlist), descodificació UUencode,
+divisió/combinació, aparença plana.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>wcmd.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>32</ID>
+<Nom>Mapes de les comarques</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-28T00:00:00</Data>
+<URL1>mapes.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>3</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1027649</Mida>
+<Autor>M. Teresa Sasal Lasaosa i Josep Lluís Soler Quetglas</Autor>
+<Descripcio>Conjunt dels mapes de les comarques de Catalunya. També inclou una
+col·lecció de signes convencionals de quatre temàtiques diferents: cartografia,
+economia, història i natura. Les comarques es presenten com a pinzells per poder
+muntar conjunts geogràfics més amplis. En el manual es presenten
+múltiples exemples d&apos;utilització que contenen propostes d&apos;activitats didàctiques.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>33</ID>
+<Nom>Luchi</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-28T00:00:00</Data>
+<URL1>luchi.zip</URL1>
+<Versio>4.1.4E</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 2000 ptes)</Preu>
+<Mida>392332</Mida>
+<ProgramWeb>http://www.tinet.org/~luchi</ProgramWeb>
+<Descripcio>Versió d&apos;avaluació totalment operativa per a 30 dies que controla la
+despesa telefònica. Té en compte possibles bonificacions com els plans
+de descompte de Telefònica; disposa d&apos;una sèrie d´opcions que el fan
+molt adient per poder mesurar exactament l&apos;import que gastem en cada
+connexió.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>luchi.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>34</ID>
+<Nom>WinTick</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-28T00:00:00</Data>
+<URL1>wintick.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>120205</Mida>
+<Autor>Pablo Sanz, Geoff Fisher i José L. Rodríguez</Autor>
+<ProgramWeb>http://www.xtec.es/~psanz</ProgramWeb>
+<Descripcio>Aquesta aplicació té dos objectius: dotar els professor d&apos;una eina
+plurilingüe, acompanyada d&apos;exercicis; i donar als alumnes la facilitat
+de controlar el seu propi procés d&apos;aprenentatge mitjançant l&apos;enregistrament
+ de resultats en una fitxa personal.
+Els exercicis que es poden generar amb el programa són del tipus de
+&quot;Múltiple elecció&quot; i &quot;Quina és&quot;. Els exercicis són compatibles per a versions d&apos;MS-DOS 
+i de Windows.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>wintick.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>35</ID>
+<Nom>Navegador</Nom>
+<Softcatala>1</Softcatala>
+<Data>1999-04-28T00:00:00</Data>
+<URL1>navegador4.6.inst.hqx</URL1>
+<Versio>4.6</Versio>
+<Plataforma>4</Plataforma>
+<Categoria>0</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>16374121</Mida>
+<Autor>Netscape</Autor>
+<ProgramWeb>http://www.netscape.com</ProgramWeb>
+<Descripcio>El Navegador en català 4.6 és la nova versió del popular navegador de la
+casa Netscape que us permetrà explorar els continguts d&apos;Internet, enviar
+i rebre correu electrònic, consultar i participar en els fòrums de
+notícies i crear les vostres pàgines web; ara podeu fer tot això en
+català i d&apos;una manera senzilla, intuïtiva i eficaç que pretén aprofitar
+al màxim les possibilitats actuals que ens ofereix Internet. Els usuaris
+habituals de versions anteriors podreu comprovar que aquesta ofereix
+noves opcions i que és plenament configurable; també notareu importants
+millores en el programa de gestió del correu.
+
+&lt;br&gt;El Navegador en català integra les mateixes funcions que el Netscape 4.5
+i ha estat homologat per la mateixa casa Netscape, amb qui Softcatalà ha
+estat en contacte permanent durant el procés d&apos;adaptació al català per
+tal de poder-ne obtenir la seva homologació.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/navegador/</Projecte>
+</Programes>
+<Programes>
+<ID>36</ID>
+<Nom>Renta</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-04-29T00:00:00</Data>
+<URL1>renta2001.zip</URL1>
+<Versio>2001</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>12100212</Mida>
+<Autor>Agencia Tributaria</Autor>
+<ProgramWeb>http://www.aeat.es</ProgramWeb>
+<Descripcio>El programa d&apos;ajuda a la declaració de renda per a Renda 2001 és un
+producte informàtic elaborat per l&apos;Agència Tributària per facilitar la 
+confecció de la declaració de l&apos;IRPF i del PATRIMONI als contribuents
+que ho desitgin.
+&lt;br&gt;&lt;br&gt;
+Té les característiques següents:
+&lt;br&gt;&lt;br&gt;
+- EMMAGATZEMATGE de les dades per a la seva revisió posterior (amb un
+màxim de 50 declaracions).
+&lt;br&gt;&lt;br&gt;
+- RESUM dels resultats de les declaracions de l&apos;impost sobre la renda
+segons el tipus de tributació: INDIVIDUAL o CONJUNTA.
+&lt;br&gt;&lt;br&gt;
+- IMPRESSIÓ de les declaracions en una impressora gràfica (làser o
+d&apos;injecció de tinta) amb una resolució mínima de 300 ppp (punts per
+polzada). La declaració impresa inclou el document d&apos;ingrés o devolució
+i es pot presentar directament.
+&lt;br&gt;&lt;br&gt;
+- GRAVACIÓ de la informació en un codi de punts imprès a la zona
+superior de la primera pàgina de la declaració (pàgina 0), que
+accelerarà el procediment posterior, especialment si es tracta de
+declaracions amb dret A DEVOLUCIÓ.
+&lt;br&gt;&lt;br&gt;
+- GENERACIÓ d&apos;un fitxer amb les dades de la declaració per a la seva
+presentació telemàtica a través de l&apos;opció prevista en la pàgina web de
+l&apos;Agència Tributària.
+&lt;br&gt;&lt;br&gt;  
+EL PROGRAMA NO PREVEU ELS SUPÒSITS SEGÜENTS:
+&lt;br&gt;&lt;br&gt;
+DECLARACIONS CONJUNTES en cas de MORT D&apos;AMBDÓS CÒNJUGES.
+Aplicació de MÒDULS REDUÏTS d&apos;activitats empresarials en estimació
+objectiva per signes, índexs o mòduls, en virtut d&apos;autorització
+administrativa.
+&lt;br&gt;&lt;br&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>renda.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>37</ID>
+<Nom>Word Correct</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-04-29T00:00:00</Data>
+<URL1>wcmcca30.hqx</URL1>
+<Versio>3.0</Versio>
+<Plataforma>4</Plataforma>
+<Categoria>0</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 12000 ptes)</Preu>
+<Mida>4266611</Mida>
+<Autor>Market Way</Autor>
+<ProgramWeb>http://www.market-way.net/wordcorrect/</ProgramWeb>
+<Descripcio>WordCorrect és un programa independent a l&apos;editor de textos, de manera
+que el mateix corrector es pot utilitzar en els diferents editors instal·lats
+al vostre ordinador, incloent-hi el Microsoft Word 6.0, 7.0 (Office 95) i 8
+(Office 97), WordPerfect 5.2, 6.x, WordPerfect 8 (Suite 8),  Lotus AmiPro 3.x, Claris
+Works i QuarkXPress (per a la versió professional del WordCorrect). El
+WordCorrect s&apos;incorporaal vostre editor mitjançant una barra d&apos;eines des d&apos;on es pot accedir a l&apos;aplicació, o també des del menú de les eines.
+
+&lt;p&gt;WordCorrect és l&apos;únic corrector ortogràfic i gramatical de català, que
+especifica l&apos;errada comesa, mostra les alternatives i s&apos;associa a una Ajuda Gramatical que
+conté la norma gramatical a aplicar per a cada errada detectada.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Aquesta versió de demostració permet fer servir totes les opcions, tret de la substitució. L&apos;empresa que va crear el programa ha fet fallida, i resulta impossible aconseguir-ne una versió completa amb la funció de substitució habilitada. &lt;/b&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>39</ID>
+<Nom>Distribuidors de programari i maquinari</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-04-30T00:00:00</Data>
+<URL1>dist.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>3793</Mida>
+<Autor>Servei electrònic d´informació</Autor>
+<ProgramWeb>http://www.gencat.es/dgsi/</ProgramWeb>
+<Descripcio>Llistat alfabètic de fabricants i distribuïdors que disposen de
+productes informàtics en català inclosos a l&apos;esmentada relació, amb les seves
+adreçes i telèfons.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>40</ID>
+<Nom>Programari i maquinari informàtics</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-04-30T00:00:00</Data>
+<URL1>relacio.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>253266</Mida>
+<Autor>Servei electrònic d´informació</Autor>
+<ProgramWeb>http://www.gencat.es/dgsi/</ProgramWeb>
+<Descripcio>La Direcció General de Serveis d&apos;Informàtica ha fet pública la darrera actualització, a
+30 de gener de 1999, de la relació de programaris i maquinaris informàtics
+normalitzats lingüísticament. Atenció: en format PDF.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>43</ID>
+<Nom>Basecamp</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-05-06T00:00:00</Data>
+<URL1>basecamp.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>341660</Mida>
+<Autor>Josep Esteve</Autor>
+<ProgramWeb>http://www.geocities.com/TheTropics/Paradise/4003/</ProgramWeb>
+<Descripcio>Basecamp és un programa per a la gestió d&apos;un càmping.
+Les seves característiques bàsiques són:
+&lt;br&gt;
+&lt;br&gt; - Adreces de clients, treballadors i personals.
+&lt;br&gt; - Facturació, càrrecs, dipòsits.
+&lt;br&gt; - Etiquetes.
+&lt;br&gt; - Reserves.
+&lt;br&gt; - Moneda estrangera, compra, venda.
+&lt;br&gt; - Control de pàrquing de caravanes i embarcacions.
+&lt;br&gt; - Resums de facturació, etc...
+&lt;br&gt; - Llistats diversos.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Basecamp requereix Microsoft Access97.&lt;/b&gt;</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>basecamp.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>44</ID>
+<Nom>Xip2002</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-05-16T00:00:00</Data>
+<URL1>xip2002.exe</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>4</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu 15.000 ptes)</Preu>
+<Mida>5387533</Mida>
+<Autor>Jordi Rodon I Lluís Palacín</Autor>
+<ProgramWeb>http://www.edubit.com/</ProgramWeb>
+<Descripcio>Xip Escolar és un conjunt de programes orientats a facilitar la gestió dels
+centres d&apos;ensenyament. No és un programa per matricular alumnes però 
+complementa el programa de matrícula que distribueix el Departament 
+d&apos;Ensenyament de la Generalitat de Catalunya. No és un programa de comptabilitat 
+però ajuda en la gestió econòmica dels centres. Fonamentalment són programes que 
+venen a complementar i omplir aspectes de la gestió que molts cops es resolen 
+gràcies a iniciatives de membres de claustre, i aquí el XIP ve a omplir el 
+possible buit de &quot;l&apos;entès en informàtica que resol bona part dels problemes&quot;.
+El programa de gestió escolar fonamental és el dedicat al control de 
+l&apos;assistència dels alumnes. Aquest va lligat amb el de matrícula, que el 
+que fa és utilitzar les dades de matrícula del centre per fer que el de
+faltes les utilitzi per al registre de les faltes dels alumnes.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>xip98.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>67</ID>
+<Nom>Funcions per a Windows</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-10-31T00:00:00</Data>
+<URL1>fuwi260c.zip</URL1>
+<Versio>2.60c</Versio>
+<Plataforma>2</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>2</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>447552</Mida>
+<Autor>Jordi Lagares roset</Autor>
+<ProgramWeb>http://www.xtec.es/~jlagares/#MATEMATIQUES</ProgramWeb>
+<Descripcio>FUNCIONS per a Windows és un programa didàctic que representa
+funcions definides de forma explícita o de forma numèrica mitjançant
+una taula de doble entrada.
+&lt;br&gt;
+El seu objectiu principal és ajudar els alumnes a aprehendre una
+gran majoria dels conceptes lligats amb les funcions. Així, la majoria
+de les opcions dels menús són referències directes lligades amb ells, és
+a dir: (Una funció) Imatge, Antiimatge, Arrels, Discontinuïtats aïllades,
+Màxims, Mínims, Punts d&apos;inflexió, Derivada en un punt, Integral definida,
+Integral de línia, Intervals de creixements, Intervals de decreixement,
+Intervals de concavitat, Intervals de convexitat, Funció derivada, Segona
+derivada, Funció integral, Talls i Àrea entre dues funcions.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>funcions.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>45</ID>
+<Nom>Advanced Disk Catalog</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-05-16T00:00:00</Data>
+<URL1>adc120.zip</URL1>
+<Versio>1.20d</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu 20 dolars)</Preu>
+<Mida>1465239</Mida>
+<Autor>Elcom ltd</Autor>
+<ProgramWeb>http://www.elcomsoft.com/adc.html</ProgramWeb>
+<Descripcio>L&apos;Advanced Disk Catalog és una utilitat d&apos;ús senzill per a Windows amb una
+interfície semblant a l&apos;Explorer que us permet catalogar disquets, discs
+durs, CD-ROMs, Zips, Jazz, i altres formats. És de 32-bits, està totalment
+escrit en C++, no utilitza cap motor de base de dades i és molt ràpid. La base de
+dades creada per l&apos;ADC és molt compacta.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>adc.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>46</ID>
+<Nom>Clic</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-05-16T00:00:00</Data>
+<URL1>click30.zip</URL1>
+<Versio>3.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>4</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2471147</Mida>
+<Autor>Francesc Busquets</Autor>
+<ProgramWeb>http://www.xtec.es/recursos/clic/cat/index.htm</ProgramWeb>
+<Descripcio>Clic 3.0 és una eina d&apos;autor que facilita als mestres la creació dels seus propis materials 
+educatius multimèdia. Fins ara hem rebut ja més de 160 aplicacions diferents, algunes
+d&apos;elles molt interessants. El programa està disponible en català, castellà i
+euskera... i aviat també en gallec, anglès, alemany i francès. S&apos;utilitza a
+les escoles d&apos;arreu dels Països Catalans, i també a altres comunitats i
+països (sobretot a Euskadi i a l&apos;Amèrica Llatina).</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>click.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>47</ID>
+<Nom>ContaAUSA</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-05-18T00:00:00</Data>
+<URL1>contausa.zip</URL1>
+<Versio>2.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu>0</Preu>
+<Mida>11607076</Mida>
+<Autor>AUSATEL</Autor>
+<ProgramWeb>http://www.ausatel.com/serveis/index.htm</ProgramWeb>
+<Descripcio>ContAUSA és un programa de comptabilitat molt complet. 
+Les seves característiques bàsiques són:
+
+&lt;br&gt;-Multiempresa: Permet portar diverses empreses a la vegada.
+&lt;br&gt; Pla General Comptable: Manteniment de comptes i subcomptes, fins a 12
+dígits
+&lt;br&gt;-Assentaments: Introducció d’assentaments amb actualització automàtica dels
+comptes. Permet la introducció d’assentaments automàtics: de facturació, de
+cobraments i pagaments, i assentaments patró o predefinits
+&lt;br&gt;-Balanç de sumes i saldos: Entre dues dates pels nivells 1, 2, 3 i el
+nivell de subcomptes.
+&lt;br&gt;-Balanç de situació i d’explotació: Amb diferents opcions de visualització.
+&lt;br&gt;Permet variar l’estructura de les masses
+ patrimonials. Balanços mensuals, trimestrals, anuals comparatius i
+balanços abreujats.
+&lt;br&gt;-Llibre Major: Tant per pantalla com per impressora, amb la possibilitat de
+consultar ràpidament els assentaments corresponents.
+&lt;br&gt;-Facturació: Control de les factures de clients i proveïdors, permetent
+treure els llibres d’ingressos i despeses, llistats d’I.V.A. 
+&lt;br&gt;-Regularització de comptes, tancament i inici d’exercici automàtic.
+&lt;br&gt;-Comptabilitat analítica: Possibilitat de treure tots els balanços, llibre
+i diari i llibre major segons unes cotes de projectes o departaments.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>contausa.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>48</ID>
+<Nom>LeechFTP</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>1999-05-18T00:00:00</Data>
+<URL1>lftp13.zip</URL1>
+<Versio>build 207</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu>0</Preu>
+<Mida>644217</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>LeechFTP és un programa multitasca de lliure distribució per a Windows. A
+més de les seves  possibilitats d&apos;FTP, el LeechFTP pot fer descàrregues de
+fitxers HTTP, és a dir, pot descarregar directament fitxers de servidors
+de web. L&apos;element més important del LeechFTP és la cua de treballs. Quan es
+decideix carregar o descarregar un fitxer, aquest no es transfereix
+immediatament a través de la connexió en curs, sinó que tota la informació
+de la transferència s&apos;envia a la cua de treballs. Totes les activitats, com
+ara descarregar, carregar o explorar directoris es consideren com treballs
+a executar l&apos;un després de l&apos;altre.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>leech.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<URLMirror>/leechftp/1.3.1.207/lftp13.zip</URLMirror>
+</Programes>
+<Programes>
+<ID>49</ID>
+<Nom>Parabooks per Windows</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-06-08T00:00:00</Data>
+<URL1>pbooksw.zip</URL1>
+<Versio>1.2</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1709900</Mida>
+<Autor>Roger Ferrer</Autor>
+<ProgramWeb>http://idd003pv.eresmas.net/</ProgramWeb>
+<Descripcio>Parabooks és un senzill programa que us permet gestionar una llibreria de
+forma còmoda i fàcil.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>parabook.gif</Imatge>
+</Programes>
+<Programes>
+<ID>51</ID>
+<Nom>mIRC</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>1999-06-23T00:00:00</Data>
+<URL1>mirc582.zip</URL1>
+<Versio>5.82</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 20 dolars)</Preu>
+<Mida>1814331</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>mIRC és un client shareware de tertúlies IRC per a Windows. Ha estat
+desenvolupat per Khaled Mardam-Bey, qui en té el copyright. Per als
+nouvinguts a Internet, IRC significa Internet Relay Chat (retransmissor de
+tertúlies d&apos;Internet). 
+&lt;br&gt;&lt;br&gt;
+La xarxa IRC és un punt de trobada virtual on la
+gent d&apos;arreu del món pot trobar-se i parlar (bé, escriure). A l&apos;IRC us
+trobeu amb altres en &quot;canals&quot; (habitacions, llocs virtuals, normalment amb
+un cert tema de conversa) per parlar en grups o en privat.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>mirc.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/mirc/</Projecte>
+</Programes>
+<Programes>
+<ID>52</ID>
+<Nom>FactUsa</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-06-24T00:00:00</Data>
+<URL1>factusa.zip</URL1>
+<Versio>2.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu>0</Preu>
+<Mida>12847992</Mida>
+<Autor>AUSATEL</Autor>
+<ProgramWeb>http://www.ausatel.com/serveis/index.htm</ProgramWeb>
+<Descripcio>FacAUSA és un complet programa de facturació per a empreses. Aquest
+programa té les següents característiques:
+
+&lt;br&gt;Multiempresa: Permet portar diverses empreses a la vegada.
+&lt;br&gt;Facturació directa: Control de les factures de clients i de proveïdors
+&lt;br&gt;Albarans d&apos;entrada i sortida: La facturació es pot realitzar
+automàticament a partir dels albarans. 
+&lt;br&gt;Control i gestió d&apos;estocs: El control d&apos;estocs 
+es realitza automàticament en introduir factures o albarans.
+&lt;br&gt;Els productes es podran agrupar per famílies i subfamílies. 
+&lt;br&gt;Generació de &quot;autofactures&quot; i &quot;autoalbarans&quot;: Permet fer una programació de
+quotes per períodes, realitzant-se una facturació automàtica.
+&lt;br&gt;Gestió de Pressupostos: Automatitza el pas de pressupostos a factures.
+&lt;br&gt;Gestió de rebuts: Es podran treure per impressora o mitjançant un
+disquet (Q19).
+&lt;br&gt;Treballar amb qualsevol tipus de moneda: Amb o sense decimals (pessetes,
+euros...).
+&lt;br&gt;Control d&apos;amortitzacions : Tenir un control sobre els béns adquirits per
+l&apos;empresa.
+&lt;br&gt;Permet guardar un històric dels anys anteriors.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>55</ID>
+<Nom>StratiGraf</Nom>
+<Softcatala>0</Softcatala>
+<Data>1999-06-24T00:00:00</Data>
+<URL1>sigct051.zip</URL1>
+<Versio>0.51</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu per determinar)</Preu>
+<Mida>7328687</Mida>
+<Autor>Pròleg DPC</Autor>
+<ProgramWeb>http://www.proleg.com</ProgramWeb>
+<Descripcio>Sistema avançat de documentació i interpretació de jaciments arqueològics.
+Generació automàtica de màtrix, consistència de les dades de l´excavació i
+datació automàtica d´UEs.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>sig.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>57</ID>
+<Nom>Ergovis PC</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-06-29T00:00:00</Data>
+<URL1>ergopc.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (desconegut)</Preu>
+<Mida>1071471</Mida>
+<Autor>Blockmedia</Autor>
+<ProgramWeb>http://www.blockmedia.com</ProgramWeb>
+<Descripcio>Ergovis és un programa que es queda obert al nostre PC i
+cada cert temps, que podem programar, ens aconsella uns
+exercicis de relaxació visual. És molt útil per a gent que
+passa moltes hores davant de l&apos;ordinador, i els exercicis
+són força relaxants.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>58</ID>
+<Nom>Apunts pràctics de l&apos;MS-Word 97</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-06-29T00:00:00</Data>
+<URL1>word97.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1935578</Mida>
+<Autor>Melcior</Autor>
+<ProgramWeb>http://www.bermol.com/</ProgramWeb>
+<Descripcio>Document en format PDF (cal l&apos;Acrobat Reader per
+poder-lo llegir) que conté un recull d&apos;apunts pràctics
+per al Microsoft Word 97. El contingut és molt complet i
+inclou tot el que podríem esperar d&apos;un bon manual
+de Word, amb notes pràctiques força interessants.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<AutorTraduccio>Melcior</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>59</ID>
+<Nom>Apunts pràctics de l&apos;MS-Access 97</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-06-29T00:00:00</Data>
+<URL1>access97.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1605247</Mida>
+<Autor>Melcior</Autor>
+<ProgramWeb>http://www.bermol.com/</ProgramWeb>
+<Descripcio>Document en format PDF (cal l&apos;Acrobat Reader per
+poder-lo llegir) que conté un recull d&apos;apunts pràctics
+per al Microsoft Access 97. En aquests apunts queden coberts
+els temes més importants i pràctics de l&apos;Access, des de
+la creació de bases de dades i formularis fins a la
+creació de macros o relacions de taules.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<AutorTraduccio>Melcior</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>147</ID>
+<Nom>IZArc</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-11-07T00:00:00</Data>
+<URL1>izarc32.exe</URL1>
+<Versio>3.2.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2579502</Mida>
+<Autor>Ivan Zahariev</Autor>
+<ProgramWeb>http://free.top.bg/izsoft/</ProgramWeb>
+<Descripcio>L&apos;IZArc és una eina d&apos;arxivament de fitxers que admet molts formats, com ara ACE, ARC, ARJ, BH, BZ2, CAB, ENC, GZ, HA, JAR, LHA, LZH, MBF, MIM, PAK, PK3, RAR, TAR, TBZ, TGZ, UUE, XXE, Z, ZIP, ZOO... Us permet arrossegar i deixar fitxers des de i cap al Windows Explorer, crear arxius per desar en més d&apos;un disc, reparar arxius ZIP malmesos, cercar en diversos arxius, veure i escriure comentaris, i incorpora un detector de contrasenyes que us permet esbrinar les contrasenyes que protegeixen un arxiu ZIP.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>izarc.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>60</ID>
+<Nom>Apunts pràctics de l&apos;MS-Windows 98</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-07-03T00:00:00</Data>
+<URL1>win98.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>5235600</Mida>
+<Autor>Melcior</Autor>
+<ProgramWeb>http://www.bermol.com/</ProgramWeb>
+<Descripcio>Document en format PDF (cal l&apos;Acrobat Reader per poder-lo llegir) que conté un
+recull d&apos;apunts pràctics sobre el Windows 98. És un curs força complet que
+inclou tot el necessari per poder treballar amb aquest sistema operatiu,
+configurar-lo i  matenir-lo.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<AutorTraduccio>Melcior</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>61</ID>
+<Nom>Apunts pràctics de l&apos;MS-Excel 97</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-07-03T00:00:00</Data>
+<URL1>excel97.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2446708</Mida>
+<Autor>Melcior</Autor>
+<ProgramWeb>http://www.bermol.com/</ProgramWeb>
+<Descripcio>Document en format PDF (cal l&apos;Acrobat Reader per poder-lo llegir) que
+conté un recull d&apos;apunts pràctics sobre l&apos;Excel 97. És un curs molt complet que
+inclou  tot el que necessitem per fer funcionar un Excel a nivell d&apos;usuari
+avançat.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<AutorTraduccio>Melcior</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>62</ID>
+<Nom>Chameleon</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-08-29T00:00:00</Data>
+<URL1>cham2ca.zip</URL1>
+<Versio>2.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 24.95$)</Preu>
+<Mida>1190848</Mida>
+<Autor>Jury Gerasimov</Autor>
+<ProgramWeb>http://www.softshape.com/cham/</ProgramWeb>
+<Descripcio>Un petit rellotge que es pot mostrar a l&apos;escriptori o a la barra de tasques, al qual se li poden intercanviar
+skins a l&apos;estil del Winamp, i que serveix també com a agenda personal que ens avisarà puntualment d&apos;allò que
+no vulguem oblidar.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>chameleon.gif</Imatge>
+</Programes>
+<Programes>
+<ID>63</ID>
+<Nom>Escriu</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-09-11T00:00:00</Data>
+<URL1>escriu261.zip</URL1>
+<Versio>2.6.1</Versio>
+<Plataforma>4</Plataforma>
+<Categoria>0</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu 9950 ptes)</Preu>
+<Mida>2163324</Mida>
+<Autor>Inèdit</Autor>
+<ProgramWeb>http://www.inedit.com</ProgramWeb>
+<Descripcio>Escriu 2.6.1 és un corrector ortogràfic i sintàctic de català amb
+connexió directa des de Claris Works 4.0, WordPerfect 3.0, Microsoft 
+Word 6.0, i QuarkXpress 3.3, tot mantenint el format i els estils del text
+original. També pot treballar amb qualsevol altre programa utilitzant el 
+portaretalls. &lt;BR&gt;
+
+Escriu comprova l&apos;ortografia de més de 200.000 mots, l&apos;apostrofació, 
+la contracció, la conjugació de més de 300.000 formes verbals, els verbs 
+irregulars, els pronoms febles o  els accents diacrítics.</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>64</ID>
+<Nom>Winamp</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>1999-09-18T00:00:00</Data>
+<URL1>winamp271.zip</URL1>
+<Versio>2.71</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2089048</Mida>
+<Autor>Winamp</Autor>
+<ProgramWeb>http://www.winamp.com</ProgramWeb>
+<Descripcio>WinAmp és un reproductor de fitxers MP3. En molt poc temps MP3 s&apos;ha convertit
+en estàndard de so majoritari per reproduir música a la xarxa Internet. A banda
+de fitxers de so MP3 la versió Winamp 2.71 també reprodueix les 
+pistes de CD i altres estàndards com WMA, Audiosoft, Mjuice, MOD o WAV. 
+&lt;br&gt;&lt;br&gt;
+Aquest programa té l&apos;aspecte d&apos;un equip reproductor de música convencional Winamp.
+El Winamp permet visualitzar informació sobre la cançó que s&apos;escolta així com configurar 
+llistats de reproducció amb les cançons seleccionades per desar-los, si cal, 
+al disc dur. Finalment, el Winamp disposa d&apos;un ampli panell equalitzador per 
+graduar el so segons els interessos de l&apos;usuari.
+&lt;br&gt;&lt;br&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>winamp.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/winamp/</Projecte>
+</Programes>
+<Programes>
+<ID>65</ID>
+<Nom>Teulat</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-10-07T00:00:00</Data>
+<URL1>teulat10.zip</URL1>
+<Versio>1.0.5</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu 94.500 ptes)</Preu>
+<Mida>1810647</Mida>
+<Autor>Marc Antoni Malagarriga I Francesc Garre</Autor>
+<ProgramWeb>http://personal2.redestb.es/6q-fgb/teulat.htm</ProgramWeb>
+<Descripcio>La filosofia de TEULAT és fer grans les impressores de qualsevol
+format. TEULAT és una aplicació adreçada a tallers de preimpressió,
+dissenyadors, rotulistes i estudis d&apos;arquitectura. Gestiona impressions a
+gran format imprimint en pannells (teules) el fitxer gràfic de
+treball. Sense limitacions de factors d&apos;ampliació, format de pàgina base i nombre de
+pannells. Treballa amb fitxers PostScript, EPS, TIFF i JPEG.
+L&apos;aplicació corre sota WIN9X i NT però el fitxer resultant és multiplataforma
+(PostScript o PDF d&apos;Acrobat). Es recomana fer-lo treballar conjuntament
+amb Adobe Acrobat 4.0. Porta inclosa una utilitat per personalitzar formats de
+pàgina en fitxers PPD (multiplataforma WIN/MAC) de configuració d&apos;impressora.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>teulat.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>66</ID>
+<Nom>WinOmega</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-10-07T00:00:00</Data>
+<URL1>womega.exe</URL1>
+<Versio>6.00.5</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 136 euros)</Preu>
+<Mida>2907402</Mida>
+<Autor>Omega Software</Autor>
+<ProgramWeb>http://www.omega-software.net</ProgramWeb>
+<Descripcio>Paquet integrat de gestió empresarial per a Windows 95/98/NT,
+amb facturació, magatzem, editor de textos, fitxers d&apos;articles, clients,
+proveïdors i agents comercials, i nombroses utilitats en línia.  Enllaç amb
+comptabilitat ContaClip, amb traspàs automàtic de dades.  Inclou agenda, llista de
+telèfons, calculadora, calendari, rellotge i bloc de notes.  Molt fàcil d&apos;usar sense
+aprenentatge previ, ideal per a petites i mitjanes empreses.  El successor d&apos;Omega
+DOS, programa de gran èxit per a MS-DOS.  Us permetrà de dur tota la gestió
+del vostre negoci sense necessitat de tenir diferents programes.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>winomega.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>68</ID>
+<Nom>LineRipper</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-11-01T00:00:00</Data>
+<URL1>linripca.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>870417</Mida>
+<Autor>Miquel Picart</Autor>
+<ProgramWeb>http://home.worldonline.es/mpicarth</ProgramWeb>
+<Descripcio>Programa per comprimir fitxers i capturar desde la targeta de so.
+Suporta els formats WMA i MP3 i es poden utilitzar diversos compressor.
+Funcions especials per si volem capturar els nostres vells LPs.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>linerip.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>69</ID>
+<Nom>Eudora</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>1999-11-13T00:00:00</Data>
+<URL1>eud306.exe</URL1>
+<Versio>3.0.6</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>3218121</Mida>
+<Autor>Qualcomm</Autor>
+<ProgramWeb>http://www.eudora.com/</ProgramWeb>
+<Descripcio>L&apos;Eudora és un dels programes més complets i populars de correu electrònic. Permet la gestió de múltiples comptes de correu, filtres de correu, llibreta d&apos;adreces, automarcatge per recollir correu, i opcions avançades de correu.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>eudora.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/eudora/</Projecte>
+<URLMirror>/eudora/3.06/win32/eud306.exe</URLMirror>
+</Programes>
+<Programes>
+<ID>70</ID>
+<Nom>Introducció a Internet</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-11-13T00:00:00</Data>
+<URL1>introint.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>317851</Mida>
+<Autor>Francesc Busquets I Anna Castelló</Autor>
+<ProgramWeb>http://pie.xtec.es</ProgramWeb>
+<Descripcio>Curs complet d&apos;introducció a Internet. Inclou una completa descripció
+sobre com funciona Internet, els tipus de connexió que podem tenir,
+els diferents protocols, com configurar el nostre equip per poder-hi
+accedir, etc.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>71</ID>
+<Nom>WinRAR</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-12-09T00:00:00</Data>
+<URL1>wrar320ca.exe</URL1>
+<Versio>3.20</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu>0</Preu>
+<Mida>1012968</Mida>
+<Autor>Rarlab</Autor>
+<ProgramWeb>http://www.rarlab.com/</ProgramWeb>
+<Descripcio>El WinRAR és una completa utilitat d&apos;arxivament de fitxers per a
+Windows 95/98/NT/XP i 2000 que pot gestionar els arxius RAR, ZIP, ARJ,
+CAB, LZH, TAR, GZ, ACE, BZIP2, JAR i UUE nativament.
+&lt;br&gt; 
+&lt;br&gt;
+Aquesta nova versió inclou nombroses millores quant al rendiment i
+utilització, i permet l&apos;ús dels formats BZIP2, JAR, ACE 2.0, que cada
+cop són més populars. 
+&lt;br&gt;
+&lt;br&gt;
+El WinRAR crea arxius RAR, que tot sovint són més petits que els
+fitxers ZIP o ARJ. Els arxius RAR poden ser auto-extraïbles, poden
+realitzar una verificació d&apos;autenticitat sobre si mateixos i poden
+incloure comentaris ANSI de color.
+&lt;br&gt;
+&lt;br&gt; 
+A més dels formats RAR i ZIP, el WinRAR permet l&apos;ús dels formats més
+habituals; a més, es pot integrar amb la l&apos;intèrpret d&apos;ordres del 
+Windows, el que fa pràcticament instantani treballar amb gairebé qualsevol 
+tipus d&apos;arxiu. Pot extreure, comprovar, actualitzar, suprimir i reparar 
+els arxius ZIP, i també us permet afegir o modificar comentaris i crear 
+arxius ZIP auto-extraïbles.
+&lt;br&gt;
+&lt;br&gt;
+El WinRAR proporciona una ordre d&apos;&quot;estimació&quot; que determina el grau
+de compressió dels fitxers i carpetes seleccionades, i un menú de
+&quot;favorits&quot; que conté els noms de les carpetes i arxius preseleccionats.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>wrar.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>110</ID>
+<Nom>X-CRiPt</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-05-20T00:00:00</Data>
+<URL1>setupx51cat.exe</URL1>
+<Versio>5.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1116957</Mida>
+<Autor>Alresoft</Autor>
+<ProgramWeb>http://www.alresoft.com</ProgramWeb>
+<Descripcio>L&apos;X-CRiPt inclou un seguit de funcions que fan que el mIRC sigui molt
+més potent i fàcil d&apos;utilitzar, ens proporciona protecció contra els
+atacs d&apos;altres usuaris de l&apos;IRC, i ens ofereix un gran nombre d&apos;opcions,
+com ara acudits, dibuixos, banderes, etc., per fer que la nostra
+experiència amb el mIRC sigui encara més agradable. Fins i tot podem
+organitzar una votació en un canal.
+&lt;br&gt;
+&lt;br&gt;
+Podeu baixar el paquet de guerra per a l&apos;X-CRiPt mitjançant aquest
+enllaç, però us avisem que, atesa la seva naturalesa, els programes
+antivirus poden identificar-lo com un programa infectat sense que ho
+sigui.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>72</ID>
+<Nom>Microeines</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-12-27T00:00:00</Data>
+<URL1>microeines.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>54874</Mida>
+<Autor>Catacrack</Autor>
+<ProgramWeb>http://go.to/catacrack</ProgramWeb>
+<Descripcio>Microeines és una recopilació de petits programes fets en ensamblador.
+Inclou:
+&lt;br&gt;
+* &quot;Molotov&quot;: tanca automàticament les finestres no desitjades
+(normalment es tracta de propaganda no sol·licitada) en navegar per
+Internet
+&lt;br&gt;
+* &quot;Renamejador&quot;: permet fer canvis massius de noms de fitxer
+&lt;br&gt;
+* &quot;Data fitxers&quot;: serveix per modificar les dates de creació,
+modificació i últim accés de múltiples fitxers
+&lt;br&gt;
+* &quot;Extractor de JPG&quot;: extreu les imatges en format JPG de fitxers que
+continguin diverses imatges
+&lt;br&gt;
+* &quot;EnviarPortapapers&quot;: envia el contingut del porta-retalls</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>73</ID>
+<Nom>Paperets</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-12-27T00:00:00</Data>
+<URL1>paperets.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>840856</Mida>
+<Autor>Melcior</Autor>
+<ProgramWeb>http://usuarios.intercom.es/melcior/</ProgramWeb>
+<Descripcio>Paperets és un petit programa que ens permet tenir anotacions
+al nostre escriptori de Windows. Té un disseny i presentació que
+recorda molt al tradicional Post-IT. Útil per escriure petites
+anotacions.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>74</ID>
+<Nom>Apunts pràctics de l&apos;MS-Word 2000</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-01-03T00:00:00</Data>
+<URL1>word2000.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2167964</Mida>
+<Autor>Melcior</Autor>
+<ProgramWeb>http://usuarios.intercom.es/melcior/</ProgramWeb>
+<Descripcio>Aquest document ofereix una guia força completa amb la qual es pot aprendre
+a fer servir el Word 2000 amb fluïdesa. Els temes estan escrits amb senzillesa,
+amb exemples i amb les pantalles dels menús. Està en format PDF (cal l’Acrobat 
+Reader per a poder-lo llegir) i comprimit amb format ZIP.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>75</ID>
+<Nom>Apunts pràctics de l&apos;MS-Excel 2000</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-01-03T00:00:00</Data>
+<URL1>excel2000.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1794808</Mida>
+<Autor>Melcior</Autor>
+<ProgramWeb>http://usuarios.intercom.es/melcior/</ProgramWeb>
+<Descripcio>Aquest document ofereix una guia força completa amb la qual es pot aprendre
+a fer servir l&apos;Excel 2000 amb fluïdesa. Els temes estan escrits amb
+senzillesa, amb exemples i amb les pantalles dels menús.
+Està en format PDF (cal l’Acrobat Reader per a poder-lo llegir) i comprimit
+amb format ZIP.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>76</ID>
+<Nom>Apunts pràctics de l&apos;MS-Access 2000</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-01-03T00:00:00</Data>
+<URL1>access2000.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1216394</Mida>
+<Autor>Melcior</Autor>
+<ProgramWeb>http://usuarios.intercom.es/melcior/</ProgramWeb>
+<Descripcio>Aquest document ofereix una guia força completa amb la qual es pot aprendre
+a fer servir l&apos;Access 2000 amb fluïdesa. Els temes estan escrits amb
+senzillesa, amb exemples i amb les pantalles dels menús.
+Està en format PDF (cal l’Acrobat Reader per a poder-lo llegir) i comprimit
+amb format ZIP.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>77</ID>
+<Nom>Audiograbber</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-02-05T00:00:00</Data>
+<URL1>audiogr181.zip</URL1>
+<Versio>1.81</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1534569</Mida>
+<Autor>Jackie Franck</Autor>
+<ProgramWeb>http://www.audiograbber.com-us.net</ProgramWeb>
+<Descripcio>L&apos;Audiograbber és un programa que copia música i l&apos;emmagatzema al disc
+dur del vostre ordinador; el seu objectiu principal és copiar música des
+dels CD. La música es copia digitalment i, per tant, les còpies que
+s&apos;obtenen són perfectes. Inclou funcions per comprovar que les còpies
+són fidels a l&apos;original. No totes les unitats de CD-ROM, però, poden
+llegir àudio digital, de manera que també hi ha una opció per copiar la
+música a través de la targeta de so amb una pèrdua de qualitat mínima.
+També és possible copiar so, mitjançant la targeta de so, des d&apos;una font
+externa, com ara un tocadiscs o una ràdio.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>audio.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>78</ID>
+<Nom>Manual del Navegador</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2000-02-05T00:00:00</Data>
+<URL1>manual_navegador_47.zip</URL1>
+<Versio>4.7</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>67121</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>El manual del Navegador és una guia de referència completa que 
+cobreix tota la funcionalitat del Navegador per a Windows, Mac i 
+Unix. En aquest manual de 75 pàgines és fa una explicació 
+detallada de tots els aspectes del Navegador i el seu ús. Aquest 
+manual es recomana a tots els usuaris que vulguin conèixer aquesta 
+aplicació més a fons o que  simplement vulguin resoldre dubtes 
+sobre el seu funcionament.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/navegador/</Projecte>
+</Programes>
+<Programes>
+<ID>82</ID>
+<Nom>Relatran</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-03-05T00:00:00</Data>
+<URL1>relatr30.zip</URL1>
+<Versio>3.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>3</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>859162</Mida>
+<Autor>Jaume Dellunde</Autor>
+<Descripcio>Relatran facilita la pràctica d&apos;exercicis sobre mecanismes als estudiants de
+secundària. S&apos;inclouen, entre altres, càlculs de forces, avantatges mecànics,
+diàmetres de politges, nombre de dents de rodes, relacions de transmissió,
+velocitats de gir i velocitats lineals. El programa resulta útil al professor
+en la preparació d&apos;exercicis, i en la confecció d&apos;exàmens.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>relatran.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>83</ID>
+<Nom>NetVampire</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2000-03-10T00:00:00</Data>
+<URL1>netvampire33.zip</URL1>
+<Versio>3.3</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>994719</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>NetVampire és un gestor universal de descàrregues que podeu utilitzar per buscar, 
+planificar i descarregar  fitxers des de servidors FTP i de web. Només us cal 
+arrossegar l&apos;enllaç des del vostre navegador cap a una petita finestra flotant 
+i el programa us descarregarà el fitxer.
+&lt;br&gt;&lt;br&gt;
+El NetVampire buscarà ubicacions alternatives del fitxer a Internet,
+comprovarà l&apos;accessibilitat i velocitat d&apos;aquest llocs, establirà una
+connexió directa si així s&apos;ha planificat i començarà la descàrrega. No
+us haureu de preocupar de si els servidors estan ocupats o si les
+connexions fallen; el programa s&apos;encarregarà d&apos;insistir en la connexió
+fins que s&apos;aconsegueixi, i continuarà la descàrrega allà on s&apos;hagi
+interromput.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/netvampire/</Projecte>
+</Programes>
+<Programes>
+<ID>84</ID>
+<Nom>Webcopier</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2000-03-30T00:00:00</Data>
+<URL1>webcopier21_ca.exe</URL1>
+<Versio>2.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1010233</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>El WebCopier és un potent navegador en desconnexió , que explora llocs web 
+i els emmagatzema localment. Això ens permet tenir còpies al nostre ordinador 
+de llocs web sencers i visualitzar-los sense necessitat d&apos;estar connectats a 
+Internet. D&apos;aquesta manera, podem baixar parts de diaris electrònics, 
+documents o informació en general i llegir-la una vegada desconnectats 
+d&apos;Internet.
+&lt;br&gt;&lt;br&gt;
+El WebCopier realitza recerques precises d&apos;enllaços, incloent anàlisi 
+de JavaScript, i pot baixar fins a 100 fitxers simultàniament i 
+imprimir el lloc web complet o una part determinada. Suporta servidors 
+intermediaris i permet especificar el nom d&apos;usuari i contrasenya per 
+poder accedir a llocs web segurs.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>webcopier.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/webcopier/</Projecte>
+</Programes>
+<Programes>
+<ID>86</ID>
+<Nom>Panda Antivirus</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-05-03T00:00:00</Data>
+<URL1>panda600.zip</URL1>
+<Versio>6.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (consultar)</Preu>
+<Mida>7042412</Mida>
+<Autor>Panda Software</Autor>
+<ProgramWeb>http://www.pandasoftware.com</ProgramWeb>
+<Descripcio>El Panda Antivirus és un programa antivirus que explora les descàrregues
+de correu electrònic i d&apos;Internet en temps real.
+&lt;br&gt;
+Pot detectar i eliminar gairebé 20.000 virus diferents, incloent els que
+s&apos;escampen mitjançant llocs web nocius, correu electrònic, grups de
+notícies i IRC, i també pot detectar i eliminar gairebé qualsevol tipus
+de virus maligne o perjudicial, incloent els xifrats, els polimòrfics,
+els d&apos;arrencada, de fitxer, de macro (Word, Excel i Access), de
+miniaplicacions Java i de controls ActiveX.
+&lt;br&gt;
+Inclou un assistent de manteniment, i es pot actualitzar automàticament
+a través d&apos;Internet.
+&lt;br&gt;
+Atenció: Aquesta versió només funciona amb Windows 95 i 98.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>panda.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>87</ID>
+<Nom>Llistar MP3</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-05-03T00:00:00</Data>
+<URL1>llistarmp3-156.zip</URL1>
+<Versio>1.56</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>42248</Mida>
+<Autor>Catacrack</Autor>
+<ProgramWeb>http://go.to/catacrack</ProgramWeb>
+<Descripcio>Programa fet en ensamblador per a Windows, que mostra informació dels
+fitxers d&apos;àudio comprimits.  De cada fitxer detectat, se&apos;n mostra el
+nom, la mida, la durada de la cançó, les dades de la compressió, i,
+finalment, les dades del &apos;tag&apos;  (títol, artista, àlbum, any, comentari i estil).</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>llistar.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>88</ID>
+<Nom>Mozilla</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2000-05-17T00:00:00</Data>
+<URL1>mozilla-win32-1.7.3-installer-caAD.exe</URL1>
+<Versio>1.73</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>1</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>13212112</Mida>
+<Autor>Mozilla</Autor>
+<ProgramWeb>http://www.mozilla.org</ProgramWeb>
+<Descripcio>El Mozilla és la nova versió del popular navegador de la
+casa Netscape que us permetrà explorar els continguts d&apos;Internet, enviar
+i rebre correu electrònic, consultar i participar en els fòrums de
+notícies i crear les vostres pàgines web; ara podeu fer tot això en
+català i d&apos;una manera senzilla, intuïtiva i eficaç que pretén aprofitar
+al màxim les possibilitats actuals que ens ofereix Internet. Els usuaris
+habituals de versions anteriors podreu comprovar que aquesta ofereix
+noves opcions i que és plenament configurable; també notareu importants
+millores en el programa de gestió del correu.
+&lt;br&gt;&lt;br&gt;
+El Mozilla inclou un nou gestor de contrasenyes que manté de forma
+centralitzada i segura tots els detalls dels nostres noms d&apos;usuari i
+claus d&apos;accés. També inclou el gestor de galetes, que permet tenir
+control sobre quines galetes tenim al sistema, millorant d&apos;aquesta
+manera la seguretat i privadesa dels usuaris. Una altra de les novetats 
+és la possibilitat de gestionar més d&apos;una bústia de correu d&apos;una forma 
+còmoda i pràctica. 
+&lt;br&gt;&lt;br&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>mozilla.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<Projecte>http://www.softcatala.org/projectes/mozilla/</Projecte>
+<URLMirror>/mozilla/1.7.3/win32/mozilla-win32-1.7.3-installer-caAD.exe</URLMirror>
+</Programes>
+<Programes>
+<ID>89</ID>
+<Nom>Menús en català per al Word 97/2000</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-05-17T00:00:00</Data>
+<URL1>tradwordcat.exe</URL1>
+<Versio>3.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>7</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>211480</Mida>
+<Autor>Jopers</Autor>
+<ProgramWeb>http://www.jopers.cjb.net/</ProgramWeb>
+<Descripcio>El TradWordCat és una petita aplicació que, tot i la seva poca grandària
+(206 kB), tradueix al català els menús del Microsoft Word 97 o 2000,
+tant els de la barra d&apos;eines com els contextuals.
+&lt;br&gt;&lt;br&gt;
+Les novetats més importants d&apos;aquesta última versió és que s&apos;ha afegit
+l&apos;&quot;autotext&quot; en català i que s&apos;han acabat de traduir totes les
+&quot;llacunes&quot; que no estaven traduïdes en la versió anterior. Una altra
+novetat destacada és que ara es pot aplicar la traducció en un Word en
+qualsevol idioma; per tant, ja no està limitat al Word en castellà.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>wordtrac.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>90</ID>
+<Nom>Agenda Personal</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-05-17T00:00:00</Data>
+<URL1>agenda.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1489575</Mida>
+<Autor>Alfons Dolsa</Autor>
+<Descripcio>Aquesta agenda telefònica, d&apos;ús senzill i aspecte semblant a una agenda
+de butxaca, és una aplicació ideal per guardar les nostres adreces,
+telèfons i adreces de correu electrònic dels nostres coneguts. És força
+versàtil i ocupa poc espai al disc dur.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>agenda.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>91</ID>
+<Nom>Gex</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-06-20T00:00:00</Data>
+<URL1>gex499.zip</URL1>
+<Versio>4.99</Versio>
+<Plataforma>3</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>368853</Mida>
+<Autor>Universitat de Barcelona</Autor>
+<ProgramWeb>http://www.ub.es/slc/ffll/accgex.htm</ProgramWeb>
+<Descripcio>Programa d&apos;autoaprenentatge del català desenvolupat pel
+Servei de Llengua Catalana de la Universitat de Barcelona
+Conté exercicis autocorrectius d&apos;ortografia, morfologia,
+lèxic, sintaxi.
+&lt;br&gt;
+&lt;br&gt;
+Programa molt complet per repassar els diferents aspectes
+del català i recomanat per la gent que vol millorar-lo per
+compte propi.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>gex.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>92</ID>
+<Nom>Distribució normal de Gauss</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-06-20T00:00:00</Data>
+<URL1>gauss.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>2</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>319370</Mida>
+<Autor>Jordi Lagares roset</Autor>
+<ProgramWeb>http://www.xtec.es/~jlagares/#MATEMATIQUES</ProgramWeb>
+<Descripcio>Programa d&apos;ajuda que facilita molt la resolució i comprensió, de manera
+gràfica, de problemes que requereixin la taula de la funció de
+distribució de Gauss. Podeu modificar el valor de la mitjana, de la
+desviació típica, l&apos;X inicial i l&apos;X final.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>gauss.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>93</ID>
+<Nom>Raons Trigonomètriques</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-06-20T00:00:00</Data>
+<URL1>trigonom.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>2</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>23425</Mida>
+<Autor>Jordi Lagares roset</Autor>
+<ProgramWeb>http://www.xtec.es/~jlagares/#MATEMATIQUES</ProgramWeb>
+<Descripcio>Calcula i dibuixa les raons trigonomètriques (SINUS, COSINUS, TANGENT)
+dels angles entre -360 i 360 amb una precisió de dues xifres.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>trigo.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>94</ID>
+<Nom>Factura</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-07-13T00:00:00</Data>
+<URL1>factura-12.hqx</URL1>
+<Versio>1.2</Versio>
+<Plataforma>4</Plataforma>
+<Categoria>0</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>3859997</Mida>
+<Autor>Joan Grabuleda</Autor>
+<ProgramWeb>http://www.arrakis.es/~grabu/</ProgramWeb>
+<Descripcio>Factura és un programa senzill i fàcil d&apos;utilitzar que permet
+realitzar factures comercials i de serveis. Està pensat per a treballadors
+autònoms i petites empreses.&lt;br&gt;&lt;br&gt;
+Aquesta versió està adaptada a la realitat econòmica espanyola, però
+els usuaris dels diferents països d&apos;Amèrica Llatina poden adaptar-lo a
+llurs realitats econòmiques respectives.&lt;br&gt;&lt;br&gt;
+
+És un programa molt complet i recomanable.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>factmac.jpg</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>140</ID>
+<Nom>Mecanografia</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-08-08T00:00:00</Data>
+<URL1>MecanogInstall.exe</URL1>
+<Versio>1.4</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>301696</Mida>
+<Autor>Jordi March Nogué</Autor>
+<ProgramWeb>http://www.aeic.es/softlliure.htm</ProgramWeb>
+<Descripcio>Senzill per aprendre mecanografia utilitzant exercicis preparats, paraules creades aleatoriament i fins i tot arxius de text copiats del portapapers.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>mecano.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>141</ID>
+<Nom>Showit</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-08-08T00:00:00</Data>
+<URL1>ShowIT_21_Install.exe</URL1>
+<Versio>2.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2619666</Mida>
+<Autor>Jordi March Nogué</Autor>
+<ProgramWeb>http://www.aeic.es/softlliure.htm</ProgramWeb>
+<Descripcio>Programa de presentacions i memorització d&apos;associacions i reconeixement de
+paraules, imatges i sons. Presenta per pantalla:
+&lt;br&gt;
+&lt;br&gt;
+-Fitxers d&apos;imatges dels tipus gràfics més habituals (bmp, gif, jpeg, jpg), de tipus vectorial (wmf), amb o sense comentaris o preguntes-respostes (que ja estiguin creats).
+&lt;br&gt;
+-Text: títols, preguntes-respostes (creades amb aquest programa).
+&lt;br&gt;
+- Fitxers de text (rtf, txt).
+&lt;br&gt;
+-Pàgines web (htm, html) o fitxers web (mht), desats.
+&lt;br&gt;
+-Fitxers de vídeo (avi, mov).
+&lt;br&gt;
+&lt;br&gt;
+Aquesta presentació la fa de forma seqüencial, ordenadament o aleatòriament, automàticament o manualment, a partir d&apos;una llista que el mateix programa permet crear i modificar fàcilment. Els 3 primers elements, sobretot els 2 primers, tenen força possibilitats de modificació en la presentació, reproduint per cada diapositiva, o diverses de consecutives, fitxers d&apos;àudio (wav, mp3, cda, mid, wma), dissenyant presentacions fàcilment.
+&lt;br&gt;
+&lt;br&gt;
+Anomenarem &quot;diapositiva&quot; a cadascuna de les imatges (amb o sense text), text, fitxer de text, i &quot;presentació&quot; a la col·lecció ordenada de diapositives que es mostrarà per pantalla; les diapositives poden ser dinàmiques, i d&apos;aquesta manera podeu ampliar una imatge o navegar per una pàgina web durant la presentació.
+&lt;br&gt;
+&lt;br&gt;
+Es poden utilitzar 5 tipus de diapositives visibles: d&apos;imatges, de sols text, de fitxers de text de pàgines web i de vídeo, les no visibles de presentació, i els programes o fitxers a obrir.
+&lt;br&gt;
+&lt;br&gt;
+El programa disposa d&apos;un sistema de disseny d&apos;aplicacions didàctiques basades en presentacions amb preguntes i respostes, (les preguntes poden ser textuals, referides a sons i/o imatges), de record de què són o el comentari referit a imatges, per a memorització d&apos;una seqüència d&apos;imatges (o text). Permet així treballar en memorització d&apos;associacions i traduccions de paraules, sinònims, adquisició de comprensió lectora, endevinalles, realització d&apos;exàmens, amb puntuació; ja sigui amb respostes presents, a teclejar o a dir mentalment, música, idiomes, etc. Tot això el fa realment original, flexible i indicat per a l&apos;ensenyament, tant per als ensenyants (realització d&apos;exercicis, heteroavaluació, escriptura dels resultats en xarxa, etc.) com per als alumnes (aprenentatge, autoevaluació, etc.).
+&lt;br&gt;
+&lt;br&gt;
+Un variat repertori de 38 exemples d&apos;aprenentatge faciliten l&apos;ús del priograma.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>showit.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>95</ID>
+<Nom>Tutorial del Napster</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-09-05T00:00:00</Data>
+<URL1>napstertutorial.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1453371</Mida>
+<Autor>Germà Martín</Autor>
+<Descripcio>Aquest tutorial explica el funcionament del programa Napster. El Napster
+és un programa que ens permet compartir els nostres fitxers mp3 amb
+qualsevol usuari i accedir als seus, sempre que estigui connectat i que
+tingui activat el programa.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>96</ID>
+<Nom>FlashGet</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-09-30T00:00:00</Data>
+<URL1>fgf087.zip</URL1>
+<Versio>0.87</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu>0</Preu>
+<Mida>1129741</Mida>
+<Autor>Amaze Software</Autor>
+<ProgramWeb>http://www.amazesoft.com</ProgramWeb>
+<Descripcio>El FlashGet s&apos;ha dissenyat específicament per solucionar dos dels
+problemes més greus que s&apos;esdevenen en descarregar fitxers: la velocitat
+i la gestió dels fitxers descarregats.
+&lt;br&gt;
+El FlashGet pot dividir els fitxers descarregats en seccions,
+descarregant totes les seccions alhora, i això comporta un increment de
+velocitat d&apos;entre un 100 i un 500%. Això, sumat a les potents, però
+senzilles d&apos;utilitzar, propietats del FlashGet, us ajudarà a controlar
+les descàrregues com mai abans. És molt similar al GetRight i al
+NetVampire.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>flashg.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>97</ID>
+<Nom>Examinator</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-09-30T00:00:00</Data>
+<URL1>examinator.exe</URL1>
+<Versio>1.0</Versio>
+<Plataforma>3</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>365473</Mida>
+<Autor>Conselleria de Cultura de la Generalitat Valenciana</Autor>
+<ProgramWeb>http://www.cult.gva.es/dgoiepl/salt/salt_programes.htm</ProgramWeb>
+<Descripcio>Examinator és un programa que ofereix la possibilitat d&apos;autoavaluar, de
+manera lúdica, els nostres coneixements de català. Molt útil i divertit
+per aprendre al mateix temps que juguem. Poden jugar-hi una o dues
+persones.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>examin.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>98</ID>
+<Nom>Radiator</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-11-21T00:00:00</Data>
+<URL1>radiator.zip</URL1>
+<Versio>1.5.4</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>755907</Mida>
+<Autor>Miroslav Flesko</Autor>
+<ProgramWeb>http://flesko.cz</ProgramWeb>
+<Descripcio>El Radiator és un programa lliure per a la recepció i enregistrament de
+les populars targetes de ràdio AimsLab RadioTrack, RadioTrack II, Reveal
+RA300, SoundForte SF 16 FMP2, SoundForte SF16 - FMI, Aztech / Packard
+Bell, Comp - Express, GemTek RadioCard, SoundForte SF16 - FMR2,
+SoundForte SF16 - FMD2, Zoltrix RadioPlus 108, per als adaptadors de
+port sèrie GemTek RadioMan, GemTek Wizard Radio, Justy Radion-maru, Unit
+Rajikoma, sèries d&apos;AverMedia TV98 (BT878), GemTek FMRadio 21 USB,
+SoundForte SF256-PCx Xtreme, SoundForte SF16-FMR, SoundForte SF16-FMX,
+DLINK USB radio DSB-R100. El seu aspecte s&apos;ha inspirat en l&apos;ATI
+Multimedia Center, el programari que es subministra amb les targetes
+ATI. 
+&lt;br&gt;
+Us ofereix: un ús intuïtiu, possibilitat de realitzar totes les
+operacions mitjançant dreceres de teclat, possibilitat d&apos;enregistrar en
+diverses qualitats de so mitjançant còdecs, incloent MP3 y WMA,
+utilització del ratolí, incloent el de bola, vista opcional de la safata
+d&apos;icones, senzill procés d&apos;edició de freqüències i ordenació
+d&apos;emissores, sintonització directa des del teclat, commutadors de línia
+d&apos;ordres, suport per a mòduls d&apos;idioma, integració ATI MMC.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>rad.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>99</ID>
+<Nom>Salt 2.0</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-12-19T00:00:00</Data>
+<URL1>salt_2.zip</URL1>
+<Plataforma>1</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>33418626</Mida>
+<Autor>Conselleria de Cultura de la Generalitat Valenciana</Autor>
+<ProgramWeb>http://www.cult.gva.es/dgoiepl/salt/</ProgramWeb>
+<Descripcio>El Salt és un programa de traducció i correcció de textos de 
+la Conselleria de Cultura de la Generalitat Valenciana. El Salt
+permet traduir els textos del  castellà a la nostra llengua amb 
+un mètode interactiu que minimitza els errors i garanteix una 
+gran qualitat dels  textos traduïts. A més dels errors estrictament
+ortogràfics, detecta barbarismes, perífrasis incorrectes,
+locucions errònies, combinacions incorrectes de pronoms i
+faltes de concordança.
+&lt;br&gt;&lt;br&gt;
+Aquesta nova versió 2.0 reconeix els formats Word 6, Word 97
+i Word 2000, pot processar textos llargs sense necessitat de
+seleccionar fragments cada cop, té un nou mode d&apos;operació 
+automàtica per a textos llargs, cosa que permet automatitzar la 
+traducció de més d&apos;un document, i un gran nombre de millores
+relatives a la traducció i correcció.
+&lt;br&gt;&lt;br&gt;
+El Salt 2.0 inclou també un complet diccionari valencià i una
+flexió completa de la conjugació dels verbs tant en castellà
+com en català, eines que resultaran molt útils
+durant el procés de depuració de les traduccions.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>salt2.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<URLMirror>/populars/salt_2.zip</URLMirror>
+</Programes>
+<Programes>
+<ID>100</ID>
+<Nom>WhereIsIt</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-12-19T00:00:00</Data>
+<URL1>whereis216.zip</URL1>
+<Versio>2.16</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>0</Llicencia>
+<Preu>0</Preu>
+<Mida>2679587</Mida>
+<Autor>Robert Galle</Autor>
+<ProgramWeb>http://www.whereisit-soft.com</ProgramWeb>
+<Descripcio>El WhereIsIt? es va dissenyar amb un únic objectiu: crear
+un programa de catalogació potent però senzill
+d&apos;utilitzar, fet per facilitar-nos la vida. Una
+interfície familiar i simplificada, àmplies capacitats de
+cerca i suport per a arxius, combinat amb un potent
+generador d&apos;informes i una base de dades compacta, però
+detallada, configuren l&apos;eina definitiva per gestionar la
+vostra col·lecció de programari.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>whereisit.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>101</ID>
+<Nom>Recull de documents administratius</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-01-19T00:00:00</Data>
+<URL1>reculldocs.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2150299</Mida>
+<Autor>Universitat Autònoma de Barcelona</Autor>
+<ProgramWeb>http://www.uab.es/gab-llengua-catalana</ProgramWeb>
+<Descripcio>Recull de documents administratius&quot; és un conjunt de documents bàsics
+de l&apos;administració universitària, elaborat pel Gabinet de Llengua
+Catalana de la UAB. Conté models, exemples, criteris de redacció, 
+remarques i fraseologia específica de cada document, i es presenta 
+en format HTML i PDF.
+&lt;br&gt;&lt;br&gt;
+S&apos;inclouen els següents tipus de documents: Acta de reunió, carta,
+certificat,  citació, conveni, convocatòria de reunió, diligència, 
+informe, invitació, memòria, notificació de la resolució, ofici, 
+recurs, resolució, saluda i sol·licitud (o instància).
+&lt;br&gt;&lt;br&gt;
+Un cop hagueu descarregat l&apos;arxiu, podeu obrir-ne el fitxer
+&quot;index.html&quot;.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>102</ID>
+<Nom>Recull de termes de Microsoft</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-01-19T00:00:00</Data>
+<URL1>microsoftgloss.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1104559</Mida>
+<Autor>Microsoft Ireland</Autor>
+<ProgramWeb>http://www.microsoft.com</ProgramWeb>
+<Descripcio>Els glossaris de les aplicacions més recents que Microsoft ha traduït al
+català. Aquests glossaris contenen la frase original en anglès
+emparellada amb la seva traducció al català.
+&lt;br&gt;&lt;br&gt;
+Aquest fitxer conté els glossaris oficials de Microsoft, en ASCII
+delimitat, per a les versions catalanes del Microsoft Excel 95,
+Microsoft Windows 98 i Microsoft Internet Explorer 4.0.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>103</ID>
+<Nom>Vocabulari de dret penal</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-02-02T00:00:00</Data>
+<URL1>dicpenal.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>6234</Mida>
+<Autor>Departament de Justícia de la Generalitat</Autor>
+<ProgramWeb>http://www.gencat.es/justicia/llengua</ProgramWeb>
+<Descripcio>Diccionari personal per al Microsoft Word amb termes especifics
+del dret penal i penitenciari, elaborat pels serveis lingüístics
+del Departament de Justícia de la Generalitat de Catalunya.
+&lt;br&gt;
+&lt;br&gt;
+Aquest fitxer afegix els termes relatius al dret penal i 
+penitenciari al vostre corrector estándard. En tractar-se d&apos;un 
+fitxer de texte sense format, probablement també el podreu importar
+des d&apos;altres aplicacions que admetin diccionaris personalitzats.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>104</ID>
+<Nom>Curs de català de nivell B</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-02-01T00:00:00</Data>
+<URL1>cursb.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>3</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>7351223</Mida>
+<Autor>Departament de Justícia de la Generalitat</Autor>
+<ProgramWeb>http://www.gencat.es/justicia/llengua</ProgramWeb>
+<Descripcio>El curs Autoaprenentatge B va adreçat a organitzacions i
+persones dels diversos àmbits vinculats al Departament de
+Justícia. 
+&lt;br&gt;&lt;br&gt;
+El programa ofereix tres possibilitats: accedir als temes
+(teoria), anar directament als exercicis (pràctica), i també
+consultar directament la teoria corresponent a cada
+exercici. L&apos;usuari d&apos;aquest curs també pot accedir al mòdul
+d&apos;avaluació dels exercicis interactius, una eina que li
+permetrà de resoldre&apos;ls directament a la pantalla, consultar
+quines són les respostes correctes i saber el resultat
+obtingut en cada exercici, és a dir, el nombre de respostes
+encertades sobre el total de preguntes. D&apos;aquesta manera pot
+autoavaluar el seu procés d&apos;aprenentatge.
+&lt;br&gt;&lt;br&gt;
+Els exercicis interactius contenen un total de 115
+exercicis, distribuïts en trenta-set temes (el tema 1 no té
+exercicis). N&apos;hi ha de diversa mena: emplenar buits amb una
+lletra o un dígraf (ortografia), escriure la forma correcta
+entre unes quantes de possibles (ortografia, morfologia
+nominal i verbal i sintaxi), escriure els mots -formes
+verbals, pronoms...- que falten en una frase o un text
+(morfologia i sintaxi) i escriure o reescriure frases
+senceres amb la puntuació adequada (puntuació).</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>106</ID>
+<Nom>Guia de comunicació eficaç</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-03-12T00:00:00</Data>
+<URL1>guiacomunica.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>240669</Mida>
+<Autor>Universitat Autònoma de Barcelona</Autor>
+<ProgramWeb>http://www.uab.es/gab-llengua-catalana</ProgramWeb>
+<Descripcio>La guia de comunicació eficaç està pensada per ajudar-nos
+a desenvolupar els nostres propis escrits amb més  
+eficàcia i claredat. Es tracten en detalls temes com ara
+l&apos;organització de documents i el registre lingüístic, i s&apos;hi veuen
+alguns casos pràctics.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>107</ID>
+<Nom>EventControl</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-03-12T00:00:00</Data>
+<URL1>ec2k_v10.zip</URL1>
+<Versio>2000</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 15$)</Preu>
+<Mida>3548405</Mida>
+<Autor>Esteve Valentí</Autor>
+<ProgramWeb>http://perso.wanadoo.es/evalenti/ec_cat.html</ProgramWeb>
+<Descripcio>L&apos;EventControl 2000 és un programa que roman actiu a la memòria de
+l&apos;ordinador i que controla:
+&lt;br&gt;
+&lt;br&gt;
+- amb quina freqüència hem arrencat l&apos;ordinador, i durant quan de temps
+&lt;br&gt;
+- les vegades s&apos;ha activat el salvapantalles, i durant quant de temps
+&lt;br&gt;
+- les vegades que hem estat connectats a Internet a través del mòdem, i
+durant quan de temps
+&lt;br&gt;
+- les vegades que, i durant quan de temps, hem estat utilitzant qualsevol 
+programa que haguem afegit per tal que sigui controlat per l&apos;EventControl 
+2000 (per defecte es controlen el VisualBasic 6, l&apos;Internet Explorer, 
+l&apos;Outlook Express i tots els programes de l&apos;Office 2000)
+&lt;br&gt;
+&lt;br&gt;
+A més, s&apos;hi ha incorporat un cronòmetre per al control de temps de
+qualsevol altra tasca.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>ec.jpg</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>108</ID>
+<Nom>Opera</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-04-01T00:00:00</Data>
+<URL1>ow32ca723j.exe</URL1>
+<Versio>7.23</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>1</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 35$)</Preu>
+<Mida>12636439</Mida>
+<Autor>Opera</Autor>
+<ProgramWeb>http://www.opera.com</ProgramWeb>
+<Descripcio>L&apos;Opera 7 és un versàtil navegador, ràpid i fàcil d&apos;utilitzar, que inclou un gestor de contrasenyes (Vareta), un gestor de correu i grups de discussió (M2), i noves característiques com botons d&apos;avanç ràpid, rebobinatge, notes i molt més. Les populars funcions de versions anteriors, que inclouen la interfície de documents múltiples, gestos del ratolí, dreceres de teclat, cerca i traducció integrades, zoom, i moltes altres característiques més, continuen, evidentment, incloses i millorades. Ara els usuaris poden fins i tot personalitzar i fer les seves pròpies barra d&apos;eines, gestos del ratolí i dreceres de teclat, i compartir-los amb altres usuaris d&apos;Opera.
+
+L&apos;Opera 7 permet l&apos;ús de CSS, Java (mitjançant el connector Sun Java), JavaScript SSL (128 bits), TLS (Transaction Layer Security), etc. 
+
+L&apos;Opera és una excel·lent alternativa als navegadors de Netscape i Microsoft. A més, gràcies a la publicitat en cibertires, ara és de franc! (es por adquirir una versió sense publicitat per 39$).</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>opera7.gif</Imatge>
+</Programes>
+<Programes>
+<ID>109</ID>
+<Nom>Guia d&apos;estil de Softcatalà</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2001-04-01T00:00:00</Data>
+<URL1>guia.zip</URL1>
+<Versio>1.1</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>44085</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>L&apos;objectiu de la guia d&apos;estil de Softcatalà és establir les normes que
+s&apos;han d&apos;aplicar a totes i cadascuna de les traduccions que es fan a
+Softcatalà, i es pot considerar com el complement del Recull de termes,
+un glossari amb més de 1.400 entrades en anglès, amb la seva traducció
+corresponent al català, que Softcatalà va publicar recentment. 
+&lt;br&gt;&lt;br&gt;
+Aquesta guia, que recull l&apos;experiència de Softcatalà en la traducció
+durant els darrers dos anys i mig, resulta força útil per a traductors
+de programari i pàgines web al català, atès que recull multitud de casos
+i dubtes que es presenten tot sovint durant el procés de traducció. S&apos;hi
+indiquen algunes normes gramaticals que són, a vegades, poc conegudes o
+que provoquen confusió entre els traductors i correctors, i inclou també
+la llista completa en català dels països del món, segons la normativa
+ISO 3166-1.
+&lt;br&gt;&lt;br&gt;
+Fent pública aquesta guia d&apos;estil, Softcatalà espera posar la seva
+experiència a l&apos;abast de tothom que vulgui traduir programes o pàgines
+web al català, o escriure&apos;n en aquest idioma, o que simplement hi té
+curiositat. 
+&lt;br&gt;&lt;br&gt;
+Softcatalà ha comptat amb el suport del Centre de Terminologia TERMCAT,
+entitat que s&apos;ha encarregat de revisar el contingut de la Guia d&apos;estil i
+suggerir-hi canvis i addicions</Descripcio>
+<Puntuacio>5</Puntuacio>
+</Programes>
+<Programes>
+<ID>111</ID>
+<Nom>Fitxer Lingüístic</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-05-20T00:00:00</Data>
+<URL1>fl.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1978282</Mida>
+<Autor>Universitat Politècnica de Catalunya</Autor>
+<ProgramWeb>http://www2.upc.es/slt/fl/criteris/presentacio.html</ProgramWeb>
+<Descripcio>El Fitxer Lingüístic (FL) és una publicació electrònica que difon criteris
+lingüístics i models de documents de la Universitat Politècnica de Catalunya.
+&lt;br&gt;
+&lt;br&gt;
+Es va començar a editar l&apos;any 1997 i, durant dos anys, se n&apos;ha fet una
+tramesa mensual de fitxes entre les persones que estan subscrites a la
+seva llista de distribució. Simultàniament, les fitxes s&apos;han anat
+publicant a Internet.
+&lt;br&gt;
+&lt;br&gt; 
+Un cop aplegades les 50 primeres fitxes sobre diferents aspectes de la
+llengua, l&apos;any 2000 hem renovat l&apos;FL. Hi hem
+inclòs nous apartats, hi n&apos;hem incorporat noves eines de consulta, de cerca
+d&apos;informació i de navegació i hem fet un nou disseny.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>112</ID>
+<Nom>Music Time</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-07-12T00:00:00</Data>
+<URL1>musictime.zip</URL1>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>4</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>850004</Mida>
+<Autor>Music Time</Autor>
+<Descripcio>Amb MusicTime de Luxe qualsevol pot composar els seus propis ritmes i
+escoltar-los sobre la marxa, afegir instruments i imprimir la partitura.
+És un programa molt útil per a la creació musical, es pot connectar a
+dispositius externs i és realment senzill d&apos;utilitzar.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Atenció: Aquest programa no funciona sobre Windows XP&lt;/b&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>musict.jpg</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>113</ID>
+<Nom>MegaFact2000</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-07-12T00:00:00</Data>
+<URL1>megafact2000.zip</URL1>
+<Plataforma>1</Plataforma>
+<Categoria>3</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 34.000 pessetes)</Preu>
+<Mida>12311211</Mida>
+<Autor>MegaTro</Autor>
+<ProgramWeb>http://www.megatro.com</ProgramWeb>
+<Descripcio>Programa de gestió per a Windows
+multiempresa, multiusuari i xarxa
+facturació, rebuts, estocs, TPV
+magatzems, articles, clients, proveïdors
+facilitat d&apos;ús.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>megaf.jpg</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>114</ID>
+<Nom>XnView</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2001-07-12T00:00:00</Data>
+<URL1>xnview.exe</URL1>
+<Versio>1.21</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2121231</Mida>
+<Autor>Xnview</Autor>
+<ProgramWeb>http://www.xnview.com/</ProgramWeb>
+<Descripcio>L&apos;XNview us permet visualitzar i convertir els vostres fitxers d&apos;imatge.
+&lt;br&gt;&lt;br&gt;
+Amb l&apos;XNview podeu treballar amb 110 formats de fitxer, incloent BMP,
+GIF, IFF, JPG, PNG, RGB, TDI i TGA, i posa a la vostra disposició
+diversos filtres (difuminació, relleus, etc.) i efectes (de lent, ones,
+etc.)
+&lt;br&gt;&lt;br&gt;
+Inclou una funció de presentació de diapositives, una eina d&apos;exploració
+d&apos;imatges i una utilitat per a captures de pantalla. També podeu
+augmentar i reduir el zoom de les imatges, copiar-les al porta-retalls,
+capgirar-les i canviar-ne la mida, ja sigui individualment o de manera
+simultània.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>xnview.jpg</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>115</ID>
+<Nom>Cartes du Ciel</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-09-14T00:00:00</Data>
+<URL1>cartes.exe</URL1>
+<Versio>2.61</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>3</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>3371212</Mida>
+<Autor>Patrick Chevalley</Autor>
+<ProgramWeb>http://www.astrosurf.com/astropc/cartes</ProgramWeb>
+<Descripcio>Cartes du Ciel és un magnífic atlas del cel. En la versió bàsica inclou unes 
+9000 estrelles però es pot ampliar a moltes més adquirint nous catàlegs. 
+Una eina molt bona per a astrònoms afeccionats.
+&lt;br&gt;
+Nota: la instal·lació d&apos;aquest programa està en anglès, però tant aviat com
+acaba us donarà a escollir la llengua de treball, entre la que trobareu
+el català</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>astro.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>116</ID>
+<Nom>Anonymity Proxy</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2001-09-14T00:00:00</Data>
+<URL1>a4proxy.exe</URL1>
+<Versio>2.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1076021</Mida>
+<Autor>iNet Privacy</Autor>
+<ProgramWeb>http://www.inetprivacy.com/a4proxy/</ProgramWeb>
+<Descripcio>L&apos;Anonymity 4 Proxy és una eina indispensable per als usuaris que
+valoren la seva privacitat. Aquest programa, amb el qual podeu moure-us
+per Internet de manera anònima, inclou una base de dades amb centenars
+de servidors intermediaris anònims de tot el món, i us ajuda a
+escollir-ne el més ràpid per al lloc web que us interessa, al mateix
+temps que verifica el vostre nivell d&apos;anonimat. Podeu blocar les
+galetes, modificar les capçaleres de sol·licitud i examinar tota
+la informació que envia el vostre navegador, modificant-ne qualsevol
+part.
+&lt;br&gt;
+Les característiques avançades us permet ocultar als curiosos la vostra
+presència a Internet de manera activa, generar una adreça IP falsa,
+blocar o modificar qualsevol informació (incloent les galetes) que envia
+el vostre navegador, i compartir la connexió anònima a Internet amb
+altres usuaris d&apos;una xarxa local. 
+&lt;br&gt;
+Nota: La instal·lació d&apos;aquesta aplicació està en anglès. Un cop
+instal·lada, per activar la versió en català aneu al menú Options, trieu
+l&apos;opció Language, i seleccioneu &quot;Catalan&quot;.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>proxy.gif</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>117</ID>
+<Nom>Ara</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2000-12-19T00:00:00</Data>
+<URL1>ara.zip</URL1>
+<Versio>2.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu 8.000 pessetes)</Preu>
+<Mida>15223064</Mida>
+<Autor>Ara autotrad</Autor>
+<ProgramWeb>http://www.ara-autotrad.com/</ProgramWeb>
+<Descripcio>Programa de traducció automàtica del castellà al català de gran qualitat i d&apos;ús
+senzill per l&apos;usuari. Ara pot obrir documents de Word 97 o Word 2000,
+respectant-ne totalment el format. També pot obrir documents de Word 6, sempre que tingui
+instal·lat aquest programa a l&apos;ordinador. Obre també, a més a més, sense cap problema,
+documents amb format RTF,TXT o HTM.
+&lt;br&gt;&lt;br&gt;
+ 
+Ara disposarà d&apos;un processador de textos, senzill de manejar i que li permetrà satisfer 
+la majoria de les seves necessitats d&apos;edició de textos. Incorpora funcions per a edició, 
+format, inserció (de text, imatges, objectes), taules, etc.
+&lt;br&gt;&lt;br&gt;
+
+Disposa d&apos;un programador de traduccions amb el qual vostè pot marcar diversos documents 
+per tal que siguin traduïts de forma automàtica pel programa, sense requerir la seva presència. 
+El programa desa els documents traduïts. Vostè pot comprovar en qualsevol moment en quin estat 
+es troben les tasques de traducció i revisar els documents traduïts.
+Programa de traducció automàtica del castellà al català de gran qualitat i d&apos;ús
+senzill per l&apos;usuari. Ara pot obrir documents de Word 97 o Word 2000,
+respectant-ne totalment el format. També pot obrir documents de Word 6, sempre que tingui
+instal·lat aquest programa a l&apos;ordinador. Obre també, a més a més, sense cap problema,
+documents amb format RTF,TXT o HTM.
+&lt;br&gt;&lt;br&gt;
+Atenció: Aquesta és una versió demo del programa, la versió completa costa
+8.000 pessetes. Aquesta versió no permet desar els documents, ni imprimir-los
+i sol funciona durant 30 dies després de la instal·lació.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>ara.jpg</Imatge>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<URLMirror>/populars/ara.zip</URLMirror>
+</Programes>
+<Programes>
+<ID>119</ID>
+<Nom>WordCorrect Valencià</Nom>
+<vilaweb>1</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>1999-08-20T00:00:00</Data>
+<URL1>wcpcva10.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu 12000 ptes)</Preu>
+<Mida>3002383</Mida>
+<Autor>DGC</Autor>
+<ProgramWeb>http://www.market-way.net/wordcorrect/</ProgramWeb>
+<Descripcio>WordCorrect Valencià és la versió per al valencià del conegut paquet de
+correcció ortogràfica. Reconeix totes las particularitats d&apos;aquesta variant
+dialèctica.
+
+WordCorrect és un programa independent a l&apos;editor de textos, de manera
+que el mateix corrector es pot utilitzar en els diferents editors instal·lats
+al vostre ordinador, incloent-hi el Microsoft Word 6.0, 7.0 (Office 95) i 8
+(Office 97), WordPerfect 5.2, 6.x, WordPerfect 8 (Suite 8),  Lotus AmiPro 3.x, 
+Claris Works i QuarkXPress (per a la versió professional del WordCorrect). El
+WordCorrect s&apos;incorpora al vostre editor mitjançant una barra d&apos;eines des d&apos;on es pot accedir a
+l&apos;aplicació, o també des del menú de les eines oferint les funcions de
+corrector, diccionari i sinònims.
+
+&lt;p&gt;WordCorrect és l&apos;únic corrector ortogràfic i gramatical de català, que
+especifica l&apos;errada comesa, mostra les alternatives i s&apos;associa a una Ajuda Gramatical que
+conté la norma gramatical a aplicar per a cada errada detectada.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Aquesta versió de demostració permet fer servir totes les opcions, tret de la substitució. L&apos;empresa que va crear el programa ha fet fallida, i resulta impossible aconseguir-ne una versió completa amb la funció de substitució habilitada. &lt;/b&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<AutorTraduccio>Market Way</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>121</ID>
+<Nom>Metapad</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-03-25T00:00:00</Data>
+<URL1>metapad.zip</URL1>
+<Versio>3.5RC2</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>95232</Mida>
+<Autor>Alexander Davidson</Autor>
+<ProgramWeb>http://liquidninja.com/metapad/</ProgramWeb>
+<Descripcio>El Metapad és un petit i ràpid editor de textos, totalment gratuït, amb
+característiques similars a les del Bloc de notes de Microsoft, però amb
+moltes (i força útils) funcions addicionals. Ha estat dissenyat per
+reemplaçar completament el Bloc de notes, atès que n&apos;inclou totes les
+funcions i moltes, moltes més.
+&lt;br&gt;
+&lt;br&gt;
+Algunes de les seves funcions són: col·locació persistent de finestres,
+avís de fitxers &quot;bruts&quot;, Cerca i Reemplaça intel·ligent, compatibilitat
+amb visualitzadors externs (com per exemple un navegador), tabulacions
+configurables, mode de sagnat automàtic, compatibilitat amb fitxers de
+text UNIX &quot;sense costures&quot;, sagnat de blocs i anul·lació del mateix
+(Tab, Maj+Tab), compatibilitat amb hiperenllaços, i altres. 
+&lt;br&gt;
+&lt;br&gt;
+Per activar l&apos;idioma català heu d&apos;anar al menú principal de l&apos;aplicació;
+des d&apos;allà, aneu a Options-&gt;Settings-&gt;Advanced 2-&gt;Language Pluggin i
+escolliu el fitxer mpad35_CAT_1.dll, que és el que conté l&apos;idioma
+català.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>metapad.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>122</ID>
+<Nom>BSPlayer</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-04-04T00:00:00</Data>
+<URL1>bsplayer.zip</URL1>
+<Versio>1.00</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>863211</Mida>
+<Autor>Ferreret</Autor>
+<ProgramWeb>http://www.bsplayer.org/</ProgramWeb>
+<Descripcio>EL BSPlayer és un dels millors reproductors de DivX del moment. És 
+ràpid, fiable, i inclou un munt de pràctiques opcions que fan que la 
+reproducció d&apos;aquesta mena de vídeos sigui d&apos;allò més còmoda.
+&lt;br&gt;
+&lt;br&gt;
+Algunes de les característiques més importants del BSPlayer són:
+&lt;br&gt; 
+Aspecte totalment modificable (mitjançant aparences [skins])
+&lt;br&gt;
+Possibilitat de mostrar subtítols
+&lt;br&gt;
+Reprodueix fitxers AVI, MPG, ASF, WMV, WAV, MP3...
+&lt;br&gt;
+És multilingüe (permet treballar en més de vint idiomes)
+&lt;br&gt; 
+Mida de finestra ajustable (fins i tot amb la roda del ratolí)
+&lt;br&gt; 
+Arrossega el fitxer directament sobre la seva interfície
+&lt;br&gt;
+Captura qualsevol fotograma amb un resultat espectacular
+&lt;br&gt;
+Llista de reproducció de fitxers
+&lt;br&gt;
+Menú amb els vídeos que s&apos;han reproduït més recentment
+&lt;br&gt;
+Permet l&apos;ús de fitxers AVI amb diverses bandes d&apos;àudio simultànies
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Requisits: DirectX 7 o superior.&lt;/b&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>123</ID>
+<Nom>MPEG Audio</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-04-18T00:00:00</Data>
+<URL1>mac.exe</URL1>
+<Versio>2.82</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1200128</Mida>
+<Autor>Jurgel Faul</Autor>
+<ProgramWeb>http://www.jfaul.de/</ProgramWeb>
+<Descripcio>Aquest programa s&apos;ha dissenyat per organitzar la vostra col·lecció de
+fitxers d&apos;àudio. Ràpid i senzill d&apos;utilitzar, explora les unitats
+seleccionades i en localitza els fitxers MPA, MP2 i MP3; després, en fa
+una relació amb una interfície en forma d&apos;arbre tipus Explorador del
+Windows. Només cal seleccionar un fitxer per saber-ne la mida, els bits
+per segon, la llargada, la velocitat de mostra i el mode de canal. Feu 
+doble clic sobre el fitxer per reproduir-lo amb la seva aplicació 
+associada (probablement Windows Media Player o Winamp). També permet 
+realitzar cerques i crear llistes de peces, i inclou un editor 
+d&apos;etiquetes MP3.</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>124</ID>
+<Nom>Barra d&apos;eines de Google</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-06-06T00:00:00</Data>
+<URL1>http://toolbar.google.com/intl/ca/</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>500212</Mida>
+<Autor>Google</Autor>
+<ProgramWeb>http://www.google.com</ProgramWeb>
+<Descripcio>La barra d&apos;eines de Google incrementa les possibilitats de trobar informació des d&apos;arreu d&apos;Internet i només triga uns segons a instal·lar-se. Es tracta d&apos;una extensió per a Internet Explorer que un cop instal·lada apareix amb les barres d&apos;eines. Això vol dir que pots fer cerques al Google de manera fàcil i ràpida sense abandonar la pàgina que estiguis visitant. La barra ofereix els següents serveis:
+&lt;br&gt;
+&lt;br&gt;
+    * Cerca amb Google: accedeix a la tecnologia de recerca de Google des de qualsevol pàgina.
+&lt;br&gt;
+    * Busca dins el lloc: cerca només les pàgines dins el lloc que estàs visitant.
+&lt;br&gt;
+    * PageRank: mira el lloc de la pàgina en el rànquing de Google.
+&lt;br&gt;
+    * Informació de la pàgina: accedeix a més informació sobre la pàgina incloent-hi pàgines similars, pàgines que hi enllacen i captures de pantalla emmagatzemades.
+&lt;br&gt;
+    * Destacament: destaca els termes de recerca que has introduït quan apareixen en aquesta pàgina, cada paraula en un color.
+&lt;br&gt;
+* Recerca de mots: troba els termes de recerca que has introduit dins aquesta pàgina.
+&lt;br&gt;
+&lt;br&gt;
+Pots personalitzar el format la barra d&apos;eines Google mitjançant la pàgina d&apos;opcions. D&apos;aquesta manera, pots incloure-hi funcions, com per exemple el botó &quot;Avui tinc sort!&quot;, així com els botons de cerca de Grups Google i els d&apos;Imatges. Si encara no n&apos;esteu convençuts, feu un cop d&apos;ull a la pàgina d&apos;ajuda per a una descripció ben detallada de totes les funcions de la barra d&apos;eines Google.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Requeriments del Sistema
+&lt;br&gt;
+&lt;br&gt;
+* Microsoft Windows 95/98/ME/NT/2000/XP
+&lt;br&gt;
+* Versió 5 o superior de Microsoft Internet Explorer
+&lt;br&gt;
+&lt;/b&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>google.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>125</ID>
+<Nom>SlowView</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-06-06T00:00:00</Data>
+<URL1>slowview.exe</URL1>
+<Versio> 0.9.9.5</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1500212</Mida>
+<Autor>SlowView</Autor>
+<ProgramWeb>http://www.slowview.at/</ProgramWeb>
+<Descripcio>Programa de visualització de gràfics d&apos;ús molt senzill i ràpid. Permet seqüenciar el mostreig d&apos;imatges, navegar per directoris, i fer conversions en lots de grups d&apos;imatges. Suporta, entre d&apos;altres, els formats  MP3, AVI, MPEG, ASF, WMA, MNG, PNG, (animated)GIF, JPG, BMP, TGA, PSD, SGI. És força configurable i d&apos;aparença molt agradable.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;
+Nota: el procés d&apos;instal·lació del programa és en anglès. Un cop instal·lat, hem d&apos;executar-lo i anar a l&apos;opció &apos;Tools&apos;, triar l&apos;opció &apos;Set Language&apos;, i finalment seleccionar &apos;Valencià&apos;.
+&lt;/b&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>slowview.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>126</ID>
+<Nom>Open Office</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2002-06-06T00:00:00</Data>
+<URL1>oo-ca-11.zip</URL1>
+<Versio>1.1</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>7</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>64553000</Mida>
+<Autor>Open Office</Autor>
+<ProgramWeb>http://www.openoffice.org</ProgramWeb>
+<Descripcio>L&apos;OpenOffice és la versió de programari lliure (sota la llicència GPL) del conegut paquet ofimàtic  Star Office, propietat de Sun Microsystems. 
+&lt;br&gt;
+&lt;br&gt;
+L&apos;OpenOffice.org 1.1 us dóna tot el que esperaríeu d&apos;un paquet ofimàtic
+i, a més a més, en català. Amb ell podeu crear documents dinàmics, analitzar
+dades, dissenyar agradables presentacions i produir dibuixos
+espectaculars.
+&lt;br&gt;
+&lt;br&gt;
+L&apos;OpenOffice 1.1 us dóna les llibertats següents:
+&lt;br&gt;
+&lt;br&gt;
+. Sense drets de llicència; mai no haureu de comprar una llicència o
+pagar una altra actualització.
+&lt;br&gt;
+&lt;br&gt;
+. Llibertat per treballar com ho feu normalment, i en
+català. Us sentireu còmodes en utilitzar-lo, i el podreu fer servir amb
+els vostres antics fitxers del Microsoft Office. Corrector ortogràfic
+en català, castellà, anglès i francès.
+&lt;br&gt;
+&lt;br&gt;
+. Llibertat d&apos;usar-lo gratuïtament on vulgueu: les empreses poden
+donar-lo als treballadors per tal que l&apos;usin a casa; les escoles el poden
+donar als seus alumnes; les empreses informàtiques el poden instal·lar en els ordinadors nous.
+&lt;br&gt;
+&lt;br&gt;
+. Llibertat per intercanviar fitxers amb la gent que encara treballa
+amb els programes de Microsoft Office; ells mai no sabran que heu trobat
+la llibertat si no és que els ho dieu.
+&lt;br&gt;
+&lt;br&gt;
+. Llibertat per escollir l&apos;ordinador amb el que voleu treballar:
+sistemes amb el típic Windows, Sun Solaris o la nova generació de
+sistemes GNU/Linux.
+&lt;br&gt;
+&lt;br&gt;
+L&apos;OpenOffice inclou els següents mòduls:
+&lt;br&gt;
+&lt;br&gt;
+El WRITER és una potent eina per crear documents professionals,
+informes, butlletins de notícies i fullets. Podeu integrar fàcilment
+imatges i esquemes en els documents i crear des de cartes de
+negocis fins a llibres sencers amb esquemes professionals, així com
+crear i publicar continguts per a llocs web.
+&lt;br&gt;
+&lt;br&gt;
+El CALC és un complet gestor de fulls de càlcul amb una presentació agradable
+de les dades. Calcula, analitza i visualitza les vostres dades d&apos;una
+forma ràpida i fàcil. Utilitza funcions avançades per realitzar
+anàlisis de dades sofisticades i eines de construcció
+d&apos;esquemes per generar esquemes excepcionals en 2D i 3D. Útil per a estudiants,
+clients, amics...
+&lt;br&gt;
+&lt;br&gt;
+L&apos;IMPRESS és el camí més ràpid i potent per crear presentacions
+multimèdia efectives. Les vostres presentacions ressaltaran
+d&apos;allò més amb els efectes especials d&apos;animació i les impactants eines de
+dibuix.
+&lt;br&gt;
+&lt;br&gt;
+Amb el DRAW realitzareu tota mena de gràfics, des de diagrames senzills fins a dibuixos en 3D i efectes especials.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>openoffice.jpg</Imatge>
+<Projecte>http://www.softcatala.org/projectes/openoffice/</Projecte>
+<URLMirror>/openoffice/1.1/win32/oo-ca-11.zip</URLMirror>
+</Programes>
+<Programes>
+<ID>127</ID>
+<Nom>Models per a AMPA</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-06-06T00:00:00</Data>
+<URL1>ampa.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>242000</Mida>
+<Autor>CPNL</Autor>
+<ProgramWeb>http://www.cpnl.org</ProgramWeb>
+<Descripcio>El manual de documents per a les Associacions de Mares i Pares d’Alumnes
+(AMPA) s’adreça a tots els pares i mares que formen part d’una AMPA i que es
+troben amb la necessitat de redactar cartes, estendre rebuts, etc. amb la
+voluntat de posar-los a l’abast eines que els facilitin la seva tasca.
+&lt;br&gt;
+&lt;br&gt;
+El fitxer conté 23 models de documents amb exemples, recomanacions d’ús i un
+recull d’enllaços d’interès, i és el resultat del treball iniciat l&apos;any 1994
+pel Consorci per a la Normalització Lingüística www.cpnl.org, revisat i
+actualitzat a partir de les aportacions de les AMPA amb què s&apos;ha
+col·laborat.</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>128</ID>
+<Nom>TeeTree Office</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-06-06T00:00:00</Data>
+<URL1>TeeTreeOffice.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1200124</Mida>
+<Autor>Steema</Autor>
+<ProgramWeb>http://www.steema.com/products/TeeTreeOffice/spanish/</ProgramWeb>
+<Descripcio>Eina gratuïta per a la creació de presentacions, diagrames de flux i animacions a l&apos;estil &apos;Flash&apos;. Permet fer servir tot tipus de tipus de lletra, colors, farcits, polígons i imatges. Inclou la possibilitat d&apos;exportar els nostres dissenys en formats jpeg / jpg, png, gif, pcx, vml, bmp, wmf, emf.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;
+Nota: el programa no inclou instal·lació. Heu de descomprimir el fitxer en un directori i executar-lo des d&apos;allà mateix cada cop.  Un cop funcionat, hem d&apos;executar-lo i anar a l&apos;opció &apos;Tools&apos;, triar l&apos;opció &apos;Language&apos;, i finalment seleccionar &apos;Català&apos;.
+&lt;/b&gt;</Descripcio>
+<Puntuacio>3</Puntuacio>
+<Imatge>tee.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>129</ID>
+<Nom>Paquet català per al Windows XP</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-06-27T00:00:00</Data>
+<URL1>LIPsetup.msi</URL1>
+<Versio>2.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2889201</Mida>
+<Autor>Microsoft Barcelona</Autor>
+<ProgramWeb>http://www.microsoft.com/spain/windowsxp/catalan/</ProgramWeb>
+<Descripcio>Aquest pedaç, realitzat per Microsoft, permet una traducció parcial del
+Windows XP Professional al català. Un cop instal·lat, trobarem que els
+principals elements de la interfície d&apos;usuari estan traduïts, incloent-hi el
+panell de control, l&apos;Internet Explorer 6.0, el Microsoft OutLook, i pràcticament
+totes les eines habituals que podem fer servir durant una sessió normal d&apos;ús
+del Microsoft Windows XP.
+&lt;br&gt;
+&lt;br&gt;
+El pedaç, un cop instal·lat, es pot desinstal·lar sense cap mena de problema
+i deixa el sistema tal com el teníem abans d&apos;instalar-lo, i és compatible
+amb totes les aplicacions que tinguem ja instal·lades.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt; 
+Atenció: Aquest pedaç NOMÉS funciona sobre el Windows XP Professional i Home en
+espanyol. No funciona sobre versions entre altres llengues (anglès, per
+exemple)  altres versions anteriors de Windows (95, 98, Me, 2000 o NT 4.0).
+&lt;/b&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>winxp.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>130</ID>
+<Nom>Abiword</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2002-07-12T00:00:00</Data>
+<URL1>setup_abiword.exe</URL1>
+<Versio>2.06</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>7</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>6899725</Mida>
+<Autor>AbiWord</Autor>
+<ProgramWeb>http://www.abisource.com</ProgramWeb>
+<Descripcio>L&apos;AbiWord és un processador de textos que té un aspecte semblant al Microsoft Word però que és lliure i molt més lleuger. 
+&lt;br&gt;&lt;br&gt;
+L&apos;AbiWord ofereix un munt de funcions per a processament de textos; inclou totes les opcions habituals de formatatge de caràcters, alineament de paràgrafs, regles, tabulacions, etc. S&apos;hi poden utilitzar tipus de lletra TrueType, &quot;refés&quot; il·limitats i imatges del disc dur. A més del format propi de l&apos;AbiWord, el programa pot obrir els
+formats del Word, de text enriquit (Rich Text) i de text senzill. Amb l&apos;excepció del format de Word, es poden desar els documents en els mateixos formats, incloent l&apos;HTML.
+&lt;br&gt;&lt;br&gt;
+Si necessiteu un programa de processament de textos, bàsic però efectiu, l&apos;AbiWord és una gran elecció. Per descomptat, no té totes les funcions del Word, però això no té per què ser necessàriament un problema. Aniran apareixent noves versions de l&apos;AbiWord, de manera que tingueu-ne aquesta en compte.
+&lt;br&gt;&lt;br&gt;
+La versió 2.0 inclou importants novetats com taules, notes a peu de pàgina, notes al final del document, suport per teclats internacionals, millores en els filtres d&apos;importació i exportació de documents i una interfície d&apos;usuari força millorada. 
+&lt;br&gt;&lt;br&gt;
+La versió en català inclou corrector ortogràfic en català, castellà, francès i anglès.
+&lt;br&gt;&lt;br&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>abiword.jpg</Imatge>
+<Projecte>http://www.softcatala.org/projectes/abiword/</Projecte>
+<URLMirror>/abiword/2.06/win32/setup_abiword.exe</URLMirror>
+</Programes>
+<Programes>
+<ID>133</ID>
+<Nom>Guia del Winzip</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-08-04T00:00:00</Data>
+<URL1>winzip.pdf</URL1>
+<Versio>1.00</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>9</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>98774</Mida>
+<Autor>Joan Sebarroja</Autor>
+<ProgramWeb>http://www.sebarroja.com</ProgramWeb>
+<Descripcio>Guia de referència, en format PDF, per instal·lar i usar el Winzip, un programa compresor i descompressor de fitxers. Un cop impresa, es pot doblegar per fer-ne un tríptic.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+</Programes>
+<Programes>
+<ID>134</ID>
+<Nom>PP MailCheck</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-08-05T00:00:00</Data>
+<URL1>mailck.exe</URL1>
+<Versio>1.5</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1556066</Mida>
+<Autor>PP Soft</Autor>
+<ProgramWeb>http://www.ppsoft.dk/Mailcheck_catalan.htm</ProgramWeb>
+<Descripcio>Amb el PP MailCheck podeu gestionar fàcilment el correu electrònic directament en el servidor POP3, atès que us permet previsualitzar els missatges del servidor i eliminar directament aquells que no us voleu baixar amb el vostre client de correu habitual.
+&lt;br&gt;&lt;br&gt;
+El PP MailCheck disposa de diverses opcions per informar-vos sobre els missatges rebuts nous; podeu programar un avís emergent, un globus o un avís sonor. L&apos;avís emergent no solament us avisarà que heu rebut un missatge, sinó que també us dirà qui l&apos;envia i de quin assumpte es tracta.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>mailcheck.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>135</ID>
+<Nom>Ircap</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-08-05T00:00:00</Data>
+<URL1>ircap-cat.exe</URL1>
+<Versio>7.2</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>429252</Mida>
+<Autor>Ircap</Autor>
+<ProgramWeb>http://www.ircap.net/</ProgramWeb>
+<Descripcio>Sense cap mena de dubte, una de les millors seqüències per al mIRC que
+es poden trobar avui dia en català. L&apos;aspecte de protecció està molt ben
+cuidat, i convé destacar els detectors de missatges d&apos;atac i ICMP, molt
+útils per als usuaris novells. D&apos;altra banda, la part estètica s&apos;ha
+tractat molt bé; la seva interfície gràfica és impressionant, amb un
+sistema d&apos;aparences que fa que el mIRC clàssic esdevengui una simple
+finestra per a textos.
+&lt;br&gt;&lt;br&gt;&lt;b&gt;
+Nota: per poder utilitzar aquesta seqüència cal tenir instal·lat el mIRC
+6.01 o superior, que trobareu en anglès a 
+&lt;a href=&quot;http://www.mirc.com&quot;&gt;aquí&lt;/a&gt;&lt;/b&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Descripcio_x0020_coregitda>1</Descripcio_x0020_coregitda>
+<AutorTraduccio>AlrSoft</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>136</ID>
+<Nom>Open Office per a Linux</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2002-08-05T00:00:00</Data>
+<URL1>oo-ca-11.tar.gz</URL1>
+<Versio>1.1</Versio>
+<Plataforma>5</Plataforma>
+<Categoria>10</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>88882212</Mida>
+<Autor>Open Office</Autor>
+<ProgramWeb>http://www.openoffice.org</ProgramWeb>
+<Descripcio>L&apos;OpenOffice és la versió de programari lliure (sota la llicència GPL) del conegut paquet ofimàtic  Star Office, propietat de Sun Microsystems. 
+&lt;br&gt;
+&lt;br&gt;
+L&apos;OpenOffice.org 1.1 us dóna tot el que esperaríeu d&apos;un paquet ofimàtic
+i, a més a més, en català. Amb ell podeu crear documents dinàmics, analitzar
+dades, dissenyar agradables presentacions i produir dibuixos
+espectaculars.
+&lt;br&gt;
+&lt;br&gt;
+L&apos;OpenOffice 1.1 us dóna les llibertats següents:
+&lt;br&gt;
+&lt;br&gt;
+. Sense drets de llicència; mai no haureu de comprar una llicència o
+pagar una altra actualització.
+&lt;br&gt;
+&lt;br&gt;
+. Llibertat per treballar com ho feu normalment, i en
+català. Us sentireu còmodes en utilitzar-lo, i el podreu fer servir amb
+els vostres antics fitxers del Microsoft Office. Corrector ortogràfic
+en català, castellà, anglès i francès.
+&lt;br&gt;
+&lt;br&gt;
+. Llibertat d&apos;usar-lo gratuïtament on vulgueu: les empreses poden
+donar-lo als treballadors per tal que l&apos;usin a casa; les escoles el poden
+donar als seus alumnes; les empreses informàtiques el poden instal·lar en els ordinadors nous.
+&lt;br&gt;
+&lt;br&gt;
+. Llibertat per intercanviar fitxers amb la gent que encara treballa
+amb els programes de Microsoft Office; ells mai no sabran que heu trobat
+la llibertat si no és que els ho dieu.
+&lt;br&gt;
+&lt;br&gt;
+. Llibertat per escollir l&apos;ordinador amb el que voleu treballar:
+sistemes amb el típic Windows, Sun Solaris o la nova generació de
+sistemes GNU/Linux.
+&lt;br&gt;
+&lt;br&gt;
+L&apos;OpenOffice inclou els següents mòduls:
+&lt;br&gt;
+&lt;br&gt;
+El WRITER és una potent eina per crear documents professionals,
+informes, butlletins de notícies i fullets. Podeu integrar fàcilment
+imatges i esquemes en els documents i crear des de cartes de
+negocis fins a llibres sencers amb esquemes professionals, així com
+crear i publicar continguts per a llocs web.
+&lt;br&gt;
+&lt;br&gt;
+El CALC és un complet gestor de fulls de càlcul amb una presentació agradable
+de les dades. Calcula, analitza i visualitza les vostres dades d&apos;una
+forma ràpida i fàcil. Utilitza funcions avançades per realitzar
+anàlisis de dades sofisticades i eines de construcció
+d&apos;esquemes per generar esquemes excepcionals en 2D i 3D. Útil per a estudiants,
+clients, amics...
+&lt;br&gt;
+&lt;br&gt;
+L&apos;IMPRESS és el camí més ràpid i potent per crear presentacions
+multimèdia efectives. Les vostres presentacions ressaltaran
+d&apos;allò més amb els efectes especials d&apos;animació i les impactants eines de
+dibuix.
+&lt;br&gt;
+&lt;br&gt;
+Amb el DRAW realitzareu tota mena de gràfics, des de diagrames senzills fins a dibuixos en 3D i efectes especials.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Projecte>http://www.softcatala.org/projectes/openoffice/</Projecte>
+<URLMirror>/openoffice/1.1/linux/oo-ca-11.tar.gz</URLMirror>
+</Programes>
+<Programes>
+<ID>138</ID>
+<Nom>Navegador</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2002-08-05T00:00:00</Data>
+<URL1>ns47caR4_unix.tar.gz</URL1>
+<Versio>4.7</Versio>
+<Plataforma>5</Plataforma>
+<Categoria>10</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>550212</Mida>
+<Autor>Netscape</Autor>
+<ProgramWeb>http://www.netscape.com</ProgramWeb>
+<Descripcio>El Navegador en català 4.7 és la nova versió del popular navegador de la
+casa Netscape que us permetrà explorar els continguts d&apos;Internet, enviar
+i rebre correu electrònic, consultar i participar en els fòrums de
+notícies i crear les vostres pàgines web; ara podeu fer tot això en
+català i d&apos;una manera senzilla, intuïtiva i eficaç que pretén aprofitar
+al màxim les possibilitats actuals que ens ofereix Internet. Els usuaris
+habituals de versions anteriors podreu comprovar que aquesta ofereix
+noves opcions i que és plenament configurable; també notareu importants
+millores en el programa de gestió del correu.
+&lt;br&gt;
+&lt;br&gt;
+El Navegador en català integra les mateixes funcions que el Netscape 4.7
+i ha estat homologat per la mateixa casa Netscape, amb qui Softcatalà ha
+estat en contacte permanent durant el procés d&apos;adaptació al català per
+tal de poder-ne obtenir la seva homologació.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;
+Instal·lació:&lt;/b&gt; Podeu instal·lar el Navegador per a Unix sobre la vostra versió actual del 
+Navegador, si no el teniu us caldrà descarregar el producte complet des del 
+servidor &lt;a href=&quot;ftp://ftp.netscape.com/pub/communicator&quot;&gt;ftp de Netscape&lt;/a&gt;. 
+L&apos;actualització al català conté el programa traduït, la documentació, el corrector 
+ortogràfic i un script d&apos;instal·lació.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Projecte>http://www.softcatala.org/projectes/navegador/</Projecte>
+<URLMirror>/navegador/4.7/unix/r4/ns47caR4_unix.tar.gz</URLMirror>
+</Programes>
+<Programes>
+<ID>139</ID>
+<Nom>Paquet català per al Mozilla</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2002-08-08T00:00:00</Data>
+<URL1>mozilla-1.7.3-langpack-caAD.xpi</URL1>
+<Versio>1.73</Versio>
+<Plataforma>5</Plataforma>
+<Categoria>10</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>565952</Mida>
+<Autor>Mozilla</Autor>
+<ProgramWeb>http://www.mozilla.org</ProgramWeb>
+<Descripcio>Mozilla és la nova versió del popular navegador que us permetrà explorar els continguts d&apos;Internet, enviari rebre correu electrònic, consultar i participar en els fòrums de
+notícies i crear les vostres pàgines web; ara podeu fer tot això en
+català i d&apos;una manera senzilla, intuïtiva i eficaç que pretén aprofitar
+al màxim les possibilitats actuals que ens ofereix Internet. Els usuaris
+habituals de versions anteriors podreu comprovar que aquesta ofereix
+noves opcions i que és plenament configurable; també notareu importants
+millores en el programa de gestió del correu.
+&lt;br&gt;&lt;br&gt;
+Aquesta darrera versió introdueix noves tecnologies, entre les quals cal destacar Gecko, el nou motor per
+mostrar pàgines web, que pot treballar amb els estàndards HTML 4, CSS-1,
+XML, RDF, JavaScript/EcmaScript i DOM. Aquest nou motor és molt més ràpid 
+i eficaç que l&apos;anterior. 
+&lt;br&gt;&lt;br&gt;
+El Mozilla inclou un nou gestor de contrasenyes que manté de forma
+centralitzada i segura tots els detalls dels nostres noms d&apos;usuari i
+claus d&apos;accés. També inclou el gestor de galetes, que permet tenir
+control sobre quines galetes tenim al sistema, millorant d&apos;aquesta
+manera la seguretat i privadesa dels usuaris. Una altra de les novetats 
+és la possibilitat de gestionar més d&apos;una bústia de correu d&apos;una forma 
+còmoda i pràctica. 
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Instruccions per a instal·lar el paquet d&apos;idioma:&lt;/b&gt;obriu el fitxer ca.xpi amb el Mozilla a través de l&apos;opció Open File del menú File. El Mozilla detectarà automàticament que es tracta d&apos;un mòdul i l&apos;instal·larà. Tanqueu el Mozilla i torneu-lo a executar. Aneu a Preferences del menú Edita i seleccioneu Appearance. Escolliu el català com a idioma preferit. Tanqueu un altre cop el Mozilla i torneu-lo a executar.&lt;br&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Projecte>http://www.softcatala.org/projectes/mozilla/</Projecte>
+<URLMirror>/mozilla/1.7.3/langpack/mozilla-1.7.3-langpack-caAD.xpi</URLMirror>
+</Programes>
+<Programes>
+<ID>165</ID>
+<Nom>Biadix</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2004-02-22T00:00:00</Data>
+<URL1>ftp://ftp.softcatala.org/pub/knoppix/biadix/1.0/</URL1>
+<Versio>1.00</Versio>
+<Plataforma>5</Plataforma>
+<Categoria>10</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>668908000</Mida>
+<Autor>Knoppix/Biadix</Autor>
+<ProgramWeb>http://www.biada.org/</ProgramWeb>
+<Descripcio>La KNOPPIX és una distribució basada en Debian que és un &apos;Live-CD&apos; (és a dir, que arrenca directament des del CD i utilitza només el CD i la RAM) sense necessitat de fer particions al disc.
+&lt;br&gt;&lt;br&gt;
+La KNOPPIX es pot adaptar i usar com a suport de coneixement de Linux, com a eina educativa, com a sistema de rescat o com a plataforma comercial de demostració. No cal instal·lar res en el vostre PC, ja que el sistema de descompressió, de gairebé 2 gigabytes de programes, és transparent.
+&lt;br&gt;&lt;br&gt;
+Biadix és una personalització de Knoppix que ha estat adaptada al català per
+Antoni Mirabete i Eugeni Alonso, que han traduït tot el procés d&apos;arrancada. A
+més, inclou el KDE, l&apos;OpenOffice, el Mozilla i altres aplicacions completament
+en català.
+&lt;br&gt;&lt;br&gt;
+Podeu trobar informació detallada sobre com preparar el CD-ROM i sobre la Biadix en general &lt;a href=&quot;http://www.softcatala.org/articles/article32.htm&quot;&gt;en aquest article.&lt;/a&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>biadix-full.png</Imatge>
+<AutorTraduccio>Antoni Mirabete</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>142</ID>
+<Nom>Scalc</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-08-08T00:00:00</Data>
+<URL1>scalc_20_install.exe</URL1>
+<Versio>2.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>693865</Mida>
+<Autor>Jordi March Nogué</Autor>
+<ProgramWeb>http://www.aeic.es/softlliure.htm</ProgramWeb>
+<Descripcio>Calculadora que permet escriure les operacions que volem fer en una sola línia: així, podem veure i escriure, per exemple:
+(12*3)/sqr(pi)*cos(2) i podem repassar (i aquesta és la diferència amb les calculadores habituals) si la línia està ben teclejada.
+&lt;br&gt;
+&lt;br&gt;
+A més, s&apos;hi poden utilitzar un munt de funcions: totes les aritmètiques habituals, logarítmiques, trigonomètriques, valors aleatoris, opcions lògiques...
+&lt;br&gt;
+&lt;br&gt;
+També podem:
+&lt;br&gt;
+&lt;br&gt;
+* reduir-la per fer que ocupi una part mínima de la pantalla, tot desactivant el que no ens interessi;
+&lt;br&gt;
+* activar la opció en primer pla, és a dir, que quedi sempre visible per damunt de la resta de finestres;
+&lt;br&gt;
+* utilitzar fins a quatre variables, en comptes d&apos;haver de modificar directament la fórmula: així, es pot definir: sqr(a) + (a * b) + a i modificar directament les entrades de les variables;
+&lt;br&gt;
+* crear, desar i utilitzar fórmules matemàtiques i constants de qualsevol tipus. El programa en porta algunes, però qualsevol usuari pot afegir-ne tantes de noves com vulgui;
+&lt;br&gt;
+* obtenir dades estadístiques d&apos;una sèrie de valors (separats per espais): recompte, marges, mitja aritmètica, desviació estàndard i percentils, i ordenar aquesta sèrie.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>calc.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>143</ID>
+<Nom>Diccionari Ispell en català d&apos;Ignasi Labastida</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-08-08T00:00:00</Data>
+<URL1>ispellca.zip</URL1>
+<Versio>0.1</Versio>
+<Plataforma>5</Plataforma>
+<Categoria>10</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2533664</Mida>
+<Autor>Ignasi Labastida i Juan</Autor>
+<Descripcio>Diccionari català per al programa Ispell, versió 0.1. L&apos;arxiu català és
+una còpia de totes les paraules que componen el diccionari, extret d&apos;una
+llista original elaborada per en Joan Dolç, i compactada amb
+tots els afixos en l&apos;arxiu català. Totes les paraules del diccionari
+estan en format de text.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Actualment, aquest diccionari ha deixat d&apos;ésser actualitzat. &lt;/b&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>144</ID>
+<Nom>RegCleaner</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2002-08-16T00:00:00</Data>
+<URL1>regcleaner.exe</URL1>
+<Versio>4.3</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>505897</Mida>
+<Autor>Jouni Vuorio</Autor>
+<ProgramWeb>http://www.vtoy.fi/jv16/shtml/regcleaner.shtml</ProgramWeb>
+<Descripcio>Amb el RegCleaner us podeu deslliurar fàcilment de totes les entrades antigues i obsoletes del Registre del Windows, creades per aquells  programes que ja fa anys que vau eliminar.
+&lt;br&gt;
+&lt;br&gt;
+Les funcions clau inclouen: eliminació de tipus de fitxers, eliminació  d&apos;entrades de programes antics, desinstal·lació i eliminació de  programes de la llista Afegeix/Elimina programes, eliminació de fitxers  DLL que ja no s&apos;utilitzen, eliminació de DLL compartits que ja no  s&apos;utilitzen (es detecten automàticament), còpies de seguretat  automàtiques...
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;
+Per activar el català, aneu a Options-&gt;Language-&gt;Select Language i  escolliu el fitxer &quot;Catalan.rlg&quot;
+&lt;/b&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Imatge>reg.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>145</ID>
+<Nom>Gimp</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2002-10-14T00:00:00</Data>
+<URL1>gimp-1.2.4-ca.exe</URL1>
+<Versio>1.2.4</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>12360141</Mida>
+<Autor>Gimp.org</Autor>
+<ProgramWeb>http://www.gimp.org</ProgramWeb>
+<Descripcio>Es tracta d&apos;un programa de distribució lliure, extremadament potent i versàtil, adequat per a tasques com ara retoc fotogràfic o creació i disseny d&apos;imatges. Es pot utilitzar com a simple programa de dibuix, com a programa de retoc fotogràfic professional, com a sistema de processament massiu en línia, com a dissenyador massiu d&apos;imatges de producció, com a conversor de formats gràfics, etc.
+&lt;br&gt;
+&lt;br&gt;
+El GIMP és extremadament expansible i extensible; està dissenyat per poder ser ampliat mitjançant extensions per poder fer gairebé qualsevol cosa. L&apos;avançada interfície de seqüències permet seqüenciar fàcilment des de la tasca més simple als procediments de manipulació d&apos;imatge més complexos.
+&lt;br&gt;
+Característiques i funcions
+&lt;br&gt;
+&lt;br&gt;
+Aquesta és només una breu relació de les funcions del GIMP; no és més que la punta de l&apos;iceberg.
+&lt;br&gt;
+&lt;br&gt;
+    * Complet joc d&apos;eines de dibuix, incloent Pinzell, Llapis, Aerògraf, Clonador, etc.
+&lt;br&gt;
+    * Gestió de memòria basada en mosaic, de manera que la mida de la imatge només està limitada per l&apos;espai disponible al disc.
+&lt;br&gt;
+    * Mostreig de sub-píxels per a totes les eines de dibuix que permet un antidentat d&apos;alta qualitat
+&lt;br&gt;
+    * Utilització plena de canals alfa
+&lt;br&gt;
+    * Capes i canals
+&lt;br&gt;
+    * Base de dades de procediments per cridar les funcions internes del GIMP desde programes externs com en &quot;Script-Fu&quot;
+&lt;br&gt;
+    * Funcions avançades de seqüenciació
+&lt;br&gt;
+    * Desfés/Refés pràcticament il·limitats (limitats només per l&apos;espai del disc)
+&lt;br&gt;
+    * Les eines de transformació inclouen rotació, escala, retall i inversió
+&lt;br&gt;
+    * Reconeix els formats gràfics gif, jpg, png, xpm, tiff, tga, mpeg, ps, pdf, pcx, bmp, i molts d&apos;altres.
+&lt;br&gt;
+    * Carrega, visualitza, converteix i desa amb molts formats gràfics
+&lt;br&gt;
+    * Les eines de selecció inclouen rectangle, el·lipse, lliure, difosa, Bézier i intel·ligent
+&lt;br&gt;
+    * Extensions que permeten l&apos;addició senzilla de nous formats gràfics i nous filtres d&apos;efectes
+&lt;br&gt;
+&lt;br&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>gimp.jpg</Imatge>
+<Projecte>http://www.softcatala.org/projectes/gimp</Projecte>
+<URLMirror>/gimp/win32/1.2.4/gimp-1.2.4-ca.exe</URLMirror>
+</Programes>
+<Programes>
+<ID>146</ID>
+<Nom>Diccionari Ispell en català de Softcatalà</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>1</Softcatala>
+<Data>2002-10-19T00:00:00</Data>
+<URL1>ispell-sc-ca.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>5</Plataforma>
+<Categoria>10</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>1998231</Mida>
+<Autor>Joan Moratinos / Softcatalà</Autor>
+<ProgramWeb>http://www.mallorcaweb.net/jmo</ProgramWeb>
+<Descripcio>Corrector ortogràfic multiplataforma amb llicència de programari lliure que s&apos;utilitza
+actualment per a les versions catalanes de l&apos;Open Office, l&apos;Abiword,  el
+Mozilla i el sistema GNU/Linux, entre d&apos;altres. Aquest diccionari s&apos;ha adaptat amb
+èxit als motors de correció ortogràfica de l&apos;Ispell, el MySpell, i l&apos;Aspell.
+El fitxer inclou un diccionari compilat (.hash) i les regles i el
+vocabulari necessari per generar-lo.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Projecte>http://www.softcatala.org/projectes/myspell</Projecte>
+<URLMirror>/ispell/ispell-sc-ca.zip</URLMirror>
+</Programes>
+<Programes>
+<ID>148</ID>
+<Nom>Emule</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-12-11T00:00:00</Data>
+<URL1>eMule0.44b_Installer.exe</URL1>
+<Versio>0.44b</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>1203315</Mida>
+<Autor>Emule Project</Autor>
+<ProgramWeb>http://www.emule-project.net/</ProgramWeb>
+<Descripcio>L&apos;eMule és un nou programa de compartició de fitxers que es basa en la xarxa de l&apos;eDonkey2000, però que ofereix moltes més característiques que el programa eDonkey estàndard; a més, és programari lliure (llicència GPL).
+&lt;br&gt;&lt;br&gt;
+L&apos;eMule presenta les característiques més avançades dels programes de compartició de fitxers: permet compartir tot tipus de fitxers, aturar i reemprendre la descàrrega en qualsevol moment, descarregar des de diversos usuaris alhora, seleccionar usuaris, seleccionar l&apos;amplada de banda consumida... A més, un cop començada la descàrrega del fitxer, l&apos;usuari passa a compartir amb la resta de la comunitat el fragment del fitxer ja descarregat, la qual cosa incrementa enormement la disponibilitat d&apos;un fitxer. Assigna un únic identificador a fitxers iguals, la qual cosa permet incloure enllaços a aquests fitxers a les pàgines web, permetent així la creació d&apos;un servidor deslocalitzat.
+&lt;br&gt;&lt;br&gt;
+A més a més, l&apos;eMule permet enviar missatges entre els usuaris, iniciar sessions de xat i estadístiques de tot tipus: amplada de banda consumida en tot moment, demanda dels fitxers compartits per l&apos;usuari, nombre de bytes baixats i pujats de la xarxa.....
+&lt;br&gt;&lt;br&gt;
+La xarxa eDonkey2000, de la qual l&apos;eMule n&apos;es client, és una xarxa a mig camí entre les xarxes d&apos;un únic servidor central (Napster, Kazaa, iMesh...) i les xarxes sense servidors (Gnutelles, Morpheus...). Està integrada per múltiples servidors que els usuaris van creant i anul·lant amb el temps. Degut a aquesta característica, convé tenir una llista de servidors com més actualitzada millor. La forma més senzilla d&apos;aconseguir una llista de servidors actualitzada de l&apos;eMule és fer una cerca, per exemple al Google, de &quot;emule server list&quot;, sense les cometes, i afegir al programa la llista obtinguda (&quot;add to eMule&quot;) amb l&apos;eMule funcionant.
+&lt;br&gt;&lt;br&gt;
+Nota: el procés d&apos;instal·lació no és en català. Si teniu activat el català com a configuració regional del Windows, el programa la detectarà en executar-se; si no, heu d&apos;anar a Preferences/General/ Language i triar &quot;Catalonian&quot;.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>emule.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>149</ID>
+<Nom>Safari</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-12-11T00:00:00</Data>
+<URL1>safari.app.sit</URL1>
+<Versio>1.0 Beta(v51)</Versio>
+<Plataforma>4</Plataforma>
+<Categoria>0</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>2298603</Mida>
+<Autor>Apple / Traducció Ramon Sala</Autor>
+<ProgramWeb>http://www.rsdigital.net/safari.html</ProgramWeb>
+<Descripcio>Apple ha creat un nou navegador amb el nom de Safari. Fet públic en el marc de la MacWorld Expo de San Francisco, es tracta d&apos;un navegador molt ràpid, segons diverses proves fetes per nosaltres, que incorpora
+les cerques amb el Google directament en el menú i té un innovador sistema de
+gestió dels favorits. De moment solament funciona amb la darrera versió del sistema d&apos;Apple, el
+MacOSX (concretament la versió 10.2, també coneguda com a Jaguar).
+El nou navegador es basa en el navegador de codi obert Konqueror, que ha
+estat molt millorat. 
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;INSTAL·LACIÓ&lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;
+Per descomprimir-lo es
+necessita el programa Stuffit Expander (que és a tots els Macs).
+Quan es descomprimeix, agafem la icona en forma de brúixola i la posem a la
+carpeta on tinguem els nostres programes, després hi fem 2 clics i el programa ja
+funciona.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<AutorTraduccio>Ramon Sala</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>150</ID>
+<Nom>IsoBuster</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-12-11T00:00:00</Data>
+<URL1>isobuster_12_all_lang.zip</URL1>
+<Versio>1.2</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu $20.00)</Preu>
+<Mida>2219042</Mida>
+<Autor>Smart Projects</Autor>
+<ProgramWeb>http://www.smart-projects.net/</ProgramWeb>
+<Descripcio>L&apos;IsoBuster s&apos;ha dissenyat per recuperar dades des de CD i DVD mitjançant la utilització dels sistemes de fitxers més habituals dels CD/DVD: ISO9660, Joliet i UDF. Permet l&apos;ús de molts formats de CD/DVD, amb una atenció especial als CD de vídeo, CD-i... És possible fer extraccions de sessions anteriors, crear fitxers d&apos;imatge, reproduir àudio, etc. La comunicació amb els dispositius de CD/DVD és directa, i per tant els programes de control del sistema de fitxers del Windows no s&apos;utilitzen.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;
+El procés d&apos;instal·lació és en anglès. Un cop instal·lat el programa, aneu a Options-&gt;Language i escolliu &apos;català&apos; per activar la versió en català. &lt;/b&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>151</ID>
+<Nom>Diccionari català per al Dreamweaver MX</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-12-11T00:00:00</Data>
+<URL1>dreamweaver-mx-esca.zip</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>922048</Mida>
+<Autor>Macromedia</Autor>
+<ProgramWeb>http://www.macromedia.com/</ProgramWeb>
+<Descripcio>Diccionari en català per al Dreamweaver MX, que hi afegeix les capacitats de correcció ortogràfica en català. És necessari tenir una còpia del programa ja instal·lada.
+&lt;br&gt;&lt;br&gt;
+Per instal·lar-lo s&apos;ha de descomprimir l&apos;arxiu i desar-ne els fitxers a la carpeta Macromedia\Dreamweaver MX\Configuration\Content\Dictionaries. Se us preguntarà si voleu sobreescriure un fitxer; heu de respondre que sí.</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>152</ID>
+<Nom>CatScript</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-04-22T00:00:00</Data>
+<URL1>catscript25.zip</URL1>
+<Versio>2.5</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>1103536</Mida>
+<Autor>Cesk Freixas</Autor>
+<ProgramWeb>http://www.paisoscatalans.org/catscript/</ProgramWeb>
+<Descripcio>El CatScript és una seqüència (script) per al mIRC (un client de xat instantani per a xarxes IRC --Internet Relay Chat--), totalment en català, que intenta facilitar els moviments i les operacions que els usuaris i usuàries poden dur a terme en una sala de xat. La versió actual del CatScript és la 2.5; les altres tres versions (CatScript 1.0, CatScript versió 11 de setembre, CatScript 2.0) queden així enrere.
+&lt;br&gt;&lt;br&gt;
+El CatScript va sorgir per primer cop l&apos;any 2000 amb la intenció d&apos;omplir el buit que hi havia en el panorama de les seqüències per al mIRC en català. 
+&lt;br&gt;&lt;br&gt;
+Nota: Has de col·locar aquest programa dins de la carpeta de l&apos;script de l&apos;mIRC</Descripcio>
+<Puntuacio>3</Puntuacio>
+</Programes>
+<Programes>
+<ID>153</ID>
+<Nom>Gsview</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-04-22T00:00:00</Data>
+<URL1>gsv44w32.zip</URL1>
+<Versio>4.4</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>7221298</Mida>
+<Autor>Russell Lang</Autor>
+<ProgramWeb>http://www.cs.wisc.edu/~ghost/gsview/gsviewct.htm</ProgramWeb>
+<Descripcio>El GSview és una interfície gràfica per al Ghostscript, intèrpret per al llenguatge de descripció de pàgines PostScript utilitzat per les impressores làser. El GSview permet visualitzar o imprimir les pàgines seleccionades que segueixin les convencions estructurals dels documents PostScript d&apos;Adobe, i necessita el Ghostscript.
+&lt;br&gt;&lt;br&gt;
+Nota: El Gsview requereix el programa AFPL Ghostscript 8.00 que està inclòs al mateix fitxer zip. Primer heu d&apos;instal·lar gs800w32.exe i després el programa GSview (gsv44w32.exe)</Descripcio>
+<Puntuacio>4</Puntuacio>
+<AutorTraduccio>Jordi Solà</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>154</ID>
+<Nom>Cdex</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-04-22T00:00:00</Data>
+<URL1>cdex.zip</URL1>
+<Versio>1.50 beta 10</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>1929666</Mida>
+<Autor>Albert L. Faber</Autor>
+<ProgramWeb>http://www.cdex.n3.net/</ProgramWeb>
+<Descripcio>El CDex és una eina per fer qualsevol cosa relacionada amb l&apos;àudio. Adreçat principalment a l&apos;extracció i la conversió, coses com ara passar la vostra col·lecció de discos compactes a mp3 o ogg esdevenen extremadament senzilles. El CDex és programari lliure, i permet la utilització de múltiples codificadors sense les restriccions que presenten els programes comercials. Les característiques principals del CDex són:
+&lt;br&gt;
+&lt;br&gt;
+-Interfície fàcil d&apos;usar
+&lt;br&gt;
+-Crea llistes de reproducció PLS i M3U
+&lt;br&gt;
+-Correcció Jitter avançada
+&lt;br&gt;
+-Permet la utilització de molts formats/codificadors d&apos;àudio (WAV, MP3, OGG, VQF, APE, etc)
+&lt;br&gt;
+-Suport per a etiquetes ID3 V1 i V2
+&lt;br&gt;
+-Permet la normalització de fitxers d&apos;àudio
+&lt;br&gt;
+-Permet la recodificació directe de fitxers d&apos;àudio ja comprimits
+&lt;br&gt;
+-Permet la utilització de CDDB
+&lt;br&gt;
+-Permet l&apos;enregistrament analògic des de la línia d&apos;entrada d&apos;àudio
+&lt;br&gt;
+&lt;br&gt;
+El millor de tot és que el CDex és completament de franc. Mai no haureu de pagar per l&apos;ús del programa ni registrar-vos de cap manera. A més a més, el CDex és completament obert, segons els termes de la llicència GPL. 
+&lt;br&gt;
+&lt;br&gt;
+Nota: Per activar el català aneu a Options-&gt;Select Language</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>cdex.png</Imatge>
+<AutorTraduccio>Marc Belzunces</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>155</ID>
+<Nom>Tux Paint</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-04-22T00:00:00</Data>
+<URL1>tuxpaint-0.9.10-win32-installer.exe</URL1>
+<Versio>0.9.10</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>4</Categoria>
+<Subcategoria>2</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>24161687</Mida>
+<Autor>Bill Kendrich</Autor>
+<ProgramWeb>http://www.newbreedsoftware.com/tuxpaint/</ProgramWeb>
+<Descripcio>El Tux Paint és un programa de dibuix per a nens petits. Té una interfície senzilla i un quadre de dibuix de mida fixa, i proporciona l&apos;accés a imatges existents mitjançant un navegador de miniatures (sense accés directe al sistema de fitxers).
+&lt;br&gt;&lt;br&gt;
+A diferencia d&apos;altres programes de dibuix més populars, com ara el GIMP, té un joc d&apos;eines molt limitat. Inclou, però, efectes d&apos;entreteniment orientats als menuts, com per exemple sorolls.
+&lt;br&gt;&lt;br&gt;Per activar l&apos;idioma català heu de tenir seleccionat el català a la vostra configuració regional de Windows (Panel de Control, Configuración regional).</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>156</ID>
+<Nom>PDFCreator</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-06-24T00:00:00</Data>
+<URL1>pdfcreator.0.5.exe</URL1>
+<Versio>0.5</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>6632574</Mida>
+<Autor>Projecte PDFCreator</Autor>
+<ProgramWeb>http://sourceforge.net/projects/pdfcreator</ProgramWeb>
+<Descripcio>El PDF Creator és la manera més senzilla de crear els vostres PDF des de qualsevol programa, incloent-hi l&apos;Open Office, el Microsoft Office i  d&apos;altres. Aquest programa s&apos;instal·la com a una impressora virtual en Windows, i tots els documents que hi creem seran convertits a PDF.
+&lt;br&gt;
+&lt;br&gt;
+Un cop instal·lat, escolliu l&apos;opció &quot;Options&quot;, &quot;Language&quot;, &quot;Català&quot; per activar l&apos;idioma català.
+&lt;br&gt;
+&lt;br&gt;
+Nota: En instal·lar l&apos;aplicació disposarem d&apos;una impressora &quot;PDFCreator&quot; al nostre programa d&apos;ofimàtica, la qual crearà un fitxer &quot;spool.ps&quot; al directori d&apos;instal·lació del PDFCreator. Caldrà executar el PDF Creator, seleccionar el fitxer spool.ps i crear aleshores el fitxer pdf.&quot;</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>157</ID>
+<Nom>Irfanview</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-07-01T00:00:00</Data>
+<URL1>iview380.zip</URL1>
+<Versio>3.80</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>841216</Mida>
+<Autor>Irfan Skiljan</Autor>
+<ProgramWeb>http://www.irfanview.com/</ProgramWeb>
+<Descripcio>L&apos;IrfanView és un senzill, però ràpid, visualitzador i editor d&apos;imatges que pot gestionar els formats gràfics més importants: BMP, DIB, JPEG, GIF, GIF animat, PNG, PCX, TIFF multipàgina, TGA i altres. A més, permet arrossegar i deixar, visualitzar directoris, treballar amb TWAIN, fer presentacions de diapositives, convertir fitxers en massa, i modificar les imatges pel que fa a la profunditat del color, retallar-les, difuminar-les i aguditzar-les. 
+&lt;br&gt;
+&lt;br&gt;
+Nota: Per instal·lar la versió en català, heu de copiar el fitxer catala.dll al directori &lt;i&gt;languages&lt;/i&gt; que trobareu on heu instal·lat l&apos;Infraview (usualment Archivos de Programa/Infraview). Un cop copiat el fitxer, escolliu Options, Set Language, i escolliu
+&quot;Català&quot;.</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+<Programes>
+<ID>159</ID>
+<Nom>Outpost Firewall Pro</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-08-19T00:00:00</Data>
+<URL1>opcat.zip</URL1>
+<Versio>2.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Preu> (preu 35$)</Preu>
+<Mida>5940411</Mida>
+<Autor>Agnitum</Autor>
+<ProgramWeb>http://www.agnitum.com/products/outpost/</ProgramWeb>
+<Descripcio>L&apos;Outpost Firewall és una gran solució per protegir-vos a Internet. És un
+programa &apos;tallafoc&apos; (firewall), que actua com una paret entre el vostre
+ordinador i xarxa per tal d&apos;augmentar la vostra seguretat i privacitat.
+&lt;br&gt;&lt;br&gt;
+Aquest programa permet:
+- Protegir-vos de pirates informàtics
+- Controlar la privacitat de les vostres dades
+- Controlar l&apos;activitat de la xarxa
+- Mantenir i controlar la vostra privacitat a Internet
+- Evitar publicitat i finestres emergents no desitjades
+- Filtrar fitxers adjunts de correu electrònic potencialment perillosos
+&lt;br&gt;
+L&apos;Outpost Firewall permet configurar per a cada programa si voleu o no que
+pugui accedir a la xarxa i en quines condicions (entrada, sortida, port,
+protocol, adressa).
+&lt;br&gt;
+Amb l&apos;Outpost Firewall es pot aconseguir navegar per Internet sense que
+pugueu ser detectats i així evitar els atacs dels pirates informàtics.
+&lt;br&gt;
+L&apos;Outpost Firewall detecta qualsevol intent d&apos;accés a la xarxa per part de
+qualsevol programa i així es pot evitar la difusió de molts virus i troians. Si
+hi ha hagut algun canvi en els components d&apos;algun dels programes que
+accedeix a la xarxa, l&apos;Outpost Firewall us avisa i permet bloquejar aquest
+programa si és que penseu que la modificació és il·legítima.
+&lt;br&gt;
+A més, l&apos;Outpost Firewall és un programa que permet la incorporació de
+connectors i programes auxiliars de tercers.
+&lt;br&gt;
+L&apos;Outpost Firewall Pro v2.0 permet un periode de proba de 30 dies, després
+del qual haureu de decidir si el voleu adquirir.
+&lt;br&gt;
+Nota: Mireu el fitxer Llegeix-me.txt que trobareu al paquet abans de fer la instal·lació.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>outpost.jpg</Imatge>
+<AutorTraduccio>Ferran Rius Riu</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>160</ID>
+<Nom>More TV</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-08-22T00:00:00</Data>
+<URL1>moretv353cat.zip</URL1>
+<Versio>3.53</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>140352</Mida>
+<Autor>Feurstein</Autor>
+<ProgramWeb>http://www.moretv.com</ProgramWeb>
+<Descripcio>MoreTV és un dels sintonitzadors de TV més bons del moment, podent-se adaptar a tots els sintonitzadors sense necessitat de controladors Aquesta no és l&apos;única peculiaritat que té, sinó que, a més, amb un fitxer extra (key.txt) es pot veure televisió codificada en Nagravisió. En definitiva, el MoreTv és un dels millors programes necessaris si tens una capturadora de Televisió. Aquesta és la seva versió en català.
+&lt;br&gt;&lt;br&gt;
+Atenció: Aquest programa requereix una tarjeta capturadora de vídeo.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>moretv.jpg</Imatge>
+<AutorTraduccio>Jordi Domènech</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>161</ID>
+<Nom>Paquet d&apos;idioma de l&apos;Enigmail</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-08-24T00:00:00</Data>
+<URL1>enigmail-ca-0.76.2.xpi</URL1>
+<Versio>0.76</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>9742</Mida>
+<Autor>Patrick Brunschwig i altres</Autor>
+<ProgramWeb>http://enigmail.mozdev.org/</ProgramWeb>
+<Descripcio>L&apos;Enigmail és un connector que permet signar i xifrar amb GPG/PGP els correus i arxius enviats des del client de correu del Mozilla.</Descripcio>
+<Puntuacio>3</Puntuacio>
+<AutorTraduccio>Josep Ma. Ferrer</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>162</ID>
+<Nom>Maxigramar</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-10-21T00:00:00</Data>
+<URL1>maxigramar_demo.exe</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>3</Llicencia>
+<Preu> (preu 50 euros)</Preu>
+<Mida>1629107</Mida>
+<Autor>Maxigramar</Autor>
+<ProgramWeb>http://www.maxigramar.com/</ProgramWeb>
+<Descripcio>Maxigramar és un corrector ortogràfic i gramatical per a Microsoft Word 97,
+2000 i XP. Conté un diccionari amb més de 120.000 termes i 6.000 verbs
+conjugats (aprox. 15 milions de formes verbals).
+&lt;br&gt;&lt;br&gt;
+Atenció: Aquesta versió és una demostració comercial que només funciona durant
+30 dies, període després del qual haureu d&apos;adquirir-lo per continuar
+utilitzant-lo. Més informació a &lt;a href=http://www.maxigramar.com/&gt;www.maxigramar.com&lt;/a&gt;</Descripcio>
+<Puntuacio>5</Puntuacio>
+</Programes>
+<Programes>
+<ID>164</ID>
+<Nom>Skype</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2004-01-01T00:00:00</Data>
+<URL1>skype.zip</URL1>
+<Versio>1.0.0.29</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>2</Llicencia>
+<Mida>6306049</Mida>
+<Autor>Skyper</Autor>
+<ProgramWeb>http://www.skype.com/</ProgramWeb>
+<Descripcio>Spyke és un programa gratuït i senzill que permet fer trucades de veu gratuïtes a qualsevol usuari de Spyke amb una qualitat excel·lent. Dels creadors de la tecnologia de Kazaa, Spyke usa tecnlogia peer-to-peer (client-client) per connectar-vos amb altres usuaris. 
+&lt;br&gt;
+&lt;br&gt;
+Spypke requereix un microfòn, uns ariculars i una connexió a Internet per funcionar.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;
+Nota: Per instal·lar la versió en català, realitzeu la instal·lació en un altre llengua,
+i cop finalitzada carregueu l&apos;Spyke i escolliu el fitxer d&apos;idioma mitjançant el menú Tools-&gt;Select Language-&gt;Load User define language.&lt;/b&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Projecte>http://www.david.valls.name/</Projecte>
+<AutorTraduccio>David valls i botet</AutorTraduccio>
+</Programes>
+<Programes>
+<ID>163</ID>
+<Nom>Paquet català per al Microsoft Office 2003</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2003-10-22T00:00:00</Data>
+<URL1>office2003-lip.exe</URL1>
+<Versio>1.0</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>7</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Mida>10733104</Mida>
+<Autor>Microsoft</Autor>
+<ProgramWeb>http://www.microsoft.com/spain</ProgramWeb>
+<Descripcio>Paquet d&apos;idioma català per al Microsoft Office 2003. Aquest pedaç es pot aplicar sobre una instal·lació prèvia d&apos;Office 2003 en qualsevol llengua. Inclou de sèrie el corrector ortogràfic en català.
+&lt;br&gt;&lt;br&gt;
+El pedaç només tradueix els programes Word, Excel,PowerPoint i Outlook; la resta de components (Acces, InfoPath, Publisher i les Eines de Microsoft Office) no els tradueix, així com tampoc tradueix la documentació en línia del producte.
+&lt;br&gt;&lt;br&gt;
+Atenció: Office 2003 només funciona amb Windows 2000 o XP. Aquest pedaç
+requereix una llicència prèvia de Microsoft Office ja instal·lada i funcionant.</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Imatge>office2003.jpg</Imatge>
+</Programes>
+<Programes>
+<ID>166</ID>
+<Nom>Memòria de traducció de Softcatalà</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2004-02-24T00:00:00</Data>
+<URL1>tm-sc.zip</URL1>
+<Versio>1.00</Versio>
+<Plataforma>6</Plataforma>
+<Categoria>5</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>1</Llicencia>
+<Preu>0</Preu>
+<Mida>3800212</Mida>
+<Autor>Softcatalà</Autor>
+<ProgramWeb>http://www.softcatala.org</ProgramWeb>
+<Descripcio>Una memòria de traducció és una base de dades que conté el text 
+original d&apos;un programa i la seva traducció a una llengua diferent a 
+l&apos;original, en aquest cas el parell anglès - català.
+&lt;br&gt;&lt;br&gt;
+Les memòries de traducció són útils principalment perquè augmenten la 
+productivitat dels traductors, atès que no han de traduir les frases 
+que ja apareixen a la memòria, augmenten l&apos;homogeneïtat de les 
+traduccions, i permeten consultar com cert terme o expressió s&apos;ha 
+traduït anteriorment. Són d&apos;ús força estès en el món professional de la 
+traducció.
+&lt;br&gt;&lt;br&gt;
+La versió que es publica conté les traduccions dels principals 
+programes que Softcatalà ha traduït, s&apos;hi inclouen l&apos;Open Office, el 
+Gnome, el Mozilla, l&apos;Abiword, el Netscape clàssic, i les eines de 
+configuració i instal·lació de les distribucions de Linux Mandrake i 
+Fedora.
+&lt;br&gt;&lt;br&gt;
+Teniu tota la informació sobre com utilizar aquesta memòria de 
+traducció i d&apos;on baixar-la a &lt;a href=http://www.softcatala.org/projectes/eines/mt/&gt;http://www.softcatala.org/projectes/eines/mt/&lt;/a&gt;</Descripcio>
+<Puntuacio>4</Puntuacio>
+<Projecte>http://www.softcatala.org/projectes/eines/mt/</Projecte>
+</Programes>
+<Programes>
+<ID>167</ID>
+<Nom>FireFox</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2004-04-02T00:00:00</Data>
+<URL1>MozillaFirefox-0.9.2-ca.exe</URL1>
+<Versio>0.9</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>1</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>6312523</Mida>
+<Autor>Mozilla</Autor>
+<ProgramWeb>http://www.mozilla.org</ProgramWeb>
+<Descripcio>El Mozilla Firefox és un navegador web gratuït, de codi obert, basat en el codi desenvolupat dins el projecte Mozilla.org. Les seves característiques principals són la rapidesa així com la facilitat d&apos;instal·lació i utilització. El Firefox és una aplicació molt lleugera i ràpida, alhora que compleix amb els principals estàndards d&apos;Internet.
+&lt;br&gt;&lt;br&gt;
+El Firefox incorpora un gran nombre de funcions que en faciliten la utilització: plenament funcional només amb el teclat, barra d&apos;eines personalitzable, administrador de marcadors, integració de cercadors d&apos;Internet (per exemple, amb Google), bloqueig de les finestres emergents no sol·licitades, navegació ràpida en pestanyes separades per a cada web que es visita, administrador de contrasenyes, baixada automàtica i simple de fitxers.</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Projecte>http://www.softcatala.org/projectes/mozilla/</Projecte>
+<URLMirror>/firefox/0.9/MozillaFirefox-0.9.2-ca.exe</URLMirror>
+</Programes>
+<Programes>
+<ID>168</ID>
+<Nom>ThunderBird</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2004-04-29T00:00:00</Data>
+<URL1>MozillaThunderbird-0.7.2-ca.exe</URL1>
+<Versio>0.7</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>2</Categoria>
+<Subcategoria>0</Subcategoria>
+<Llicencia>4</Llicencia>
+<Preu>0</Preu>
+<Mida>8591212</Mida>
+<Autor>Mozilla</Autor>
+<ProgramWeb>http://www.mozilla.org</ProgramWeb>
+<Descripcio>El Mozilla Thunderbird és un client de correu lliure i gratuït d&apos;execució ràpida i que consumeix menys recursos que altres alternatives, basat en el codi desenvolupat dins el projecte Mozilla.
+&lt;br&gt;&lt;br&gt;
+El programa té gran quantitat d&apos;opcions de personalització i incorpora les característiques més útils que pot necessitar un client de correu avui en dia: filtres de missatges, gestió del correu brossa amb auto-aprenentatge, etc.; tot això juntament amb les opcions a les que podem estar més habituats, com ara la cerca de missatges o una llibreta d&apos;adreces personal.
+Als executables que s&apos;hi ofereixen, s&apos;incorpora l&apos;extensió Enigmail traduïda al català, que permet afegir aquelles funcionalitats criptogràfiques de xifratge i signatura que ajuden a garantir una comunicació de correu electrònic privada i segura</Descripcio>
+<Puntuacio>5</Puntuacio>
+<Projecte>http://www.softcatala.org/projectes/mozilla/</Projecte>
+<URLMirror>/thunderbird/0.7/MozillaThunderbird-0.7.2-ca.exe</URLMirror>
+</Programes>
+<Programes>
+<ID>169</ID>
+<Nom>BitDefender</Nom>
+<vilaweb>0</vilaweb>
+<Softcatala>0</Softcatala>
+<Data>2004-04-29T00:00:00</Data>
+<URL1>bitdefender_std_v72-010.exe</URL1>
+<Versio>7.2</Versio>
+<Plataforma>1</Plataforma>
+<Categoria>6</Categoria>
+<Subcategoria>1</Subcategoria>
+<Llicencia>3</Llicencia>
+<Mida>10173952</Mida>
+<Autor>BitDefender</Autor>
+<ProgramWeb>http://www.bitdefender-es.com/</ProgramWeb>
+<Descripcio>BitDefender és un antivirus professional que ens protegeix del contagi de virus informàtics i cucs i garanteix la privadesa de les dades de l&apos;usuari. També inclou la possibilitat de protegir l&apos;ordinador i el correu electrònic, i les signatures amb definicions de virus es poden actualitzar per Internet de forma automàtica.</Descripcio>
+<Puntuacio>4</Puntuacio>
+</Programes>
+</dataroot>
