@@ -46,6 +46,7 @@ namespace MyFormProject
 			this.monthcal2.Location = new System.Drawing.Point(0, 230);
 			this.monthcal2.Name = "monthcalendar2";
 			this.monthcal2.TabIndex = 2;
+			this.monthcal2.MaxSelectionCount = 200;
 
 
 //			this.monthcal3.ShowWeekNumbers = true;
