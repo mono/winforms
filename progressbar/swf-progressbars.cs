@@ -13,6 +13,9 @@ namespace MyFormProject
 		private System.Windows.Forms.ProgressBar progressBar9;
 		private System.Windows.Forms.ProgressBar progressBar8;
 		private System.Windows.Forms.Button button;
+		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button button4;
+		private System.Windows.Forms.Button button5;		
 		private System.Windows.Forms.ProgressBar progressBar3;
 		private System.Windows.Forms.ProgressBar progressBar2;
 		private System.Windows.Forms.ProgressBar progressBar5;
@@ -47,6 +50,9 @@ namespace MyFormProject
 			this.progressBar2 = new System.Windows.Forms.ProgressBar();
 			this.progressBar3 = new System.Windows.Forms.ProgressBar();
 			this.button = new System.Windows.Forms.Button();
+			this.button3 = new System.Windows.Forms.Button();
+			this.button4 = new System.Windows.Forms.Button();
+			this.button5 = new System.Windows.Forms.Button();			
 			this.progressBar8 = new System.Windows.Forms.ProgressBar();
 			this.progressBar9 = new System.Windows.Forms.ProgressBar();
 			this.button2 = new System.Windows.Forms.Button();
@@ -153,10 +159,37 @@ namespace MyFormProject
 			// 
 			this.button.Location = new System.Drawing.Point(425, 170);
 			this.button.Name = "button";
-			this.button.Size = new System.Drawing.Size(75, 20);
+			this.button.Size = new System.Drawing.Size(75, 25);
 			this.button.TabIndex = 17;
 			this.button.Text = "Start Timer";
 			this.button.Click += new System.EventHandler(this.ButtonClick);
+			// 
+			// button 3
+			// 
+			this.button3.Location = new System.Drawing.Point(425, 30);
+			this.button3.Name = "button";
+			this.button3.Size = new System.Drawing.Size(75, 25);			
+			this.button3.Text = "Inc. 1";
+			this.button3.Click += new System.EventHandler(this.Button3Click);
+			
+			// 
+			// button 4
+			// 
+			this.button4.Location = new System.Drawing.Point(425, 60);
+			this.button4.Name = "button";
+			this.button4.Size = new System.Drawing.Size(75, 25);			
+			this.button4.Text = "Dec. 1";
+			this.button4.Click += new System.EventHandler(this.Button4Click);
+			// 
+			// button 5
+			// 
+			this.button5.Location = new System.Drawing.Point(425, 90);
+			this.button5.Name = "button";
+			this.button5.Size = new System.Drawing.Size(75, 25);			
+			this.button5.Text = "Inc. Step";
+			this.button5.Click += new System.EventHandler(this.Button5Click);
+			
+			
 			// 
 			// progressBar8
 			// 
@@ -212,6 +245,9 @@ namespace MyFormProject
 			this.ClientSize = new System.Drawing.Size(504, 378);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button);
+			this.Controls.Add(this.button3);
+			this.Controls.Add(this.button4);
+			this.Controls.Add(this.button5);
 			this.Controls.Add(this.progressBar9);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.progressBar8);
@@ -250,13 +286,28 @@ namespace MyFormProject
 		}
 		
 		void ButtonClick(object sender, System.EventArgs e)
-		{
+		{ 			
 			this.timer.Enabled = true;
 		}
 		
 		void Button2Click(object sender, System.EventArgs e)
-		{
+		{			
 			this.timer.Enabled = false;
+		}
+		
+		void Button3Click(object sender, System.EventArgs e)
+		{			
+			progressBar.Increment (1);						
+		}
+		
+		void Button4Click(object sender, System.EventArgs e)
+		{			
+			progressBar.Value = progressBar.Value - 1;						
+		}
+		
+		void Button5Click(object sender, System.EventArgs e)
+		{			
+			progressBar.PerformStep ();						
 		}
 		
 	}			
