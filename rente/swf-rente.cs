@@ -16,6 +16,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using Microsoft.Win32;
+using System.Diagnostics;
 
 namespace MWFTestApplication {
 	class MainWindow : System.Windows.Forms.Form {	
@@ -111,13 +112,13 @@ namespace MWFTestApplication {
 
 				cp = base.CreateParams;
 
-				cp.Style &= ~0x00C00000;
-
+				cp.Style = 0x16070000;
 				return cp;
 			}
 		}
 
 		protected override void OnPaint(PaintEventArgs e) {
+			this.TopMost = true;
 			e.Graphics.FillRectangle(backbrush, e.ClipRectangle);
 			e.Graphics.DrawString(Text, this.Font, brush, ClientSize.Width/2, ClientSize.Height/2, format);
 		}
