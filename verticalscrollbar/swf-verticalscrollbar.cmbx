@@ -1,0 +1,16 @@
+<Combine fileversion="1.0" name="swf-verticalscrollbar" description="">
+  <StartMode startupentry="swf-verticalscrollbar" single="True">
+    <Execute entry="swf-verticalscrollbar" type="None" />
+  </StartMode>
+  <Entries>
+    <Entry filename=".\swf-verticalscrollbar.prjx" />
+  </Entries>
+  <Configurations active="Debug">
+    <Configuration name="Release">
+      <Entry name="swf-verticalscrollbar" configurationname="Debug" build="False" />
+    </Configuration>
+    <Configuration name="Debug">
+      <Entry name="swf-verticalscrollbar" configurationname="Debug" build="False" />
+    </Configuration>
+  </Configurations>
+</Combine>
