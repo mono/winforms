@@ -48,6 +48,7 @@ namespace MyFormProject
 		private Label label6;
 		private Label labelSel;
 		private Button buttonAdd;
+		private Button buttonClear;
 		private Label labelitems;
 		private int last_item = 0;
 
@@ -72,6 +73,7 @@ namespace MyFormProject
 			label6 = new Label ();
 			labelSel = new Label ();
 			buttonAdd = new Button ();
+			buttonClear = new Button ();
 			labelitems = new Label ();
 
 			SuspendLayout ();
@@ -99,7 +101,21 @@ namespace MyFormProject
 				"this is item 16",
 				"this is item 17",
 			};
-
+			
+			object[] items_comarques = new object[] 
+			{
+				"Conca de Barberà", "Vallès Occidental", "Ripollès", 
+				"Alt Urgell", "Alta Ribagorça",
+				"Anoia", "Bages", "Baix Empordà", "Baix Llobregat", 
+				"Baix Penedès", "Barcelonès",
+				"Berguedà", "Cerdanya", "Garraf", "Garrigues", 				
+				"Montsià", "Noguera", "Osona", "Pallars Jussà", "Pla d'Urgell", 
+				"Priorat", "Ribera d'Ebre", "Alt Penedès", 
+				"Segarra", "Segrià", "Selva", "Solsonès", "Tarragonès", 
+				"Garrotxa", "Gironès", "Maresme", "Pallars Sobirà", 
+				"Terra Alta", "Baix Camp", "Baix Ebre", "Urgell", "Val d'Aran", 
+				"Vallès Oriental", "Alt Empordà", "Alt Camp",
+			};
 
 			bool listbox1 = true;
 			bool listbox2 = true;
@@ -122,6 +138,10 @@ namespace MyFormProject
 				listBox1.HorizontalScrollbar = false;
 				listBox1.Items.AddRange (items);
 				listBox1.SelectedIndexChanged += new System.EventHandler (IndexChangedListBox1);
+				
+				listBox1.SelectedIndex = 1;
+				listBox1.SelectedIndex = 2;
+				
 				label1.Location = new System.Drawing.Point (10, y);
 				label1.AutoSize = true;
 				label1.Text = "MultiColumn:" + listBox1.MultiColumn + " Selection:" + listBox1.SelectionMode;
@@ -140,6 +160,8 @@ namespace MyFormProject
 				listBox2.MultiColumn = false;
 				listBox2.SelectionMode = SelectionMode.MultiSimple;
 				listBox2.Items.AddRange (items);
+				listBox2.SelectedIndex = 1;
+				listBox2.SelectedIndex = 2;
 				listBox2.SelectedIndexChanged += new System.EventHandler (IndexChangedListBox2);
 				label2.Location = new System.Drawing.Point (450, y);
 				label2.AutoSize = true;
@@ -161,6 +183,9 @@ namespace MyFormProject
 				listBox3.HorizontalScrollbar = true;
 				listBox3.Items.AddRange (items);
 				listBox3.SelectedIndexChanged += new System.EventHandler (IndexChangedListBox3);
+				listBox3.SelectedIndex = 1;
+				listBox3.SelectedIndex = 2;
+				listBox3.RightToLeft = RightToLeft.Yes;
 				label3.Location = new System.Drawing.Point (10, y);
 				label3.AutoSize = true;
 				label3.Text = "MultiColumn:" + listBox3.MultiColumn + " Selection:" + listBox3.SelectionMode;
@@ -172,6 +197,7 @@ namespace MyFormProject
 			if (listbox4) {
 				listBox4.Location = new System.Drawing.Point (450, y + 20);
 				listBox4.MultiColumn = true;
+				listBox4.RightToLeft = RightToLeft.Yes;
 				listBox4.SelectionMode = SelectionMode.One;
 				listBox4.Size = new System.Drawing.Size (400, 65);
 				listBox4.IntegralHeight = false;
@@ -182,6 +208,8 @@ namespace MyFormProject
 				label4.Location = new System.Drawing.Point (450, y);
 				label4.AutoSize = true;
 				label4.Text = "MultiColumn:" + listBox4.MultiColumn + " Selection:" + listBox4.SelectionMode;
+				
+				listBox4.SelectedItem = listBox4.Items[4];
 			}
 
 			y += 120;
@@ -190,6 +218,9 @@ namespace MyFormProject
 			// listBox 5
 			//
 			if (listbox5) {
+				
+				Console.WriteLine ("ListBox {0}",  listBox5.Text);
+				
 				listBox5.Location = new System.Drawing.Point (10, y + 20);
 				listBox5.MultiColumn = true;
 				listBox5.SelectionMode = SelectionMode.MultiSimple;
@@ -197,11 +228,16 @@ namespace MyFormProject
 				listBox5.IntegralHeight = true;
 				listBox5.ScrollAlwaysVisible = false;
 				listBox5.HorizontalScrollbar = false;
-				listBox5.Items.AddRange (items);
+				listBox5.Items.AddRange (items_comarques);
+				listBox5.Text = listBox5.Items[5].ToString ();
 				listBox5.SelectedIndexChanged += new System.EventHandler (IndexChangedListBox5);
+				listBox5.Sorted = true;								
 				label5.Location = new System.Drawing.Point (10, y);
 				label5.AutoSize = true;
-				label5.Text = "MultiColumn:" + listBox5.MultiColumn + " Selection:" + listBox5.SelectionMode;
+				label5.Text = "MultiColumn:" + listBox5.MultiColumn + " Selection:" + listBox5.SelectionMode;				
+				
+				
+				Console.WriteLine ("ListBox {0}",  listBox5.Text);
 			}
 
 			//
@@ -210,16 +246,17 @@ namespace MyFormProject
 			if (listbox6) {
 				listBox6.Location = new System.Drawing.Point (450, y + 20);
 				listBox6.MultiColumn = true;
+				listBox6.Sorted = true;
 				listBox6.SelectionMode = SelectionMode.MultiExtended;
 				listBox6.Size = new System.Drawing.Size (400, 70);
 				listBox6.IntegralHeight = false;
 				listBox6.ScrollAlwaysVisible = false;
 				listBox6.HorizontalScrollbar = false;
-				listBox6.Items.AddRange (items);
+				listBox6.Items.AddRange (items_comarques);
 				listBox6.SelectedIndexChanged += new System.EventHandler (IndexChangedListBox6);
 				label6.Location = new System.Drawing.Point (450, y);
 				label6.AutoSize = true;
-				label6.Text = "MultiColumn:" + listBox6.MultiColumn + " Selection:" + listBox6.SelectionMode;
+				label6.Text = "MultiColumn:" + listBox6.MultiColumn + " Selection:" + listBox6.SelectionMode;				
 			}
 
 			y += 120;
@@ -227,12 +264,17 @@ namespace MyFormProject
 			labelSel.AutoSize = true;
 			labelSel.Text = "Seleteced Items None";
 
-
 			buttonAdd.Location = new Point (860, 30);
 			buttonAdd.Name = "button";
 			buttonAdd.Size = new System.Drawing.Size (75, 25);
 			buttonAdd.Text = "Add Items";
 			buttonAdd.Click += new System.EventHandler (ButtonAddClick);
+			
+			buttonClear.Location = new Point (860, 300);
+			buttonClear.Name = "button";
+			buttonClear.Size = new System.Drawing.Size (90, 25);
+			buttonClear.Text = "Clear Sel Items";			
+			buttonClear.Click += new System.EventHandler (ButtonClearClick);
 
 			labelitems.Location = new Point (860, 60);
 			labelitems.Text = "items:" + listBox1.Items.Count;
@@ -263,7 +305,7 @@ namespace MyFormProject
 			Controls.Add (buttonAdd);
 			Controls.Add (labelitems);
 			Controls.Add (labelSel);
-
+			Controls.Add (buttonClear);
 
 			Text = "SWF-Listboxes";
 			ResumeLayout (false);
@@ -275,7 +317,7 @@ namespace MyFormProject
 			int last = last_item;
 
 			for (int i = last_item; i < last + 10; i++) {
-				item_text = "new item " + last_item;
+				item_text = "New item " + last_item;
 				listBox1.Items.Add (item_text);
 				listBox2.Items.Add (item_text);
 				listBox3.Items.Add (item_text);
@@ -286,6 +328,11 @@ namespace MyFormProject
 			}
 
 			labelitems.Text = "items:" + listBox1.Items.Count;
+		}
+		
+		void ButtonClearClick (object sender, System.EventArgs e)
+		{
+			listBox2.ClearSelected ();
 		}
 
 		string DumpElements (ListBox listbox)
