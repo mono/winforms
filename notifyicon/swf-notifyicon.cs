@@ -60,6 +60,7 @@ namespace MWFTestApplication {
 			notify.MouseMove += new MouseEventHandler(notify_MouseMove);
 			notify.MouseUp +=new MouseEventHandler(notify_MouseUp);
 
+notify.Update = true;
 			Application.Run();
 		}
 
