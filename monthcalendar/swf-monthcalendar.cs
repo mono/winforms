@@ -28,7 +28,7 @@ namespace MyFormProject
 			// 
 			// monthcal1
 			// 
-			this.monthcal1.CalendarDimensions = new Size(2, 1);
+			this.monthcal1.CalendarDimensions = new Size(1, 1);
 			this.monthcal1.SelectionStart = new DateTime (2004, 11, 10);
 			this.monthcal1.SelectionEnd = new DateTime (2004, 11, 13);
 			this.monthcal1.FirstDayOfWeek = Day.Monday;
@@ -39,7 +39,7 @@ namespace MyFormProject
 
 			this.monthcal2.ShowWeekNumbers = true;
 			this.monthcal2.ShowToday = false;
-			this.monthcal2.CalendarDimensions = new Size(2, 1);
+			this.monthcal2.CalendarDimensions = new Size(3, 1);
 			this.monthcal2.SelectionStart = new DateTime (2004, 11, 10);
 			this.monthcal2.SelectionEnd = new DateTime (2004, 11, 13);
 			this.monthcal2.Anchor = AnchorStyles.Top | AnchorStyles.Left;
