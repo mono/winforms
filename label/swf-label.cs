@@ -1,4 +1,4 @@
-﻿// project created on 25/07/2003 at 8:32
+// project created on 25/07/2003 at 8:32
 using System;
 using System.Windows.Forms;
 
