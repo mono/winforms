@@ -1,4 +1,4 @@
-﻿// created on 28/07/2003 at 23:26
+// created on 28/07/2003 at 23:26
 using System;
 using System.Windows.Forms;
 
