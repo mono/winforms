@@ -112,21 +112,35 @@ namespace SWFToolBar
 			b11.Style = ToolBarButtonStyle.DropDownButton;
 			b11.ImageIndex = 0;
 			b11.DropDownMenu = menu;
+			b11.ToolTipText = "DropDownButton with menu";
+
 			b12.Style = ToolBarButtonStyle.Separator;
 			b12.ImageIndex = 1;
+			b12.ToolTipText = "Separator";
+
 			b13.Style = ToolBarButtonStyle.ToggleButton;
 			b13.ImageIndex = 2;
+			b13.ToolTipText = "ToggleButton";
+			
 			b14.Style = ToolBarButtonStyle.PushButton;
 			b14.ImageIndex = 3;
+			b14.ToolTipText = "PushButton";
 
 			b21.Style = ToolBarButtonStyle.DropDownButton;
 			b21.ImageIndex = 0;
+			b21.ToolTipText = "DropDownButton without menu";
+			
 			b22.Style = ToolBarButtonStyle.Separator;
 			b22.ImageIndex = 1;
+			b22.ToolTipText = "Separator";
+			
 			b23.Style = ToolBarButtonStyle.ToggleButton;
 			b23.ImageIndex = 2;
+			b23.ToolTipText = "ToggleButton";
+
 			b24.Style = ToolBarButtonStyle.PushButton;
 			b24.ImageIndex = 3;
+			b24.ToolTipText = "PushButton";
 
 			this.toolBar1.Buttons.Add (b11);
 			this.toolBar1.Buttons.Add (b12);
