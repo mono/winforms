@@ -1,9 +1,4 @@
 //
-// This is a bit overboard for a test app, but I'm hoping it 
-// can be gutted and used as a base for other test apps, trying
-// to set a good example :-)
-//
-
 
 using System;
 using System.Globalization;
@@ -77,8 +72,12 @@ namespace MWFTestApplication {
 			}
 
 		}
-
 		public void CheckConversion(object check, object expect, TypeConverter conv, Type type) {
+			CheckConversion(check, expect, conv, type, CultureInfo.InvariantCulture);
+			CheckConversion(check, expect, conv, type, CultureInfo.CreateSpecificCulture("de-de"));
+		}
+
+		public void CheckConversion(object check, object expect, TypeConverter conv, Type type, CultureInfo culture) {
 			object obj;
 			object result;
 
@@ -86,7 +85,7 @@ namespace MWFTestApplication {
 				Console.WriteLine("{0}: CheckConversion, checking {1}({2}) <-> {3}({4})", conv.ToString(), check.GetType().ToString(), check.ToString(), type.ToString(), expect != null ? expect.ToString() : "null");
 			}
 
-			obj = conv.ConvertTo(null, CultureInfo.InvariantCulture, check, type);
+			obj = conv.ConvertTo(null, culture, check, type);
 
 			if (obj == null) {
 				if (expect != null) {
@@ -108,7 +107,7 @@ namespace MWFTestApplication {
 				Console.WriteLine("{0}: CheckConversion, ConvertTo result: '{1}')", conv.ToString(), obj);
 			}
 
-			result = conv.ConvertFrom(null, CultureInfo.InvariantCulture, obj);
+			result = conv.ConvertFrom(null, culture, obj);
 
 			// Roundtrip check
 			if (!check.Equals(result)) {
@@ -207,7 +206,7 @@ namespace MWFTestApplication {
 
 
 			// Keys.Modifiers doesn't round-trip
-			failed_expected++;
+			failed_expected += 2;	// Once for each culture
 
 			key_conv = new KeysConverter();
 
@@ -239,12 +238,30 @@ namespace MWFTestApplication {
 			CheckConversion(0.0, "0%", conv, typeof(string));
 		}
 
+		public void TestSelectionRangeConverter() {
+			SelectionRangeConverter	conv;
+			SelectionRange		sel;
+			DateTime		start;
+			DateTime		end;
+
+			start = new DateTime(1969, 2, 1, 18, 0, 0, 0);
+			end = new DateTime(1977, 5, 27, 0, 0, 0, 0);
+
+			conv = new SelectionRangeConverter();
+			sel = new SelectionRange(start, end);
+
+			CheckConvert(1, 1, conv, typeof(SelectionRange));
+			CheckConversion(sel, "1969-02-01, 1977-05-27", conv, typeof(string), CultureInfo.InvariantCulture);
+			CheckConversion(sel, "01.02.1969; 27.05.1977", conv, typeof(string), CultureInfo.CreateSpecificCulture("de-de"));
+		}
+
 		public MainWindow() {
 			ClientSize = new System.Drawing.Size (520, 520);
 			Text = "SWF Converters Test App";
 
 			TestKeysConverter();
 			TestOpacityConverter();
+			TestSelectionRangeConverter();
 
 			if (visual) {
 				if (failed != failed_expected) {
