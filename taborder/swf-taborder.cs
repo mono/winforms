@@ -68,11 +68,31 @@ namespace MWFTestApplication {
 			for (int i = 0; i < count; i++) {
 				ctl = container.GetNextControl(ctl, forward);
 				if (ctl != null) {
-					Console.WriteLine("{1} GetNextControl returned {0}, Tabstop: {2}", ctl.Text, i+1, ctl.TabStop);
+					Console.WriteLine("{1} GetNextControl returned {0}, Tabindex: {2}", ctl.Text, i+1, ctl.TabIndex);
 				} else {
 					Console.WriteLine("{0} GetNextControl returned NULL", i+1);
 				}
 			}
+		}
+
+		bool TestTabIndex(Control ctl, int expected) {
+			if (ctl.TabIndex != expected) {
+				if (verbose > 0) {
+					Console.WriteLine("Test {0} failed (TabIndex):\n   Control: {1}\n   Expected : {2}\n   Got: {3}",
+						test_no, ctl.Text, expected, ctl.TabIndex);
+				}
+
+				if (exception) {
+					throw new Exception("Test " + test_no + " failed (TabIndex)");
+				}
+				test_no++;
+				return false;
+			}
+
+			if (verbose > 0) {
+				Console.WriteLine("Test {0} passed", test_no++);
+			}
+			return true;
 		}
 		
 		bool TestControl(Control container, Control start, bool forward, string expected) {
@@ -93,12 +113,12 @@ namespace MWFTestApplication {
 			if (ctl == null || ctl.Text != expected) {
 				result = false;
 				if (verbose > 0) {
-					Console.WriteLine("Test {0} failed:\n   Container: {1}\n   Start: {2}\n   Forward: {3}\n   Expected: {4}\n   Got: {5}",
+					Console.WriteLine("Test {0} failed (GetNextControl):\n   Container: {1}\n   Start: {2}\n   Forward: {3}\n   Expected: {4}\n   Got: {5}",
 						test_no, container.Text, start.Text, forward, expected, ctl != null ? ctl.Text : "null");
 				}
 
 				if (exception) {
-					throw new Exception("Test " + test_no + " failed");
+					throw new Exception("Test " + test_no + " failed (GetNextControl)");
 				}
 
 				test_no++;
@@ -167,13 +187,14 @@ namespace MWFTestApplication {
 			group2.Location = new Point(220, 40);
 			group3.Location = new Point(10, 210);
 
-			group1.TabIndex = 1;
+			group1.TabIndex = 30;
 			group1.TabStop = true;
 
-			group2.TabIndex = 2;
+			// Don't assign, test automatic assignment
+			//group2.TabIndex = 2;
 			group2.TabStop = true;
 
-			group3.TabIndex = 30;
+			group3.TabIndex = 35;
 			group3.TabStop = true;
 
 			radio11.Text = "Radio 1-1 [Tab1]";
@@ -191,11 +212,8 @@ namespace MWFTestApplication {
 			radio33.Text = "Radio 3-3 [Tab2]";
 			radio34.Text = "Radio 3-4 [Tab4]";
 
-			radio11.TabIndex = 1;
+			// We don't assign TabIndex for radio1X; test automatic assignment
 			radio11.TabStop = true;
-			radio12.TabIndex = 2;
-			radio13.TabIndex = 3;
-			radio14.TabIndex = 4;
 
 			radio21.TabIndex = 4;
 			radio22.TabIndex = 3;
@@ -270,16 +288,24 @@ namespace MWFTestApplication {
 				// Show the behaviour inside a single container
 				Console.WriteLine("Starting from a container that contains one other container");
 				WalkControls(group2, group2, 14, true);
+
+				// Bogus args, test sanity checking
+				Console.WriteLine("Sanity check testing, container is non-container control, starting at sibling");
+				WalkControls(radio11, radio21, 14, true);
+
+				Console.WriteLine("Sanity check testing, container is aunt of start");
+				WalkControls(group1, radio21, 14, true);
 			}
 
 			// Perform some tests, the TabIndex stuff below will alter the outcome
-			TestControl(group2, radio34, true, null);
+			TestControl(group2, radio34, true, null);		// Test 1
+			TestTabIndex(group2, 31);				// Test 2
 
 			// Does the taborder of containers and non-selectable things change behaviour?
 			label1.TabIndex = 5;
 			label2.TabIndex = 4;
 			group1.TabIndex = 3;
-			group2.TabIndex = 2;
+			group2.TabIndex = 1;	// same as group3
 			group3.TabIndex = 1;
 
 			if (debug > 0) {
@@ -288,19 +314,29 @@ namespace MWFTestApplication {
 			}
 
 			// Start verification
-			TestControl(group2, radio34, true, radio23.Text);	// Test 2
-			TestControl(group2, group2, true, radio24.Text);
-			TestControl(group2, group3, true, radio31.Text);
-			TestControl(group1, radio14, true, null);
-			TestControl(group2, radio24, true, group3.Text);
-			TestControl(group2, radio21, true, null);
-			TestControl(this, radio12, true, radio13.Text);
-			TestControl(this, radio14, true, label2.Text);
-			TestControl(this, radio34, true, radio23.Text);
-			TestControl(group2, radio24, true, group3.Text);
+			TestControl(group2, radio34, true, radio23.Text);	// Test 3
+			TestControl(group2, group2, true, radio24.Text);	// Test 4
+			TestControl(group2, group3, true, radio31.Text);	// Test 5
+			TestControl(group1, radio14, true, null);		// Test 6
+			TestControl(group2, radio24, true, group3.Text);	// Test 7
+			TestControl(group2, radio21, true, null);		// Test 8
+			TestControl(this, radio12, true, radio13.Text);		// Test 9
+			TestControl(this, radio14, true, label2.Text);		// Test 10
+			TestControl(this, radio34, true, radio23.Text);		// Test 11
+			TestControl(group2, radio24, true, group3.Text);	// Test 12
 
-			TestControl(this, label2, false, radio14.Text);
-			TestControl(group2, group3, false, radio24.Text);
+			// Sanity checks
+			TestControl(radio11, radio21, true, null);		// Test 13
+			TestControl(group1, radio21, true, radio11.Text);	// Test 14
+
+			TestControl(this, label2, false, radio14.Text);		// Test 15
+			TestControl(group2, group3, false, radio24.Text);	// Test 16
+
+			TestTabIndex(radio21, 4);				// Test 17
+			TestTabIndex(radio11, 0);				// Test 18
+			TestTabIndex(radio13, 2);				// Test 19
+			TestTabIndex(group3, 1);				// Test 20
+			TestTabIndex(group2, 1);				// Test 21
 
 			if (visual) {
 				if (failed == 0) {
