@@ -22,6 +22,7 @@ namespace MyFormProject
 		private System.Windows.Forms.MenuItem miStandard;
 		private System.Windows.Forms.MenuItem miDivided;
 		private System.Windows.Forms.MenuItem miHierarchical;
+		private System.Windows.Forms.MenuItem miActions;
 		private System.Windows.Forms.MenuItem miWindow;
 
 		//  Standard			
@@ -104,10 +105,18 @@ namespace MyFormProject
 		private System.Windows.Forms.MenuItem miSubHierarchical26 = new MenuItem();
 		private System.Windows.Forms.MenuItem miSubHierarchical27 = new MenuItem();
 		private System.Windows.Forms.MenuItem miSubHierarchical28 = new MenuItem();
+		
+		//  Menu Actions
+		private System.Windows.Forms.MenuItem miSubActions0 = new MenuItem();
+		private System.Windows.Forms.MenuItem miSubActions1 = new MenuItem();
+		private System.Windows.Forms.MenuItem miSubActions2 = new MenuItem();
+		
 
 		//  Window
 		private System.Windows.Forms.MenuItem miWindow0 = new MenuItem();
 		private System.Windows.Forms.MenuItem miWindow1 = new MenuItem();
+		
+		private int item_num = 0;
 		
 		public MainForm()
 		{
@@ -351,6 +360,19 @@ namespace MyFormProject
 			                         miSubDivided13, miSubDivided14, miSubDivided15,
 			                         miSubDivided16, miSubDivided17, miSubDivided18, 
 			                         miSubDivided19, miSubDivided20, miSubDivided21});
+			                         
+			//
+			//Add the menu items to the Menu Actions menu
+			//
+			
+			miSubActions0.Text = "Add Menu item";
+			miSubActions0.Click  += new System.EventHandler (AddMenuItem);
+			miSubActions1.Text = "Remove last Menu item";
+			miSubActions1.Click  += new System.EventHandler (RemoveMenuItem);
+			
+			miActions = new MenuItem("&Menu Actions", new MenuItem[] 
+			                              {miSubActions0, miSubActions1});
+
 
 			//
 			//Add the menu items to the Hierarchical example
@@ -371,7 +393,7 @@ namespace MyFormProject
 			//Add the examples to the mainMenu
 			//
 			mainMenu = new MainMenu(new MenuItem[] {miStandard, miDivided, 
-			                        miHierarchical, miWindow});		                        
+			                        miHierarchical, miActions, miWindow});
 			
 				
 				
@@ -403,5 +425,19 @@ namespace MyFormProject
 			Console.WriteLine ("Clicked 'Checked_true (event)' item");
 		}		
 		
+		void AddMenuItem (object sender, EventArgs e)
+		{
+			MenuItem item = new MenuItem ();
+			item.Text = "New Item + " + item_num;
+			miActions.MenuItems.Add (item);
+			item_num++;
+		}
+		
+		void RemoveMenuItem (object sender, EventArgs e)
+		{			
+			if (miActions.MenuItems.Count > 0)
+				miActions.MenuItems.RemoveAt (miActions.MenuItems.Count -1 );			
+		}
+			
 	}		
 }
