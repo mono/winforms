@@ -41,6 +41,7 @@ namespace MyFormProject
 		private Button buttonDropDownList;
 		private Button buttonAddItems;
 		private Button buttonCleanItems;
+		private Button buttonDropDownAction;
 		private int last_item = 0;
 
 		public MainForm()
@@ -1031,6 +1032,12 @@ namespace MyFormProject
 			comboBox.DropDownStyle = ComboBoxStyle.Simple;
 			comboBox.MaxDropDownItems = 10;
 			//comboBox.ItemHeight = false;
+			
+			buttonDropDownAction = new Button ();
+			buttonDropDownAction.Location = new Point (400, 130);
+			buttonDropDownAction.Text = "DropDown action";
+			buttonDropDownAction.Size = new Size (100, 23);
+			buttonDropDownAction.Click += new System.EventHandler (buttonDropDownListActionClick);
 						
 			
 			buttonAddItems = new Button ();
@@ -1055,7 +1062,8 @@ namespace MyFormProject
 			// 
 			this.ClientSize = new System.Drawing.Size(624, 309);
 			this.Controls.AddRange(new Control[] { buttonAddItems, buttonCleanItems,
-						comboBox, buttonSimple, buttonDropDown, buttonDropDownList});
+						comboBox, buttonSimple, buttonDropDown, buttonDropDownList,
+						buttonDropDownAction});
 						
 			this.Text = "Single ComboBox sample";
 			this.ResumeLayout(false);
@@ -1067,6 +1075,11 @@ namespace MyFormProject
 			Console.WriteLine ("ComboBox String {0}", comboBox.ToString ());		
 			
 		}
+		
+		private void buttonDropDownListActionClick (object sender, System.EventArgs e)
+		{				
+			comboBox.DroppedDown = !comboBox.DroppedDown;
+		}	
 		
 		private void buttonCleanItemsClick (object sender, System.EventArgs e)
 		{				
@@ -1083,7 +1096,7 @@ namespace MyFormProject
 
 		private void buttonSimpleClick (object sender, System.EventArgs e)
 		{				
-			comboBox.DroppedDown = true; 			
+			comboBox.DropDownStyle = ComboBoxStyle.Simple;
 		}
 
 		private void buttonDropDownClick (object sender, System.EventArgs e)
