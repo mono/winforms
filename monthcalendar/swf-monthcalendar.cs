@@ -75,6 +75,7 @@ namespace MyFormProject
 			this.monthcal3.Location = new System.Drawing.Point(0, 460);
 			this.monthcal3.Name = "monthcalendar3";
 			this.monthcal3.TabIndex = 3;
+			this.monthcal1.ShowWeekNumbers = true;
 
 
 			this.label1.Location = new System.Drawing.Point(0, 0);
