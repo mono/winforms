@@ -4,6 +4,12 @@
 // This will not run with SWF unless XplatUI and XplatUI.ScrollWindow is
 // marked as public!
 //
+// Left button = Horizontal Scroll 
+// Right button = Vertical Scroll
+// Middle button = Both Horizontal and Vertical Scroll
+// Press shift with the button = scroll in opposite direction
+// To redraw full screen resize
+//
 
 #undef window_scroll
 using System;
@@ -19,29 +25,50 @@ namespace ScrollTest {
 			Pen		gp = new Pen(Color.Green, 2);
 			Pen		bp = new Pen(Color.Blue, 2);
 
-                        g.FillRectangle(SystemBrushes.Window, ClientRectangle);
-                        g.DrawString("TestString", f, b, 0, 0);
-
-			g.DrawLine(gp , 1, 1, 500, 500);
-			g.DrawLine(gp , 500, 1, 1, 500);
-
-			for (int i = 0; i < 500; i += 20) {
-				g.DrawLine(bp, 0, i, 500, i);
-			}
-			
 			if ((e.ClipRectangle.Width == 5) || (e.ClipRectangle.Height == 5)) {
 				g.FillRectangle(b, e.ClipRectangle);
+			} else {
+				g.FillRectangle(SystemBrushes.Window, ClientRectangle);
+				g.DrawString("TestString", f, b, 0, 0);
+
+				g.DrawLine(gp , 1, 1, 500, 500);
+				g.DrawLine(gp , 500, 1, 1, 500);
+
+				for (int i = 0; i < 500; i += 20) {
+					g.DrawLine(bp, 0, i, 500, i);
+				}
 			}
+			
 
 			Console.WriteLine("Received Expose area {0}", e.ClipRectangle);
                 }
 
 		private void MainWindow_MouseDown(object sender, MouseEventArgs e) {
+			int	XAmount;
+			int	YAmount;
+
 			Console.WriteLine("MouseUp received, clicks: {0}", e.Clicks);
+
+			if (e.Button == MouseButtons.Right) {
+				XAmount = 0;
+				YAmount = 5;
+			} else if (e.Button == MouseButtons.Left) {
+				XAmount = 5;
+				YAmount = 0;
+			} else {	// Middle button
+				XAmount = 5;
+				YAmount = 5;
+			}
+
+			if ((Control.ModifierKeys & Keys.Shift) != 0) {
+				XAmount *= -1;
+				YAmount *= -1;
+			}
+
 #if window_scroll
-			XplatUI.ScrollWindow(Handle, -111, 0, false);
+			XplatUI.ScrollWindow(Handle, XAmount, YAmount, false);
 #else
-			XplatUI.ScrollWindow(Handle, new Rectangle(e.X, e.Y, 75, 75), 0, -5, true);
+			XplatUI.ScrollWindow(Handle, new Rectangle(e.X, e.Y, 75, 75), XAmount, YAmount, true);
 #endif
 		}
 
