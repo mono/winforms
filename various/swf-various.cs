@@ -222,6 +222,23 @@ namespace MWFTestApplication {
 				}
 			}
 
+			int pre_scale_width = this.ClientSize.Width;
+
+			this.Scale(2);
+			this.Scale(1);
+
+			if (this.ClientSize.Width != (pre_scale_width * 2)) {
+				failed++;
+				if (verbose > 0) {
+					Console.WriteLine("{0}: this.Scale(2); this.Scale(1) failed, width: {1}, expected {2}", test_no, this.ClientSize.Width, pre_scale_width * 2);
+				}
+				test_no++;
+			} else {
+				if (verbose > 0) {
+					Console.WriteLine("Test {0} passed", test_no++);
+				}
+			}
+				
 			if (visual) {
 				if (failed == 0) {
 					MessageBox.Show("All Tests Passed!", "Success");
@@ -229,7 +246,8 @@ namespace MWFTestApplication {
 					MessageBox.Show(failed + "tests failed, check the log", "Failure");
 				}
 			}
-		}		
+
+		}
 		
 		public static int Main(string[] args) {
 			if (args.Length > 0) {
