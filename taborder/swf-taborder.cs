@@ -412,14 +412,14 @@ namespace MWFTestApplication {
 
 			// Sanity checks
 			TestControl(radio11, radio21, true, null);		// Test 14
-			TestControl(group1, radio21, true, radio11.Text);	// Test 15
+			TestControl(group1, radio21, true, text1.Text);		// Test 15
 
 			TestControl(this, label2, false, radio14.Text);		// Test 16
 			TestControl(group2, group3, false, radio21.Text);	// Test 17
 
 			TestTabIndex(radio21, 4);				// Test 18
-			TestTabIndex(radio11, 0);				// Test 19
-			TestTabIndex(radio13, 2);				// Test 20
+			TestTabIndex(radio11, 1);				// Test 19
+			TestTabIndex(radio13, 3);				// Test 20
 			TestTabIndex(group3, 35);				// Test 21
 			TestTabIndex(group2, 1);				// Test 22
 
