@@ -281,7 +281,7 @@ namespace MyFormProject
 			this.Controls.Add(this.vScrollBar2);
 			this.Controls.Add(this.vScrollBar1);
 			this.Name = "MainForm";
-			this.Text = "swf-horizontalscrollbar";
+			this.Text = "swf-verticalscrollbar";
 			this.Load += new System.EventHandler(this.MainFormLoad);
 			this.ResumeLayout(false);
 		}
