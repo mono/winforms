@@ -21,6 +21,8 @@ namespace System.Windows.Forms {
 		public BeginInvokeDemo ()
 		{
 			label = new Label ();
+			label.Dock = DockStyle.Fill;
+			label.TextAlign = ContentAlignment.MiddleCenter;
 			label.Text = DateTime.Now.ToLongTimeString ();
 			Controls.Add (label);
 		}
