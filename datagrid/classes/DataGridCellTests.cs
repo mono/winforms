@@ -30,44 +30,27 @@ using System.Windows.Forms;
 
 namespace DatagridTests
 {
-	class DataGridBoolColumnTests
+	class DataGridCellTests
 	{
-		public void DumpDataGridBoolColumn (DataGridBoolColumn ts)
+		public DataGridCellTests ()
 		{
-			Console.WriteLine ("AllowNull {0} ", ts.AllowNull);
-			Console.WriteLine ("FalseValue {0} ", ts.FalseValue);
-			Console.WriteLine ("NullValue {0} ", ts.NullValue);
-			Console.WriteLine ("TrueValue {0} ", ts.TrueValue);
-			Console.WriteLine ("Alignment {0} ", ts.Alignment);
-			Console.WriteLine ("DataGridTableStyle {0} ", ts.DataGridTableStyle);
-			Console.WriteLine ("HeaderAccessibleObject {0} ", ts.HeaderAccessibleObject);
-			Console.WriteLine ("HeaderText {0} ", ts.HeaderText);
-			Console.WriteLine ("MappingName {0} ", ts.NullText);
-			Console.WriteLine ("PropertyDescriptor {0} ", ts.PropertyDescriptor);
-			Console.WriteLine ("ReadOnly {0} ", ts.ReadOnly);
-			Console.WriteLine ("Width {0} ", ts.Width);
-		}
+			DataGridCell dg = new DataGridCell ();
+			Console.WriteLine ("DataGridCell default --- ");
+			Console.WriteLine ("Column {0}", dg.RowNumber);
+			Console.WriteLine ("Row {0}", dg.ColumnNumber);
 
-		public DataGridBoolColumnTests ()
-		{
-			DataGridBoolColumn bc = new DataGridBoolColumn ();
-			bc.FalseValueChanged += new System.EventHandler (OnFalseValueChanged);
+			dg.RowNumber = 10;
+			dg.ColumnNumber = 5;
 
-			Console.WriteLine ("DataGridBoolColumn default --- ");
-			DumpDataGridBoolColumn (bc);
-			bc.FalseValue = true;
-
+			Console.WriteLine ("ToString {0}", dg.ToString ());
+			Console.WriteLine ("GetHashCode {0}", dg.GetHashCode ());
 		}
 
 		public static void Main (string[] args)
 		{
-			new DataGridBoolColumnTests ();
+			new DataGridCellTests ();
 		}
 
-		private void OnFalseValueChanged (object sender, System.EventArgs e)
-		{
-			Console.WriteLine ("FalseValueChanged fired");
-		}
 
 	}
 }

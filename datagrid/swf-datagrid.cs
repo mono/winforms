@@ -28,32 +28,66 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace DatagridTests
+namespace DatagridSamples
 {
-	class GridColumnStylesCollectionTests
+	class DataGridSamples : Form
 	{
-		public void DumpGridColumnStylesCollection (GridColumnStylesCollection ts)
+		class OurButton : Button
 		{
-			Console.WriteLine ("IsSynchronized {0} ", ts.IsSynchronized);
-			Console.WriteLine ("SyncRoot {0} ", ts.SyncRoot);
-			//Console.WriteLine ("IsFixedSize {0} ", ts.IsFixedSize);
-			Console.WriteLine ("IsReadOnly {0} ", ts.IsReadOnly);
+			public Form form = null;
+
+			public OurButton (Form f)
+			{
+				form = f;
+			}
 		}
 
-		public GridColumnStylesCollectionTests ()
+		public DataGridSamples ()
 		{
-			DataGridTableStyle ts = new DataGridTableStyle ();
-			GridColumnStylesCollection sc = ts.GridColumnStyles;
-
-			Console.WriteLine ("GridColumnStylesCollection default --- ");
-			DumpGridColumnStylesCollection (sc);
-
+			InitializeComponent ();
 		}
+
+		public void CreateSampleEntry (string description, Form form, ref int y)
+		{
+			Label label = new Label ();
+			label.Text = description;
+			label.Location = new Point (10, y + 5);
+			label.AutoSize = true;
+			Controls.Add (label);
+
+			OurButton button = new OurButton (form);
+			button.Text = "Run sample";
+			button.Location = new Point (180, y);
+			button.Click += new System.EventHandler (this.label2_Click);
+			Controls.Add (button);
+
+			y += 30;
+		}
+
+		private void label2_Click (object sender, System.EventArgs e)
+		{
+			((OurButton)sender).form.ShowDialog (this);
+		}
+
+
+		void InitializeComponent ()
+		{
+			int y = 10;
+
+			CreateSampleEntry ("With real data ", new DataGridRealSample (), ref y);
+			CreateSampleEntry ("Properties testing", new DataGridTestProperties (), ref y);
+			CreateSampleEntry ("Properties table navigation", new DataGridTableNavigation (), ref y);
+			CreateSampleEntry ("Table and column styles", new DataGridStyles (), ref y);
+			Text = "SWF-Datagrid app";
+			Name = "MainForm";
+			ClientSize = new Size (300, 300);
+		}
+
 
 		public static void Main (string[] args)
 		{
-			new GridColumnStylesCollectionTests ();
+			Application.Run (new DataGridSamples ());
 		}
+
 	}
 }
-
