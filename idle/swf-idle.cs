@@ -25,16 +25,16 @@ namespace System.Windows.Forms {
 			Controls.Add (label);
 		}
 
-                private void IdleHandler (object sender, EventArgs e)
-                {
-                        label.Text = "Last Idle: " + DateTime.Now.Ticks;
-                }
+		private void IdleHandler (object sender, EventArgs e)
+		{
+			label.Text = "Last Idle: " + DateTime.Now.Ticks;
+		}
 
 		public static void Main ()
 		{
 			IdleDemo demo = new IdleDemo ();
 
-                        Application.Idle += new EventHandler (demo.IdleHandler);
+			Application.Idle += new EventHandler (demo.IdleHandler);
 			Application.Run (demo);
 		}
 	}
