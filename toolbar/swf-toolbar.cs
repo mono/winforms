@@ -94,8 +94,9 @@ namespace SWFToolBar
 			this.toolBar2.TabIndex = 1;
 			this.toolBar2.ImageList = il;
 			this.toolBar2.Divider = false;
-			this.toolBar2.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler (this.toolBar2_ButtonClick);
-			
+			this.toolBar2.ButtonClick += new ToolBarButtonClickEventHandler (this.toolBar2_ButtonClick);
+			this.toolBar2.ButtonDropDown += new ToolBarButtonClickEventHandler(this.toolBar2_ButtonDropDown);
+
 			//il.ColorDepth = ColorDepth.Depth32Bit;
 			//il.Images.Add (new Bitmap ("Sunset.jpg"));
 			//il.Images.Add (new Bitmap ("Bluehills.jpg"));
@@ -153,6 +154,11 @@ namespace SWFToolBar
 		private void toolBar2_ButtonClick (object sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
 		{
 			Console.WriteLine ("button clicked: {0}, rect: {1}", e.Button.Text, e.Button.Rectangle);
+		}
+
+		private void toolBar2_ButtonDropDown (object sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
+		{
+			Console.WriteLine ("button dropdown clicked: {0}, rect: {1}", e.Button.Text, e.Button.Rectangle);
 		}
 
 		static void Main () 
