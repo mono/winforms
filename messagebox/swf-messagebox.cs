@@ -1,6 +1,8 @@
 using System;
-using System.Windows.Forms;
 using System.Drawing;
+using System.Globalization;
+using System.Windows.Forms;
+using System.Threading;
 
 namespace MyFormProject
 {
@@ -48,6 +50,7 @@ namespace MyFormProject
 		[STAThread]
 		static void Main() 
 		{
+			Thread.CurrentThread.CurrentUICulture = new CultureInfo( "de-DE", false );
 			Application.Run(new MainForm());
 		}
 
@@ -56,24 +59,36 @@ namespace MyFormProject
 
 			switch (count) {
 				case 0: {
-					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					this.button1.Text = "Last result was " + result + "\nClick to get OK/Cancel MessageBox";
 					break;
 				}
 
 				case 1: {
-					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 					this.button1.Text = "Last result was " + result + "\nClick me for Yes/No MessageBox";
 					break;
 				}
 
 				case 2: {
-					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
 					this.button1.Text = "Last result was " + result + "\nClick to exit the test application";
 					break;
 				}
 
 				case 3: {
+					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
+					this.button1.Text = "Last result was " + result + "\nClick to exit the test application";
+					break;
+				}
+
+				case 4: {
+					result = MessageBox.Show("Please click a button and verify that the proper result is reported in the main window.", "MessageBox Test", MessageBoxButtons.AbortRetryIgnore);
+					this.button1.Text = "Last result was " + result + "\nClick to exit the test application";
+					break;
+				}
+
+				case 5: {
 					Application.Exit();
 					break;
 				}
