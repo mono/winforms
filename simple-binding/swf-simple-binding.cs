@@ -46,9 +46,6 @@ public class SimpleBinding : Form {
 
 	public SimpleBinding ()
 	{
-
-		MakeTable ();
-
 		text_box = new TextBox ();
 		text_box.Left = 10;
 		text_box.Top = 10;
