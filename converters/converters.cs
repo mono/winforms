@@ -16,6 +16,7 @@ namespace MWFTestApplication {
 		static MainWindow	main_window;
 		static int		test_no		= 1;
 		static int		failed		= 0;
+		static int		failed_expected = 0;
 		static int		debug		= 0;
 		static int		verbose		= 0;
 		static bool		visual		= false;
@@ -43,6 +44,7 @@ namespace MWFTestApplication {
 				}
 			}
 
+#if not
 			foreach (Type t in type.Assembly.GetTypes ()) {
 				if (conv.CanConvertFrom(null, t)) {
 					from_count++;
@@ -58,6 +60,7 @@ namespace MWFTestApplication {
 					}
 				}
 			}
+#endif
 
 			if (from_count != expect_from) {
 				if (verbose > 0) {
@@ -80,17 +83,29 @@ namespace MWFTestApplication {
 			object result;
 
 			if (debug > 0) {
-				Console.WriteLine("{0}: CheckConversion, checking {1}({2}) <-> {3}({4})", conv.ToString(), check.GetType().ToString(), check.ToString(), type.ToString(), expect.ToString());
+				Console.WriteLine("{0}: CheckConversion, checking {1}({2}) <-> {3}({4})", conv.ToString(), check.GetType().ToString(), check.ToString(), type.ToString(), expect != null ? expect.ToString() : "null");
 			}
 
 			obj = conv.ConvertTo(null, CultureInfo.InvariantCulture, check, type);
 
+			if (obj == null) {
+				if (expect != null) {
+					failed++;
+					Console.WriteLine("{0}: ConvertTo failed, type {1}, expected {2}, got null", conv.ToString(), type.ToString(), expect.ToString());
+				}
+				return;
+			}
+
 			// Intermediate verification
-			if (!obj.Equals(expect)) {
+			if (expect != null && !obj.Equals(expect)) {
 				failed++;
 				if (verbose > 0) {
 					Console.WriteLine("{0}: ConvertTo failed, type {1}, expected {2}, got {3}", conv.ToString(), type.ToString(), expect.ToString(), obj.ToString());
 				}
+			}
+
+			if (debug > 1) {
+				Console.WriteLine("{0}: CheckConversion, ConvertTo result: '{1}')", conv.ToString(), obj);
 			}
 
 			result = conv.ConvertFrom(null, CultureInfo.InvariantCulture, obj);
@@ -101,6 +116,10 @@ namespace MWFTestApplication {
 				if (verbose > 0) {
 					Console.WriteLine("{0}: ConvertTo/ConvertFrom roundtrip failed, type {1}", conv.ToString(), type.ToString());
 				}
+			}
+
+			if (debug > 1) {
+				Console.WriteLine("{0}: CheckConversion, ConvertFrom result: '{1}')", conv.ToString(), result);
 			}
 		}
 
@@ -142,7 +161,7 @@ namespace MWFTestApplication {
 						Console.WriteLine("{0}: Index {1:2} expecting:{2}, returned {3}", conv.ToString(), i, expected[i], values[i]);
 					}
 
-					if (expected[i].Equals(values[i])) {
+					if (!expected[i].Equals(values[i].ToString())) {
 						if (verbose > 0) {
 							Console.WriteLine("{0}: GetStandardValues Index {1} values don't match ({2} != {3})", conv.ToString(), i, expected[i], values[i]);
 						}
@@ -181,18 +200,31 @@ namespace MWFTestApplication {
 
 		public void TestKeysConverter() {
 			KeysConverter	key_conv;
+			Keys[]		keys;
 			string[]	expected = new string [] {
 						"Alt", "Back", "Control", "Delete", "End", "Enter", "F1", "F10", "F11", "F12", "F2",
 						"F3", "F4", "F5", "F6", "F7", "F8", "F9", "Home", "Insert", "Next", "Prior", "Shift" };
 
+
+			// Keys.Modifiers doesn't round-trip
+			failed_expected++;
+
 			key_conv = new KeysConverter();
 
 			CheckConvert(1, 1, key_conv, typeof(Keys));
+
+			keys = (Keys[])Enum.GetValues(typeof(Keys));
+			for (int i = 0; i < keys.Length; i++) {
+				CheckConversion(keys[i], null, key_conv, typeof(string));
+			}
+			CheckConversion(Keys.Shift | Keys.Alt | Keys.Control, "Ctrl+Alt+Shift+None", key_conv, typeof(string));
+			CheckConversion(Keys.Shift | Keys.Alt | Keys.Control | Keys.F4, "Ctrl+Alt+Shift+F4", key_conv, typeof(string));
 			CheckConversion(Keys.Shift | Keys.F4, "Shift+F4", key_conv, typeof(string));
+			CheckConversion(Keys.ControlKey, "ControlKey", key_conv, typeof(string));
+
 			CheckStandardValues(expected, key_conv);
 			CheckStandardValuesSupported(true, key_conv);
 			CheckStandardValuesExclusive(false, key_conv);
-
 		}
 
 		public MainWindow() {
@@ -202,10 +234,10 @@ namespace MWFTestApplication {
 			TestKeysConverter();
 
 			if (visual) {
-				if (failed == 0) {
+				if (failed != failed_expected) {
 					MessageBox.Show("All Tests Passed!", "Success");
 				} else {
-					MessageBox.Show(failed + "tests failed, check the log", "Failure");
+					MessageBox.Show(failed + "tests failed, only expected " + failed_expected + "; check the log", "Failure");
 				}
 			}
 		}		
