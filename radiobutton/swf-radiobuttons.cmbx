@@ -1,0 +1,16 @@
+<Combine fileversion="1.0" name="swf-radiobuttons" description="">
+  <StartMode startupentry="swf-radiobuttons" single="True">
+    <Execute entry="swf-radiobuttons" type="None" />
+  </StartMode>
+  <Entries>
+    <Entry filename=".\swf-radiobuttons.prjx" />
+  </Entries>
+  <Configurations active="Debug">
+    <Configuration name="Release">
+      <Entry name="swf-radiobuttons" configurationname="Debug" build="False" />
+    </Configuration>
+    <Configuration name="Debug">
+      <Entry name="swf-radiobuttons" configurationname="Debug" build="False" />
+    </Configuration>
+  </Configurations>
+</Combine>

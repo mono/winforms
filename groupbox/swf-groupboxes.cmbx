@@ -1,0 +1,16 @@
+<Combine fileversion="1.0" name="swf-groupboxes" description="">
+  <StartMode startupentry="swf-groupboxes" single="True">
+    <Execute entry="swf-groupboxes" type="None" />
+  </StartMode>
+  <Entries>
+    <Entry filename=".\swf-groupboxes.prjx" />
+  </Entries>
+  <Configurations active="Debug">
+    <Configuration name="Release">
+      <Entry name="swf-groupboxes" configurationname="Debug" build="False" />
+    </Configuration>
+    <Configuration name="Debug">
+      <Entry name="swf-groupboxes" configurationname="Debug" build="False" />
+    </Configuration>
+  </Configurations>
+</Combine>
