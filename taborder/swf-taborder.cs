@@ -6,6 +6,7 @@
 
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -19,12 +20,16 @@ namespace MWFTestApplication {
 		static bool		visual		= false;
 		static bool		exception	= false;
 
+		static Control		active;
+
 		Label		label1 = new Label();		// To test non-tabstop items as well
 		Label		label2 = new Label();
 
 		GroupBox	group1 = new GroupBox();
 		GroupBox	group2 = new GroupBox();
 		GroupBox	group3 = new GroupBox();
+
+		TextBox		text1 = new TextBox();
 
 		RadioButton	radio11 = new RadioButton();
 		RadioButton	radio12 = new RadioButton();
@@ -40,29 +45,33 @@ namespace MWFTestApplication {
 		RadioButton	radio34 = new RadioButton();
 
 		private void MouseClick(object sender, MouseEventArgs e) {
-			Control child;
-			Point	p;
+			if (e.Button == MouseButtons.Left) {
+				Control child;
+				Point	p;
 
-			p = ((Control)sender).PointToScreen(new Point(e.X, e.Y));
-			p = main_window.PointToClient(p);
+				p = ((Control)sender).PointToScreen(new Point(e.X, e.Y));
+				p = main_window.PointToClient(p);
 
-			child = GetChildAtPoint(p);
+				child = GetChildAtPoint(p);
 
-			if (child != null) {
-				if (child.Parent != null) {
-					WalkControls(child.Parent, child, 14, true);
+				if (child != null) {
+					if (child.Parent != null) {
+						WalkControls(child.Parent, child, 14, true);
+					}
+
+					WalkControls(child, child, 14, true);
+				} else {
+					Console.WriteLine("No control found at point");
 				}
-
-				WalkControls(child, child, 14, true);
 			} else {
-				Console.WriteLine("No control found at point");
+				this.SelectNextControl(active, true, true, true, true);
 			}
 		}
 
 		void WalkControls(Control container, Control start, int count, bool forward) {
 			Control ctl;
 
-			Console.WriteLine("Walking inside {0},\n starting at control {1}", container.Text, start.Text);
+			Console.WriteLine("Walking inside {0},\n starting at control {1}", container.Text, start != null ? start.Text : "null");
 
 			ctl = start;
 			for (int i = 0; i < count; i++) {
@@ -137,8 +146,8 @@ namespace MWFTestApplication {
 			ClientSize = new System.Drawing.Size (520, 520);
 			Text = "SWF Taborder Test App Form";
 
-			if (debug > 1) {
-				this.MouseDown += new MouseEventHandler(MouseClick);
+			this.MouseDown += new MouseEventHandler(MouseClick);
+			if (debug > 2) {
 
 				label1.MouseDown += new MouseEventHandler(MouseClick);
 				label2.MouseDown += new MouseEventHandler(MouseClick);
@@ -161,6 +170,53 @@ namespace MWFTestApplication {
 				radio32.MouseDown += new MouseEventHandler(MouseClick);
 				radio33.MouseDown += new MouseEventHandler(MouseClick);
 				radio34.MouseDown += new MouseEventHandler(MouseClick);
+			}
+
+			if (debug > 1) {
+				this.Activated += new EventHandler(cbActivated);
+				this.Deactivate += new EventHandler(cbDeactivate);
+
+				this.Enter += new EventHandler(cbEnter);
+				group1.Enter += new EventHandler(cbEnter);
+				radio11.Enter += new EventHandler(cbEnter);
+				radio12.Enter += new EventHandler(cbEnter);
+				radio13.Enter += new EventHandler(cbEnter);
+				radio14.Enter += new EventHandler(cbEnter);
+
+				this.Leave += new EventHandler(cbLeave);
+				group1.Leave += new EventHandler(cbLeave);
+				radio11.Leave += new EventHandler(cbLeave);
+				radio12.Leave += new EventHandler(cbLeave);
+				radio13.Leave += new EventHandler(cbLeave);
+				radio14.Leave += new EventHandler(cbLeave);
+
+				this.GotFocus += new EventHandler(cbGotFocus);
+				group1.GotFocus += new EventHandler(cbGotFocus);
+				radio11.GotFocus += new EventHandler(cbGotFocus);
+				radio12.GotFocus += new EventHandler(cbGotFocus);
+				radio13.GotFocus += new EventHandler(cbGotFocus);
+				radio14.GotFocus += new EventHandler(cbGotFocus);
+
+				this.Validating += new CancelEventHandler(cbValidating);
+				group1.Validating += new CancelEventHandler(cbValidating);
+				radio11.Validating += new CancelEventHandler(cbValidating);
+				radio12.Validating += new CancelEventHandler(cbValidating);
+				radio13.Validating += new CancelEventHandler(cbValidating);
+				radio14.Validating += new CancelEventHandler(cbValidating);
+
+				this.Validated += new EventHandler(cbValidated);
+				group1.Validated += new EventHandler(cbValidated);
+				radio11.Validated += new EventHandler(cbValidated);
+				radio12.Validated += new EventHandler(cbValidated);
+				radio13.Validated += new EventHandler(cbValidated);
+				radio14.Validated += new EventHandler(cbValidated);
+
+				this.LostFocus += new EventHandler(cbLostFocus);
+				group1.LostFocus += new EventHandler(cbLostFocus);
+				radio11.LostFocus += new EventHandler(cbLostFocus);
+				radio12.LostFocus += new EventHandler(cbLostFocus);
+				radio13.LostFocus += new EventHandler(cbLostFocus);
+				radio14.LostFocus += new EventHandler(cbLostFocus);
 			}
 
 			if (debug > 0) {
@@ -200,6 +256,8 @@ namespace MWFTestApplication {
 			// Test default tab index
 			TestTabIndex(radio11, 0);				// Test 1
 
+			text1.Text = "Edit Control";
+
 			radio11.Text = "Radio 1-1 [Tab1]";
 			radio12.Text = "Radio 1-2 [Tab2]";
 			radio13.Text = "Radio 1-3 [Tab3]";
@@ -216,6 +274,7 @@ namespace MWFTestApplication {
 			radio34.Text = "Radio 3-4 [Tab4]";
 
 			// We don't assign TabIndex for radio1X; test automatic assignment
+			text1.TabStop = true;
 			radio11.TabStop = true;
 
 			radio21.TabIndex = 4;
@@ -229,6 +288,8 @@ namespace MWFTestApplication {
 			radio32.TabIndex = 13;
 			radio33.TabIndex = 12;
 			radio34.TabIndex = 14;
+
+			text1.Location = new Point(10, 100);
 
 			radio11.Location = new Point(10, 20);
 			radio12.Location = new Point(10, 40);
@@ -245,6 +306,8 @@ namespace MWFTestApplication {
 			radio33.Location = new Point(10, 60);
 			radio34.Location = new Point(10, 80);
 
+			text1.Size = new Size(150, text1.PreferredHeight);
+
 			radio11.Size = new Size(150, 20);
 			radio12.Size = new Size(150, 20);
 			radio13.Size = new Size(150, 20);
@@ -259,6 +322,8 @@ namespace MWFTestApplication {
 			radio32.Size = new Size(150, 20);
 			radio33.Size = new Size(150, 20);
 			radio34.Size = new Size(150, 20);
+
+			group1.Controls.Add(text1);
 
 			group1.Controls.Add(radio11);
 			group1.Controls.Add(radio12);
@@ -299,6 +364,10 @@ namespace MWFTestApplication {
 				// Bogus args, test sanity checking
 				Console.WriteLine("Sanity check testing, container is non-container control, starting at sibling in different container");
 				WalkControls(radio11, radio21, 14, true);
+
+				// Bogus args, test sanity checking
+				Console.WriteLine("Sanity check testing, container is non-container control, starting is null");
+				WalkControls(radio24, null, 14, true);
 
 				// Bogus args, test sanity checking
 				Console.WriteLine("Sanity check testing, container is non-container control, starting is same as container");
@@ -400,6 +469,7 @@ namespace MWFTestApplication {
 				}
 			}
 			main_window = new MainWindow();
+			active = main_window;
 
 			// We don't want to run it, tests are already complete
 			if (visual) {
@@ -411,6 +481,39 @@ namespace MWFTestApplication {
 			}
 
 			return failed;
+		}
+
+		private void cbEnter(object sender, EventArgs e) {
+			Console.WriteLine("Enter called on object {0}", ((Control)sender).Text);
+		}
+
+		private void cbLeave(object sender, EventArgs e) {
+			Console.WriteLine("Leave called on object {0}", ((Control)sender).Text);
+		}
+
+		private void cbGotFocus(object sender, EventArgs e) {
+			Console.WriteLine("GotFocus called on object {0}", ((Control)sender).Text);
+		}
+
+		private void cbLostFocus(object sender, EventArgs e) {
+			Console.WriteLine("LostFocus called on object {0}", ((Control)sender).Text);
+		}
+
+		private void cbValidating(object sender, CancelEventArgs e) {
+			Console.WriteLine("Validating called on object {0}", ((Control)sender).Text);
+		}
+
+		private void cbValidated(object sender, EventArgs e) {
+			Console.WriteLine("Validated called on object {0}", ((Control)sender).Text);
+		}
+
+		private void cbActivated(object sender, EventArgs e) {
+			Console.WriteLine("Activated called on object {0}", ((Control)sender).Text);
+//			Console.WriteLine("Currently active control: {0}", main_window.ActiveControl.Text);
+		}
+
+		private void cbDeactivate(object sender, EventArgs e) {
+			Console.WriteLine("Deactivate called on object {0}", ((Control)sender).Text);
 		}
 	}
 }
