@@ -10,9 +10,23 @@ using System.IO;
 using System.Windows.Forms;
 
 namespace MWFTestApplication {
-	class MainWindow {
+	class MainWindow : Form {
+		public static MainWindow	main_window;
 		public static NotifyIcon	notify;
 		public static ContextMenu	menu;
+		public static Bitmap		icon_bitmap;
+
+		private void MainWindow_Paint(object sender, PaintEventArgs e) {
+			e.Graphics.DrawImage(icon_bitmap, 0, 0);
+		}
+
+		public MainWindow() {
+
+			this.StartPosition = FormStartPosition.CenterScreen;
+
+			BackColor = Color.Green;
+			Paint += new PaintEventHandler(MainWindow_Paint);
+		}
 
 		public static void Main(string[] args) {
 			Stream		s;
@@ -26,6 +40,7 @@ namespace MWFTestApplication {
 				s = File.OpenRead("notify.ico");
 
 				notify.Icon = new Icon(s);
+
 			}
 
 			catch {
@@ -40,6 +55,8 @@ namespace MWFTestApplication {
 				}
 			}
 
+			icon_bitmap = notify.Icon.ToBitmap();
+
 			item1 = new MenuItem("Open");
 			item1.Click += new EventHandler(notify_menuOpen);
 
@@ -49,9 +66,8 @@ namespace MWFTestApplication {
 			items = new MenuItem[] {item1, item2};
 
 			menu = new ContextMenu(items);
-			
 
-			notify.Text = "Crapper";
+			notify.Text = "Tester tooltip text";
 			notify.Visible = true;
 			notify.ContextMenu = menu;
 			notify.Click +=new EventHandler(notify_Click);
@@ -60,8 +76,9 @@ namespace MWFTestApplication {
 			notify.MouseMove += new MouseEventHandler(notify_MouseMove);
 			notify.MouseUp +=new MouseEventHandler(notify_MouseUp);
 
-notify.Update = true;
-			Application.Run();
+			main_window = new MainWindow();
+
+			Application.Run(main_window);
 		}
 
 		private static void notify_menuOpen(object sender, EventArgs e) {
@@ -76,23 +93,23 @@ notify.Update = true;
 		}
 
 		private static void notify_Click(object sender, EventArgs e) {
-			Console.WriteLine("User clicked");
+			Console.WriteLine("swf-notifyicon: User clicked");
 		}
 
 		private static void notify_DoubleClick(object sender, EventArgs e) {
-			Console.WriteLine("User double-clicked");
+			Console.WriteLine("swf-notifyicon: User double-clicked");
 							     }
 
 		private static void notify_MouseDown(object sender, MouseEventArgs e) {
-			Console.WriteLine("MouseDown event");
+			Console.WriteLine("swf-notifyicon: MouseDown event");
 		}
 
 		private static void notify_MouseMove(object sender, MouseEventArgs e) {
-			Console.WriteLine("MouseMove event");
+			Console.WriteLine("swf-notifyicon: MouseMove event");
 		}
 
 		private static void notify_MouseUp(object sender, MouseEventArgs e) {
-			Console.WriteLine("MouseUp event");
+			Console.WriteLine("swf-notifyicon: MouseUp event");
 		}
 	}
 }
