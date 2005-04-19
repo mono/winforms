@@ -49,6 +49,7 @@ namespace System.Windows.Forms {
 		{
 			BeginInvokeDemo demo = new BeginInvokeDemo ();
 
+			demo.CreateHandle();
 			ThreadStart thread_start = new ThreadStart (demo.UpdateLabel);	
 			Thread worker = new Thread (thread_start);
 			worker.IsBackground = true;
