@@ -23,7 +23,7 @@
 //	Jordi Mas i Hernandez, jordi@ximian.com
 //
 //
-// ListBox Complex Databiding Sample
+// ListBox, ComboBox and CheckedListBox Complex Databiding Sample
 //
 
 using System.Windows.Forms;
@@ -35,18 +35,18 @@ using System.Reflection;
 
 namespace Samples
 {
-	public class ourListBox : ListBox 
+	public class ourListBox : ListBox
 	{
-		public ourListBox ()
+		public ourListBox ()  : base ()
 		{
-			
+
 		}
-		
+				
 		public CurrencyManager _DataManager {
 			get { return DataManager; }
 		}
 	}
-	
+
 	// Data container
 	public class Simbols
 	{
@@ -66,7 +66,7 @@ namespace Samples
 		public string Descripcio {
 			get { return descripcio; }
 		}
-		
+
 		public string DescripcioLlarga {
 			get { return descripcio; }
 		}
@@ -80,22 +80,18 @@ namespace Samples
 	class MainForm : System.Windows.Forms.Form
 	{
 		private ourListBox listBox = new ourListBox ();
-		private TextBox textBox = new TextBox ();
+		private TextBox textbox_listbox = new TextBox ();
+		private ComboBox comboBox = new ComboBox ();
+		private TextBox textbox_combobox = new TextBox ();
+		private CheckedListBox checkedListbox = new CheckedListBox ();
+		private TextBox textbox_checkedlistbox = new TextBox ();
+		private ArrayList simbols = new ArrayList ();
+		private CheckBox singledata_checkbox = new CheckBox ();
+
 
 		public MainForm ()
 		{
-			Console.WriteLine ("ListBox [{0}] {1}", listBox.DataSource, listBox.DataSource == null);
-			Console.WriteLine ("ListBox [{0}] {1}", listBox.DisplayMember, listBox.DisplayMember == string.Empty);
-			Console.WriteLine ("ListBox [{0}] {1}", listBox.ValueMember, listBox.ValueMember == string.Empty);
-
-			listBox.Location = new Point (20, 16);
-			listBox.Size = new Size (250, 130);
-
-			textBox.Location = new Point (20, 160) ;
-			textBox.Size = new Size (250, 24) ;
-
-			Controls.AddRange (new Control[] {listBox, textBox});
-			ArrayList simbols = new ArrayList ();
+			/* Data */
 			simbols.Add (new  Simbols ("Fons Monetari Internacional", "FMI"));
 			simbols.Add (new  Simbols ("Centimetre", "cm"))  ;
 			simbols.Add (new  Simbols ("Ferrocarril", "FC"));
@@ -104,29 +100,85 @@ namespace Samples
 			simbols.Add (new  Simbols ("quilogram", "kg"));
 			simbols.Add (new  Simbols ("watt", "W"));
 
+			/* Settings */
+			singledata_checkbox.Location = new Point (20, 10);
+			singledata_checkbox.Text = "Single Data source (test Position)";
+			singledata_checkbox.CheckedChanged += new EventHandler (singledata_checkboxCheckedChanged);
+			singledata_checkbox.Size = new Size (250, 30);
+
+			/* ListBox */
+			listBox.Location = new Point (20, 40);
+			listBox.Size = new Size (250, 130);
+
+			textbox_listbox.Location = new Point (20, 180);
+			textbox_listbox.Size = new Size (250, 24);
 			listBox.SelectedValueChanged += new EventHandler (listBox_SelectedValueChanged);
 
 			listBox.DataSource = simbols;
 			listBox.DisplayMember = "Descripcio";
 			listBox.ValueMember = "Simbol";
 
-            		ClientSize = new Size (350, 250);
-            		Text = "ListBox Complex Databinding Sample";           		
-            		
-            		PropertyDescriptorCollection col = listBox._DataManager.GetItemProperties ();
-						
-			Console.WriteLine ("**Items {0}", col.Count);
-			for (int i = 0; i < col.Count; i++)
-				Console.WriteLine ("**   item [{0}], ComponentType:{1}, PropertyType:{2}, DisplayName {3}, Name {4}", col[i], col[i].ComponentType,
-					col[i].PropertyType, col[i].DisplayName, col[i].PropertyType, col[i].Name);				
-			
+			/* ComboBox */
+			comboBox.Location = new Point (300, 40);
+			comboBox.Size = new Size (250, 130);
+
+			textbox_combobox.Location = new Point (300, 180);
+			textbox_combobox.Size = new Size (250, 24);
+			comboBox.SelectedValueChanged += new EventHandler (comboBox_SelectedValueChanged);
+
+			comboBox.DataSource = simbols.Clone ();
+			comboBox.DisplayMember = "Descripcio";
+			comboBox.ValueMember = "Simbol";
+
+			/* CheckedListBox */
+			checkedListbox.Location = new Point (20, 250);
+			checkedListbox.Size = new Size (250, 130);
+
+			textbox_checkedlistbox.Location = new Point (20, 400);
+			textbox_checkedlistbox.Size = new Size (250, 24);
+			checkedListbox.SelectedValueChanged += new EventHandler (checkedListbox_SelectedValueChanged);
+
+			checkedListbox.DataSource = simbols.Clone ();
+			checkedListbox.DisplayMember = "Descripcio";
+			checkedListbox.ValueMember = "Simbol";
+
+            		ClientSize = new Size (600, 600);
+            		Text = "ListBox Complex Databinding Sample";
+
+			Controls.AddRange (new Control[] {listBox, textbox_listbox, singledata_checkbox,
+				textbox_checkedlistbox, comboBox, textbox_combobox, checkedListbox});
+
             	}
 
 		private void listBox_SelectedValueChanged (object sender, EventArgs e)
 	        {
-		        Console.WriteLine ("Value changed {0}", listBox.SelectedIndex);
-	        	    if (listBox.SelectedIndex != -1)
-	                	textBox.Text = listBox.SelectedValue.ToString();
+			if (listBox.SelectedIndex != -1)
+	                	textbox_listbox.Text = listBox.SelectedValue.ToString ();
+	        }
+
+	        private void comboBox_SelectedValueChanged (object sender, EventArgs e)
+	        {
+			if (listBox.SelectedIndex != -1)
+	                	textbox_combobox.Text = comboBox.SelectedValue.ToString ();
+	        }
+
+	        private void checkedListbox_SelectedValueChanged (object sender, EventArgs e)
+	        {
+			if (checkedListbox.SelectedIndex != -1)
+	                	textbox_checkedlistbox.Text = checkedListbox.SelectedValue.ToString ();
+	        }
+
+
+	        private void singledata_checkboxCheckedChanged (object sender, EventArgs e)
+	        {
+	        	if (singledata_checkbox.Checked) {
+	        		comboBox.DataSource = simbols;
+	        		checkedListbox.DataSource = simbols;
+
+	        	} else {
+	        		comboBox.DataSource = simbols.Clone ();
+	        		checkedListbox.DataSource = simbols.Clone ();
+	        	}
 	        }
 
 		public static void Main (string[] args)
