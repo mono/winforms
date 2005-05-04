@@ -1,5 +1,6 @@
 // project created on 13/10/2003 at 10:13
 using System;
+using System.Collections;
 using System.Windows.Forms;
 
 namespace MyFormProject 
@@ -67,26 +68,25 @@ namespace MyFormProject
 			this.linkLabel19 = new System.Windows.Forms.LinkLabel();
 			this.linkLabel18 = new System.Windows.Forms.LinkLabel();
 			this.SuspendLayout();
-			// 
-			// linkLabel11
-			// 
-			this.linkLabel11.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.World);
-			this.linkLabel11.Location = new System.Drawing.Point(8, 224);
-			this.linkLabel11.Name = "linkLabel11";
-			this.linkLabel11.Size = new System.Drawing.Size(280, 16);
-			this.linkLabel11.TabIndex = 10;
-			this.linkLabel11.TabStop = true;
-			this.linkLabel11.Text = "A normal LinkLabel - Font.Italic = true";
+
 			// 
 			// linkLabel10
 			// 
-			this.linkLabel10.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+			this.linkLabel10.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
 			this.linkLabel10.Location = new System.Drawing.Point(8, 200);
 			this.linkLabel10.Name = "linkLabel10";
-			this.linkLabel10.Size = new System.Drawing.Size(280, 16);
-			this.linkLabel10.TabIndex = 9;
+			this.linkLabel10.Size = new System.Drawing.Size(300, 16);
+			this.linkLabel10.TabIndex = 2;
 			this.linkLabel10.TabStop = true;
 			this.linkLabel10.Text = "A normal LinkLabel - Font.Bold = true";
+			this.linkLabel10.Links.Add (0,6, "http://www.novell.com");
+			(this.linkLabel10.Links.Add (14,6, "http://www.ximian.com")).Enabled = false;
+			this.linkLabel10.Links.Add (42,4, "http://www.mono-project.com");
+			this.linkLabel10.Text = "Novell bought Ximian and now sponsors the Mono project";
+			this.linkLabel10.LinkClicked += new LinkLabelLinkClickedEventHandler (linkLabel10Clicked);
+			this.linkLabel10.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.linkLabel10.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+
 			// 
 			// linkLabel8
 			// 
@@ -117,6 +117,7 @@ namespace MyFormProject
 			this.linkLabel17.TabStop = true;
 			this.linkLabel17.Text = "A normal LinkLabel - TextAlign = TopRight";
 			this.linkLabel17.TextAlign = System.Drawing.ContentAlignment.TopRight;
+
 			// 
 			// linkLabel16
 			// 
@@ -327,11 +328,60 @@ namespace MyFormProject
 			this.linkLabel18.TabStop = true;
 			this.linkLabel18.Text = "A normal LinkLabel - TextAlign = MiddleLeft";
 			this.linkLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			
+			
+			// 
+			// linkLabel30
+			// 
+			LinkLabel linkLabel30 = new LinkLabel ();
+			linkLabel30.Location = new System.Drawing.Point (600, 30);
+			linkLabel30.Size = new System.Drawing.Size(280, 16);
+			linkLabel30.Text = "Users need not fear making the switch to Linux";
+			linkLabel30.Links.Add (6,9, "http://link1");
+			linkLabel30.Links.Add (31,6, "http://link2");
+			linkLabel30.Links.Add (41,6, "http://www.linux.org");				
+			Controls.Add (linkLabel30);
+			
+			// 
+			// linkLabel31
+			// 
+			LinkLabel linkLabel31 = new LinkLabel ();
+			linkLabel31.Location = new System.Drawing.Point (600, 60);
+			linkLabel31.Size = new System.Drawing.Size(280, 16);
+			linkLabel31.Text = "Users need not fear making the switch to Linux";
+			linkLabel31.Links.Add (6,9, "http://link1");
+			linkLabel31.Links.Add (31,6, "http://link2");
+			linkLabel31.Links.Add (41,6, "http://www.linux.org");				
+			linkLabel31.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+			Controls.Add (linkLabel31);
+			
+			// 
+			// linkLabel32
+			// 
+			LinkLabel linkLabel32 = new LinkLabel ();
+			linkLabel32.Location = new System.Drawing.Point (600, 90);
+			linkLabel32.Size = new System.Drawing.Size (250, 16);
+			linkLabel32.Text = "Many Linux distros have Firefox or Mozilla";
+			linkLabel32.Links.Add (5,5, "http://www.linux.org");
+			linkLabel32.Links.Add (24,7, "http://www.firefox.com");
+			LinkLabel.Link last_link = linkLabel32.Links.Add (35,7, "http://www.mozilla.org");
+			linkLabel32.TextAlign = System.Drawing.ContentAlignment.TopRight;			
+			Controls.Add (linkLabel32);
+			
+			// Some operations with Ilist
+			IList ilist = linkLabel32.Links;
+			ilist.Remove (last_link);			
+			last_link.Start = 35;
+			last_link.Length = 3;
+			ilist.Add (last_link);
+			
+			
+
 			// 
 			// MainForm
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 14);
-			this.ClientSize = new System.Drawing.Size(584, 341);
+			this.ClientSize = new System.Drawing.Size (850, 341);
 			this.Controls.Add(this.linkLabel26);
 			this.Controls.Add(this.linkLabel25);
 			this.Controls.Add(this.linkLabel24);
@@ -340,8 +390,7 @@ namespace MyFormProject
 			this.Controls.Add(this.linkLabel21);
 			this.Controls.Add(this.linkLabel20);
 			this.Controls.Add(this.linkLabel19);
-			this.Controls.Add(this.linkLabel18);
-			this.Controls.Add(this.linkLabel17);
+			this.Controls.Add(this.linkLabel18);			
 			this.Controls.Add(this.linkLabel16);
 			this.Controls.Add(this.linkLabel15);
 			this.Controls.Add(this.linkLabel14);
@@ -349,8 +398,9 @@ namespace MyFormProject
 			this.Controls.Add(this.linkLabel12);
 			this.Controls.Add(this.linkLabel11);
 			this.Controls.Add(this.linkLabel10);
-			this.Controls.Add(this.linkLabel9);
 			this.Controls.Add(this.linkLabel8);
+			this.Controls.Add(this.linkLabel9);
+			this.Controls.Add(this.linkLabel17);			
 			this.Controls.Add(this.linkLabel7);
 			this.Controls.Add(this.linkLabel6);
 			this.Controls.Add(this.linkLabel5);
@@ -362,6 +412,13 @@ namespace MyFormProject
 			this.Text = "This is my form";
 			this.ResumeLayout(false);
 		}
+		
+		private	void linkLabel10Clicked (object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			Console.WriteLine ("LinkLabel10 Clicked Visited:{0} Enabled:{1} Start {2} Len {3}", e.Link.Visited, 
+				e.Link.Enabled, e.Link.Start, e.Link.Length);
+		}
+		
 			
 		[STAThread]
 		public static void Main(string[] args)
