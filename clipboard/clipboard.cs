@@ -18,6 +18,14 @@ namespace System.Windows.Forms {
 			Console.WriteLine("Format ID: " + f.Id + ", Name: " + f.Name);
 		}
 
+		public static void PrintFormats(string title, string[] s) {
+			Console.WriteLine("{0}", title);
+			for (int i = 0; i < s.Length; i++ ) {
+				Console.WriteLine(" => {0}", s[i]);
+			}
+			Console.WriteLine("");
+		}
+
 		public static void Main ()
 		{
 			PrintFormatInfo(DataFormats.GetFormat(DataFormats.Bitmap));
@@ -42,6 +50,31 @@ namespace System.Windows.Forms {
 			PrintFormatInfo(DataFormats.GetFormat(DataFormats.UnicodeText));
 			PrintFormatInfo(DataFormats.GetFormat(DataFormats.WaveAudio));
 
+			// Add our own format
+			PrintFormatInfo(DataFormats.GetFormat("Birthday"));
+
+			// Test some basic stuff
+			DataObject	dobj;
+			Control		c;
+			string		rtf;
+
+			c = new Control();
+			rtf = "\\r\\t\\f  string";
+
+			// Load the data object
+			dobj = new DataObject(DataFormats.Text, "I am text");
+			dobj.SetData(c.GetType(), c);
+			dobj.SetData(DataFormats.Rtf, rtf);
+
+			PrintFormats("GetFormats(): ", dobj.GetFormats());		// Count should be 5
+			PrintFormats("GetFormats(true): ", dobj.GetFormats(true));	// Count should be 5
+			PrintFormats("GetFormats(false): ", dobj.GetFormats(false));	// Count should be 3
+
+			Console.WriteLine("GetDataPresent(typeof(string)): {0}", dobj.GetDataPresent(typeof(string)));			// We expect true
+			Console.WriteLine("GetDataPresent(DataFormats.Text): {0}", dobj.GetDataPresent(DataFormats.Text));		// We expect true
+			Console.WriteLine("GetDataPresent(DataFormats.WaveAudio): {0}", dobj.GetDataPresent(DataFormats.WaveAudio));	// We expect false
+
+			Console.WriteLine("GetData(DataFormats.Rtf): {0}", dobj.GetData(DataFormats.Rtf));				// We expect "\r\t\f  string"
 
 			clipboard clip = new clipboard ();
 
