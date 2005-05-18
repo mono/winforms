@@ -2,16 +2,29 @@ using System;
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace System.Windows.Forms {
 	public class clipboard : Form {
+		static Image	image;
+
+		protected override void OnPaint(PaintEventArgs e) {
+			base.OnPaint (e);
+			if (image != null) {
+				e.Graphics.DrawImage(image, 0, 0);
+			}
+Console.WriteLine("Got PaintEVENT");
+
+		}
+
 
 		public clipboard ()
 		{
 			this.Width = 400;
 			this.Height = 400;
 
-			Clipboard.SetDataObject("blah", true);
+			
+
 		}
 
 		public static void PrintFormatInfo(DataFormats.Format f) {
@@ -24,6 +37,28 @@ namespace System.Windows.Forms {
 				Console.WriteLine(" => {0}", s[i]);
 			}
 			Console.WriteLine("");
+		}
+
+		public static void PrintClipboardContents() {
+			IDataObject	data;
+			string[]	formats;
+
+			data = Clipboard.GetDataObject();
+			if (data == null) {
+				Console.WriteLine("Clipboard is empty");
+				return;
+			}
+
+			Console.WriteLine("Clipboard contains data in the following formats:");
+			formats = data.GetFormats(false);
+
+			for (int i = 0; i < formats.Length; i++) {
+				Console.WriteLine("  => {0}", formats[i]);
+			}
+
+			for (int i = 0; i < formats.Length; i++) {
+				Console.WriteLine(" {0} = >{1}<", formats[i], data.GetData(formats[i], false));
+			}
 		}
 
 		public static void Main ()
@@ -78,8 +113,22 @@ namespace System.Windows.Forms {
 
 			clipboard clip = new clipboard ();
 
+			PrintClipboardContents();
+
+			IDataObject data;
+
+			data = Clipboard.GetDataObject();
+
+			if (data != null && data.GetDataPresent(DataFormats.Bitmap)) {
+				image = (Image)Clipboard.GetDataObject().GetData(DataFormats.Bitmap);
+			}
+
+			Bitmap i = new Bitmap("test.bmp");
+			string s = "bummerä";
+
+			Clipboard.SetDataObject(s);
+
 			Application.Run (clip);
 		}
 	}
 }
-
