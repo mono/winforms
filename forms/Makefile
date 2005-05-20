@@ -1,7 +1,19 @@
 all: FormsTest.exe FormsMdi.exe FormsHello.exe CustomControl.exe ImageViewer.exe radiobuttons.exe
 
 FormsTest.exe: FormsTest.cs
-	mcs FormsTest.cs -r:System.Windows.Forms -r:System.Drawing
+	mcs FormsTest.cs \
+		-resource:FormsTest.dotgnu.ico 		\
+		-resource:FormsTest.small_folder.ico 	\
+		-resource:FormsTest.small_text.ico 	\
+		-resource:FormsTest.test.ico		\
+		-resource:FormsTest.test\ 15bpp.bmp	\
+		-resource:FormsTest.test\ 16bpp.bmp	\
+		-resource:FormsTest.test\ 1bpp.bmp	\
+		-resource:FormsTest.test\ 4bpp.bmp	\
+		-resource:FormsTest.test\ 8bpp.bmp	\
+		-resource:FormsTest.test.bmp		\
+		-r:System.Windows.Forms 		\
+		-r:System.Drawing
 
 FormsMdi.exe: FormsMdi.cs
 	mcs FormsMdi.cs -r:System.Windows.Forms -r:System.Drawing
