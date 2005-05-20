@@ -8,6 +8,9 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Runtime.Serialization;
 
 namespace MWFTestApplication {
 	struct CursorInfo {
@@ -238,6 +241,34 @@ namespace MWFTestApplication {
 				this.Controls.Add(labels[i]);
 
 			}
+
+			// Get the GetDataObject method
+			SerializationInfo	si;
+			FormatterConverter	fc;
+
+			fc = new FormatterConverter();
+			si = new SerializationInfo(typeof(Cursor), fc);
+			((ISerializable)ci.cursor).GetObjectData(si, new StreamingContext(StreamingContextStates.All));
+
+			Console.WriteLine("Member count: {0}", si.MemberCount);
+
+			Console.WriteLine("Members: {0}", si.MemberCount);
+			SerializationInfoEnumerator e;
+			e = si.GetEnumerator();
+			while (e.MoveNext()) {
+				Console.WriteLine("Member {0}", e.Name);
+			}
+
+			byte [] data = (byte [])si.GetValue ("CursorData", typeof (byte []));
+			Console.WriteLine("CursorData:");
+			for (int i = 0; i < data.Length; i++) {
+				Console.Write("{0:X2}, ", data[i]);
+			}
+			Console.WriteLine("");
+
+			Console.WriteLine("Result: {0}", si.ToString());
+				
+			//ci.cursor.I
 
 			KeyDown += new KeyEventHandler(MainWindow_KeyDown);
 		}		
