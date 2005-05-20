@@ -1,34 +1,34 @@
 all: FormsTest.exe FormsMdi.exe FormsHello.exe CustomControl.exe ImageViewer.exe radiobuttons.exe
 
 FormsTest.exe: FormsTest.cs
-	mcs FormsTest.cs \
-		-resource:FormsTest.dotgnu.ico 		\
-		-resource:FormsTest.small_folder.ico 	\
-		-resource:FormsTest.small_text.ico 	\
-		-resource:FormsTest.test.ico		\
-		-resource:FormsTest.test\ 15bpp.bmp	\
-		-resource:FormsTest.test\ 16bpp.bmp	\
-		-resource:FormsTest.test\ 1bpp.bmp	\
-		-resource:FormsTest.test\ 4bpp.bmp	\
-		-resource:FormsTest.test\ 8bpp.bmp	\
-		-resource:FormsTest.test.bmp		\
-		-r:System.Windows.Forms 		\
-		-r:System.Drawing
+	mcs FormsTest.cs /debug \
+		/resource:FormsTest.dotgnu.ico 		\
+		/resource:FormsTest.small_folder.ico 	\
+		/resource:FormsTest.small_text.ico 	\
+		/resource:FormsTest.test.ico		\
+		/resource:FormsTest.test\ 15bpp.bmp	\
+		/resource:FormsTest.test\ 16bpp.bmp	\
+		/resource:FormsTest.test\ 1bpp.bmp	\
+		/resource:FormsTest.test\ 4bpp.bmp	\
+		/resource:FormsTest.test\ 8bpp.bmp	\
+		/resource:FormsTest.test.bmp		\
+		/r:System.Windows.Forms.dll 		\
+		/r:System.Drawing.dll
 
 FormsMdi.exe: FormsMdi.cs
-	mcs FormsMdi.cs -r:System.Windows.Forms -r:System.Drawing
+	mcs FormsMdi.cs /debug /r:System.Windows.Forms.dll /r:System.Drawing.dll
 
 FormsHello.exe: FormsHello.cs
-	mcs FormsHello.cs -r:System.Windows.Forms -r:System.Drawing
+	mcs FormsHello.cs /debug /r:System.Windows.Forms.dll /r:System.Drawing.dll
 
 CustomControl.exe: CustomControl.cs
-	mcs CustomControl.cs -r:System.Windows.Forms -r:System.Drawing
+	mcs CustomControl.cs /debug /r:System.Windows.Forms.dll /r:System.Drawing.dll
 
 ImageViewer.exe: ImageViewer.cs
-	mcs ImageViewer.cs -r:System.Windows.Forms -r:System.Drawing
+	mcs ImageViewer.cs /debug /r:System.Windows.Forms.dll /r:System.Drawing.dll
 
 radiobuttons.exe: radiobuttons.cs
-	mcs radiobuttons.cs -r:System.Windows.Forms -r:System.Drawing
+	mcs radiobuttons.cs /debug /r:System.Windows.Forms.dll /r:System.Drawing.dll
 
 clean: 
 	rm -f FormsTest.exe
