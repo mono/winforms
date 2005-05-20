@@ -201,8 +201,7 @@ namespace MWFTestApplication {
 
 				case 28: {
 					ci.name = "Application defined";
-					//ci.cursor = new Cursor("mycursor.cur");
-					ci.cursor = Cursors.WaitCursor;
+					ci.cursor = new Cursor("mycursor.cur");
 					return;
 				}
 
@@ -235,7 +234,9 @@ namespace MWFTestApplication {
 				labels[i].BackColor = Color.FromArgb(i * 9, i * 9, i * 9);
 				labels[i].ForeColor = Color.Red;
 				labels[i].Cursor = ci.cursor;
+				labels[i].Paint += new PaintEventHandler(MainWindow_Paint);
 				this.Controls.Add(labels[i]);
+
 			}
 
 			KeyDown += new KeyEventHandler(MainWindow_KeyDown);
@@ -285,6 +286,10 @@ namespace MWFTestApplication {
 			if (e.KeyData == Keys.Escape) {
 				Application.Exit();
 			}
+		}
+
+		private void MainWindow_Paint(object sender, PaintEventArgs e) {
+			((Label)sender).Cursor.Draw(e.Graphics, new Rectangle(new Point(10, 10), ((Label)sender).Cursor.Size));
 		}
 	}
 }
