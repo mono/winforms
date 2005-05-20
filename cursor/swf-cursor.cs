@@ -289,7 +289,16 @@ namespace MWFTestApplication {
 		}
 
 		private void MainWindow_Paint(object sender, PaintEventArgs e) {
-			((Label)sender).Cursor.Draw(e.Graphics, new Rectangle(new Point(10, 10), ((Label)sender).Cursor.Size));
+			Cursor cursor;
+
+			cursor = ((Label)sender).Cursor;
+
+			cursor.Draw(e.Graphics, new Rectangle(new Point(10, 10), cursor.Size));
+			cursor.DrawStretched(e.Graphics, new Rectangle(new Point(10, 10+cursor.Size.Height), new Size(size_of_label, size_of_label - cursor.Size.Height - 10)));
+
+			if (sender != labels[28]) {
+				Console.WriteLine(cursor.ToString());
+			}
 		}
 	}
 }
