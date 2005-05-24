@@ -72,53 +72,80 @@ namespace MWFTestApplication {
 			}
 
 		}
+
 		public void CheckConversion(object check, object expect, TypeConverter conv, Type type) {
-			CheckConversion(check, expect, conv, type, CultureInfo.InvariantCulture);
-			CheckConversion(check, expect, conv, type, CultureInfo.CreateSpecificCulture("de-de"));
+			CheckConversion(check, expect, conv, type, true, true, CultureInfo.InvariantCulture);
+			CheckConversion(check, expect, conv, type, true, true, CultureInfo.CreateSpecificCulture("de-de"));
 		}
 
+
+		public void CheckConversion(object check, object expect, TypeConverter conv, Type type, bool test_from, bool test_to) {
+			CheckConversion(check, expect, conv, type, test_from, test_to, CultureInfo.InvariantCulture);
+			CheckConversion(check, expect, conv, type, test_from, test_to, CultureInfo.CreateSpecificCulture("de-de"));
+		}
 		public void CheckConversion(object check, object expect, TypeConverter conv, Type type, CultureInfo culture) {
+			CheckConversion(check, expect, conv, type, true, true, culture);
+		}
+
+		public void CheckConversion(object check, object expect, TypeConverter conv, Type type, bool test_from, bool test_to, CultureInfo culture) {
 			object obj;
 			object result;
+
+			obj = check;
 
 			if (debug > 0) {
 				Console.WriteLine("{0}: CheckConversion, checking {1}({2}) <-> {3}({4})", conv.ToString(), check.GetType().ToString(), check.ToString(), type.ToString(), expect != null ? expect.ToString() : "null");
 			}
 
-			obj = conv.ConvertTo(null, culture, check, type);
+			if (test_to) {
+				obj = conv.ConvertTo(null, culture, check, type);
 
-			if (obj == null) {
-				if (expect != null) {
+				if (obj == null) {
+					if (expect != null) {
+						failed++;
+						Console.WriteLine("{0}: ConvertTo failed, type {1}, expected {2}, got null", conv.ToString(), type.ToString(), expect.ToString());
+					}
+					return;
+				}
+
+				// Intermediate verification
+				if (expect != null && !obj.Equals(expect)) {
 					failed++;
-					Console.WriteLine("{0}: ConvertTo failed, type {1}, expected {2}, got null", conv.ToString(), type.ToString(), expect.ToString());
+					if (verbose > 0) {
+						Console.WriteLine("{0}: ConvertTo failed, type {1}, expected {2}, got {3}", conv.ToString(), type.ToString(), expect.ToString(), obj.ToString());
+					}
 				}
-				return;
-			}
 
-			// Intermediate verification
-			if (expect != null && !obj.Equals(expect)) {
-				failed++;
-				if (verbose > 0) {
-					Console.WriteLine("{0}: ConvertTo failed, type {1}, expected {2}, got {3}", conv.ToString(), type.ToString(), expect.ToString(), obj.ToString());
+				if (debug > 1) {
+					Console.WriteLine("{0}: CheckConversion, ConvertTo result: '{1}')", conv.ToString(), obj);
 				}
 			}
 
-			if (debug > 1) {
-				Console.WriteLine("{0}: CheckConversion, ConvertTo result: '{1}')", conv.ToString(), obj);
-			}
 
-			result = conv.ConvertFrom(null, culture, obj);
+			if (test_from) {
+				result = conv.ConvertFrom(null, culture, obj);
 
-			// Roundtrip check
-			if (!check.Equals(result)) {
-				failed++;
-				if (verbose > 0) {
-					Console.WriteLine("{0}: ConvertTo/ConvertFrom roundtrip failed, type {1}", conv.ToString(), type.ToString());
+				if (test_to) {
+					// Roundtrip check
+					if (!check.Equals(result)) {
+						failed++;
+						if (verbose > 0) {
+							Console.WriteLine("{0}: ConvertTo/ConvertFrom roundtrip failed, type {1}", conv.ToString(), type.ToString());
+						}
+					}
+
+				} else {
+					if (!expect.Equals(result)) {
+						failed++;
+						if (verbose > 0) {
+							Console.WriteLine("{0}: ConvertFrom failed, type {1}", conv.ToString(), type.ToString());
+						}
+					}
 				}
-			}
 
-			if (debug > 1) {
-				Console.WriteLine("{0}: CheckConversion, ConvertFrom result: '{1}')", conv.ToString(), result);
+				if (debug > 1) {
+					Console.WriteLine("{0}: CheckConversion, ConvertFrom result: '{1}')", conv.ToString(), result);
+				}
 			}
 		}
 
@@ -255,6 +282,23 @@ namespace MWFTestApplication {
 			CheckConversion(sel, "01.02.1969; 27.05.1977", conv, typeof(string), CultureInfo.CreateSpecificCulture("de-de"));
 		}
 
+		public void TestDataGridPreferredColumnWidthTypeConverter() {
+			DataGridPreferredColumnWidthTypeConverter conv;
+			int	val;
+
+			conv = new DataGridPreferredColumnWidthTypeConverter();
+
+			CheckConvert(2, 1, conv, typeof(int));
+
+			CheckConversion(-1, "AutoColumnResize (-1)", conv, typeof(string));
+			CheckConversion(0, "0", conv, typeof(string));
+			CheckConversion(1, "1", conv, typeof(string));
+
+			CheckConversion("AutoColumnResize (-1)", -1, conv, typeof(int), true, false);
+			CheckConversion("0", 0, conv, typeof(int), true, false);
+			CheckConversion("1", 1, conv, typeof(int), true, false);
+		}
+
 		public MainWindow() {
 			ClientSize = new System.Drawing.Size (520, 520);
 			Text = "SWF Converters Test App";
@@ -262,6 +306,7 @@ namespace MWFTestApplication {
 			TestKeysConverter();
 			TestOpacityConverter();
 			TestSelectionRangeConverter();
+			TestDataGridPreferredColumnWidthTypeConverter();
 
 			if (visual) {
 				if (failed != failed_expected) {
