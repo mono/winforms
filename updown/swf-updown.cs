@@ -37,17 +37,22 @@ namespace MyFormProject
 
 			upDown1 = new DomainUpDown();	
 			upDown1.Location = new Point(10, 10);
-			// upDown1.Size = new Size(80, 30);
 			upDown2 = new DomainUpDown();	
 			upDown2.Location = new Point(10, 50);
-			// upDown2.Size = new Size(80, 30);
 			upDown2.UpDownAlign = LeftRightAlignment.Left;
 			upDown3 = new NumericUpDown();	
+
 			upDown3.Location = new Point(10, 90);
+			upDown3.Value = 3m;
+			upDown3.Increment = 0.3m;
+			upDown3.DecimalPlaces = 0;
 			upDown3.ValueChanged += new EventHandler(MainForm_ValueChanged);
+			upDown3.Visible = false;
+
 			upDown4 = new NumericUpDown();	
 			upDown4.Location = new Point(10, 130);
 			upDown4.UpDownAlign = LeftRightAlignment.Left;
+
 			upDown1ro = new DomainUpDown();	
 			upDown1ro.Location = new Point(150, 10);
 			upDown1ro.ReadOnly = true;
@@ -62,6 +67,16 @@ namespace MyFormProject
 			upDown4ro.Location = new Point(150, 130);
 			upDown4ro.UpDownAlign = LeftRightAlignment.Left;
 			upDown4ro.ReadOnly = true;
+
+			upDown1.TabIndex  = 0;
+			upDown2.TabIndex  = 1;
+			upDown3.TabIndex  = 2;
+			upDown4.TabIndex  = 2;
+			upDown1ro.TabIndex  = 3;
+			upDown2ro.TabIndex  = 4;
+			upDown3ro.TabIndex  = 5;
+			upDown4ro.TabIndex  = 6;
+
 			this.Controls.AddRange(new Control[] {upDown1, upDown1ro, upDown2, upDown2ro
 								  , upDown3, upDown3ro, upDown4, upDown4ro});
 			upDown1.Items.Add(upDownString1);
@@ -99,6 +114,7 @@ namespace MyFormProject
 
 		void MainForm_ValueChanged(object sender, EventArgs e) {
 			Console.WriteLine("value changed {0}", upDown3.Value);
+			upDown3.Visible = true;
 		}
 	}
 }
