@@ -12,7 +12,7 @@ namespace MyFormProject
 
                         Icon icon;
 
-                        icon = new Icon("notify.ico");
+                        icon = new Icon("test.ico");
                         this.Icon = icon;
                 }
 
