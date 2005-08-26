@@ -50,7 +50,11 @@ namespace SWFTestClass {
 				e.Graphics.DrawImage(saved_img_jpg, img_bmp.Width * 2, img_bmp.Height * 3);
 				e.Graphics.DrawImage(saved_img_png, img_bmp.Width * 3, img_bmp.Height * 3);
 			} else {
-				e.Graphics.DrawImage(img_bmp, 0, 0);
+				// draw normal size
+				//e.Graphics.DrawImage(img_bmp, 0, 0);
+
+				// stretch to window size
+				e.Graphics.DrawImage(img_bmp, this.ClientRectangle, new Rectangle(0, 0, img_bmp.Width, img_bmp.Height), GraphicsUnit.Pixel);
 			}
 		}
 
@@ -89,6 +93,17 @@ namespace SWFTestClass {
 				img_jpg.Save("saved_test.jpg", ImageFormat.Jpeg);
 				img_png.Save("saved_test.png", ImageFormat.Png);
 
+				saved_img_bmp1 = img_bmp1;
+				saved_img_bmp16 = img_bmp16;
+				saved_img_bmp256 = img_bmp256;
+				saved_img_bmp = img_bmp;
+
+				saved_img_tif = img_tif;
+				saved_img_gif = img_gif;
+				saved_img_jpg = img_jpg;
+				saved_img_png = img_png;
+
+//#if true
 				saved_img_bmp1 = Image.FromFile("saved_test1.bmp");
 				saved_img_bmp16 = Image.FromFile("saved_test16.bmp");
 				saved_img_bmp256 = Image.FromFile("saved_test256.bmp");
@@ -98,6 +113,7 @@ namespace SWFTestClass {
 				saved_img_gif = Image.FromFile("saved_test.gif");
 				saved_img_jpg = Image.FromFile("saved_test.jpg");
 				saved_img_png = Image.FromFile("saved_test.png");
+//#endif
 			}
 			Application.Run(new MainWindow());
 
