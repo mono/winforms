@@ -49,6 +49,9 @@ public class RadioButtons : Form
 		Controls.Add(buttons[0]);
 		y += 30;
 
+		// Test for null
+		Controls.Add (null);
+
 		// Second Button
 		style = FlatStyle.Popup;
 		text = "Apearance Normal , FlatStyle.Popup";
