@@ -1,10 +1,7 @@
-all: mono
+all: swf-cursor.exe
 
-mono: swf-cursor.cs
+swf-cursor.exe: swf-cursor.cs
 	mcs swf-cursor.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
-
-dotnet: swf-cursor.cs
-	csc swf-cursor.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
 
 clean:
 	rm swf-cursor.exe -r -f
