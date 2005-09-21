@@ -1,10 +1,7 @@
-all: mono
+all: swf-begininvoke.exe
 
-mono: swf-begininvoke.cs
-	mcs swf-begininvoke.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
-
-dotnet: swf-begininvoke.cs
-	csc swf-begininvoke.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
+swf-begininvoke.exe: swf-begininvoke.cs
+	mcs -debug swf-begininvoke.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
 
 clean:
 	rm swf-begininvoke.exe -r -f

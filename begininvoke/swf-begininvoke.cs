@@ -31,6 +31,12 @@ namespace System.Windows.Forms {
 
 		private void UpdateLabel ()
 		{
+			// BeginInvoke may not be called on a window that doesn't
+			// yet have a handle
+			while (!label.IsHandleCreated) {
+				Thread.Sleep(250);
+			}
+
 			while (true) {
 				lock (this) {
 					label.BeginInvoke (new updater (DateUpdater));
