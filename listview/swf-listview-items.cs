@@ -49,6 +49,7 @@ namespace MonoSamples
 		private Button button_removeheaders;
 		private Button button_additems;
 		private Button button_removeitems;
+		private Button button_changeitems;
 		private Label label_itemprop;
 		private Label label_index;
 		private Label label_index_val;
@@ -113,6 +114,8 @@ namespace MonoSamples
 
                 	for (int i = 0; i < names.Length; i++)                	                		
                 		il.Images.Add (Image.FromFile ("listview-items-icons/64x64/" + names[i]));
+
+			il.Images[1] = Image.FromFile ("horse.bmp");
 
                 	listView_content.LargeImageList  = il;
 			Controls.Add (listView_content);
@@ -221,6 +224,12 @@ namespace MonoSamples
 			combo_sorting.Text = Enum.GetName (listView_content.Sorting.GetType(), listView_content.Sorting);
 			combo_sorting.SelectedIndexChanged  += new System.EventHandler (combosorting_selectedindex);
 			Controls.Add (combo_sorting);
+
+			button_changeitems = new Button ();
+			button_changeitems.Location = new System.Drawing.Point (430 + 200, 180);
+			button_changeitems.Text = "Chg Items";
+			button_changeitems.Click += new System.EventHandler (buttonChgItemsClick);
+			Controls.Add (button_changeitems);
 
 			// Item properties
 			label_itemprop = new Label ();
@@ -367,6 +376,15 @@ namespace MonoSamples
 		private void buttonDelItemsClick (object sender, System.EventArgs e)
 		{
 			listView_content.Clear ();
+		}
+
+		private void buttonChgItemsClick (object sender, System.EventArgs e)
+		{
+			for (int i = 0; i < listView_content.Items.Count; i++) {
+				listView_content.Items [i].BackColor = Color.Blue;
+				Console.WriteLine ("Item {0} - {1}", listView_content.Items [i].Text,
+						listView_content.Items [i].GetBounds (ItemBoundsPortion.Entire));
+			}
 		}
 
 		private void listviewIndexChanged (object sender, System.EventArgs e)
