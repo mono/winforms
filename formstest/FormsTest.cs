@@ -433,6 +433,7 @@ namespace FormsTest
 			AddResXTest(tabPage24);
 			AddImageListTest(tabPage25);
 
+			AutoScaleBaseSize = new Size (5, 13);
 			ResumeLayout(false);
 		}
 
