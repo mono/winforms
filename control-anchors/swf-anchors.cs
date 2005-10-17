@@ -23,6 +23,7 @@ namespace MonoSamples
 		private System.Windows.Forms.Button btnBottomRightLeft;
 		private System.Windows.Forms.Button btnRightLeft;
 		private System.Windows.Forms.Button btnTopBottom;
+		private System.Windows.Forms.Button btnNone;
 
 		public AnchorForm()
 		{
@@ -51,11 +52,11 @@ namespace MonoSamples
 			this.btnTopLeft = new System.Windows.Forms.Button();
 			this.btnRightLeft = new System.Windows.Forms.Button();
 			this.btnTopBottom = new System.Windows.Forms.Button();
+			this.btnNone = new System.Windows.Forms.Button();
 			// 
 			// btnTopRightLeft
 			// 
-			this.btnTopRightLeft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-				| System.Windows.Forms.AnchorStyles.Right)));
+			this.btnTopRightLeft.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
 			this.btnTopRightLeft.Location = new System.Drawing.Point(168, 19);
 			this.btnTopRightLeft.Name = "btnTopRightLeft";
 			this.btnTopRightLeft.Size = new System.Drawing.Size(216, 23);
@@ -64,8 +65,7 @@ namespace MonoSamples
 			// 
 			// btnTopLeftBottom
 			// 
-			this.btnTopLeftBottom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-				| System.Windows.Forms.AnchorStyles.Right)));
+			this.btnTopLeftBottom.Anchor =  AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
 			this.btnTopLeftBottom.Location = new System.Drawing.Point(524, 46);
 			this.btnTopLeftBottom.Name = "btnTopLeftBottom";
 			this.btnTopLeftBottom.Size = new System.Drawing.Size(24, 240);
@@ -74,8 +74,7 @@ namespace MonoSamples
 			// 
 			// btnTopRightBottom
 			// 
-			this.btnTopRightBottom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-				| System.Windows.Forms.AnchorStyles.Left)));
+			this.btnTopRightBottom.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
 			this.btnTopRightBottom.Location = new System.Drawing.Point(4, 46);
 			this.btnTopRightBottom.Name = "btnTopRightBottom";
 			this.btnTopRightBottom.Size = new System.Drawing.Size(24, 240);
@@ -84,8 +83,7 @@ namespace MonoSamples
 			// 
 			// btnBottomRightLeft
 			// 
-			this.btnBottomRightLeft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-				| System.Windows.Forms.AnchorStyles.Right)));
+			this.btnBottomRightLeft.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 			this.btnBottomRightLeft.Location = new System.Drawing.Point(164, 291);
 			this.btnBottomRightLeft.Name = "btnBottomRightLeft";
 			this.btnBottomRightLeft.Size = new System.Drawing.Size(216, 23);
@@ -94,9 +92,7 @@ namespace MonoSamples
 			// 
 			// btnAll
 			// 
-			this.btnAll.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-				| System.Windows.Forms.AnchorStyles.Left) 
-				| System.Windows.Forms.AnchorStyles.Right)));
+			this.btnAll.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 			this.btnAll.Location = new System.Drawing.Point(226, 133);
 			this.btnAll.Name = "btnAll";
 			this.btnAll.Size = new System.Drawing.Size(100, 67);
@@ -105,7 +101,7 @@ namespace MonoSamples
 			// 
 			// btnTop
 			// 
-			this.btnTop.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.btnTop.Anchor = AnchorStyles.Top;
 			this.btnTop.Location = new System.Drawing.Point(220, 61);
 			this.btnTop.Name = "btnTop";
 			this.btnTop.Size = new System.Drawing.Size(116, 23);
@@ -114,7 +110,7 @@ namespace MonoSamples
 			// 
 			// btnBottom
 			// 
-			this.btnBottom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.btnBottom.Anchor = AnchorStyles.Bottom;
 			this.btnBottom.Location = new System.Drawing.Point(220, 248);
 			this.btnBottom.Name = "btnBottom";
 			this.btnBottom.Size = new System.Drawing.Size(116, 23);
@@ -123,7 +119,7 @@ namespace MonoSamples
 			// 
 			// btnLeft
 			// 
-			this.btnLeft.Anchor = System.Windows.Forms.AnchorStyles.Left;
+			this.btnLeft.Anchor = AnchorStyles.Left;
 			this.btnLeft.Location = new System.Drawing.Point(52, 149);
 			this.btnLeft.Name = "btnLeft";
 			this.btnLeft.Size = new System.Drawing.Size(120, 23);
@@ -132,7 +128,7 @@ namespace MonoSamples
 			// 
 			// btnRight
 			// 
-			this.btnRight.Anchor = System.Windows.Forms.AnchorStyles.Right;
+			this.btnRight.Anchor = AnchorStyles.Right;
 			this.btnRight.Location = new System.Drawing.Point(372, 149);
 			this.btnRight.Name = "btnRight";
 			this.btnRight.Size = new System.Drawing.Size(120, 23);
@@ -141,7 +137,7 @@ namespace MonoSamples
 			// 
 			// btnBottomRight
 			// 
-			this.btnBottomRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnBottomRight.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
 			this.btnBottomRight.Location = new System.Drawing.Point(372, 248);
 			this.btnBottomRight.Name = "btnBottomRight";
 			this.btnBottomRight.Size = new System.Drawing.Size(120, 23);
@@ -150,7 +146,7 @@ namespace MonoSamples
 			// 
 			// btnTopRight
 			// 
-			this.btnTopRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnTopRight.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 			this.btnTopRight.Location = new System.Drawing.Point(372, 61);
 			this.btnTopRight.Name = "btnTopRight";
 			this.btnTopRight.Size = new System.Drawing.Size(120, 23);
@@ -159,7 +155,7 @@ namespace MonoSamples
 			// 
 			// btnBottomLeft
 			// 
-			this.btnBottomLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnBottomLeft.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
 			this.btnBottomLeft.Location = new System.Drawing.Point(52, 248);
 			this.btnBottomLeft.Name = "btnBottomLeft";
 			this.btnBottomLeft.Size = new System.Drawing.Size(120, 23);
@@ -176,7 +172,7 @@ namespace MonoSamples
 			// 
 			// btnRightLeft
 			// 
-			this.btnRightLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnRightLeft.Anchor = AnchorStyles.Left | AnchorStyles.Right;
 			this.btnRightLeft.Location = new System.Drawing.Point(104, 104);
 			this.btnRightLeft.Name = "btnRightLeft";
 			this.btnRightLeft.Size = new System.Drawing.Size(120, 23);
@@ -185,17 +181,30 @@ namespace MonoSamples
 			// 
 			// btnTopBottom
 			// 
-			this.btnTopBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+			this.btnTopBottom.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
 			this.btnTopBottom.Location = new System.Drawing.Point(336, 96);
 			this.btnTopBottom.Name = "btnTopBottom";
 			this.btnTopBottom.Size = new System.Drawing.Size(24, 136);
 			this.btnTopBottom.TabIndex = 131;
 			this.btnTopBottom.Text = "Anchor=Top,Bottom";
 			// 
+			// btnNone
+			// 
+			this.btnNone.Anchor = AnchorStyles.None;
+			this.btnNone.Location = new System.Drawing.Point(5, 5);
+			this.btnNone.Name = "None";
+			this.btnNone.Size = new System.Drawing.Size(40, 40);
+			this.btnNone.TabIndex = 133;
+			this.btnNone.Text = "None";
+
+
+			// 
 			// AnchorForm
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.ClientSize = new System.Drawing.Size(552, 333);
+			this.SuspendLayout();
+			this.Controls.Add(this.btnNone);
 			this.Controls.Add(this.btnTopBottom);
 			this.Controls.Add(this.btnRightLeft);
 			this.Controls.Add(this.btnTopRightLeft);
