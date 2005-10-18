@@ -59,6 +59,8 @@ namespace MonoSamples
 		private Label label_checked_val;
 		private Label label_selected;
 		private Label label_selected_val;
+		private Label label_selected_items;
+		private Label label_checked_items;
 		private CheckBox checkbox_hidesel;
 		private CheckBox checkbox_fullrow;
 		private CheckBox checkbox_gridlines;
@@ -75,7 +77,7 @@ namespace MonoSamples
 				"abiword_48.png",
 				"bmp.png",
 				"disks.png",
-				"evolution.png",				
+				"evolution.png",
 			};
 
 		public ListViewTest ()
@@ -95,13 +97,15 @@ namespace MonoSamples
 			listView_content.Location = new System.Drawing.Point (10, 10);
 			listView_content.Size = new System.Drawing.Size (400, 300);
 			listView_content.SelectedIndexChanged += new System.EventHandler (listviewIndexChanged);
+			listView_content.ItemCheck += new ItemCheckEventHandler (itemCheckChanged);
+			listView_content.KeyDown += new KeyEventHandler (OnKeyDownLV);
 
 			/* Small images */
 			ImageList il = new ImageList ();
                 	il.ColorDepth = ColorDepth.Depth32Bit;
                 	il.ImageSize = new Size (32, 32);
 
-                	for (int i = 0; i < names.Length; i++)                	
+                	for (int i = 0; i < names.Length; i++)
                 		il.Images.Add (Image.FromFile ("listview-items-icons/32x32/" + names[i]));
 
                 	listView_content.SmallImageList  = il;
@@ -112,7 +116,7 @@ namespace MonoSamples
                 	il.ImageSize = new Size (64, 64);
                 	//il.ImageSize = new Size (128, 128);
 
-                	for (int i = 0; i < names.Length; i++)                	                		
+                	for (int i = 0; i < names.Length; i++)
                 		il.Images.Add (Image.FromFile ("listview-items-icons/64x64/" + names[i]));
 
 			il.Images[1] = Image.FromFile ("horse.bmp");
@@ -283,6 +287,16 @@ namespace MonoSamples
 			label_selected_val.AutoSize = true;
 			Controls.Add (label_selected_val);
 
+			label_selected_items = new Label ();
+			label_selected_items.Location = new System.Drawing.Point (10, 320);
+			label_selected_items.Size = new Size (400, 150);
+			Controls.Add (label_selected_items);
+
+			label_checked_items = new Label ();
+			label_checked_items.Location = new System.Drawing.Point (10, 480);
+			label_checked_items.Size = new Size (400, 150);
+			Controls.Add (label_checked_items);
+
 			// CheckBoxes
 			checkbox_checkboxes = new CheckBox ();
 			checkbox_checkboxes.Location = new System.Drawing.Point (430, 240);
@@ -353,6 +367,45 @@ namespace MonoSamples
 
 		}
 
+		private void OnKeyDownLV (Object o, KeyEventArgs key)
+		{
+			if (key.KeyValue == 'D') { // Delete focused element when pressing D
+				listView_content.Items.Remove (listView_content.FocusedItem);
+
+			}
+		}
+
+		private void CollectionUpdated ()
+		{
+			string str;
+			str = "SelIndices ";
+			for (int i = 0; i < listView_content.SelectedIndices.Count; i++) {
+				str += "" + listView_content.SelectedIndices[i];
+				str += ";";
+			}
+
+			str += " - SelObjects ";
+			for (int i = 0; i < listView_content.SelectedItems.Count; i++) {
+				str += "" + listView_content.SelectedItems[i];
+				str += ";";
+			}
+			label_selected_items.Text = str;
+
+			str = "CheckedIndices ";
+			for (int i = 0; i < listView_content.CheckedIndices.Count; i++) {
+				str += "" + listView_content.CheckedIndices[i];
+				str += ";";
+			}
+
+			str += " - CheckedObjects ";
+			for (int i = 0; i < listView_content.CheckedItems.Count; i++) {
+				str += "" + listView_content.CheckedItems[i];
+				str += ";";
+			}			
+			label_checked_items.Text = str;
+		}
+
+
 		// Events
 		private void buttonAddItemsClick (object sender, System.EventArgs e)
 		{
@@ -363,19 +416,22 @@ namespace MonoSamples
 				listView_content.Items.Add (item);
 				last_item++;
 				image_index++;
-				
-				for (int subitems = 0; subitems < 5; subitems++) {					
+
+				for (int subitems = 0; subitems < 5; subitems++) {
     					item.SubItems.Add ("SubItem" + subitems);
 				}
 
 				if (image_index >= names.Length)
 					image_index  = 0;
 			}
+
+			CollectionUpdated ();
 		}
 
 		private void buttonDelItemsClick (object sender, System.EventArgs e)
 		{
 			listView_content.Clear ();
+			CollectionUpdated ();
 		}
 
 		private void buttonChgItemsClick (object sender, System.EventArgs e)
@@ -385,14 +441,25 @@ namespace MonoSamples
 				Console.WriteLine ("Item {0} - {1}", listView_content.Items [i].Text,
 						listView_content.Items [i].GetBounds (ItemBoundsPortion.Entire));
 			}
+
+		}
+
+		
+		private void itemCheckChanged (object sender, ItemCheckEventArgs e)
+		{
+			CollectionUpdated ();
 		}
 
 		private void listviewIndexChanged (object sender, System.EventArgs e)
 		{
-			label_index_val.Text = "" + listView_content.FocusedItem.Index;
-			label_bounds_val.Text = "" + listView_content.FocusedItem.Bounds;
-			label_checked_val.Text = "" + listView_content.FocusedItem.Checked;
-			label_selected_val.Text = "" + listView_content.FocusedItem.Selected;
+			if (listView_content.FocusedItem != null) {
+				label_index_val.Text = "" + listView_content.FocusedItem.Index;
+				label_bounds_val.Text = "" + listView_content.FocusedItem.Bounds;
+				label_checked_val.Text = "" + listView_content.FocusedItem.Checked;
+				label_selected_val.Text = "" + listView_content.FocusedItem.Selected;
+			}
+
+			CollectionUpdated ();
 		}
 
 		private void comboview_selectedindex (object sender, System.EventArgs e)
