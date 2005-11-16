@@ -2421,7 +2421,7 @@ namespace FormsTest
 			contextMenuLabel1.Text = "Right click in this tab page for context menu.";
 			contextMenuLabel1.Dock = DockStyle.Top;
 			c.Controls.Add(contextMenuLabel1);
-			contextMenu = new ContextMenu( new MenuItem[] { cutMenuItem, copyMenuItem, seperatorMenuItem, pasteMenuItem });
+			contextMenu = new ContextMenu( new MenuItem[] { cutMenuItem.CloneMenu (), copyMenuItem.CloneMenu (), seperatorMenuItem.CloneMenu (), pasteMenuItem.CloneMenu () });
 			c.ContextMenu = contextMenu;
 		}
 
