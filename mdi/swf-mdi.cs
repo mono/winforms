@@ -15,28 +15,27 @@ public class MainForm : Form {
 
         private Form form_one;
         private Form form_two;
-		
+        private Form form_three;
+        
         public MainForm()
         {
                 IsMdiContainer = true;
-			
-                form_one = new Form();
-                form_one.MdiParent = this;
-                form_one.Name = "One";
-                form_one.Text = "One";
-                form_one.BackColor = Color.Red;
-                form_one.Show ();
+		Text = "I am the toplevel window";
 
-                form_two = new System.Windows.Forms.Form();
-                form_two.Left = form_one.Right + 10;
-                form_two.MdiParent = this;
-                form_two.Name = "Two";
-                form_two.Text = "Two";
-                form_two.BackColor = Color.Black;
-                form_two.Show ();
-
-                Width = form_one.Width * 2;
-                Height = form_one.Height * 2;
+		foreach (FormBorderStyle bs in Enum.GetValues (typeof (FormBorderStyle))) {
+                        Form form = new Form ();
+                        form.MdiParent = this;
+                        form.Name = bs.ToString ();
+			form.Text = bs.ToString ();
+                        form.FormBorderStyle = bs;
+		
+			form.Top = 75;
+			form.Left =75;
+			form.Width = 200;
+			form.Height = 100;
+			form.BackColor = Color.Red;
+                        form.Show ();
+		}
         }
 
         public static void Main (string [] args)
