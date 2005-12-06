@@ -33,8 +33,16 @@ namespace StatusBarTests {
 
 	public class Test1 : Form {
 
+		StatusBarPanel clicks_panel;
+		int cnt = 0;
+
 		public Test1 ()
 		{
+			Button btn = new Button ();
+			btn.Text = "Click Me";
+			btn.Click += new EventHandler (button_clicked);
+
+			Controls.Add (btn);
 			StatusBar sb1;
 			sb1 = new StatusBar ();
 			sb1.Width = 300;
@@ -43,8 +51,9 @@ namespace StatusBarTests {
 
 			StatusBarPanel p = new StatusBarPanel ();
 			p.AutoSize = StatusBarPanelAutoSize.Spring;
-			p.Text = "test";
+			p.Text = "Clicks: 0";
 			sb1.Panels.Add (p);
+			clicks_panel = p;
 
 			StatusBarPanel p2 = new StatusBarPanel ();
 			p2.AutoSize = StatusBarPanelAutoSize.Contents;
@@ -55,6 +64,11 @@ namespace StatusBarTests {
 			p3.AutoSize = StatusBarPanelAutoSize.Spring;
 			p3.Text = "test";
 			sb1.Panels.Add (p3);
+		}
+
+		private void button_clicked (object o, EventArgs args)
+		{
+			clicks_panel.Text = "Clicks: " + ++cnt;
 		}
 
 		public static void Main ()
