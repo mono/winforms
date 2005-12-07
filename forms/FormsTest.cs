@@ -2113,23 +2113,23 @@ namespace FormsTest
 		private void AddMenuTest()
 		{
 			seperatorMenuItem = new MenuItem("-");
-			thisMenuItem = new MenuItem("Th&is");
-			thatMenuItem = new MenuItem("Th&at");
-			otherAMenuItem = new MenuItem("Other&A");
-			otherBMenuItem = new MenuItem("Other&B");
-			otherCMenuItem = new MenuItem("Other&C");
-			otherMenuItem = new MenuItem("&Other", new MenuItem[]{otherAMenuItem, otherBMenuItem, seperatorMenuItem, otherCMenuItem});
-			newMenuItem = new MenuItem("&New", new MenuItem[]{thisMenuItem, thatMenuItem, otherMenuItem});
-			openMenuItem = new MenuItem("&Open");
-			exitMenuItem = new MenuItem("E&xit");
+			thisMenuItem = new MenuItem("This");
+			thatMenuItem = new MenuItem("That");
+			otherAMenuItem = new MenuItem("OtherA");
+			otherBMenuItem = new MenuItem("OtherB");
+			otherCMenuItem = new MenuItem("OtherC");
+			otherMenuItem = new MenuItem("Other", new MenuItem[]{otherAMenuItem, otherBMenuItem, seperatorMenuItem, otherCMenuItem});
+			newMenuItem = new MenuItem("New", new MenuItem[]{thisMenuItem, thatMenuItem, otherMenuItem});
+			openMenuItem = new MenuItem("Open");
+			exitMenuItem = new MenuItem("Exit");
 			exitMenuItem.Click +=new EventHandler(exitMenuItem_Click);
-			fileMenuItem = new MenuItem("&File",new MenuItem[] {newMenuItem, openMenuItem, exitMenuItem});
-			cutMenuItem = new MenuItem("C&ut");
-			copyMenuItem = new MenuItem("&Copy");
-			pasteMenuItem = new MenuItem("&Paste");
-			editMenuItem = new MenuItem("&Edit", new MenuItem[] {cutMenuItem, copyMenuItem, seperatorMenuItem, pasteMenuItem});
-			aboutMenuItem = new MenuItem("&About");
-			helpMenuItem = new MenuItem("&Help", new MenuItem[] {aboutMenuItem});
+			fileMenuItem = new MenuItem("File",new MenuItem[] {newMenuItem, openMenuItem, exitMenuItem});
+			cutMenuItem = new MenuItem("Cut");
+			copyMenuItem = new MenuItem("Copy");
+			pasteMenuItem = new MenuItem("Paste");
+			editMenuItem = new MenuItem("Edit", new MenuItem[] {cutMenuItem, copyMenuItem, seperatorMenuItem, pasteMenuItem});
+			aboutMenuItem = new MenuItem("About");
+			helpMenuItem = new MenuItem("Help", new MenuItem[] {aboutMenuItem});
 			mainMenu = new MainMenu(new MenuItem[] { fileMenuItem, editMenuItem, helpMenuItem });
 			Menu = mainMenu;
 		}
@@ -2421,7 +2421,7 @@ namespace FormsTest
 			contextMenuLabel1.Text = "Right click in this tab page for context menu.";
 			contextMenuLabel1.Dock = DockStyle.Top;
 			c.Controls.Add(contextMenuLabel1);
-			contextMenu = new ContextMenu( new MenuItem[] { cutMenuItem.CloneMenu (), copyMenuItem.CloneMenu (), seperatorMenuItem.CloneMenu (), pasteMenuItem.CloneMenu () });
+			contextMenu = new ContextMenu( new MenuItem[] { cutMenuItem, copyMenuItem, seperatorMenuItem, pasteMenuItem });
 			c.ContextMenu = contextMenu;
 		}
 
