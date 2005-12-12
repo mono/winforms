@@ -493,9 +493,7 @@ public class MainForm : System.Windows.Forms.Form {
 		four.Text = "four";
 		five.Text = "five";
 
-		one.Controls.Add(two);
 		this.Controls.Add(one);
-		this.Controls.Add(three);
 
 		t = new System.Windows.Forms.Timer();
 		t.Interval = 2000;
@@ -511,6 +509,7 @@ public class MainForm : System.Windows.Forms.Form {
 		five.Calls = null;
 	}
 
+	// Check events sent when moving a child from one to another control
 	public void ReparentTest() {
 		ClearCalls();
 
@@ -521,6 +520,7 @@ public class MainForm : System.Windows.Forms.Form {
 		PrintList("Reparent, Three Calls", three.Calls);
 	}
 
+	// Check events that are sent when a control is added as a child
 	public void ControlsAddTest() {
 		two.Parent = null;
 		three.Controls.Clear();
@@ -530,6 +530,7 @@ public class MainForm : System.Windows.Forms.Form {
 		PrintList("Add, Child calls", two.Calls);
 	}
 
+	// Check events that are sent when a child of a control is removed
 	public void ControlsRemoveTest() {
 		three.Controls.Add(two);
 		ClearCalls();
@@ -538,16 +539,30 @@ public class MainForm : System.Windows.Forms.Form {
 		PrintList("Add, Child calls", two.Calls);
 	}
 
+	// Check events that are sent when all children of a control are removed
 	public void ControlsClearTest() {
-		three.Controls.Add(two);
-		three.Controls.Add(four);
-		three.Controls.Add(five);
+		one.Cursor = Cursors.SizeNWSE;	// Check for CursorChanged event
+		one.Controls.Add(two);
+		one.Controls.Add(three);
+		one.Controls.Add(four);
+		one.Controls.Add(five);
+
 		ClearCalls();
-		three.Controls.Clear();
-		PrintList("Clear, Former parent calls", three.Calls);
+		one.Controls.Clear();
+		PrintList("Clear, Former parent calls", one.Calls);
 		PrintList("Clear, Child two calls", two.Calls);
+		PrintList("Clear, Child two calls", three.Calls);
 		PrintList("Clear, Child four calls", four.Calls);
 		PrintList("Clear, Child five calls", five.Calls);
+	}
+
+	// Check events sent when 
+	public void ControlsAddSame() {
+		three.Controls.Add(two);
+		ClearCalls();
+		three.Controls.Add(two);
+		PrintList("Re-Add, parent", three.Calls);
+		PrintList("Re-Add, child", two.Calls);
 	}
 
 	static void Main() {
@@ -565,5 +580,6 @@ public class MainForm : System.Windows.Forms.Form {
 
 		//ReparentTest();
 		ControlsClearTest();
+		//ControlsAddSame();
 	}
 }
