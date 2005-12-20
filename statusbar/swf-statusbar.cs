@@ -34,6 +34,7 @@ namespace StatusBarTests {
 	public class Test1 : Form {
 
 		StatusBarPanel clicks_panel;
+		StatusBarPanel mouse_panel;
 		int cnt = 0;
 
 		public Test1 ()
@@ -64,11 +65,19 @@ namespace StatusBarTests {
 			p3.AutoSize = StatusBarPanelAutoSize.Spring;
 			p3.Text = "test";
 			sb1.Panels.Add (p3);
+			mouse_panel = p3;
+
+			MouseMove += new MouseEventHandler (mouse_moved);
 		}
 
 		private void button_clicked (object o, EventArgs args)
 		{
 			clicks_panel.Text = "Clicks: " + ++cnt;
+		}
+
+		private void mouse_moved (object o, MouseEventArgs e)
+		{
+			mouse_panel.Text = "Cursor:  " + e.X + ", " + e.Y;
 		}
 
 		public static void Main ()
