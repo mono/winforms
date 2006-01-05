@@ -215,15 +215,22 @@ namespace MyFormProject
 		private void t_Tick(object sender, EventArgs e) {
 			Form	f;
 			Label	l;
+			Button	b;
 
 			t.Stop();
 
 			l = new Label();
 			f = new Form();
+			b = new Button();
 
 			l.Text = "Modal Form";
 			l.Dock = DockStyle.Fill;
+
+			b.Text = "New modal";
+			b.Click += new EventHandler(b_Click);
+
 			f.FormBorderStyle = FormBorderStyle.FixedDialog;
+			f.Controls.Add(b);
 			f.Controls.Add(l);
 			f.BackColor = Color.SeaShell;
 			f.ShowDialog();
@@ -239,6 +246,23 @@ namespace MyFormProject
 			MessageBox.Show("Click OK to call Close() on main (invisible) form", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			main.Close();
 			t.Stop();
+		}
+
+		private void b_Click(object sender, EventArgs e) {
+			Form	f;
+			Label	l;
+
+			l = new Label();
+			f = new Form();
+
+			l.Text = "Modal Form created by Modal Form";
+			l.Dock = DockStyle.Fill;
+
+			f.FormBorderStyle = FormBorderStyle.FixedDialog;
+			f.Controls.Add(l);
+			f.BackColor = Color.Plum;
+			f.ShowDialog();
+			MessageBox.Show("Past ShowDialog() inside ShowDialog", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 	}
 }
