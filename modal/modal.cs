@@ -157,24 +157,33 @@ namespace MyFormProject
 			// Position on screen
 			this.Location = new Point(10, 10);
 
+			form1.Text = "Form1";
 			form1.Location = new Point(10, 200);
 			form1.Size = new Size(200, 50);
 
+			form2.Text = "Form2";
 			form2.Location = new Point(10, 280);
 			form2.Size = new Size(200, 50);
 
+			form3.Text = "Form3";
 			form3.Location = new Point(10, 360);
 			form3.Size = new Size(200, 50);
 			form3.Owner = form2;
 
+			form4.Text = "Form4";
 			form4.Location = new Point(10, 440);
 			form4.Size = new Size(200, 50);
 
+			form5.Text = "Form5";
 			form5.Location = new Point(10, 520);
 			form5.Size = new Size(200, 50);
 
+			form6.Text = "Form6";
 			form6.Location = new Point(10, 600);
 			form6.Size = new Size(200, 50);
+
+
+			this.Text = "Toplevel form";
 
 			// Start off timer
 
@@ -223,6 +232,8 @@ namespace MyFormProject
 			f = new Form();
 			b = new Button();
 
+			f.Text = "Timer-driven Form";
+
 			l.Text = "Modal Form";
 			l.Dock = DockStyle.Fill;
 
@@ -248,12 +259,22 @@ namespace MyFormProject
 			t.Stop();
 		}
 
+		private class myform : Form {
+			public void DisplayInfo() {
+				Console.WriteLine("My owner: {0}", this.Owner);
+				Console.WriteLine("Disposed: {0}", this.IsDisposed);
+				Console.WriteLine("Handle created: {0}", this.IsHandleCreated);
+			}
+		}
+
 		private void b_Click(object sender, EventArgs e) {
-			Form	f;
+			myform	f;
 			Label	l;
 
 			l = new Label();
-			f = new Form();
+			f = new myform();
+
+			f.Text = "User-clicked Form";
 
 			l.Text = "Modal Form created by Modal Form";
 			l.Dock = DockStyle.Fill;
@@ -262,6 +283,7 @@ namespace MyFormProject
 			f.Controls.Add(l);
 			f.BackColor = Color.Plum;
 			f.ShowDialog();
+			f.DisplayInfo();
 			MessageBox.Show("Past ShowDialog() inside ShowDialog", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 	}
