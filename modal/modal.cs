@@ -225,12 +225,14 @@ namespace MyFormProject
 			Form	f;
 			Label	l;
 			Button	b;
+			Button	b2;
 
 			t.Stop();
 
 			l = new Label();
 			f = new Form();
 			b = new Button();
+			b2 = new Button();
 
 			f.Text = "Timer-driven Form";
 
@@ -240,8 +242,13 @@ namespace MyFormProject
 			b.Text = "New modal";
 			b.Click += new EventHandler(b_Click);
 
+			b2.Text = "Application Exit";
+			b2.Click += new EventHandler(b2_Click);
+			b2.Location = new Point(0, 40);
+
 			f.FormBorderStyle = FormBorderStyle.FixedDialog;
 			f.Controls.Add(b);
+			f.Controls.Add(b2);
 			f.Controls.Add(l);
 			f.BackColor = Color.SeaShell;
 			f.ShowDialog();
@@ -285,6 +292,10 @@ namespace MyFormProject
 			f.ShowDialog();
 			f.DisplayInfo();
 			MessageBox.Show("Past ShowDialog() inside ShowDialog", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+		}
+
+		private void b2_Click(object sender, EventArgs e) {
+			Application.ExitThread();
 		}
 	}
 }
