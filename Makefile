@@ -3,10 +3,10 @@ SUBDIRS = \
 	contextmenu control-anchors control-docking controlpaint cursor \
 	databinding datetimepicker dll endian groupbox horizontalscrollbar \
 	idle imagelist label linklabel listbox listview mainloop mainmenu \
-	messagebox monthcalendar notifyicon panel picturebox progressbar \
+	messagebox monthcalendar notifyicon panel picturebox printing progressbar \
 	propertygrid radiobutton rente scrollrect splitter statusbar \
 	sysinfo tabcontrol taborder textbox toolbar tooltip trackbar \
-	treeview various verticalscrollbar zorder
+	transparency treeview various verticalscrollbar zorder
 all: 
 	for i in $(SUBDIRS); do (cd $$i; make); done
 
