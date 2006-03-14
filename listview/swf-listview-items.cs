@@ -119,7 +119,7 @@ namespace MonoSamples
                 	for (int i = 0; i < names.Length; i++)
                 		il.Images.Add (Image.FromFile ("listview-items-icons/64x64/" + names[i]));
 
-			il.Images[1] = Image.FromFile ("horse.bmp");
+			//il.Images[1] = Image.FromFile ("horse.bmp");
 
                 	listView_content.LargeImageList  = il;
 			Controls.Add (listView_content);
@@ -357,7 +357,7 @@ namespace MonoSamples
 			checkbox_scrollable = new CheckBox ();
 			checkbox_scrollable.Location = new System.Drawing.Point (430, 360);
 			checkbox_scrollable.Text = "Scrollable";
-			checkbox_scrollable.Click += new System.EventHandler (checkbox_labelwrapChanged);
+			checkbox_scrollable.Click += new System.EventHandler (checkbox_scrollableChanged);
 			checkbox_scrollable.Checked = listView_content.Scrollable;
 			Controls.Add (checkbox_scrollable);
 
