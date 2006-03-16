@@ -119,8 +119,6 @@ namespace MonoSamples
                 	for (int i = 0; i < names.Length; i++)
                 		il.Images.Add (Image.FromFile ("listview-items-icons/64x64/" + names[i]));
 
-			//il.Images[1] = Image.FromFile ("horse.bmp");
-
                 	listView_content.LargeImageList  = il;
 			Controls.Add (listView_content);
 
