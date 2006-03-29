@@ -20,6 +20,10 @@ namespace System.Windows.Forms {
 
 		public BeginInvokeDemo ()
 		{
+#if NET_2_0
+			CheckForIllegalCrossThreadCalls = true;
+#endif
+
 			label = new Label ();
 			label.Dock = DockStyle.Fill;
 			label.TextAlign = ContentAlignment.MiddleCenter;
@@ -37,7 +41,11 @@ namespace System.Windows.Forms {
 				Thread.Sleep(250);
 			}
 
+
 			while (true) {
+#if NET_2_0
+				Console.WriteLine("Handle:{0:X}", this.Handle.ToInt23());
+#endif
 				lock (this) {
 					label.BeginInvoke (new updater (DateUpdater));
 				}
