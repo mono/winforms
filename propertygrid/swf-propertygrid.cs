@@ -21,6 +21,7 @@ namespace MWFTestApplication {
 			textbox.Location = new Point(0, 0);
 			textbox.Width = this.Width;
 			textbox.TabIndex = 1;
+			textbox.Dock = DockStyle.Top;
 
 			this.Controls.Add(textbox);
 
@@ -30,6 +31,7 @@ namespace MWFTestApplication {
 			propertygrid.Dock = DockStyle.Fill;
 			propertygrid.TabIndex = 2;
 			propertygrid.Text = "Property Grid";
+			propertygrid.Dock = DockStyle.Fill;
 
 			this.Controls.Add(propertygrid);
 
