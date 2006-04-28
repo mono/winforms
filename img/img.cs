@@ -79,7 +79,7 @@ namespace ImageTest {
 			T6Option            		= 0x0125,
 			ResolutionUnit      		= 0x0128,
 			PageNumber          		= 0x0129,
-			TransferFuncition   		= 0x012D,
+			TransferFunction   		= 0x012D,
 			SoftwareUsed        		= 0x0131,
 			DateTime            		= 0x0132,
 			Artist              		= 0x013B,
@@ -273,6 +273,7 @@ namespace ImageTest {
 			GpsDestDistRef			= 0x0019,
 			GpsDestDist			= 0x001A
 		}
+
 		static string PropertyToString(PropertyTagType type, byte[] bytes) {
 
 			switch(type) {
@@ -287,6 +288,8 @@ namespace ImageTest {
 					for (int i = 0; i < bytes.Length; i++) {
 						if (!Char.IsControl((char)bytes[i])) {
 							sb.Append((char)bytes[i]);
+						} else {
+							sb.Append("\\" + bytes[i].ToString());
 						}
 					}
 					return sb.ToString();
@@ -295,7 +298,7 @@ namespace ImageTest {
 				case PropertyTagType.Short: {
 					ushort s;
 
-					s = (ushort)(bytes[0] * 256 + bytes[1]);
+					s = (ushort)(bytes[1] * 256 + bytes[0]);
 					return s.ToString();
 				}
 
@@ -429,6 +432,7 @@ namespace ImageTest {
 					}
 				} while (current_frame < frame_count);
 
+//				bmp.Save("saved" + filename);
 				bmp.Dispose();
 			}
 
