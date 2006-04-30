@@ -333,6 +333,23 @@ namespace ImageTest {
 				}
 			}
 		}
+		static string PropertyTypeAndSize(PropertyItem item) {
+			int	divide;
+
+			switch((PropertyTagType)item.Type) {
+				case PropertyTagType.Byte:	divide = 1; break;
+				case PropertyTagType.Long:	divide = 4; break;
+				case PropertyTagType.Rational:	divide = 8; break;
+				case PropertyTagType.Short:	divide = 2; break;
+				case PropertyTagType.SRational:	divide = 4; break;
+				default:			divide = 0; break;
+			}
+			if ((divide != 0) && ((item.Len / divide) > 1)) {
+				return String.Format("{0}[{1}]", Enum.GetName(typeof(PropertyTagType), item.Type).ToString(), item.Len / divide);
+			}
+
+			return Enum.GetName(typeof(PropertyTagType), item.Type);
+		}
 
 		static void AnalyzeImage(string filename) {
 			Bitmap		bmp;
@@ -411,7 +428,7 @@ namespace ImageTest {
 					items = bmp.PropertyItems;
 					Console.WriteLine("\n Frame {0}, Property count: {1}", current_frame, items.Length);
 					for (int i = 0; i < items.Length; i++) {
-						Console.WriteLine("   [{0,2}]: {1,-10} {2,23} = {3}", i, (PropertyTagType)items[i].Type, (PropertyTag)items[i].Id, PropertyToString((PropertyTagType)items[i].Type, items[i].Value));
+						Console.WriteLine("  [{0,2}]: {1,-11} {2,23} = {3}", i, PropertyTypeAndSize(items[i]), (PropertyTag)items[i].Id, PropertyToString((PropertyTagType)items[i].Type, items[i].Value));
 					}
 					Console.WriteLine("");
 
