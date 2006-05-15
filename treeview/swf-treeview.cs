@@ -1,6 +1,6 @@
 
 
-#define _B
+#define _A
 
 using System;
 using System.Reflection;
@@ -19,6 +19,7 @@ public class TreeViewTest : Form {
 	private ToolBarButton show_lines;
 	private ToolBarButton show_checkboxes;
 	private ToolBarButton sort;
+	private Timer timer;
 	
 	public TreeViewTest ()
 	{
@@ -40,6 +41,7 @@ public class TreeViewTest : Form {
 		Controls.Add (tool_bar);
 
 		tree_view = new TreeView ();
+		tree_view.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 		tree_view.Width = Width;
 		tree_view.CheckBoxes = true;
 		tree_view.LabelEdit = true;
@@ -48,7 +50,9 @@ public class TreeViewTest : Form {
 		tree_view.Height = Height - tool_bar.Height - 50;
 		tree_view.Width = Width - 25;
 		tree_view.Dock = DockStyle.Fill;
-
+		tree_view.BeforeSelect += new TreeViewCancelEventHandler (BeforeSelectHandler);
+		tree_view.BeforeCheck += new TreeViewCancelEventHandler (BeforeCheckHandler);
+		
 		tree_view.ImageList = new ImageList ();
 		
 		SetupImageList (tree_view.ImageList);
@@ -56,6 +60,26 @@ public class TreeViewTest : Form {
 		FillMyTreeView ();
 
 		Controls.Add (tree_view);
+
+		timer = new Timer ();
+		timer.Interval = 250;
+		timer.Tick += new EventHandler (AddNodeHandler);
+		timer.Enabled = true;
+	}
+
+	private void AddNodeHandler (object sender, EventArgs e)
+	{
+		tree_view.Nodes.Add (new TreeNode (DateTime.Now.ToString ()));
+	}
+
+	private void BeforeSelectHandler (object sender, TreeViewCancelEventArgs te)
+	{
+		te.Node.Checked = true;
+	}
+
+	private void BeforeCheckHandler (object sender, TreeViewCancelEventArgs te)
+	{
+		Console.WriteLine ("CHECK HANDLER");
 	}
 
 	private void ToolBarButtonClick (object sender, System.Windows.Forms.ToolBarButtonClickEventArgs e)
