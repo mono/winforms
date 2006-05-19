@@ -3,7 +3,7 @@ all: mono
 mono: swf-listboxes.cs swf-listbox-multicolumn.cs swf-listbox-selections.cs
 	mcs swf-listboxes.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
 	mcs swf-listbox-multicolumn.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
-	mcs swf-listbox-selections.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
+	mcs swf-listbox-selections.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll /codepage:1251
 
 dotnet: swf-listboxes.cs swf-listbox-multicolumn.cs swf-listbox-selections.cs
 	csc swf-listboxes.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
