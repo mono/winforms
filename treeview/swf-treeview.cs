@@ -43,7 +43,7 @@ public class TreeViewTest : Form {
 		tree_view = new TreeView ();
 		tree_view.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 		tree_view.Width = Width;
-		tree_view.CheckBoxes = true;
+//		tree_view.CheckBoxes = true;
 		tree_view.LabelEdit = true;
 		
 		tree_view.Top = tool_bar.Bottom + 25;
@@ -59,12 +59,14 @@ public class TreeViewTest : Form {
 
 		FillMyTreeView ();
 
-		Controls.Add (tree_view);
 
+		Controls.Add (tree_view);
+/*
 		timer = new Timer ();
 		timer.Interval = 250;
 		timer.Tick += new EventHandler (AddNodeHandler);
 		timer.Enabled = true;
+*/
 	}
 
 	private void AddNodeHandler (object sender, EventArgs e)
@@ -105,21 +107,22 @@ public class TreeViewTest : Form {
 	private ArrayList customerArray = new ArrayList(); 
 
 #if _A
+	int ind = 0;
 	private void FillMyTreeView()
 	{
 		string [] letters = new string [] { "file a", "file b", "file c", "file d" };
 		string [] nums = new string [] { "1", "3", "5", "2", "4" };
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 1; i++) {
 			TreeNode parent = new TreeNode (nums [i]);
 			parent.ImageIndex = 0;
 
 			for (int n = 0; n < 4; n++) {
-				TreeNode node = new TreeNode ("Node");
+				TreeNode node = new TreeNode ("Node - " + ind++);
 				node.ImageIndex = 1;
 				parent.Nodes.Add (node);
 
 				for (int j = 0; j < 4; j++) {
-					TreeNode jnode = new TreeNode ("Node " + (j + i).ToString ());
+					TreeNode jnode = new TreeNode ("Node ~ " + ind++);
 					jnode.ImageIndex = 2;
 					node.Nodes.Add (jnode);
 				}
