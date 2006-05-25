@@ -62,6 +62,7 @@ namespace StatusBarTests {
 			sb1.Panels.Add (p2);
 
 			StatusBarPanel p3 = new StatusBarPanel ();
+			p3.Alignment = HorizontalAlignment.Right;
 			p3.AutoSize = StatusBarPanelAutoSize.Spring;
 			p3.Text = "test";
 			sb1.Panels.Add (p3);
