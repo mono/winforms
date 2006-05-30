@@ -192,8 +192,10 @@ namespace DatagridSamples
 			DataSet dataset = new DataSet ("CustomerSet");
 			DataTable dt1 = new DataTable ("Customers");
 			DataTable dt2 = new DataTable ("Orders");
+			DataTable dt3 = new DataTable ("Addresses");
 			DataColumn column;
 
+			// customer table
 			column = new DataColumn ("CustomerID");
 			column.DataType = typeof (int);
 			column.Unique = true;
@@ -204,6 +206,7 @@ namespace DatagridSamples
 			column.Unique = false;
 			dt1.Columns.Add (column);
 
+			// order table
 			column = new DataColumn ("OrderID");
 			column.DataType = typeof (int);
 			column.Unique = true;
@@ -219,6 +222,27 @@ namespace DatagridSamples
 			column.Unique = false;
 			dt2.Columns.Add (column);
 
+			column = new DataColumn ("AddressID");
+			column.DataType = typeof (int);
+			column.Unique = false;
+			dt2.Columns.Add (column);
+
+			// address table
+			column = new DataColumn ("AddressID");
+			column.DataType = typeof (int);
+			column.Unique = true;
+			dt3.Columns.Add (column);
+
+			column = new DataColumn ("AddressString");
+			column.DataType = typeof (string);
+			column.Unique = false;
+			dt3.Columns.Add (column);
+
+			column = new DataColumn ("CustomerID");
+			column.DataType = typeof (int);
+			column.Unique = false;
+			dt3.Columns.Add (column);
+
 			for (int i = 0; i < 10; i ++) {
 				DataRow row = dt1.NewRow ();
 				row["CustomerID"] = i;
@@ -233,13 +257,28 @@ namespace DatagridSamples
 					row["OrderID"] = ordernum++;
 					row["ItemName"] = String.Format ("Item order #{0}", j);
 					row["CustomerID"] = 9-i;
+					row["AddressID"] = j;
 					dt2.Rows.Add (row);
+				}
+			}
+
+			int addressid = 0;
+			for (int i = 0; i < 10; i ++) {
+				for (int j = 0; j < 4; j ++) {
+					DataRow row = dt3.NewRow ();
+					row["AddressID"] = addressid++;
+					row["AddressString"] = String.Format ("Customer Address {0}", j);
+					row["CustomerID"] = i;
+					dt3.Rows.Add (row);
 				}
 			}
 
 			dataset.Tables.Add (dt1);
 			dataset.Tables.Add (dt2);
-			dataset.Relations.Add ("Customer_Order", dt1.Columns["CustomerID"], dt2.Columns["CustomerID"]);
+			dataset.Tables.Add (dt3);
+			dataset.Relations.Add ("Customer_Orders", dt1.Columns["CustomerID"], dt2.Columns["CustomerID"]);
+			dataset.Relations.Add ("Customer_Addresses", dt1.Columns["CustomerID"], dt3.Columns["CustomerID"]);
+			dataset.Relations.Add ("Address_Orders", dt3.Columns["AddressID"], dt2.Columns["AddressID"]);
 
 			dataGrid.DataSource = dataset;
 			dataGrid.DataMember = "Customers";
