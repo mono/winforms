@@ -1,7 +1,7 @@
 all: mono
 
 mono: swf-datagrid.cs
-	mcs swf-datagrid.cs  swf-datagrid-realsample.cs swf-datagrid-testproperties.cs swf-datagrid-tablenav.cs swf-datagrid-styles.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:System.Data.dll
+	mcs /debug swf-datagrid.cs  swf-datagrid-realsample.cs swf-datagrid-testproperties.cs swf-datagrid-tablenav.cs swf-datagrid-styles.cs swf-datagrid-editinfo.cs swf-datagrid-relations.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:System.Data.dll
 
 dotnet: swf-datagrid.cs	
 

@@ -78,6 +78,8 @@ namespace DatagridSamples
 			CreateSampleEntry ("Properties testing", new DataGridTestProperties (), ref y);
 			CreateSampleEntry ("Properties table navigation", new DataGridTableNavigation (), ref y);
 			CreateSampleEntry ("Table and column styles", new DataGridStyles (), ref y);
+			CreateSampleEntry ("Relations", new DataGridTestRelations (), ref y);
+			CreateSampleEntry ("Edit info", new DataGridEditInfo (), ref y);
 			Text = "SWF-Datagrid app";
 			Name = "MainForm";
 			ClientSize = new Size (300, 300);
