@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 public class ToolWindowTest : Form {
 
-	private bool sizable;
+	private bool sizable = true;
 	private Button button;
 
 	public ToolWindowTest ()
@@ -25,9 +25,11 @@ public class ToolWindowTest : Form {
 		form.Text = "tool window";
 		if (sizable) {
 			form.FormBorderStyle = FormBorderStyle.SizableToolWindow;
+			form.Text = "Sizable Tool Window";
 			button.Text = "Gimme a Fixed Tool Window";
 		} else {
 			form.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+			form.Text = "Fixed Tool Window";
 			button.Text = "Gimme a Sizable Tool Window";
 		}
 		sizable = !sizable;
