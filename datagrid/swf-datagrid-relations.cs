@@ -48,9 +48,9 @@ namespace DatagridSamples
 			dataGrid.ParentRowsVisible  = !dataGrid.ParentRowsVisible ;
 		}
 
-		private void readonlyChecked (object sender, System.EventArgs e)
+		private void allowNavigateChecked (object sender, System.EventArgs e)
 		{
-			dataGrid.ReadOnly = !dataGrid.ReadOnly;
+			dataGrid.AllowNavigation = !dataGrid.AllowNavigation;
 		}
 
 		private void rowshdrsvisibleChecked (object sender, System.EventArgs e)
@@ -58,34 +58,31 @@ namespace DatagridSamples
 			dataGrid.RowHeadersVisible = !dataGrid.RowHeadersVisible;
 		}
 
-		private void button_backcolorClick (object sender, System.EventArgs e)
+		private void button_navigateClicked (object sender, System.EventArgs e)
 		{
-			ColorDialog colorDialog = new ColorDialog ();
+			dataGrid.NavigateTo (3, "Customer_Addresses");
 
-			if (DialogResult.OK == colorDialog.ShowDialog ()) {
-				dataGrid.BackColor = colorDialog.Color;
-				label_backcolor.Text = "Back color: " + dataGrid.BackColor;
-			}
+			Console.WriteLine ("dataGrid.DataMember = {0}", dataGrid.DataMember);
 		}
 
-		private void button_altbackcolorClick (object sender, System.EventArgs e)
+		private void button_navigate2Clicked (object sender, System.EventArgs e)
 		{
-			ColorDialog colorDialog = new ColorDialog ();
+			dataGrid.NavigateTo (3, "Address_Orders");
 
-			if (DialogResult.OK == colorDialog.ShowDialog ()) {
-				dataGrid.AlternatingBackColor = colorDialog.Color;
-				label_altbackcolor.Text = "Alt Background color: " + dataGrid.AlternatingBackColor;
-			}
+			Console.WriteLine ("dataGrid.DataMember = {0}", dataGrid.DataMember);
 		}
 
-		private void button_backgroundcolorClick (object sender, System.EventArgs e)
+		private void button_toggleexpansionClicked (object sender, System.EventArgs e)
 		{
-			ColorDialog colorDialog = new ColorDialog ();
+			if (dataGrid.IsExpanded (3))
+				dataGrid.Collapse (3);
+			else
+				dataGrid.Expand (3);
+		}
 
-			if (DialogResult.OK == colorDialog.ShowDialog ()) {
-				dataGrid.BackgroundColor = colorDialog.Color;
-				label_backgroundcolor.Text = "Background color: " + dataGrid.BackgroundColor;
-			}
+		private void button_navigateBackClicked (object sender, System.EventArgs e)
+		{
+			dataGrid.NavigateBack ();
 		}
 
 		void InitializeComponent ()
@@ -107,12 +104,12 @@ namespace DatagridSamples
 			checkbox_parentrowsvisible.Checked = dataGrid.ParentRowsVisible;
 			Controls.Add (checkbox_parentrowsvisible);
 
-			CheckBox checkbox_readonly = new CheckBox ();
-			checkbox_readonly.Location = new System.Drawing.Point (430 + 240, 190);
-			checkbox_readonly.Text = "ReadOnly";
-			checkbox_readonly.Click += new System.EventHandler (readonlyChecked);
-			checkbox_readonly.Checked = dataGrid.ReadOnly;
-			Controls.Add (checkbox_readonly);
+			CheckBox checkbox_allownavigate = new CheckBox ();
+			checkbox_allownavigate.Location = new System.Drawing.Point (430 + 240, 190);
+			checkbox_allownavigate.Text = "AllowNavigation";
+			checkbox_allownavigate.Click += new System.EventHandler (allowNavigateChecked);
+			checkbox_allownavigate.Checked = dataGrid.AllowNavigation;
+			Controls.Add (checkbox_allownavigate);
 
 			CheckBox checkbox_rowshdrsvisible  = new CheckBox ();
 			checkbox_rowshdrsvisible.Location = new System.Drawing.Point (430 + 100, 220);
@@ -122,45 +119,33 @@ namespace DatagridSamples
 			checkbox_rowshdrsvisible.Checked = dataGrid.RowHeadersVisible;
 			Controls.Add (checkbox_rowshdrsvisible);
 
-			label_backcolor = new Label ();
-			label_backcolor.Location = new System.Drawing.Point (430 + 210, 300);
-			label_backcolor.Text = "Back color: " + dataGrid.BackColor;
-			label_backcolor.Size = new Size (160, 30);
-			Controls.Add (label_backcolor);
+			Button button_navigate = new Button ();
+			button_navigate.Location = new System.Drawing.Point (430 + 100, 300);
+			button_navigate.Text = "Navigate to Address";
+			button_navigate.Size = new Size (100, 30);
+			button_navigate.Click += new System.EventHandler (button_navigateClicked);
+			Controls.Add (button_navigate);
 
-			Button button_backcolor = new Button ();
-			button_backcolor.Location = new System.Drawing.Point (430 + 100, 300);
-			button_backcolor.Text = "Set Back Color";
-			button_backcolor.Size = new Size (100, 30);
-			button_backcolor.Click += new System.EventHandler (button_backcolorClick);
-			Controls.Add (button_backcolor);
+			Button button_navigate2 = new Button ();
+			button_navigate2.Location = new System.Drawing.Point (430 + 220, 300);
+			button_navigate2.Text = "Navigate to Order";
+			button_navigate2.Size = new Size (100, 30);
+			button_navigate2.Click += new System.EventHandler (button_navigate2Clicked);
+			Controls.Add (button_navigate2);
 
-			label_altbackcolor = new Label ();
-			label_altbackcolor.Location = new System.Drawing.Point (430 + 210, 340);
-			label_altbackcolor.Text = "Alt Background color: " + dataGrid.BackColor;
-			label_altbackcolor.Size = new Size (160, 30);
-			Controls.Add (label_altbackcolor);
+			Button button_navigateBack = new Button ();
+			button_navigateBack.Location = new System.Drawing.Point (430 + 100, 340);
+			button_navigateBack.Text = "Navigate Back";
+			button_navigateBack.Size = new Size (100, 30);
+			button_navigateBack.Click += new System.EventHandler (button_navigateBackClicked);
+			Controls.Add (button_navigateBack);
 
-			Button button_altbackcolor = new Button ();
-			button_altbackcolor.Location = new System.Drawing.Point (430 + 100, 340);
-			button_altbackcolor.Text = "Set Alt Back Color";
-			button_altbackcolor.Size = new Size (100, 30);
-			button_altbackcolor.Click += new System.EventHandler (button_altbackcolorClick);
-			Controls.Add (button_altbackcolor);
-
-			label_backgroundcolor = new Label ();
-			label_backgroundcolor.Location = new System.Drawing.Point (430 + 210, 380);
-			label_backgroundcolor.Text = "Background color: " + dataGrid.BackColor;
-			label_backgroundcolor.Size = new Size (160, 30);
-			Controls.Add (label_backgroundcolor);
-
-			Button button_backgroundcolor = new Button ();
-			button_backgroundcolor.Location = new System.Drawing.Point (430 + 100, 380);
-			button_backgroundcolor.Text = "Set Background Color";
-			button_backgroundcolor.Size = new Size (100, 30);
-			button_backgroundcolor.Click += new System.EventHandler (button_backgroundcolorClick);
-			Controls.Add (button_backgroundcolor);
-
+			Button button_toggleexpansion = new Button ();
+			button_toggleexpansion.Location = new System.Drawing.Point (430 + 100, 380);
+			button_toggleexpansion.Text = "Toggle Row 3 Expanded";
+			button_toggleexpansion.Size = new Size (100, 30);
+			button_toggleexpansion.Click += new System.EventHandler (button_toggleexpansionClicked);
+			Controls.Add (button_toggleexpansion);
 
 			//
 			// MainForm
@@ -173,12 +158,6 @@ namespace DatagridSamples
 			ResumeLayout (false);
 		}
 
-
-		/*
-		public static void Main(string[] args)
-		{
-			Application.Run(new DatagridSample1());
-		}*/
 
 		void MainFormLoad (object sender, System.EventArgs e)
 		{
@@ -263,7 +242,7 @@ namespace DatagridSamples
 			}
 
 			int addressid = 0;
-			for (int i = 0; i < 10; i ++) {
+			for (int i = 0; i < 4; i ++) {
 				for (int j = 0; j < 4; j ++) {
 					DataRow row = dt3.NewRow ();
 					row["AddressID"] = addressid++;
