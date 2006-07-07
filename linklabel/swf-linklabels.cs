@@ -335,18 +335,18 @@ namespace MyFormProject
 			// 
 			LinkLabel linkLabel30 = new LinkLabel ();
 			linkLabel30.Location = new System.Drawing.Point (600, 30);
-			linkLabel30.Size = new System.Drawing.Size(280, 16);
-			linkLabel30.Text = "Users need not fear making the switch to Linux";
-			linkLabel30.Links.Add (6,9, "http://link1");
-			linkLabel30.Links.Add (31,6, "http://link2");
-			linkLabel30.Links.Add (41,6, "http://www.linux.org");				
+			linkLabel30.Size = new System.Drawing.Size(280, 40);
+			linkLabel30.Text = "Us\ners need not fear making the switch to Linux";
+			linkLabel30.Links.Add (0,6, "http://link1");
+			linkLabel30.Links.Add (32,6, "http://link2");
+			linkLabel30.Links.Add (42,6, "http://www.linux.org");				
 			Controls.Add (linkLabel30);
 			
 			// 
 			// linkLabel31
 			// 
 			LinkLabel linkLabel31 = new LinkLabel ();
-			linkLabel31.Location = new System.Drawing.Point (600, 60);
+			linkLabel31.Location = new System.Drawing.Point (600, 90);
 			linkLabel31.Size = new System.Drawing.Size(280, 16);
 			linkLabel31.Text = "Users need not fear making the switch to Linux";
 			linkLabel31.Links.Add (6,9, "http://link1");
@@ -359,7 +359,7 @@ namespace MyFormProject
 			// linkLabel32
 			// 
 			LinkLabel linkLabel32 = new LinkLabel ();
-			linkLabel32.Location = new System.Drawing.Point (600, 90);
+			linkLabel32.Location = new System.Drawing.Point (600, 120);
 			linkLabel32.Size = new System.Drawing.Size (250, 16);
 			linkLabel32.Text = "Many Linux distros have Firefox or Mozilla";
 			linkLabel32.Links.Add (5,5, "http://www.linux.org");
