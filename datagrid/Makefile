@@ -1,9 +1,14 @@
 all: mono
 
-mono: swf-datagrid.cs
+mono: swf-datagrid.exe related.exe arraylist.exe
+
+swf-datagrid.exe:
 	mcs /debug swf-datagrid.cs  swf-datagrid-realsample.cs swf-datagrid-testproperties.cs swf-datagrid-tablenav.cs swf-datagrid-styles.cs swf-datagrid-editinfo.cs swf-datagrid-relations.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:System.Data.dll
+
+%.exe: %.cs
+	mcs /debug $< /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:System.Data.dll
 
 dotnet: swf-datagrid.cs	
 
 clean:
-	rm swf-datagrid.exe -r -f
+	rm -f *.exe *.mdb
