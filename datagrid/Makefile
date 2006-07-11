@@ -2,8 +2,10 @@ all: mono
 
 mono: swf-datagrid.exe related.exe arraylist.exe
 
-swf-datagrid.exe:
-	mcs /debug swf-datagrid.cs  swf-datagrid-realsample.cs swf-datagrid-testproperties.cs swf-datagrid-tablenav.cs swf-datagrid-styles.cs swf-datagrid-editinfo.cs swf-datagrid-relations.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:System.Data.dll
+SWF_DATAGRID_EXE_SRCS = swf-datagrid.cs swf-datagrid-realsample.cs swf-datagrid-testproperties.cs swf-datagrid-tablenav.cs swf-datagrid-styles.cs swf-datagrid-editinfo.cs swf-datagrid-relations.cs
+
+swf-datagrid.exe:  $(SWF_DATAGRID_EXE_SRCS)
+	mcs /debug swf-datagrid.cs  $(SWF_DATAGRID_EXE_SRCS) /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:System.Data.dll
 
 %.exe: %.cs
 	mcs /debug $< /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:System.Data.dll
