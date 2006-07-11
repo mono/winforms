@@ -1,6 +1,6 @@
 all: mono
 
-mono: swf-datagrid.exe related.exe arraylist.exe
+mono: swf-datagrid.exe related.exe arraylist.exe kb318581.exe
 
 SWF_DATAGRID_EXE_SRCS = swf-datagrid.cs swf-datagrid-realsample.cs swf-datagrid-testproperties.cs swf-datagrid-tablenav.cs swf-datagrid-styles.cs swf-datagrid-editinfo.cs swf-datagrid-relations.cs
 
