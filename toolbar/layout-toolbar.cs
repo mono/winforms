@@ -20,46 +20,50 @@ namespace ToolbarLayoutTest {
                         toolbar = new ToolBar();
                         toolbar.Appearance = ToolBarAppearance.Flat;
                         //toolbar.ButtonSize = new Size(8, 8);
-                        toolbar.Buttons.Add("New");
-                        toolbar.Buttons.Add("Open");
+                        toolbar.Buttons.Add("Image");
+                        toolbar.Buttons.Add("NoImage");
                         toolbar.Buttons.Add("Blahblahblah");
+			toolbar.Dock = DockStyle.Top;
                         Controls.Add (toolbar);
+			Panel fmt_frame = new Panel ();
+			fmt_frame.Dock = DockStyle.Fill;
+                        Controls.Add (fmt_frame);
 			chkbox_appearance = new CheckBox ();
 			chkbox_appearance.Text = "Flat";
 			chkbox_appearance.Checked = true;
 			chkbox_appearance.CheckedChanged += new EventHandler (AppearanceChanged);
-			chkbox_appearance.Location = new Point (10, 100);
+			chkbox_appearance.Location = new Point (10, 10);
 			chkbox_appearance.Size = new Size (100, 20);
-                        Controls.Add (chkbox_appearance);
+                        fmt_frame.Controls.Add (chkbox_appearance);
 			chkbox_btnsize = new CheckBox ();
 			chkbox_btnsize.Text = "Button Size";
 			chkbox_btnsize.Checked = false;
 			chkbox_btnsize.CheckedChanged += new EventHandler (ButtonSizeChanged);
-			chkbox_btnsize.Location = new Point (10, 130);
+			chkbox_btnsize.Location = new Point (10, 40);
 			chkbox_btnsize.Size = new Size (100, 20);
-                        Controls.Add (chkbox_btnsize);
+                        fmt_frame.Controls.Add (chkbox_btnsize);
 			txt_width = new TextBox ();
-			txt_width.Location = new Point (110, 130);
+			txt_width.Location = new Point (110, 40);
 			txt_width.Size = new Size (50, 20);
-                        Controls.Add (txt_width);
+                        fmt_frame.Controls.Add (txt_width);
 			txt_height = new TextBox ();
-			txt_height.Location = new Point (170, 130);
+			txt_height.Location = new Point (170, 40);
 			txt_height.Size = new Size (50, 20);
-                        Controls.Add (txt_height);
+                        fmt_frame.Controls.Add (txt_height);
 			chkbox_images = new CheckBox ();
 			chkbox_images.Text = "Show Images";
 			chkbox_images.Checked = false;
 			chkbox_images.CheckedChanged += new EventHandler (ImagesChanged);
-			chkbox_images.Location = new Point (10, 160);
+			chkbox_images.Location = new Point (10, 70);
 			chkbox_images.Size = new Size (100, 20);
-                        Controls.Add (chkbox_images);
+                        fmt_frame.Controls.Add (chkbox_images);
 			chkbox_align = new CheckBox ();
 			chkbox_align.Text = "Text Underneath";
 			chkbox_align.Checked = true;
 			chkbox_align.CheckedChanged += new EventHandler (AlignmentChanged);
-			chkbox_align.Location = new Point (10, 190);
+			chkbox_align.Location = new Point (10, 100);
 			chkbox_align.Size = new Size (150, 20);
-                        Controls.Add (chkbox_align);
+                        fmt_frame.Controls.Add (chkbox_align);
 			images.ColorDepth = ColorDepth.Depth32Bit;
 			images.Images.Add (new Bitmap ("image1.bmp"));
 			images.ImageSize = new Size (40, 40);
@@ -95,8 +99,9 @@ namespace ToolbarLayoutTest {
 		{
 			if (chkbox_images.Checked) {
 				toolbar.ImageList = images;
-				foreach (ToolBarButton btn in toolbar.Buttons)
-					btn.ImageIndex = 0;
+				toolbar.Buttons [0].ImageIndex = 0;
+				toolbar.Buttons [1].ImageIndex = -1;
+				toolbar.Buttons [2].ImageIndex = 0;
 			} else {
 				foreach (ToolBarButton btn in toolbar.Buttons)
 					btn.ImageIndex = -1;
