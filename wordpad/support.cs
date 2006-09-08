@@ -523,8 +523,9 @@ namespace WordPad {
 
 		// INSERT
 		private void InsertDateTime(object sender, EventArgs e) {
+                        wordpad.edit.AppendText (DateTime.Now.ToString ());
 		}
-
+				
 		// FORMAT
 		private void ChangeFont(object sender, EventArgs e) {
 		}
