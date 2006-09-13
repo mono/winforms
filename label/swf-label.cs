@@ -26,11 +26,12 @@ namespace MyFormProject
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.Label label19;
 		private System.Windows.Forms.Label label20;
-    	private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.Label label21;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.Label label23;
 		private System.Windows.Forms.Label label24;
 		private System.Windows.Forms.Label label25;
+		private System.Windows.Forms.Label label26;
 
 		public MainForm()
 		{
@@ -61,6 +62,7 @@ namespace MyFormProject
 			this.label21 = new System.Windows.Forms.Label();
 			this.label24 = new System.Windows.Forms.Label();
 			this.label25 = new System.Windows.Forms.Label();
+			this.label26 = new System.Windows.Forms.Label();
 			this.label19 = new System.Windows.Forms.Label();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
@@ -261,6 +263,15 @@ namespace MyFormProject
 			this.label25.TabIndex = 24;
 			this.label25.Text = "A normal label : BorderStyle=FixedSingle , AutoSize=true";
 			// 
+			// label26
+			// 
+			this.label26.AutoSize = true;
+			this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.label26.Location = new System.Drawing.Point(10, 520);
+			this.label26.Name = "label25";
+			this.label26.TabIndex = 24;
+			this.label26.Text = "A multiline label\nBorderStyle=FixedSingle , AutoSize=true";
+			// 
 			// label19
 			// 
 			this.label19.BackColor = System.Drawing.Color.Red;
@@ -297,8 +308,9 @@ namespace MyFormProject
 			// 
 			// MainForm
 			// 
-			this.ClientSize = new System.Drawing.Size(480, 533);
+			this.ClientSize = new System.Drawing.Size(480, 563);
 			this.Controls.AddRange(new System.Windows.Forms.Control[] {
+						this.label26,
 						this.label25,
 						this.label24,
 						this.label23,
