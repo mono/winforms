@@ -1,4 +1,4 @@
-all: FormsTest.exe FormsMdi.exe FormsHello.exe CustomControl.exe ImageViewer.exe radiobuttons.exe
+all: FormsTest.exe FormsMdi.exe FormsHello.exe CustomControl.exe ImageViewer.exe radiobuttons.exe text.exe
 
 FormsTest.exe: FormsTest.cs
 	mcs FormsTest.cs -debug \
@@ -30,6 +30,9 @@ ImageViewer.exe: ImageViewer.cs
 radiobuttons.exe: radiobuttons.cs
 	mcs radiobuttons.cs -debug -r:System.Windows.Forms.dll -r:System.Drawing.dll
 
+text.exe: text.cs
+	mcs text.cs -debug -r:System.Windows.Forms.dll
+
 clean: 
 	rm -f FormsTest.exe
 	rm -f FormsMdi.exe
@@ -37,3 +40,4 @@ clean:
 	rm -f CustomControl.exe
 	rm -f ImageViewer.exe
 	rm -f radiobuttons.exe
+	rm -f text.exe
