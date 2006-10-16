@@ -286,7 +286,7 @@ namespace WordPad {
 				}
 			}
 
-			wordpad = new WordPad(null);
+			wordpad = new WordPad(file);
 			Application.Run(wordpad);
 
 			return 0;
