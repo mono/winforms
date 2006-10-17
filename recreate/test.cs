@@ -50,6 +50,50 @@ public class TortureForm : Form {
 
 		TestMdi ();
 		TestMdi2 ();
+		TestToplevel ();
+		TestToplevel2 ();
+	}
+
+	void TestToplevel ()
+	{
+		Timer timer = new Timer ();
+
+		Console.Write ("toplevel test 1:");
+
+		TortureMdiChild child = new TortureMdiChild ();
+		Button b = new Button ();
+		b.Text = "Click me if you see me";
+		b.Click += delegate (object sender, EventArgs e) { Console.WriteLine ("PASS"); timer.Stop (); child.Close(); };
+		b.Dock = DockStyle.Fill;
+		child.ClientSize = new Size (100, 50);
+		child.Controls.Add (b);
+
+		timer.Interval = 5000;
+		timer.Tick += delegate (object sender, EventArgs e) { Console.WriteLine ("FAIL (timer)"); timer.Stop (); child.Close(); };
+		timer.Start ();
+
+		child.ShowDialog (this);
+	}
+
+	void TestToplevel2 ()
+	{
+		Timer timer = new Timer ();
+
+		Console.Write ("toplevel test 2:");
+
+		TortureMdiChild child = new TortureMdiChild ();
+		Button b = new Button ();
+		b.Text = "Click me if you see me";
+		b.Click += delegate (object sender, EventArgs e) { Console.WriteLine ("PASS"); timer.Stop (); child.Close(); };
+		b.Dock = DockStyle.Fill;
+		child.ClientSize = new Size (100, 50);
+		child.Controls.Add (b);
+
+		timer.Interval = 5000;
+		timer.Tick += delegate (object sender, EventArgs e) { Console.WriteLine ("FAIL (timer)"); timer.Stop (); child.Close(); };
+		timer.Start ();
+
+		child.ShowDialog (this);
 	}
 
 	void TestMdi ()
