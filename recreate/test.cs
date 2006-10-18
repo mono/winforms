@@ -52,6 +52,8 @@ public class TortureForm : Form {
 		TestMdi2 ();
 		TestToplevel ();
 		TestToplevel2 ();
+
+		Application.Exit ();
 	}
 
 	void TestToplevel ()
