@@ -308,6 +308,8 @@ namespace WordPad {
 			help.MenuItems.AddRange(new MenuItem[] {about});
 
 			menu = new MainMenu(new MenuItem[] {file, edit, view, insert, format, help});
+
+			edit.Popup += new EventHandler (OnEditPopup);
 		}
 		#endregion	// Constructor
 
@@ -426,6 +428,20 @@ namespace WordPad {
 				if (sender == tabs) status.Text = "Change tab settings";
 
 				if (sender == about) status.Text = "Display information about this application";
+			}
+		}
+
+		private void OnEditPopup (object sender, EventArgs e)
+		{
+			if (wordpad.edit.SelectionLength == 0) {
+				cut.Enabled = false;
+				copy.Enabled = false;
+				clear.Enabled = false;
+			} else {
+				Console.WriteLine ("ENABLING ITEMS");
+				cut.Enabled = true;
+				copy.Enabled = true;
+				clear.Enabled = true;
 			}
 		}
 
