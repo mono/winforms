@@ -493,6 +493,8 @@ namespace WordPad {
 		}
 
 		private void DoClear(object sender, EventArgs e) {
+			wordpad.edit.SelectedText = String.Empty;
+
 		}
 
 		private void DoSelectAll(object sender, EventArgs e) {
