@@ -1,10 +1,21 @@
-all: mono
+EXE= swf-propertygrid.exe \
+     swf-propertygrid-array.exe
 
-mono: swf-propertygrid.cs
-	mcs swf-propertygrid.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
+MDB= 
 
-dotnet: swf-propertygrid.cs
-	csc swf-propertygrid.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll
+CSC=mcs
+
+all: $(EXE)
+
+mono:
+	make all CSC=mcs
+
+dotnet:
+	make all CSC=csc
 
 clean:
-	rm swf-propertygrid.exe -r -f
+	rm -f $(EXE) $(EXE:%.exe=%.exe.mdb)
+
+%.exe: %.cs
+	$(CSC) -out:$@ -debug $< /r:System.Windows.Forms.dll /r:System.Drawing.dll
+
