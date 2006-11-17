@@ -19,6 +19,7 @@ public class TreeViewTest : Form {
 	private ToolBarButton show_lines;
 	private ToolBarButton show_checkboxes;
 	private ToolBarButton sort;
+	private ToolBarButton expand_odd;
 	private Timer timer;
 	
 	public TreeViewTest ()
@@ -29,12 +30,14 @@ public class TreeViewTest : Form {
 		show_lines = new ToolBarButton ("Show Lines");
 		show_checkboxes = new ToolBarButton ("Show Check Boxes");
 		sort = new ToolBarButton ("Sort Tree");
+		expand_odd = new ToolBarButton ("Expand Every Other Node");
 		
 		tool_bar.Buttons.Add (show_plus_minus);
 		tool_bar.Buttons.Add (show_root_lines);
 		tool_bar.Buttons.Add (show_lines);
 		tool_bar.Buttons.Add (show_checkboxes);
 		tool_bar.Buttons.Add (sort);
+		tool_bar.Buttons.Add (expand_odd);
 		
 		tool_bar.ButtonClick += new ToolBarButtonClickEventHandler (ToolBarButtonClick);
 
@@ -61,6 +64,8 @@ public class TreeViewTest : Form {
 
 
 		Controls.Add (tree_view);
+
+		tree_view.Nodes [0].Expand ();
 /*
 		timer = new Timer ();
 		timer.Interval = 250;
@@ -96,6 +101,15 @@ public class TreeViewTest : Form {
 			tree_view.CheckBoxes = !tree_view.CheckBoxes;
 		else if (e.Button == sort)
 			tree_view.Sorted = true;
+		else if (e.Button == expand_odd) {
+			Console.WriteLine ("EXPANDING ODD");
+			bool odd = false;
+			foreach (TreeNode n in tree_view.Nodes [0].Nodes) {
+				if (odd)
+					n.Expand ();
+				odd = !odd;
+			}
+		}
 	}
 
 	public static void Main ()
