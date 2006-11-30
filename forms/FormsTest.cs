@@ -2891,7 +2891,6 @@ namespace FormsTest
 
 		private void AddListBoxTest(Control c)
 		{
-			return;
 			listBox1 = new ListBox();
 			listBox1.Bounds = new Rectangle(10, 10, 200, 100);
 			listBox2 = new ListBox();
