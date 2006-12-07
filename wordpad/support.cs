@@ -245,18 +245,18 @@ namespace WordPad {
 			this.status = status;
 			this.wordpad = wordpad;
 
-			mnew = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlN, "&New...", new EventHandler(NewDocument), null, new EventHandler(MenuClickHandler), null);
-			open = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlO, "&Open...", new EventHandler(OpenDocument), null, new EventHandler(MenuClickHandler), null);
-			save = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlS, "&Save...", new EventHandler(SaveDocument), null, new EventHandler(MenuClickHandler), null);
-			saveas = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "Save &As...", new EventHandler(SaveAs), null, new EventHandler(MenuClickHandler), null);
-			print = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlP, "&Print...", new EventHandler(PrintDocument), null, new EventHandler(MenuClickHandler), null);
-			printpreview = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "Print Pre&view", new EventHandler(PrintPreview), null, new EventHandler(MenuClickHandler), null);
-			pagesetup = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "Page Set&up...", new EventHandler(PrintPageSetup), null, new EventHandler(MenuClickHandler), null);
-			mru1 = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&1 - ", new EventHandler(OpenMRU1), null, new EventHandler(MenuClickHandler), null);
-			mru2 = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&2 - ", new EventHandler(OpenMRU2), null, new EventHandler(MenuClickHandler), null);
-			mru3 = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&3 - ", new EventHandler(OpenMRU3), null, new EventHandler(MenuClickHandler), null);
-			mru4 = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&4 - ", new EventHandler(OpenMRU4), null, new EventHandler(MenuClickHandler), null);
-			exit = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "E&xit", new EventHandler(Exit), null, new EventHandler(MenuClickHandler), null);
+			mnew = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlN, "&New...", new EventHandler(NewDocument), null, new EventHandler(MenuSelectHandler), null);
+			open = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlO, "&Open...", new EventHandler(OpenDocument), null, new EventHandler(MenuSelectHandler), null);
+			save = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlS, "&Save...", new EventHandler(SaveDocument), null, new EventHandler(MenuSelectHandler), null);
+			saveas = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "Save &As...", new EventHandler(SaveAs), null, new EventHandler(MenuSelectHandler), null);
+			print = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlP, "&Print...", new EventHandler(PrintDocument), null, new EventHandler(MenuSelectHandler), null);
+			printpreview = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "Print Pre&view", new EventHandler(PrintPreview), null, new EventHandler(MenuSelectHandler), null);
+			pagesetup = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "Page Set&up...", new EventHandler(PrintPageSetup), null, new EventHandler(MenuSelectHandler), null);
+			mru1 = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&1 - ", new EventHandler(OpenMRU1), null, new EventHandler(MenuSelectHandler), null);
+			mru2 = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&2 - ", new EventHandler(OpenMRU2), null, new EventHandler(MenuSelectHandler), null);
+			mru3 = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&3 - ", new EventHandler(OpenMRU3), null, new EventHandler(MenuSelectHandler), null);
+			mru4 = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&4 - ", new EventHandler(OpenMRU4), null, new EventHandler(MenuSelectHandler), null);
+			exit = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "E&xit", new EventHandler(Exit), null, new EventHandler(MenuSelectHandler), null);
 
 
 			// FILE menu
@@ -266,45 +266,45 @@ namespace WordPad {
 
 			// EDIT menu
 			edit = new MenuItem("&Edit");
-			undo = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlZ, "&Undo", new EventHandler(DoUndo), null, new EventHandler(MenuClickHandler), null);
-			cut = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlX, "Cu&t", new EventHandler(DoCut), null, new EventHandler(MenuClickHandler), null);
-			copy = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlC, "&Copy", new EventHandler(DoCopy), null, new EventHandler(MenuClickHandler), null);
-			paste = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlV, "&Paste", new EventHandler(DoPaste), null, new EventHandler(MenuClickHandler), null);
-			clear = new MenuItem(MenuMerge.Add, 0, Shortcut.Del, "Cle&ar", new EventHandler(DoClear), null, new EventHandler(MenuClickHandler), null);
-			selectall = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlA, "Select A&ll", new EventHandler(DoSelectAll), null, new EventHandler(MenuClickHandler), null);
-			find = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlF, "&Find...", new EventHandler(DoFind), null, new EventHandler(MenuClickHandler), null);
-			findnext = new MenuItem(MenuMerge.Add, 0, Shortcut.F3, "Find &Next", new EventHandler(DoFindNext), null, new EventHandler(MenuClickHandler), null);
-			replace = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlH, "R&eplace...", new EventHandler(DoReplace), null, new EventHandler(MenuClickHandler), null);
+			undo = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlZ, "&Undo", new EventHandler(DoUndo), null, new EventHandler(MenuSelectHandler), null);
+			cut = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlX, "Cu&t", new EventHandler(DoCut), null, new EventHandler(MenuSelectHandler), null);
+			copy = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlC, "&Copy", new EventHandler(DoCopy), null, new EventHandler(MenuSelectHandler), null);
+			paste = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlV, "&Paste", new EventHandler(DoPaste), null, new EventHandler(MenuSelectHandler), null);
+			clear = new MenuItem(MenuMerge.Add, 0, Shortcut.Del, "Cle&ar", new EventHandler(DoClear), null, new EventHandler(MenuSelectHandler), null);
+			selectall = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlA, "Select A&ll", new EventHandler(DoSelectAll), null, new EventHandler(MenuSelectHandler), null);
+			find = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlF, "&Find...", new EventHandler(DoFind), null, new EventHandler(MenuSelectHandler), null);
+			findnext = new MenuItem(MenuMerge.Add, 0, Shortcut.F3, "Find &Next", new EventHandler(DoFindNext), null, new EventHandler(MenuSelectHandler), null);
+			replace = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlH, "R&eplace...", new EventHandler(DoReplace), null, new EventHandler(MenuSelectHandler), null);
 			edit.MenuItems.AddRange(new MenuItem[] {undo, new MenuItem("-"), cut, copy, paste, clear, selectall, new MenuItem("-"), find, findnext, replace});
 
 
 			// VIEW menu
 			view = new MenuItem("&View");
-			toolbar = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Toolbar", new EventHandler(DoToolBar), null, new EventHandler(MenuClickHandler), null);
-			formatbar = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Format Bar", new EventHandler(DoFormatBar), null, new EventHandler(MenuClickHandler), null);
-			statusbar = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Status Bar", new EventHandler(DoStatusBar), null, new EventHandler(MenuClickHandler), null);
-			options = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Options...", new EventHandler(Options), null, new EventHandler(MenuClickHandler), null);
+			toolbar = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Toolbar", new EventHandler(DoToolBar), null, new EventHandler(MenuSelectHandler), null);
+			formatbar = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Format Bar", new EventHandler(DoFormatBar), null, new EventHandler(MenuSelectHandler), null);
+			statusbar = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Status Bar", new EventHandler(DoStatusBar), null, new EventHandler(MenuSelectHandler), null);
+			options = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Options...", new EventHandler(Options), null, new EventHandler(MenuSelectHandler), null);
 			view.MenuItems.AddRange(new MenuItem[] {toolbar, formatbar, statusbar, new MenuItem("-"), options});
 
 
 			// INSERT menu
 			insert = new MenuItem("&Insert");
-			datetime = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Date and Time...", new EventHandler(InsertDateTime), null, new EventHandler(MenuClickHandler), null);
+			datetime = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Date and Time...", new EventHandler(InsertDateTime), null, new EventHandler(MenuSelectHandler), null);
 			insert.MenuItems.AddRange(new MenuItem[] {datetime});
 
 
 			// FORMAT menu
 			format = new MenuItem("F&ormat");
-			fontstyle = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Font...", new EventHandler(ChangeFont), null, new EventHandler(MenuClickHandler), null);
-			bullet = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Bullet Style", new EventHandler(ChangeBulletStyle), null, new EventHandler(MenuClickHandler), null);
-			paragraph = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Paragraph...", new EventHandler(ChangeParagraph), null, new EventHandler(MenuClickHandler), null);
-			tabs = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Tabs...", new EventHandler(ChangeTabs), null, new EventHandler(MenuClickHandler), null);
+			fontstyle = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Font...", new EventHandler(ChangeFont), null, new EventHandler(MenuSelectHandler), null);
+			bullet = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Bullet Style", new EventHandler(ChangeBulletStyle), null, new EventHandler(MenuSelectHandler), null);
+			paragraph = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Paragraph...", new EventHandler(ChangeParagraph), null, new EventHandler(MenuSelectHandler), null);
+			tabs = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Tabs...", new EventHandler(ChangeTabs), null, new EventHandler(MenuSelectHandler), null);
 			format.MenuItems.AddRange(new MenuItem[] {fontstyle, bullet, paragraph, tabs});
 
 
 			// HELP menu
 			help = new MenuItem("Help");
-			about = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&About...", new EventHandler(About), null, new EventHandler(MenuClickHandler), null);
+			about = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&About...", new EventHandler(About), null, new EventHandler(MenuSelectHandler), null);
 			help.MenuItems.AddRange(new MenuItem[] {about});
 
 			menu = new MainMenu(new MenuItem[] {file, edit, view, insert, format, help});
@@ -393,7 +393,7 @@ namespace WordPad {
 		#endregion	// Methods
 
 		#region Event Handlers
-		private void MenuClickHandler(object sender, EventArgs e) {
+		private void MenuSelectHandler(object sender, EventArgs e) {
 			if (status != null) {
 				if (sender == mnew) status.Text = "Create new document"; 
 				if (sender == open) status.Text = "Open existing document";

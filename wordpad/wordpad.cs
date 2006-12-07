@@ -19,6 +19,8 @@ namespace WordPad {
 		public Panel		toolbarpanel;
 		public FindBar findbar;
 
+		private Timer status_text_timer;
+
 		// Document
 		public string			filename;
 		public RichTextBoxStreamType	filetype;
@@ -49,6 +51,8 @@ namespace WordPad {
 			menu = new WordPadMenu(this, status);
 
 			this.Menu = menu.MainMenu;
+
+			status.TextChanged += new EventHandler (StatusTextChangedHandler);
 
 			buttons.Appearance = ToolBarAppearance.Flat;
 			buttons.TextAlign = ToolBarTextAlign.Right;
@@ -307,6 +311,24 @@ namespace WordPad {
 
 		private void DocumentChanged(object sender, EventArgs e) {
 			wordpad.Changed = true;
+		}
+
+		private void StatusTextExpiredHandler (object sender, EventArgs e)
+		{
+			status_text_timer.Stop ();
+			status.Text = String.Empty;
+		}
+
+		private void StatusTextChangedHandler (object sender, EventArgs e)
+		{
+			if (status_text_timer == null) {
+				status_text_timer = new Timer ();
+				status_text_timer.Tick += new EventHandler (StatusTextExpiredHandler);
+				status_text_timer.Interval = 10000;
+			} else {
+				status_text_timer.Stop ();
+			}
+			status_text_timer.Start ();
 		}
 		#endregion	// Event Handlers
 

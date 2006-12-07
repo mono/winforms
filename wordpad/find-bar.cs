@@ -135,7 +135,7 @@ public class FindBar : UserControl {
 		rtb.HideSelection = false;
 		search_index = 0;
 
-		search_index = 0; // Math.Max (rtb.SelectionStart, 0);
+		search_index = Math.Max (rtb.SelectionStart, 0);
 	}
 
 	private void CloseClickedHandler (object sender, EventArgs e)
@@ -153,7 +153,6 @@ public class FindBar : UserControl {
 
 	private void Search ()
 	{
-		Console.WriteLine ("search index:  {0}", search_index);
 		int next_index = rtb.Find (search_box.Text, search_index, -1, find_options);
 
 		if (next_index != -1) {
@@ -213,9 +212,15 @@ public class FindBar : UserControl {
 			find_options |= RichTextBoxFinds.MatchCase;
 		else
 			find_options ^= RichTextBoxFinds.MatchCase;
-		Console.WriteLine ("search options:   {0}", find_options);
-
-		Search ();
+	}
+	
+	protected override bool ProcessDialogKey (Keys keyData)
+	{
+		if ((keyData & Keys.KeyCode) == Keys.Enter) {
+			FindNextHandler (this, EventArgs.Empty);
+			return true;
+		}
+		return base.ProcessDialogKey (keyData);
 	}
 
 	protected override void OnGotFocus (EventArgs e)
