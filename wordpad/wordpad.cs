@@ -17,6 +17,7 @@ namespace WordPad {
 		public WordPadFormat	formatting;
 		public StatusBar	status;
 		public Panel		toolbarpanel;
+		public FindBar findbar;
 
 		// Document
 		public string			filename;
@@ -62,6 +63,9 @@ namespace WordPad {
 			toolbarpanel.Height = buttons.Height + formatting.Height + 8;
 			formatting.Dock = DockStyle.Bottom;
 
+			findbar = new FindBar (edit);
+			findbar.Visible = false;
+
 			// Register all required events
 			this.Closing += new CancelEventHandler(WordPadClosing);
 			edit.TextChanged += new EventHandler(DocumentChanged);
@@ -73,10 +77,13 @@ namespace WordPad {
 			// Edit must be first to be 'filled' properly
 			this.Controls.Add(edit);
 			this.Controls.Add(toolbarpanel);
+			this.Controls.Add (findbar);
 			this.Controls.Add(status);
-
+			
+			
 			toolbarpanel.Dock = DockStyle.Top;
 			status.Dock = DockStyle.Bottom;
+			findbar.Dock = DockStyle.Bottom;
 			edit.Dock = DockStyle.Fill;
 
 			// Load our file, if any

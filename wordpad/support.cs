@@ -518,6 +518,7 @@ namespace WordPad {
 		}
 
 		private void DoFind(object sender, EventArgs e) {
+			wordpad.findbar.Open ();
 		}
 
 		private void DoFindNext(object sender, EventArgs e) {
