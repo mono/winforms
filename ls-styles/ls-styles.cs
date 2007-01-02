@@ -87,6 +87,8 @@ namespace ListStyles
 			PrintStyle (control, WindowExStyles.WS_EX_LAYOUTRTL);
 			PrintStyle (control, WindowExStyles.WS_EX_COMPOSITED);
 			PrintStyle (control, WindowExStyles.WS_EX_NOACTIVATE);
+			
+			PrintStyle (control, WindowStyles.WS_BORDER);
 				
 			Console.WriteLine ("");
 		}
@@ -102,7 +104,22 @@ namespace ListStyles
 			}
 		}
 		
+		public void PrintStyle (Control control, WindowStyles s)
+		{
+			CreateParams cp = (CreateParams) control.GetType().GetProperty("CreateParams", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(control, null);
+			if ((cp.Style & (int) s) == (int) s) {
+				Console.WriteLine ("=>Style: {0}:{1}", PlanStyle(s), (int)s);
+			}
+			if ((cp.ExStyle & (int) s) == (int) s) {
+				Console.WriteLine ("=>ExStyle: {0}:{1}", PlanStyle(s), (int)s);
+			}
+		}
+
 		private string PlanStyle (WindowExStyles style) {
+			return style.ToString ().Replace ("WS_EX_LEFT, WS_EX_RIGHTSCROLLBAR, ", "");
+		}		
+		
+		private string PlanStyle (WindowStyles style) {
 			return style.ToString ().Replace ("WS_EX_LEFT, WS_EX_RIGHTSCROLLBAR, ", "");
 		}		
 	}
@@ -141,5 +158,35 @@ namespace ListStyles
 
 		WS_EX_OVERLAPPEDWINDOW	= WS_EX_WINDOWEDGE | WS_EX_CLIENTEDGE,
 		WS_EX_PALETTEWINDOW	= WS_EX_WINDOWEDGE | WS_EX_TOOLWINDOW | WS_EX_TOPMOST
+	}
+	
+	public enum WindowStyles : int {
+		WS_OVERLAPPED		= 0x00000000,
+		WS_POPUP		= unchecked((int)0x80000000),
+		WS_CHILD		= 0x40000000,
+		WS_MINIMIZE		= 0x20000000,
+		WS_VISIBLE		= 0x10000000,
+		WS_DISABLED		= 0x08000000,
+		WS_CLIPSIBLINGS		= 0x04000000,
+		WS_CLIPCHILDREN		= 0x02000000,
+		WS_MAXIMIZE		= 0x01000000,
+		WS_CAPTION		= 0x00C00000,
+		WS_BORDER		= 0x00800000,
+		WS_DLGFRAME		= 0x00400000,
+		WS_VSCROLL		= 0x00200000,
+		WS_HSCROLL		= 0x00100000,
+		WS_SYSMENU		= 0x00080000,
+		WS_THICKFRAME		= 0x00040000,
+		WS_GROUP		= 0x00020000,
+		WS_TABSTOP		= 0x00010000,
+		WS_MINIMIZEBOX		= 0x00020000,
+		WS_MAXIMIZEBOX		= 0x00010000,
+		WS_TILED		= 0x00000000,
+		WS_ICONIC		= 0x20000000,
+		WS_SIZEBOX		= 0x00040000,
+		WS_POPUPWINDOW		= unchecked((int)0x80880000),
+		WS_OVERLAPPEDWINDOW	= WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX,
+		WS_TILEDWINDOW		= WS_OVERLAPPEDWINDOW,
+		WS_CHILDWINDOW		= WS_CHILD,
 	}
 }
