@@ -189,7 +189,8 @@ namespace WordPad {
 			sizes.Width = 50;
 
 			sizes.Items.AddRange(new string[] {"8", "9", "10", "11", "12", "14", "16", "18", "20", "22", "24", "26", "28", "36", "48", "72"});
-			sizes.SelectedIndex = 4;
+			Console.WriteLine ("font height:  {0}", wordpad.edit.Font.Height.ToString ());
+			sizes.SelectedItem = wordpad.edit.Font.Height.ToString ();
 			sizes.SelectedIndexChanged += new EventHandler(sizes_SelectedIndexChanged);
 
 
@@ -231,7 +232,7 @@ namespace WordPad {
 		MainMenu	menu;
 		MenuItem	file, edit, view, insert, format, help;
 		MenuItem	mnew, open, save, saveas, print, printpreview, pagesetup, mru1, mru2, mru3, mru4, exit;
-		MenuItem	undo, cut, copy, paste, clear, selectall, find, findnext, replace;
+		MenuItem	undo, redo, cut, copy, paste, clear, selectall, find, findnext, replace;
 		MenuItem	toolbar, formatbar, statusbar, options;
 		MenuItem	datetime;
 		MenuItem	fontstyle, bullet, paragraph, tabs;
@@ -267,15 +268,16 @@ namespace WordPad {
 			// EDIT menu
 			edit = new MenuItem("&Edit");
 			undo = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlZ, "&Undo", new EventHandler(DoUndo), null, new EventHandler(MenuSelectHandler), null);
+			redo = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlShiftZ, "Redo", new EventHandler(DoRedo), null, new EventHandler(MenuSelectHandler), null);
 			cut = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlX, "Cu&t", new EventHandler(DoCut), null, new EventHandler(MenuSelectHandler), null);
 			copy = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlC, "&Copy", new EventHandler(DoCopy), null, new EventHandler(MenuSelectHandler), null);
 			paste = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlV, "&Paste", new EventHandler(DoPaste), null, new EventHandler(MenuSelectHandler), null);
-			clear = new MenuItem(MenuMerge.Add, 0, Shortcut.Del, "Cle&ar", new EventHandler(DoClear), null, new EventHandler(MenuSelectHandler), null);
+			//	clear = new MenuItem(MenuMerge.Add, 0, Shortcut.Del, "Cle&ar", new EventHandler(DoClear), null, new EventHandler(MenuSelectHandler), null);
 			selectall = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlA, "Select A&ll", new EventHandler(DoSelectAll), null, new EventHandler(MenuSelectHandler), null);
 			find = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlF, "&Find...", new EventHandler(DoFind), null, new EventHandler(MenuSelectHandler), null);
 			findnext = new MenuItem(MenuMerge.Add, 0, Shortcut.F3, "Find &Next", new EventHandler(DoFindNext), null, new EventHandler(MenuSelectHandler), null);
 			replace = new MenuItem(MenuMerge.Add, 0, Shortcut.CtrlH, "R&eplace...", new EventHandler(DoReplace), null, new EventHandler(MenuSelectHandler), null);
-			edit.MenuItems.AddRange(new MenuItem[] {undo, new MenuItem("-"), cut, copy, paste, clear, selectall, new MenuItem("-"), find, findnext, replace});
+			edit.MenuItems.AddRange(new MenuItem[] {undo, redo, new MenuItem("-"), cut, copy, paste, /*clear,*/ selectall, new MenuItem("-"), find, findnext, replace});
 
 
 			// VIEW menu
@@ -406,6 +408,7 @@ namespace WordPad {
 				if (sender == exit) status.Text = "Exit application";
 
 				if (sender == undo) status.Text = "Undo last change";
+				if (sender == redo) status.Text = "Redo last undo";
 				if (sender == cut) status.Text = "Cut the selection and put it into the clipboard";
 				if (sender == copy) status.Text = "Copy the selection into the clipboard";
 				if (sender == paste) status.Text = "Paste clipboard contents";
@@ -436,12 +439,29 @@ namespace WordPad {
 			if (wordpad.edit.SelectionLength == 0) {
 				cut.Enabled = false;
 				copy.Enabled = false;
-				clear.Enabled = false;
+				//	clear.Enabled = false;
 			} else {
-				Console.WriteLine ("ENABLING ITEMS");
 				cut.Enabled = true;
 				copy.Enabled = true;
-				clear.Enabled = true;
+				//	clear.Enabled = true;
+			}
+
+			if (wordpad.edit.CanUndo) {
+				Console.WriteLine ("CAN UNDO:  {0}", wordpad.edit.UndoActionName);
+				undo.Enabled = true;
+				undo.Text = "&Undo " + wordpad.edit.UndoActionName;
+			} else {
+				undo.Text = "&Undo";
+				undo.Enabled = false;
+			}
+
+			if (wordpad.edit.CanRedo) {
+				Console.WriteLine ("CAN REDO:  {0}", wordpad.edit.RedoActionName);
+				redo.Enabled = true;
+				redo.Text = "Redo " + wordpad.edit.RedoActionName;
+			} else {
+				redo.Text = "Redo";
+				redo.Enabled = false;
 			}
 		}
 
@@ -494,6 +514,10 @@ namespace WordPad {
 		// EDIT
 		private void DoUndo(object sender, EventArgs e) {
 			wordpad.edit.Undo();
+		}
+
+		private void DoRedo(object sender, EventArgs e) {
+			wordpad.edit.Redo();
 		}
 
 		private void DoCut(object sender, EventArgs e) {
