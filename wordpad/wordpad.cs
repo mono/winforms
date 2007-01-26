@@ -44,15 +44,17 @@ namespace WordPad {
 			// UI Setup
 			toolbarpanel = new Panel();
 			buttons = new ToolBar();
+			edit = new RichTextBox();
 			formatting = new WordPadFormat(this);
 			status = new StatusBar();
-			edit = new RichTextBox();
 			Configuration.Apply(this);	// Call before creating the menu to have MRU loaded
 			menu = new WordPadMenu(this, status);
 
 			this.Menu = menu.MainMenu;
 
 			status.TextChanged += new EventHandler (StatusTextChangedHandler);
+
+			edit.HideSelection = false;
 
 			buttons.Appearance = ToolBarAppearance.Flat;
 			buttons.TextAlign = ToolBarTextAlign.Right;
