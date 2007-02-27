@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Collections;
 using System.Drawing;
 using System.IO;
@@ -234,7 +235,7 @@ namespace WordPad {
 		MenuItem	mnew, open, save, saveas, print, printpreview, pagesetup, mru1, mru2, mru3, mru4, exit;
 		MenuItem	undo, redo, cut, copy, paste, clear, selectall, find, findnext, replace;
 		MenuItem	toolbar, formatbar, statusbar, options;
-		MenuItem	datetime;
+		MenuItem	datetime, picture;
 		MenuItem	fontstyle, bullet, paragraph, tabs;
 		MenuItem	about;
 		StatusBar	status;
@@ -292,7 +293,8 @@ namespace WordPad {
 			// INSERT menu
 			insert = new MenuItem("&Insert");
 			datetime = new MenuItem(MenuMerge.Add, 0, Shortcut.None, "&Date and Time...", new EventHandler(InsertDateTime), null, new EventHandler(MenuSelectHandler), null);
-			insert.MenuItems.AddRange(new MenuItem[] {datetime});
+			picture = new MenuItem (MenuMerge.Add, 0, Shortcut.None, "&Picture", new EventHandler (InsertPicture), null, new EventHandler (MenuSelectHandler), null);
+			insert.MenuItems.AddRange(new MenuItem[] {datetime, picture});
 
 
 			// FORMAT menu
@@ -568,7 +570,49 @@ namespace WordPad {
 		private void InsertDateTime(object sender, EventArgs e) {
                         wordpad.edit.AppendText (DateTime.Now.ToString ());
 		}
-				
+
+		private void InsertPicture (object sender, EventArgs e)
+		{
+			OpenFileDialog fd = new OpenFileDialog ();
+			fd.Filter = "All Files (*.*)|*.*";
+			fd.Multiselect = false;
+			fd.RestoreDirectory = false;
+			
+
+			if (fd.ShowDialog () == DialogResult.OK) {
+				try {
+					Image img = Image.FromFile (fd.FileName);
+					MemoryStream ms = new MemoryStream ();
+					img.Save (ms, System.Drawing.Imaging.ImageFormat.Png);
+					
+					wordpad.edit.SelectedRtf = String.Concat ("\\pict\\pngblip",
+							ByteArrayToHex (ms.ToArray ()));
+				} catch (Exception ex) {
+					Console.WriteLine ("EXCEPTION WITH IMAGE:  {0}", ex);
+				}
+			}
+		}
+
+		private static String ByteArrayToHex (byte [] data)
+		{
+			int i = 0;      
+
+			string [] hex = new string [] { "0", "1", "2",
+					   "3", "4", "5", "6", "7", "8",
+					   "9", "A", "B", "C", "D", "E",
+					   "F"};
+
+			StringBuilder res = new StringBuilder (data.Length * 2);
+
+			while (i < data.Length) {
+				res.Append (hex [(int) ((((uint) data [i] & 0xF0) >> 4) & 0x0F)]); 
+				res.Append (hex [(int) ((uint) data [i] & 0x0F)]);
+				i++;
+			}
+
+			return res.ToString ();
+		}
+		
 		// FORMAT
 		private void ChangeFont(object sender, EventArgs e) {
 		}
