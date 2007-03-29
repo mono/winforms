@@ -17,7 +17,7 @@ class TestForm : Form
 		notify_icon.Text = "NotifyIcon Text";
 		notify_icon.BalloonTipTitle = "Balloon Tip Title";
 		notify_icon.BalloonTipText = "Mono has both an optimizing just-in-time (JIT) runtime and a interpreter runtime. The interpreter runtime is far less complex and is primarly used in the early stages before a JIT version for that architecture is constructed. The interpreter is not supported on architectures where the JIT has been ported.";
-		notify_icon.BalloonTipIcon = ToolTipIcon.Error;
+		notify_icon.BalloonTipIcon = ToolTipIcon.None;
 		notify_icon.Visible = true;
 		
 		notify_icon.BalloonTipClicked += new EventHandler (TestForm_BalloonTipClicked);
@@ -51,6 +51,10 @@ class TestForm : Form
 
 	private void btnballoon_Click (object sender, EventArgs e) 
 	{
+		int i = (int) notify_icon.BalloonTipIcon;
+		i = (i == 3) ? 0 : i + 1;
+		notify_icon.BalloonTipIcon = (ToolTipIcon) i;
+	
 		notify_icon.Visible = true;
 		notify_icon.ShowBalloonTip (1000);
 	}
