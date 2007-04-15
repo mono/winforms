@@ -27,7 +27,13 @@ namespace System.Windows.Forms {
 			Controls.Add (MakeTab(250, 250, TabAlignment.Bottom, TabAppearance.FlatButtons));
 			Controls.Add (MakeTab(500, 250, TabAlignment.Left, TabAppearance.FlatButtons));
 			Controls.Add (MakeTab(750, 250, TabAlignment.Right, TabAppearance.FlatButtons));
-			this.Size = new System.Drawing.Size(1000, 500);
+
+			Controls.Add (MakeTab(0, 500, TabAlignment.Top, TabAppearance.Buttons));
+			Controls.Add (MakeTab(250, 500, TabAlignment.Bottom, TabAppearance.Buttons));
+			Controls.Add (MakeTab(500, 500, TabAlignment.Left, TabAppearance.Buttons));
+			Controls.Add (MakeTab(750, 500, TabAlignment.Right, TabAppearance.Buttons));
+			
+			this.Size = new System.Drawing.Size(1000, 750);
 		}
 
 		private TabControl MakeTab(int x, int y, TabAlignment a, TabAppearance ap) {
@@ -39,7 +45,7 @@ namespace System.Windows.Forms {
 			tab.Controls.Add (CreateTabPage ("Red", Color.FromArgb (255, 255, 0, 0)));
 			tab.Controls.Add (CreateTabPage ("Orange", Color.FromArgb (255, 255, 153, 0)));
 			tab.Controls.Add (CreateTabPage ("Yellow", Color.FromArgb (255, 255, 255, 0)));
-			tab.Controls.Add (CreateTabPage ("Green", Color.FromArgb (255, 0, 153, 0)));
+			tab.Controls.Add (CreateTabPage ("Green", Color.Green));
 			tab.Controls.Add (CreateTabPage ("Blue", Color.FromArgb (255, 0, 0, 255)));
 			tab.Controls.Add (CreateTabPage ("Purple", Color.FromArgb (255, 197, 0, 148)));
 
