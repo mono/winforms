@@ -6,7 +6,9 @@ SUBDIRS = \
 	messagebox monthcalendar notifyicon panel picturebox printing progressbar \
 	propertygrid radiobutton rente scrollrect splitter statusbar \
 	sysinfo tabcontrol taborder textbox toolbar tooltip trackbar \
-	transparency treeview various verticalscrollbar zorder
+	transparency treeview various verticalscrollbar zorder \
+	maskedtextbox
+
 all: 
 	for i in $(SUBDIRS); do (cd $$i; make); done
 
