@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Sales" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="SalesHeader">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SalesDetail">
+					<xs:complexType>
+						<xs:sequence />
+						<xs:attribute name="DetailID" type="xs:int" />
+						<xs:attribute name="ItemID" type="xs:int" />
+						<xs:attribute name="ItemName" type="xs:string" />
+						<xs:attribute name="Quantity" type="xs:int" />
+						<xs:attribute name="UnitPrice" type="xs:decimal" />
+						<xs:attribute name="SubTotal" type="xs:decimal" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="HeaderID" type="xs:int" />
+			<xs:attribute name="SalesPersonID" type="xs:int" />
+			<xs:attribute name="SalesPersonName" type="xs:string" />
+			<xs:attribute name="CustomerID" type="xs:int" />
+			<xs:attribute name="CustomerName" type="xs:string" />
+			<xs:attribute name="SalesDate" type="xs:date" />
+			<xs:attribute name="SalesTotal" type="xs:decimal" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

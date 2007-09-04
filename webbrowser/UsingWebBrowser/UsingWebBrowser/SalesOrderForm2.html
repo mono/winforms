@@ -1,0 +1,73 @@
+﻿<html>
+<body>
+<H1>Sales Order</H1>
+
+	<table id="SalesHeaderTable">
+		<tr>
+			<td width="75px">
+				SalesPerson:
+			</td>
+			<td width="100%">
+				<input type="text" name="SalesPersonName" id="SalesPersonName"></input>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Customer: 
+			</td>
+			<td>
+				<input type="text" name="CustomerName" id="CustomerName"></input>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Date: 
+			</td>
+			<td>
+				<input type="text" name="SalesDate" id="SalesDate"></input>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Total: 
+			</td>
+			<td>
+				<input type="text" name="SalesTotal" id="SalesTotal"></input>
+			</td>
+		</tr>
+	</table>
+	<hr>
+	Items:
+	<br>
+	<table border="1">
+		<tr>
+			<td width="20px">Item ID</td>
+			<td width="300px">Item</td>
+			<td width="50px">Quantity</td>
+			<td width="50px">Unit Price</td>
+			<td width="20px">Subtotal</td>
+		</tr>
+		<span id="SalesDetailsTemplate">
+		<tr>
+			<td id="ItemID">
+			</td>
+			<td id="ItemName">
+			</td>
+			<td id="Quantity">
+			</td>
+			<td id="UnitPrice">
+			</td>
+			<td id="SubTotal">
+			</td>
+		</tr>
+		</span>
+		<span id="SalesData">
+		</span>
+	</table>	
+
+<input type="Button" value="Refresh" onClick="window.external.RefreshHTMLForm()"></input>
+&nbsp;&nbsp
+<input type="Button" value="Print" onClick="window.print();"></input>
+
+</body>
+</html>

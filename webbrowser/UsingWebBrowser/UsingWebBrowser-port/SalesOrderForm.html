@@ -1,0 +1,55 @@
+﻿		<tr>
+			<td width="75px">
+				SalesPerson:
+			</td>
+			<td width="100%">
+				<input type="text" name="SalesPersonName" id="SalesPersonName"></input>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Customer: 
+			</td>
+			<td>
+				<input type="text" name="CustomerName" id="CustomerName"></input>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Date: 
+			</td>
+			<td>
+				<input type="text" name="SalesDate" id="SalesDate"></input>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Total: 
+			</td>
+			<td>
+				<input type="text" name="SalesTotal" id="SalesTotal"></input>
+			</td>
+		</tr>
+	</table>
+	<hr>
+	Items:
+	<br>
+	<u>Item ID&nbsp;&nbsp;Item&nbsp;&nbsp;Quantity&nbsp;&nbsp;Unit Price&nbsp;&nbsp;Subtotal</u><br />
+	<span id="SalesDetailsTemplate">
+        <span id = "ItemID"></span>&nbsp;&nbsp;
+	    <span id = "ItemName"></span>&nbsp;&nbsp;
+	    <span id = "Quantity"></span>&nbsp;&nbsp;
+	    <span id = "UnitPrice"></span>&nbsp;&nbsp;
+    	<br />
+	</span>
+
+	<span id="SalesData">
+	</span>
+    	<br />
+
+<input type="Button" value="Refresh" onClick="window.external.RefreshHTMLForm()"></input>
+&nbsp;&nbsp
+<input type="Button" value="Print" onClick="window.print();"></input>
+
+</body>
+</html>

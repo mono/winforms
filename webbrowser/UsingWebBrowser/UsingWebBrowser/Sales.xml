@@ -1,0 +1,14 @@
+<Sales>
+
+	<SalesHeader HeaderID="1" SalesPersonID="1" SalesPersonName="Joe"	CustomerID="1" CustomerName="ACME" SalesDate="2005-02-05" SalesTotal="1138.60">
+		<SalesDetail DetailID="1" ItemID="1" ItemName="Widget" Quantity="100" UnitPrice="3.95" SubTotal="395.00"></SalesDetail>
+		<SalesDetail DetailID="2" ItemID="2" ItemName="Sprocket" Quantity="25" UnitPrice="24.95" SubTotal="623.75"></SalesDetail>
+		<SalesDetail DetailID="3" ItemID="3" ItemName="Gizmo" Quantity="3" UnitPrice="39.95" SubTotal="119.85"></SalesDetail>
+	</SalesHeader>
+	
+	<SalesHeader HeaderID="2" SalesPersonID="1" SalesPersonName="Joe" CustomerID="2" CustomerName="Widgets Etc" SalesDate="2005-02-05" SalesTotal="237.45">
+		<SalesDetail DetailID="4" ItemID="1" ItemName="Widget" Quantity="50" UnitPrice="3.95" SubTotal="197.50"></SalesDetail>
+		<SalesDetail DetailID="5" ItemID="3" ItemName="Gizmo" Quantity="1" UnitPrice="39.95" SubTotal="39.95"></SalesDetail>
+	</SalesHeader>
+
+</Sales>
