@@ -36,7 +36,7 @@ clean:
 	-rm -f "$(USINGWEBBROWSER_EXE)" 2> /dev/null
 	-rm -f "$(USINGWEBBROWSER_PDB)" 2> /dev/null
 
-include ../../rules.make
+include ../../../rules.make
 
 # project names as targets
 
