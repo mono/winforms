@@ -41,7 +41,6 @@ public class TreeViewTest : Form {
 		
 		tool_bar.ButtonClick += new ToolBarButtonClickEventHandler (ToolBarButtonClick);
 
-		Controls.Add (tool_bar);
 
 		tree_view = new TreeView ();
 		tree_view.Anchor = AnchorStyles.Top | AnchorStyles.Left;
@@ -64,6 +63,7 @@ public class TreeViewTest : Form {
 
 
 		Controls.Add (tree_view);
+		Controls.Add (tool_bar);
 
 		tree_view.Nodes [0].Expand ();
 /*
