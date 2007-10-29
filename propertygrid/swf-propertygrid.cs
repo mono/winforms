@@ -23,8 +23,6 @@ namespace MWFTestApplication {
 			textbox.TabIndex = 1;
 			textbox.Dock = DockStyle.Top;
 
-			this.Controls.Add(textbox);
-
 			propertygrid = new PropertyGrid();
 			propertygrid.CommandsVisibleIfAvailable = true;
 			propertygrid.Location = new Point(0, textbox.PreferredHeight + 10);
@@ -34,6 +32,7 @@ namespace MWFTestApplication {
 			propertygrid.Dock = DockStyle.Fill;
 
 			this.Controls.Add(propertygrid);
+			this.Controls.Add (textbox);
 
 			propertygrid.SelectedObject = textbox;
 
