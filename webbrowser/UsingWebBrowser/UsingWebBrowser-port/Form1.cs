@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +25,7 @@ namespace UsingWebBrowser
         {
             setupBrowser1();
             setupBrowser2();
-            setupBrowser3();
+//            setupBrowser3();
         }
 
 
@@ -64,7 +64,7 @@ namespace UsingWebBrowser
 
 		private void Navigate()
 		{
-			if (!browserUrl.StartsWith("http://"))
+			if (browserUrl.IndexOf("://") < 0)
 			{
 				browserUrl = "http://" + browserUrl;
 			}
