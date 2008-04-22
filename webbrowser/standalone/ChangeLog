@@ -1,3 +1,7 @@
+2008-04-22  Andreia Gaita <avidigal@novell.com> 
+
+	* Main.cs: Test OuterHTML
+
 2008-04-09  Andreia Gaita <avidigal@novell.com> 
 
 	* Page.cs, Main.cs, DomInspector.cs: Add support to get/set OuterText,

@@ -394,6 +394,21 @@ namespace standalone
 			cmdForward.Click += new EventHandler (this.forward);
 
 
+			Button cmdGetOuterHtml = new Button ();
+			cmdGetOuterHtml.Text = "<";			
+			cmdGetOuterHtml.Size = new Size (30, 30);
+			cmdGetOuterHtml.Click += delegate (object sender, EventArgs e) {
+				this.helper.getOuterHTML();
+			};
+
+			Button cmdSetOuterHtml = new Button ();
+			cmdSetOuterHtml.Text = "<";			
+			cmdSetOuterHtml.Size = new Size (30, 30);
+			cmdSetOuterHtml.Click += delegate (object sender, EventArgs e) {
+				this.helper.setOuterHTML (this.body.Text);
+			};
+
+			
 			// second line
 			lblBody = new Label ();
 			lblBody.Text = "body";
@@ -451,6 +466,8 @@ namespace standalone
 			// first line
 			cmdBack.Location = new Point (0, top);
 			cmdForward.Location = new Point (cmdBack.Right, top);
+			cmdGetOuterHtml.Location = new Point (cmdForward.Right, top);
+			cmdSetOuterHtml.Location = new Point (cmdGetOuterHtml.Right, top);
 
 			// second line
 			top += 30;
@@ -474,6 +491,8 @@ namespace standalone
 			this.Controls.Add (lblAddress);
 			this.Controls.Add (cmdBack);
 			this.Controls.Add (cmdForward);
+			this.Controls.Add (cmdGetOuterHtml);
+			this.Controls.Add (cmdSetOuterHtml);
 			this.Controls.Add (body);
 			this.Controls.Add (lblBody);		
 
