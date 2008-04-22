@@ -77,6 +77,10 @@ namespace standalone
 			nodeList = new ArrayList ();
 			domTree = new TreeView ();
 			popupmenu = new ContextMenu (new MenuItem[] { 
+				new MenuItem ("Select this node", delegate (object sender, EventArgs e) {
+					helper.lastNodeFetched = nodeList[int.Parse (domTree.SelectedNode.Name)] as INode;
+				}),
+
 				new MenuItem ("Children", delegate (object sender, EventArgs e) {
 					helper.NewRootNode = nodeList[int.Parse (domTree.SelectedNode.Name)] as IElement;
 				}),

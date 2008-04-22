@@ -213,8 +213,14 @@ namespace standalone
 			if (document == null) return;
 			document.Charset = charset;
 		}
-		
-		
+
+
+		public string invokeScript (string script)
+		{
+			if (document == null) return String.Empty;
+			return document.InvokeScript (script);
+		}
+
 		// Element
 		
 		
@@ -261,6 +267,13 @@ namespace standalone
 			OnTextChanged (retVal);
 		}
 
+		public void setAttribute (string name, string val)
+		{
+			if (!(lastNodeFetched is IElement)) return;
+			if (name.Equals (String.Empty)) return;
+			((IElement) lastNodeFetched).SetAttribute (name, val);
+		}
+
 		public void getChildren () {
 			if (!(lastNodeFetched is IElement)) return;
 			OnRootNodeChanged ();			
@@ -289,6 +302,13 @@ namespace standalone
 			if (!(lastNodeFetched is INode)) return;
 			retVal = lastNodeFetched.Value;
 			OnTextChanged (retVal);			
+		}
+
+		public void getDisabled()
+		{
+			if (!(lastNodeFetched is IElement)) return;
+			retVal = ((IElement)lastNodeFetched).Disabled.ToString();
+			OnTextChanged (retVal);
 		}
 
 		public void getType () {

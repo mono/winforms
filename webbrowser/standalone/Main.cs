@@ -48,7 +48,7 @@ namespace standalone
 			gui ();
 			loadWebHost ();	
 			address.Text = "file:///mono/test.html";
-			helper.TextChanged += delegate (string text) {body.Text += text + "\r\n";};
+			helper.TextChanged += delegate (string text) {body.AppendText (text + "\r\n");};
 			helper.RootNodeChanged += delegate () {
 				DomInspector d = new DomInspector(helper, this);
 				d.TopNode = helper.lastNodeFetched;
@@ -163,6 +163,10 @@ namespace standalone
 			webHost.Alert += delegate (object sender, Mono.WebBrowser.AlertEventArgs  e) {
 				Console.Error.WriteLine ("alert: " + e.Text);
 			};
+
+			webHost.StatusChanged += delegate (object sender, Mono.WebBrowser.StatusChangedEventArgs e) {
+				lblStatus.Text = e.Message;
+			};
 		}
 
 
@@ -180,6 +184,17 @@ namespace standalone
 			ToolStripMenuItem menu2 = null;
 			ToolStripMenuItem menu3 = null;
 			ToolStripTextBox menutxt = null;
+
+			menu1 = new ToolStripMenuItem ("Browser");
+			menu.Items.Add (menu1);
+
+			menu2 = new ToolStripMenuItem ("Render data", null, delegate (object sender, EventArgs e) {
+			//    webHost.OpenStream ("file:///", "text/html");
+			//    webHost.AppendToStream (body.Text);
+			//    webHost.CloseStream ();
+			});
+			menu1.DropDownItems.Add (menu2);
+
 			
 			menu1 = new ToolStripMenuItem ("Document");
 			menu.Items.Add (menu1);
@@ -310,6 +325,18 @@ namespace standalone
 			menu1.DropDownItems.Add (menu2);
 
 
+			menu2 = new ToolStripMenuItem ("Script");	
+			menu1.DropDownItems.Add (menu2);
+			
+			menutxt = new ToolStripTextBox ();
+			menu2.DropDownItems.Add (menutxt);
+
+			menu3 = new ToolStripMenuItem ("Invoke", null, delegate(object sender, EventArgs e) {
+				body.AppendText (helper.invokeScript (((ToolStripTextBox) ((ToolStripMenuItem) ((ToolStripMenuItem) sender).OwnerItem).DropDownItems[0]).Text));
+			});
+			menu2.DropDownItems.Add (menu3);
+
+
 			menu1 = new ToolStripMenuItem ("Element");
 			menu.Items.Add (menu1);
 			
@@ -328,6 +355,15 @@ namespace standalone
 				helper.getAttribute (((ToolStripTextBox)((ToolStripMenuItem)((ToolStripMenuItem)sender).OwnerItem).DropDownItems[0]).Text);
 			});			
 			menu2.DropDownItems.Add (menu3);
+
+			menu3 = new ToolStripMenuItem ("Set", null, delegate(object sender, EventArgs e) {
+				helper.setAttribute (((ToolStripTextBox)((ToolStripMenuItem)((ToolStripMenuItem)sender).OwnerItem).DropDownItems[0]).Text, 
+					((ToolStripTextBox)((ToolStripMenuItem)((ToolStripMenuItem)sender).OwnerItem).DropDownItems[ ((ToolStripMenuItem)((ToolStripMenuItem)sender).OwnerItem).DropDownItems.Count - 1 ]).Text);
+			});			
+			menu2.DropDownItems.Add (menu3);
+
+			menutxt = new ToolStripTextBox ();
+			menu2.DropDownItems.Add (menutxt);
 
 			menu2 = new ToolStripMenuItem ("Show Children", null, delegate (object sender, EventArgs e) {
 				helper.getChildren ();
@@ -393,7 +429,7 @@ namespace standalone
 			cmdForward.Size = new Size (30, 30);
 			cmdForward.Click += new EventHandler (this.forward);
 
-
+			
 			Button cmdGetOuterHtml = new Button ();
 			cmdGetOuterHtml.Text = "<";			
 			cmdGetOuterHtml.Size = new Size (30, 30);
@@ -407,8 +443,8 @@ namespace standalone
 			cmdSetOuterHtml.Click += delegate (object sender, EventArgs e) {
 				this.helper.setOuterHTML (this.body.Text);
 			};
-
 			
+
 			// second line
 			lblBody = new Label ();
 			lblBody.Text = "body";
@@ -461,6 +497,11 @@ namespace standalone
 				Console.Error.WriteLine (" Control: MouseClick");
 			};
 
+			// bottom
+			lblStatus = new Label ();
+			lblStatus.Dock = DockStyle.Bottom;
+			
+
 			// positioning
 			
 			// first line
@@ -485,6 +526,7 @@ namespace standalone
 			control.Location = new Point (0, top);
 
 			// add
+			this.Controls.Add (lblStatus);
 			this.Controls.Add (control);			
 			this.Controls.Add (cmdNavigate);
 			this.Controls.Add (address);
@@ -492,9 +534,10 @@ namespace standalone
 			this.Controls.Add (cmdBack);
 			this.Controls.Add (cmdForward);
 			this.Controls.Add (cmdGetOuterHtml);
-			this.Controls.Add (cmdSetOuterHtml);
+			this.Controls.Add (cmdSetOuterHtml);			
 			this.Controls.Add (body);
 			this.Controls.Add (lblBody);		
+			
 
 			domInspector = new DomInspector (helper, this);
 			domInspector.Closing += delegate (object sender, CancelEventArgs e) {
@@ -515,7 +558,9 @@ namespace standalone
 
 		private Control control;
 		IWebBrowser webHost;
-		
+
+		private Label lblStatus;
+
 		const int BUTTON_WIDTH = 80;
 		private Page helper;
 		
