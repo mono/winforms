@@ -384,5 +384,10 @@ namespace standalone
 			retVal = node.LocalName + " MouseUp";
 			OnTextChanged (retVal);
 		}
+		
+		public void fireEvent (string name)
+		{
+			lastNodeFetched.FireEvent (name);
+		}
 	}
 }

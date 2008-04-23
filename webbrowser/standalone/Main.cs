@@ -414,6 +414,19 @@ namespace standalone
 			});
 			menu1.DropDownItems.Add (menu2);
 
+			
+			menu2 = new ToolStripMenuItem ("Events");	
+			menu1.DropDownItems.Add (menu2);
+			
+			menutxt = new ToolStripTextBox ();
+			menu2.DropDownItems.Add (menutxt);
+
+			menu3 = new ToolStripMenuItem ("Fire", null, delegate(object sender, EventArgs e) {
+				helper.fireEvent (((ToolStripTextBox)((ToolStripMenuItem)((ToolStripMenuItem)sender).OwnerItem).DropDownItems[0]).Text);
+			});
+			menu2.DropDownItems.Add (menu3);
+			
+			
 			this.Controls.Add (menu);
 
 			int top = menu.Height;
