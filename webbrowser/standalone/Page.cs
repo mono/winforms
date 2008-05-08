@@ -279,6 +279,31 @@ namespace standalone
 			OnRootNodeChanged ();			
 		}
 
+		public void getTabIndex () {
+			if (!(lastNodeFetched is IElement)) return;
+			retVal = ((IElement)lastNodeFetched).TabIndex.ToString ();
+			OnTextChanged (retVal);
+		}
+
+		public void setTabIndex (string tabIndex) {
+			if (!(lastNodeFetched is IElement)) return;
+			int ret;
+			if (!int.TryParse (tabIndex, out ret)) return;
+			((IElement)lastNodeFetched).TabIndex = ret;
+		}
+		
+		public void getStyle () {
+			if (!(lastNodeFetched is IElement)) return;
+			retVal = ((IElement)lastNodeFetched).Style;
+			OnTextChanged (retVal);
+		}
+
+		public void setStyle (string style) {
+			if (!(lastNodeFetched is IElement)) return;
+			((IElement)lastNodeFetched).Style = style;
+		}
+		
+		
 		// node
 
 		public void getAttributes () {

@@ -1,3 +1,9 @@
+2008-05-08  Andreia Gaita <avidigal@novell.com> 
+
+	* Page.cs, Main.cs: Added Style and TabIndex accessors
+	* bin, bin/test.html: Test page set up to load by default in the app
+	* DomInspector.cs: Added Style and TabIndex accessors in the dom menu
+
 2008-04-23  Andreia Gaita <avidigal@novell.com> 
 
 	* Page.cs, Main.cs: Add event firing test

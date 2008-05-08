@@ -104,6 +104,14 @@ namespace standalone
 					helper.lastNodeFetched = nodeList[int.Parse (domTree.SelectedNode.Name)] as INode;
 					helper.getLocalName (); 
 				}),
+				new MenuItem ("Style",	delegate (object sender, EventArgs e) { 
+					helper.lastNodeFetched = nodeList[int.Parse (domTree.SelectedNode.Name)] as INode;
+					helper.getStyle (); 
+				}),
+				new MenuItem ("TabIndex",	delegate (object sender, EventArgs e) { 
+					helper.lastNodeFetched = nodeList[int.Parse (domTree.SelectedNode.Name)] as INode;
+					helper.getTabIndex (); 
+				}),
 				new MenuItem ("Value",delegate (object sender, EventArgs e) { 
 					helper.lastNodeFetched = nodeList[int.Parse (domTree.SelectedNode.Name)] as INode;
 					helper.getValue (); 

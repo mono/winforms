@@ -47,7 +47,7 @@ namespace standalone
 			helper = new Page ();
 			gui ();
 			loadWebHost ();	
-			address.Text = "file:///mono/test.html";
+			address.Text = "file://" + AppDomain.CurrentDomain.BaseDirectory + "test.html";
 			helper.TextChanged += delegate (string text) {body.AppendText (text + "\r\n");};
 			helper.RootNodeChanged += delegate () {
 				DomInspector d = new DomInspector(helper, this);
@@ -337,6 +337,8 @@ namespace standalone
 			menu2.DropDownItems.Add (menu3);
 
 
+			/***** Element *********/
+			
 			menu1 = new ToolStripMenuItem ("Element");
 			menu.Items.Add (menu1);
 			
@@ -425,8 +427,34 @@ namespace standalone
 				helper.fireEvent (((ToolStripTextBox)((ToolStripMenuItem)((ToolStripMenuItem)sender).OwnerItem).DropDownItems[0]).Text);
 			});
 			menu2.DropDownItems.Add (menu3);
+
+			menu2 = new ToolStripMenuItem ("Tab Index");
+			menu1.DropDownItems.Add (menu2);
+
+			menu3 = new ToolStripMenuItem ("Get", null, delegate(object sender, EventArgs e) {
+				helper.getTabIndex ();
+			});			
+			menu2.DropDownItems.Add (menu3);
+
+			menu3 = new ToolStripMenuItem ("Set", null, delegate(object sender, EventArgs e) {
+				helper.setTabIndex (body.Text);
+			});			
+			menu2.DropDownItems.Add (menu3);
+
 			
-			
+			menu2 = new ToolStripMenuItem ("Style");
+			menu1.DropDownItems.Add (menu2);
+
+			menu3 = new ToolStripMenuItem ("Get", null, delegate(object sender, EventArgs e) {
+				helper.getStyle ();
+			});			
+			menu2.DropDownItems.Add (menu3);
+
+			menu3 = new ToolStripMenuItem ("Set", null, delegate(object sender, EventArgs e) {
+				helper.setStyle (body.Text);
+			});			
+			menu2.DropDownItems.Add (menu3);
+
 			this.Controls.Add (menu);
 
 			int top = menu.Height;
