@@ -111,11 +111,6 @@ namespace standalone
 			loaded = webHost.Load (control.Handle, control.Width, control.Height);
 			if (!loaded) return;
 			
-			webHost.Completed += delegate (object sender, EventArgs e) {
-				Console.Error.WriteLine ("webHost: Completed");
-				helper.document = webHost.Document;
-				updateInspector ();
-			};
 			/*
 			webHost.Focus += delegate (object sender, EventArgs e) {
 				Console.Error.WriteLine ("webHost: Focus");
@@ -166,6 +161,21 @@ namespace standalone
 
 			webHost.StatusChanged += delegate (object sender, Mono.WebBrowser.StatusChangedEventArgs e) {
 				lblStatus.Text = e.Message;
+			};
+
+			webHost.LoadStarted += delegate (object sender, LoadStartedEventArgs e) {
+				Console.Error.WriteLine ("LoadStarted");
+			};
+			webHost.LoadCommited += delegate (object sender, LoadCommitedEventArgs e) {
+				Console.Error.WriteLine ("LoadCommited");
+			};
+			webHost.ProgressChanged += delegate (object sender, Mono.WebBrowser.ProgressChangedEventArgs e) {
+				Console.Error.WriteLine ("ProgressChanged " + e.Progress + " " + e.MaxProgress);
+			};
+			webHost.LoadFinished += delegate (object sender, LoadFinishedEventArgs e) {
+				Console.Error.WriteLine ("LoadFinished");
+				helper.document = webHost.Document;
+				updateInspector ();				
 			};
 		}
 
