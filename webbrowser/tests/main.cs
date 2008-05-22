@@ -37,7 +37,7 @@ namespace webbrowser.tests
 		monitor monitor;
 		controls controls;
 		
-		
+		[STAThread]
 		public static void Main () {
 			Application.Run (new main ());
 		}
