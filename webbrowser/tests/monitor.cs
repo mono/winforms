@@ -43,13 +43,15 @@ namespace webbrowser.tests
 		public monitor (main main)
 		{
 			this.main = main;
-			
+			this.StartPosition = FormStartPosition.Manual;
 			top = new Panel();
 			bottom = new Panel();
 			splitter = new Splitter();
 			events = new ListView();
-			events.View = View.List;
+			events.Columns.Add ("Event", -2);
+			events.View = View.Details;
 			events.GridLines = true;
+			events.Dock = DockStyle.Fill;
 			
 			top.Controls.Add (events);
 			top.Dock = DockStyle.Top;

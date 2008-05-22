@@ -50,6 +50,7 @@ namespace webbrowser.tests
 		public controls (main main)
 		{
 			this.main = main;
+			this.StartPosition = FormStartPosition.Manual;
 			left = new Panel ();
 			left.Dock = DockStyle.Left;
 			splitter = new Splitter ();
@@ -59,7 +60,8 @@ namespace webbrowser.tests
 			
 			results = new ListView();
 			results.Dock = DockStyle.Fill;
-			results.View = View.List;
+			results.View = View.Details;
+			results.Columns.Add ("");
 			right.Controls.Add (results);
 			
 			setupHandlers ();
@@ -105,8 +107,8 @@ namespace webbrowser.tests
 			loadCount++;
 		}
 		
-		private void loadTestPage (object sender, EventArgs e) {
-			main.webBrowser.Navigate ("file://" + AppDomain.CurrentDomain.BaseDirectory + System.IO.Path.DirectorySeparatorChar + "test.html");
+		private void loadTestPage (object sender, EventArgs e) {	
+			main.webBrowser.Navigate (System.IO.Path.Combine ("file://" + AppDomain.CurrentDomain.BaseDirectory, "test.html"));
 			loadCount++;
 		}
 		

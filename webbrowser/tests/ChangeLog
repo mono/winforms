@@ -1,5 +1,9 @@
 2008-05-22  Andreia Gaita <avidigal@novell.com> 
 
+	* controls.cs, main.cs, monitor.cs: layout tweaks
+
+2008-05-22  Andreia Gaita <avidigal@novell.com> 
+
 	* main.cs: STAThread attribute to appease IE
 
 2008-05-22  Andreia Gaita <avidigal@novell.com> 

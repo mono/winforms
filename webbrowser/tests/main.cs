@@ -50,11 +50,18 @@ namespace webbrowser.tests
 		}
 		
 		void gui () {
-			this.StartPosition = FormStartPosition.CenterScreen;
+			SuspendLayout ();
+			this.StartPosition = FormStartPosition.Manual;
+			this.Left = 400;
+			this.Top = 100;
 			this.Size = new Size (650, 650);
 
 			controls = new controls (this);
+			controls.SuspendLayout ();
+			controls.Top = 100;
 			monitor = new monitor(this);
+			monitor.SuspendLayout ();
+			monitor.Top = 100;
 			controls.Size = new Size(400, 400);
 			monitor.Size = new Size(400, 400);
 			controls.Left = this.Left - 400;
@@ -97,6 +104,10 @@ namespace webbrowser.tests
 			};
 			webBrowser.Dock = DockStyle.Fill;
 			this.Controls.Add (webBrowser);
+			
+			monitor.ResumeLayout ();
+			controls.ResumeLayout ();
+			this.ResumeLayout ();
 		}
 	}
 }
