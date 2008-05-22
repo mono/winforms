@@ -1,5 +1,10 @@
 2008-05-22  Andreia Gaita <avidigal@novell.com> 
 
+	* tests.mdp, controls.cs, main.cs, monitor.cs: WebBrowser tests and
+	  event monitoring
+
+2008-05-22  Andreia Gaita <avidigal@novell.com> 
+
 	* tests.mdp, test.html, controls.cs, main.cs: Added WebBrowser api test
 	  app
 

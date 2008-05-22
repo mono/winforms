@@ -63,9 +63,10 @@ namespace webbrowser.tests
 			right.Controls.Add (results);
 			
 			setupHandlers ();
+			this.Controls.Add (right);
 			this.Controls.Add (splitter);
 			this.Controls.Add (left);
-			this.Controls.Add (right);
+			
 		}
 		
 		void setupHandlers () {
@@ -97,6 +98,7 @@ namespace webbrowser.tests
 		
 		int loadCount = 0;
 		int pos = 0;
+		int navigated = 0;
 		
 		private void loadBlankPage (object sender, EventArgs e) {
 			main.webBrowser.Navigate ("about:blank");
@@ -109,24 +111,30 @@ namespace webbrowser.tests
 		}
 		
 		private void canGoBack (object sender, EventArgs e) {
-			if (pos == 0 && !main.webBrowser.CanGoBack) {
-				results.Items.Add(((Button)sender).Text, "Success", -1);
-				return;
-			}
-			results.Items.Add(((Button)sender).Text, "Failure", -1);
-			
+			if (pos == 0 && !main.webBrowser.CanGoBack)
+				message (sender, "Success - cannot go back");
+			else if (pos > 0 && main.webBrowser.CanGoBack)
+				message (sender, "Success - can go back");
+			else
+				message (sender, "Failure");
 		}
 		
 		private void canGoForward (object sender, EventArgs e) {
+			if (navigated == 0 && !main.webBrowser.CanGoForward)
+				message (sender, "Success: cannot go forward");
+			else if (navigated > 0 && main.webBrowser.CanGoForward)
+				message (sender, "Success: can go forward");
+			else
+				message (sender, "Failure");
 		}
 		
 		private void goBack (object sender, EventArgs e) {
 			if (pos > 0 && main.webBrowser.CanGoBack) {
 				pos--;
 				main.webBrowser.GoBack ();
-				results.Items.Add(((Button)sender).Text, "Success", -1);
+				message (sender, "Success: went forward");
 			} else
-				results.Items.Add(((Button)sender).Text, "Warning: Cannot go back", -1);
+				message (sender, "Warning: Cannot go back");
 
 		}
 		
@@ -134,11 +142,17 @@ namespace webbrowser.tests
 			if (main.webBrowser.CanGoForward) {
 				pos++;
 				main.webBrowser.GoForward ();
+				message (sender, "Success");
 			} else
-				results.Items.Add(((Button)sender).Text, "Warning: Cannot go forward", -1);
+				message (sender, "Warning: Cannot go forward");
 		}
 
 		private void documentText (object sender, EventArgs e) {
+		}
+		
+		
+		void message (object button, string msg) {
+			results.Items.Add(((Button)button).Text + " - " + msg);
 		}
 	}
 }

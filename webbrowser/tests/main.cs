@@ -26,12 +26,17 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace webbrowser.tests
 {
 	public class main : Form
 	{
 		public WebBrowser webBrowser;
+		public int navigated;
+		monitor monitor;
+		controls controls;
+		
 		
 		public static void Main () {
 			Application.Run (new main ());
@@ -39,15 +44,57 @@ namespace webbrowser.tests
 		
 		public main()
 		{
-			controls c = new controls (this);
 			gui ();
-			c.Show ();
+			controls.Show ();
+			monitor.Show ();
 		}
 		
 		void gui () {
 			this.StartPosition = FormStartPosition.CenterScreen;
 			this.Size = new Size (650, 650);
+
+			controls = new controls (this);
+			monitor = new monitor(this);
+			controls.Size = new Size(400, 400);
+			monitor.Size = new Size(400, 400);
+			controls.Left = this.Left - 400;
+			monitor.Left = this.Right;
+			
 			webBrowser = new WebBrowser ();
+			webBrowser.Navigating += delegate (object sender, WebBrowserNavigatingEventArgs args) {
+				monitor.addEvent ("Navigating");
+			};
+			webBrowser.Navigated += delegate (object sender, WebBrowserNavigatedEventArgs args) {
+				navigated++;
+				monitor.addEvent ("Navigated");
+			};
+			webBrowser.CanGoBackChanged += delegate (object sender, EventArgs args) {
+				monitor.addEvent ("CanGoBackChanged");
+			};
+			webBrowser.CanGoForwardChanged += delegate (object sender, EventArgs args) {
+				monitor.addEvent ("CanGoForwardChanged");
+			};
+			webBrowser.DocumentCompleted  += delegate (object sender, WebBrowserDocumentCompletedEventArgs args) {
+				monitor.addEvent ("DocumentCompleted");
+			};
+			webBrowser.DocumentTitleChanged += delegate (object sender, EventArgs args) {
+				monitor.addEvent ("DocumentTitleChanged");
+			};
+			webBrowser.EncryptionLevelChanged  += delegate (object sender, EventArgs args) {
+				monitor.addEvent ("EncryptionLevelChanged");
+			};
+			webBrowser.FileDownload  += delegate (object sender, EventArgs args) {
+				monitor.addEvent ("FileDownload");
+			};
+			webBrowser.NewWindow += delegate (object sender, CancelEventArgs args) {
+				monitor.addEvent ("NewWindow");
+			};
+			webBrowser.ProgressChanged  += delegate (object sender, WebBrowserProgressChangedEventArgs args) {
+				monitor.addEvent ("ProgressChanged");
+			};
+			webBrowser.StatusTextChanged  += delegate (object sender, EventArgs args) {
+				monitor.addEvent ("StatusTextChanged");
+			};
 			webBrowser.Dock = DockStyle.Fill;
 			this.Controls.Add (webBrowser);
 		}
