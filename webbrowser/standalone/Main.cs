@@ -150,10 +150,10 @@ namespace standalone
 			webHost.MouseLeave += delegate (object sender, EventArgs e) {
 				Console.Error.WriteLine ("webHost: MouseLeave");
 			};
-			*/
 			webHost.Generic += delegate (object sender, EventArgs e) {
 				Console.Error.WriteLine ("webHost: Generic" + sender);
 			};
+			*/
 			
 			webHost.Alert += delegate (object sender, Mono.WebBrowser.AlertEventArgs  e) {
 				Console.Error.WriteLine ("alert: " + e.Text);

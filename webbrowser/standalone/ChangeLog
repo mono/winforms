@@ -1,3 +1,7 @@
+2008-05-22  Andreia Gaita <avidigal@novell.com> 
+
+	* Main.cs: Generic event has been removed
+
 2008-05-20  Andreia Gaita <avidigal@novell.com> 
 
 	* Main.cs: Hook up page loading events
