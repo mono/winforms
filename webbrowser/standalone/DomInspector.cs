@@ -39,6 +39,7 @@ namespace standalone
 		private INode topNode;
 		private IElementCollection elementCollection;
 		private IAttributeCollection attributeCollection;
+		private IStylesheetList stylesheetList;
 		ArrayList nodeList;
 		Page helper;
 		MainForm main;
@@ -66,6 +67,14 @@ namespace standalone
 			set {
 				attributeCollection = value;
 				RefreshCollectionTree2 ();
+			}
+		}
+
+		public IStylesheetList StylesheetList {
+			get {return stylesheetList;}
+			set {
+				stylesheetList = value;
+				RefreshCollectionTree3 ();
 			}
 		}
 
@@ -325,6 +334,19 @@ namespace standalone
 			Console.Error.WriteLine (attributeCollection.Count);
 			foreach (IAttribute child in attributeCollection) {
 				t = where.Add (nodeList.Count.ToString (), child.Name + "=" + child.Value);
+				nodeList.Add (child);
+				t.ContextMenu = popupmenu;
+			}
+		}			
+		public void RefreshCollectionTree3 ()
+		{
+			nodeList.Clear ();
+			domTree.Nodes.Clear ();
+			TreeNodeCollection where = domTree.Nodes;
+			TreeNode t;
+			Console.Error.WriteLine (stylesheetList.Count);
+			foreach (IStylesheet child in stylesheetList) {
+				t = where.Add (nodeList.Count.ToString (), child.Href);
 				nodeList.Add (child);
 				t.ContextMenu = popupmenu;
 			}

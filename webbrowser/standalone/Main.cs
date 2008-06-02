@@ -44,10 +44,10 @@ namespace standalone
 		
 		public MainForm ()
 		{		
-			helper = new Page ();
+			helper = new Page (this);
 			gui ();
 			loadWebHost ();	
-			address.Text = "file://" + AppDomain.CurrentDomain.BaseDirectory + "test.html";
+			address.Text = System.IO.Path.Combine ("file://" + AppDomain.CurrentDomain.BaseDirectory, "test.html");
 			helper.TextChanged += delegate (string text) {body.AppendText (text + "\r\n");};
 			helper.RootNodeChanged += delegate () {
 				DomInspector d = new DomInspector(helper, this);
@@ -66,7 +66,14 @@ namespace standalone
 				d.AttributeCollection = helper.AttributeCollection;
 				d.Show ();
 			};
-}
+
+			helper.StylesheetListChanged += delegate () {
+				DomInspector d = new DomInspector(helper, this);
+				d.StylesheetList = helper.StylesheetList;
+				d.Show ();
+			};
+
+		}
 		
 		protected override void OnClosed (EventArgs e)
 		{
@@ -329,6 +336,11 @@ namespace standalone
 			});
 			menu1.DropDownItems.Add (menu2);
 
+			menu2 = new ToolStripMenuItem ("Stylesheets", null, delegate (object sender, EventArgs e) {
+				helper.getStylesheets ();
+			});
+			menu1.DropDownItems.Add (menu2);
+
 			menu2 = new ToolStripMenuItem ("Url", null, delegate (object sender, EventArgs e) {
 				helper.getUrl ();
 			});
@@ -347,6 +359,24 @@ namespace standalone
 			menu2.DropDownItems.Add (menu3);
 
 
+			menu2 = new ToolStripMenuItem ("Scrollbars");	
+			menu1.DropDownItems.Add (menu2);
+			
+			menutxt = new ToolStripTextBox ();
+			menu2.DropDownItems.Add (menutxt);
+
+			menu3 = new ToolStripMenuItem ("Get", null, delegate(object sender, EventArgs e) {
+				helper.getScrollbars ();
+			});
+			menu2.DropDownItems.Add (menu3);
+
+
+			menu3 = new ToolStripMenuItem ("Set", null, delegate(object sender, EventArgs e) {
+				helper.setScrollbars (((ToolStripTextBox)((ToolStripMenuItem)((ToolStripMenuItem)sender).OwnerItem).DropDownItems[0]).Text);
+			});			
+			menu2.DropDownItems.Add (menu3);
+			
+			
 			/***** Element *********/
 			
 			menu1 = new ToolStripMenuItem ("Element");
@@ -547,6 +577,9 @@ namespace standalone
 			control.MouseClick += delegate (object sender, MouseEventArgs e) {
 				Console.Error.WriteLine (" Control: MouseClick");
 			};
+			control.Resize += delegate (object sender, EventArgs e) {
+				webHost.Resize (control.Width, control.Height);
+			};
 
 			// bottom
 			lblStatus = new Label ();
@@ -608,7 +641,7 @@ namespace standalone
 		private TextBox address;
 
 		private Control control;
-		IWebBrowser webHost;
+		public IWebBrowser webHost;
 
 		private Label lblStatus;
 

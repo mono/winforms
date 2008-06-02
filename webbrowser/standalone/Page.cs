@@ -36,10 +36,16 @@ namespace standalone
 	
 	public class Page : Component
 	{
+		MainForm parent;
+		public Page (MainForm parent) {
+			this.parent = parent;
+		}
+		
 		public delegate void TextChangedHandler (string text);	
 		public delegate void RootNodeChangedHandler ();
 		public delegate void ElementCollectionChangedHandler ();
 		public delegate void AttributeCollectionChangedHandler ();
+		public delegate void StylesheetListChangedHandler ();
 		
 		public INode lastNodeFetched;
 		public IDocument document;
@@ -69,59 +75,47 @@ namespace standalone
 				OnAttributeCollectionChanged ();
 			}
 		}
-
+		
+		public IStylesheetList stylesheetList;
+		public IStylesheetList StylesheetList {
+			get {return stylesheetList;}
+			set {
+				stylesheetList = value;
+				OnStylesheetListChanged ();
+			}
+		}
 		public string retVal;
 		
-		static object TextChangedEvent = new object ();
-		public event TextChangedHandler TextChanged {
-			add {Events.AddHandler (TextChangedEvent, value);}
-			remove {Events.RemoveHandler (TextChangedEvent, value);}
-		}
-		
-		
+		public event TextChangedHandler TextChanged;
 		public void OnTextChanged(string text) {
-			TextChangedHandler eh = (TextChangedHandler)(Events[TextChangedEvent]);
-			if (eh != null)
-				eh (text);
+			if (TextChanged != null)
+				TextChanged (text);
 		}
 		
-		static object RootNodeChangedEvent = new object ();
-		public event RootNodeChangedHandler RootNodeChanged {
-			add {Events.AddHandler (RootNodeChangedEvent, value);}
-			remove {Events.RemoveHandler (RootNodeChangedEvent, value);}
-		}
-
+		public event RootNodeChangedHandler RootNodeChanged;
 		public void OnRootNodeChanged() {
-			RootNodeChangedHandler eh = (RootNodeChangedHandler)(Events[RootNodeChangedEvent]);
-			if (eh != null)
-				eh ();
+			if (RootNodeChanged != null)
+				RootNodeChanged ();
 		}		
 
 
-		static object ElementCollectionChangedEvent = new object ();
-		public event ElementCollectionChangedHandler ElementCollectionChanged {
-			add {Events.AddHandler (ElementCollectionChangedEvent, value);}
-			remove {Events.RemoveHandler (ElementCollectionChangedEvent, value);}
-		}
-
+		public event ElementCollectionChangedHandler ElementCollectionChanged;
 		public void OnElementCollectionChanged() {
-			ElementCollectionChangedHandler eh = (ElementCollectionChangedHandler)(Events[ElementCollectionChangedEvent]);
-			if (eh != null)
-				eh ();
+			if (ElementCollectionChanged != null)
+				ElementCollectionChanged ();
 		}		
 
-		static object AttributeCollectionChangedEvent = new object ();
-		public event AttributeCollectionChangedHandler AttributeCollectionChanged {
-			add {Events.AddHandler (AttributeCollectionChangedEvent, value);}
-			remove {Events.RemoveHandler (AttributeCollectionChangedEvent, value);}
-		}
-
+		public event AttributeCollectionChangedHandler AttributeCollectionChanged;
 		public void OnAttributeCollectionChanged() {
-			AttributeCollectionChangedHandler eh = (AttributeCollectionChangedHandler)(Events[AttributeCollectionChangedEvent]);
-			if (eh != null)
-				eh ();
+			if (AttributeCollectionChanged != null)
+				AttributeCollectionChanged ();
 		}		
 		
+		public event StylesheetListChangedHandler StylesheetListChanged;
+		public void OnStylesheetListChanged() {
+			if (StylesheetListChanged != null)
+				StylesheetListChanged ();
+		}		
 		// document
 		
 		public void getDocumentElement () {
@@ -197,6 +191,11 @@ namespace standalone
 			ElementCollection = document.Links;
 		}
 		
+		public void getStylesheets () {
+			if (document == null) return;
+			StylesheetList = document.Stylesheets;
+		}
+
 		public void getUrl () {
 			if (document == null) return;
 			retVal = document.Url;
@@ -219,6 +218,16 @@ namespace standalone
 		{
 			if (document == null) return String.Empty;
 			return document.InvokeScript (script);
+		}
+
+		public void getScrollbars() {
+			retVal = parent.webHost.ScrollbarsEnabled ? "true" : "false";
+			OnTextChanged (retVal);
+		}
+		
+		public void setScrollbars (string enabled) {
+			Console.Error.WriteLine (enabled);
+			parent.webHost.ScrollbarsEnabled = (enabled == "true" ? true : false);
 		}
 
 		// Element

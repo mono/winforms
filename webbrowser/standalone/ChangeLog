@@ -1,3 +1,10 @@
+2008-06-02  Andreia Gaita <avidigal@novell.com> 
+
+	* Page.cs, Main.cs: Add css, scrollbars tests
+	* standalone.mdp: Fix mono.webbrowser reference
+	* bin/test.html, DomInspector.cs: Add css tests
+	* Makefile: Added
+
 2008-05-22  Andreia Gaita <avidigal@novell.com> 
 
 	* Main.cs: Generic event has been removed
