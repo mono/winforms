@@ -11,7 +11,9 @@ LIBS=
 
 STANDALONE_EXE=$(TARGET)/standalone.exe
 STANDALONE_PDB=$(TARGET)/standalone.exe.mdb
-STANDALONE_SRC=DomInspector.cs \
+STANDALONE_SRC =  \
+	DomInspector.cs \
+	EventMonitor.cs \
 	Main.cs \
 	Page.cs
 	

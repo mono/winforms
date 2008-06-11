@@ -1,3 +1,9 @@
+2008-06-11  Andreia Gaita <avidigal@novell.com> 
+
+	* bin/test.html, DomInspector.cs, EventMonitor.cs, Main.cs, Makefile,
+	  Page.cs, standalone.mdp: New popups for event monitoring and window
+	  lists, test scrollbars, RTL.
+
 2008-06-02  Andreia Gaita <avidigal@novell.com> 
 
 	* Page.cs, Main.cs: Add css, scrollbars tests
