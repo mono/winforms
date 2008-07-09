@@ -129,7 +129,7 @@ namespace MyFormProject
 				listBox1.ScrollAlwaysVisible = false;
 				listBox1.HorizontalScrollbar = false;
 				listBox1.Items.AddRange (items);
-				listBox1.ItemCheck += new ItemCheckEventHandler (IndexChangedCheckedListBox1);
+				listBox1.SelectedIndexChanged += new EventHandler (IndexChangedCheckedListBox1);
 				listBox1.ThreeDCheckBoxes = true;
 				listBox1.CheckOnClick = true;
 				listBox1.SelectedIndex = 1;
@@ -155,7 +155,7 @@ namespace MyFormProject
 				listBox2.Items.AddRange (items);
 				listBox2.SelectedIndex = 1;
 				listBox2.SelectedIndex = 2;
-				listBox2.ItemCheck += new ItemCheckEventHandler (IndexChangedCheckedListBox2);
+				listBox2.SelectedIndexChanged += new EventHandler (IndexChangedCheckedListBox2);
 				label2.Location = new System.Drawing.Point (450, y);
 				label2.AutoSize = true;
 				label2.Text = "MultiColumn:" + listBox2.MultiColumn + " Selection:" + listBox2.SelectionMode;
@@ -177,7 +177,7 @@ namespace MyFormProject
 				listBox3.Items.AddRange (items_comarques);
 				listBox3.Text = listBox3.Items[5].ToString ();
 				listBox3.ThreeDCheckBoxes = true;
-				listBox3.ItemCheck += new ItemCheckEventHandler (IndexChangedCheckedListBox3);
+				listBox3.SelectedIndexChanged += new EventHandler (IndexChangedCheckedListBox3);
 				listBox3.Sorted = true;
 				label3.Location = new System.Drawing.Point (10, y);
 				label3.AutoSize = true;
@@ -196,7 +196,7 @@ namespace MyFormProject
 				listBox4.ScrollAlwaysVisible = false;
 				listBox4.HorizontalScrollbar = false;
 				listBox4.Items.AddRange (items_comarques);
-				listBox4.ItemCheck += new ItemCheckEventHandler (IndexChangedCheckedListBox4);
+				listBox4.SelectedIndexChanged += new EventHandler (IndexChangedCheckedListBox4);
 				label4.Location = new System.Drawing.Point (450, y);
 				label4.AutoSize = true;
 				label4.Text = "MultiColumn:" + listBox4.MultiColumn + " Selection:" + listBox4.SelectionMode;
@@ -290,22 +290,22 @@ namespace MyFormProject
 			return str;
 		}
 
-		void IndexChangedCheckedListBox1 (object sender, ItemCheckEventArgs e)
+		void IndexChangedCheckedListBox1 (object sender, EventArgs e)
 		{
 			labelSel.Text = "CheckedListBox1" + DumpElements ((CheckedListBox)sender);
 		}
 
-		void IndexChangedCheckedListBox2 (object sender, ItemCheckEventArgs e)
+		void IndexChangedCheckedListBox2 (object sender, EventArgs e)
 		{
 			labelSel.Text = "CheckedListBox2" + DumpElements ((CheckedListBox)sender);
 		}
 
-		void IndexChangedCheckedListBox3 (object sender, ItemCheckEventArgs e)
+		void IndexChangedCheckedListBox3 (object sender, EventArgs e)
 		{
 			labelSel.Text = "CheckedListBox3" + DumpElements ((CheckedListBox)sender);
 		}
 
-		void IndexChangedCheckedListBox4 (object sender, ItemCheckEventArgs e)
+		void IndexChangedCheckedListBox4 (object sender, EventArgs e)
 		{
 			labelSel.Text = "CheckedListBox4" + DumpElements ((CheckedListBox)sender);
 		}
