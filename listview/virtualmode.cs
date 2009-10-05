@@ -26,6 +26,7 @@
 using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 public class Test
@@ -49,6 +50,14 @@ public class TestForm : Form
 
 	const int ItemsCount = 500;
 
+	static readonly string [] Images = {
+				"abiword_48.png",
+				"bmp.png",
+				"disks.png"
+	};
+
+	static readonly string ImagesPath = "listview-items-icons/32x32/";
+
 	public TestForm ()
 	{
 		InitializeUIComponents ();
@@ -61,10 +70,15 @@ public class TestForm : Form
 		lv.Size = new Size (400, 500);
 		lv.FullRowSelect = true;
 		lv.SmallImageList = new ImageList ();
+		lv.SmallImageList.ColorDepth = ColorDepth.Depth32Bit;
+		lv.SmallImageList.ImageSize = new Size (24, 24);
 		lv.LargeImageList = new ImageList ();
+		lv.LargeImageList.ColorDepth = ColorDepth.Depth32Bit;
+		lv.LargeImageList.ImageSize = new Size (32, 32);
 		lv.RetrieveVirtualItem += ListViewRetrieveItem;
 		lv.VirtualListSize = ItemsCount;
 		lv.VirtualMode = true;
+		LoadListViewImages ();
 
 		view_label = new Label ();
 		view_label.Location = new Point (lv.Right + 10, 10);
@@ -115,18 +129,34 @@ public class TestForm : Form
 
 		// for testing purposes, we are creating one item per
 		// invocation
-		ListViewItem item = new ListViewItem ("Item " + args.ItemIndex);
+		ListViewItem item = new ListViewItem ("Item #" + args.ItemIndex);
 		item.SubItems.Add ("Sub item " + args.ItemIndex + "-1");
 		item.SubItems.Add ("Sub item " + args.ItemIndex + "-2");
 		if (lv.View == View.Details && args.ItemIndex % 2 == 0)
 			item.BackColor = Color.WhiteSmoke;
 
+		item.ImageIndex = args.ItemIndex % Images.Length;
 		args.Item = item;
 	}
 
 	void ViewCBSelectedIndexChanged (object o, EventArgs args)
 	{
 		UpdateView ((View)view_cb.SelectedItem);
+	}
+
+	void LoadListViewImages ()
+	{
+		if (!Directory.Exists (ImagesPath)) {
+			Console.WriteLine ("Images path " + ImagesPath + " does not exist.");
+			return;
+		}
+
+		foreach (string image_file in Images)
+			if (File.Exists (ImagesPath + image_file)) {
+				Image img = Image.FromFile (ImagesPath + image_file);
+				lv.SmallImageList.Images.Add (img);
+				lv.LargeImageList.Images.Add (img);
+			}
 	}
 }
 

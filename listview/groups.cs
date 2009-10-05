@@ -28,6 +28,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 public class Test
@@ -64,6 +65,14 @@ public class TestForm : Form
 		AddInfo ();
 	}
 
+	static readonly string [] Images = {
+				"abiword_48.png",
+				"bmp.png",
+				"disks.png"
+	};
+
+	static readonly string ImagesPath = "listview-items-icons/32x32/";
+
 	void AddInfo ()
 	{
 		ListViewItem item1 = new ListViewItem (new string [] { "Les Miserables", "Hugo, Victor" });
@@ -84,6 +93,9 @@ public class TestForm : Form
 		ListViewItem item16 = new ListViewItem (new string [] { "Amsterdam", "McEwan, Ian" });
 		items = new ListViewItem [] { item1, item2, item3, item4, item5, item6, item7, item8, item9, item10,
 			item11, item12, item13, item14, item15, item16 };
+
+		for (int i = 0; i < items.Length; i++)
+			items [i].ImageIndex = i % Images.Length;
 
 		SetGroups ();
 	}
@@ -127,7 +139,13 @@ public class TestForm : Form
 		lv.Size = new Size (400, 500);
 		lv.FullRowSelect = true;
 		lv.SmallImageList = new ImageList ();
+		lv.SmallImageList.ColorDepth = ColorDepth.Depth32Bit;
+		lv.SmallImageList.ImageSize = new Size (24, 24);
 		lv.LargeImageList = new ImageList ();
+		lv.LargeImageList.ColorDepth = ColorDepth.Depth32Bit;
+		lv.LargeImageList.ImageSize = new Size (32, 32);
+		LoadListViewImages ();
+
 		lv.ColumnClick += ColumnClicked;
 		UpdateView (View.Details);
 
@@ -199,6 +217,21 @@ public class TestForm : Form
 	void SortingCBSelectedIndexChanged (object o, EventArgs args)
 	{
 		lv.Sorting = (SortOrder)sorting_cb.SelectedItem;
+	}
+
+	void LoadListViewImages ()
+	{
+		if (!Directory.Exists (ImagesPath)) {
+			Console.WriteLine ("Images path " + ImagesPath + " does not exist.");
+			return;
+		}
+
+		foreach (string image_file in Images)
+			if (File.Exists (ImagesPath + image_file)) {
+				Image img = Image.FromFile (ImagesPath + image_file);
+				lv.SmallImageList.Images.Add (img);
+				lv.LargeImageList.Images.Add (img);
+			}
 	}
 }
 
