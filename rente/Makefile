@@ -3,7 +3,7 @@ all: mono
 mono: swf-rente.cs
 	mcs swf-rente.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:Accessibility.dll
 
-dotnet: swf-zorder.cs
+dotnet: swf-rente.cs
 	csc swf-rente.cs /r:System.Windows.Forms.dll /r:System.Drawing.dll /r:Accessibility.dll
 
 clean:
